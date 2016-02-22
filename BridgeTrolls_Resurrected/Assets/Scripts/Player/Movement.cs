@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum Roles
+{
+	Hostile, 
+	Neutral
+}
+
 public class Movement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	private Roles _playerRoles;
+
+	[SerializeField]
+	private float _speed;
 }
