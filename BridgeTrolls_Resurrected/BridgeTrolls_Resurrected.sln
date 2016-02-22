@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{61A4C7FA-1FE9-B98B-78A5-9CE75C0FBA44}") = "BridgeTrolls_Resurrected", "Assembly-CSharp.csproj", "{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
