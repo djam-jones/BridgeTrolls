@@ -1,15 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum Roles
-{
-	Hostile, 
-	Neutral
-}
-
 public class Movement : MonoBehaviour {
-
-	public Roles playerRoles;
 
 	[SerializeField] private float _speed;
 
@@ -19,13 +11,14 @@ public class Movement : MonoBehaviour {
 	[SerializeField] private float _minClampedY;
 	[SerializeField] private float _maxClampedY;
 
-	public static Movement Instance {get; private set;}
+	private float _clampOffset = 7;
 
 	void FixedUpdate()
 	{
-		if(playerRoles == Roles.Neutral)
+		Move();
+		if(PlayerRoles.Instance.playerRoles == Roles.Neutral)
 			Move();
-		else if(playerRoles == Roles.Hostile)
+		else if(PlayerRoles.Instance.playerRoles == Roles.Hostile)
 			ClampedMove();
 	}
 
@@ -44,6 +37,14 @@ public class Movement : MonoBehaviour {
 
 	private void Move()
 	{
+		Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+
+		pos.x = Mathf.Clamp(pos.x, _clampOffset, Screen.width - _clampOffset);
+		pos.y = Mathf.Clamp(pos.y, _clampOffset, Screen.height - _clampOffset);
+		pos.z = (transform.position.z + 10);
+
+		transform.position = Camera.main.ScreenToWorldPoint(pos);
+		
 		float h = Input.GetAxis("Horizontal") * _speed * Time.deltaTime;
 		float v = Input.GetAxis("Vertical") * _speed * Time.deltaTime;
 
