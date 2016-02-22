@@ -13,12 +13,19 @@ public class Movement : MonoBehaviour {
 
 	private float _clampOffset = 7;
 
+	private PlayerRoles _playerRolesScript;
+
+	void Awake()
+	{
+		_playerRolesScript = GetComponent<PlayerRoles>();
+	}
+
 	void FixedUpdate()
 	{
 		Move();
-		if(PlayerRoles.Instance.playerRoles == Roles.Neutral)
+		if(_playerRolesScript.playerRoles == Roles.Neutral)
 			Move();
-		else if(PlayerRoles.Instance.playerRoles == Roles.Hostile)
+		else if(_playerRolesScript.playerRoles == Roles.Hostile)
 			ClampedMove();
 	}
 

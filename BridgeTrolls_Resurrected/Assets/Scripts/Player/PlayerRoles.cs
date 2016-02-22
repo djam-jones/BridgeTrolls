@@ -11,13 +11,6 @@ public class PlayerRoles : MonoBehaviour {
 
 	public Roles playerRoles;
 
-	public static PlayerRoles Instance {get; private set;}
-
-	void Awake()
-	{
-		Instance = this;
-	}
-
 	public void ChangeRole()
 	{
 		if(playerRoles == Roles.Hostile)
