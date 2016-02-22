@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour {
 	[SerializeField] private float _minClampedY;
 	[SerializeField] private float _maxClampedY;
 
+	public static Movement Instance {get; private set;}
+
 	void FixedUpdate()
 	{
 		if(playerRoles == Roles.Neutral)
@@ -29,8 +31,8 @@ public class Movement : MonoBehaviour {
 
 	private void ClampedMove()
 	{
-		float h = Input.GetAxis("Horizontal") * _speed * Time.deltaTime;
-		float v = Input.GetAxis("Vertical") * _speed * Time.deltaTime;
+		float h = Input.GetAxis("Horizontal") 	* _speed * Time.deltaTime;
+		float v = Input.GetAxis("Vertical") 	* _speed * Time.deltaTime;
 
 		Vector2 pos = transform.position;
 		pos.x = Mathf.Clamp(pos.x, _minClampedX, _maxClampedX);
