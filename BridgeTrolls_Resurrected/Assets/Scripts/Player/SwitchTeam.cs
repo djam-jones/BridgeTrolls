@@ -7,10 +7,12 @@ public class SwitchTeam : MonoBehaviour {
     {
         if (other.tag == ("Enemy"))
         {
-            tag = "Enemy";
-            Destroy(GetComponent<SwitchTeam>());
-            Destroy(GetComponent<Score>());
+            Debug.Log("enemy");
+            tag = "Enemy"; 
             transform.position = new Vector2(0, 0);
+            Destroy(GetComponent<Movement>());
+            Destroy(GetComponent<Score>());
+            Destroy(GetComponent<SwitchTeam>());
         }
     }
 }
