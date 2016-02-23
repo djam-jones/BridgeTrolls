@@ -10,7 +10,9 @@ public class SwitchTeam : MonoBehaviour {
             Debug.Log("enemy");
             tag = "Enemy"; 
             transform.position = new Vector2(0, 0);
-            Destroy(GetComponent<Movement>());
+            //Destroy(GetComponent<Movement>());
+            PlayerRoles roles = GetComponent<PlayerRoles>();
+            roles.ChangeRole(); 
             Destroy(GetComponent<Score>());
             Destroy(GetComponent<SwitchTeam>());
         }
