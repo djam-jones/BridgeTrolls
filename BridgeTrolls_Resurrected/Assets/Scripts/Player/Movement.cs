@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
+	[SerializeField, HideInInspector] private string _horizontalControl  = "Horizontal_P";
+	[SerializeField, HideInInspector] private string _verticalControl 	= "Vertical_P";
+
 	[SerializeField] private float _speed;
 
 	[SerializeField] private float _minClampedX;
@@ -22,7 +25,6 @@ public class Movement : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		Move();
 		if(_playerRolesScript.playerRoles == Roles.Neutral)
 			Move();
 		else if(_playerRolesScript.playerRoles == Roles.Hostile)
@@ -31,8 +33,8 @@ public class Movement : MonoBehaviour {
 
 	private void ClampedMove()
 	{
-		float h = Input.GetAxis("Horizontal") 	* _speed * Time.deltaTime;
-		float v = Input.GetAxis("Vertical") 	* _speed * Time.deltaTime;
+		float h = Input.GetAxis(_horizontalControl + GameMagager.Instance.GetPlayerId) 	* _speed * Time.deltaTime;
+		float v = Input.GetAxis(_verticalControl   + GameMagager.Instance.GetPlayerId) 	* _speed * Time.deltaTime;
 
 		Vector2 pos = transform.position;
 		pos.x = Mathf.Clamp(pos.x, _minClampedX, _maxClampedX);
@@ -52,8 +54,8 @@ public class Movement : MonoBehaviour {
 
 		transform.position = Camera.main.ScreenToWorldPoint(pos);
 		
-		float h = Input.GetAxis("Horizontal") * _speed * Time.deltaTime;
-		float v = Input.GetAxis("Vertical") * _speed * Time.deltaTime;
+		float h = Input.GetAxis(_horizontalControl + GameMagager.Instance.GetPlayerId) * _speed * Time.deltaTime;
+		float v = Input.GetAxis(_verticalControl   + GameMagager.Instance.GetPlayerId) * _speed * Time.deltaTime;
 
 		transform.Translate(new Vector2(h, v));
 	}
