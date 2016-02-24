@@ -11,7 +11,7 @@ public class GameMagager : MonoBehaviour {
     [SerializeField]GameObject prefabPlayer;
     [SerializeField]GameObject prefabEnemy;
 
-	private int id;
+	private int id = 0;
 
 	public static GameMagager Instance {get; private set;}
 
@@ -70,6 +70,8 @@ public class GameMagager : MonoBehaviour {
 				foreach(GameObject player in playerArray)
 				{
 					id = playerArray.IndexOf(player);
+					id = (id + 1);
+					print("ID: " + id.ToString());
 				}
 			}
 			return id;

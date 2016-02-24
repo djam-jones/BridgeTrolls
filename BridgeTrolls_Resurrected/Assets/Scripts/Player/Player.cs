@@ -14,6 +14,6 @@ public class Player : MonoBehaviour {
 		_playerRoles 	= GetComponent<PlayerRoles>();
 
 		playerNum = GameMagager.Instance.GetPlayerId;
-		print(gameObject.name + " " + playerNum.ToString());
+		//print(gameObject.name + " " + playerNum.ToString());
 	}
 }
