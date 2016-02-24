@@ -5,10 +5,13 @@ using System.Collections.Generic;
 public class GameMagager : MonoBehaviour {
 	
     public GameMagager manager;
+
     [SerializeField]private int amountPlayers;
     public List<GameObject> playerArray = new List<GameObject>(); 
     [SerializeField]GameObject prefabPlayer;
     [SerializeField]GameObject prefabEnemy;
+
+	private int id;
 
 	public static GameMagager Instance {get; private set;}
 
@@ -42,14 +45,19 @@ public class GameMagager : MonoBehaviour {
 
 	private void SetEnemyPlayer()
 	{
-		GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)];
-		enemyPlayer = Instantiate(prefabEnemy, new Vector2(0, 0), prefabEnemy.transform.rotation) as GameObject;
-		playerArray.Add(enemyPlayer);
+		GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)]; 	//Pick a random player from the Player List.
+		enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile; 		//Set Role to Hostile and thus the Troll.
+
+		enemyPlayer.name = "Troll";													//Set Name to Troll.
+		enemyPlayer.tag = "Enemy";													//Set Tag to Enemy.
+
+		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
+		enemyPlayer.GetComponent<SpriteRenderer>().color = Color.red; 				//TODO: Change this to sprites eventually. But for now only change color.
 	}
 
 	private void InstantiatePlayersAndAddToList()
 	{
-		GameObject playerprefab = Instantiate(prefabPlayer, new Vector2(-8.4f,Random.Range(4.5f,-3.5f)), prefabPlayer.transform.rotation) as GameObject;
+		GameObject playerprefab = Instantiate(prefabPlayer, new Vector2(-8.4f, Random.Range(4.5f,-3.5f)), prefabPlayer.transform.rotation) as GameObject;
 		playerArray.Add(playerprefab);
 	}
 
@@ -57,9 +65,19 @@ public class GameMagager : MonoBehaviour {
 	{
 		get
 		{
-			int id = playerArray.Count;
+			for(int i = 0; i < playerArray.Count; i++)
+			{
+				foreach(GameObject player in playerArray)
+				{
+					id = playerArray.IndexOf(player);
+					print(id);
+				}
+			}
 			return id;
 		}
-		set{}
+		set
+		{
+			id = value;
+		}
 	}
 }

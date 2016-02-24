@@ -47,6 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
      <Compile Include="Assets\Scripts\Player\Movement.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerRoles.cs" />
      <Compile Include="Assets\Scripts\Player\Score.cs" />
      <Compile Include="Assets\Scripts\Player\SwitchTeam.cs" />

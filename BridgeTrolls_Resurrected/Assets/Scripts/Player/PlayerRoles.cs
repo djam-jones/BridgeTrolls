@@ -13,7 +13,7 @@ public class PlayerRoles : MonoBehaviour {
 
 	public void ChangeRole()
 	{
-		if(playerRoles == Roles.Hostile)
+		if(playerRoles == Roles.Hostile && gameObject.tag != "Enemy")
 			playerRoles = Roles.Neutral;
 		else if(playerRoles == Roles.Neutral)
 			playerRoles = Roles.Hostile;
