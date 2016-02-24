@@ -33,8 +33,8 @@ public class Movement : MonoBehaviour {
 
 	private void ClampedMove()
 	{
-		float h = Input.GetAxis(_horizontalControl + GameMagager.Instance.GetPlayerId) 	* _speed * Time.deltaTime;
-		float v = Input.GetAxis(_verticalControl   + GameMagager.Instance.GetPlayerId) 	* _speed * Time.deltaTime;
+		float h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+		float v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
 
 		Vector2 pos = transform.position;
 		pos.x = Mathf.Clamp(pos.x, _minClampedX, _maxClampedX);
@@ -54,8 +54,8 @@ public class Movement : MonoBehaviour {
 
 		transform.position = Camera.main.ScreenToWorldPoint(pos);
 		
-		float h = Input.GetAxis(_horizontalControl + GameMagager.Instance.GetPlayerId) * _speed * Time.deltaTime;
-		float v = Input.GetAxis(_verticalControl   + GameMagager.Instance.GetPlayerId) * _speed * Time.deltaTime;
+		float h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+		float v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
 
 		transform.Translate(new Vector2(h, v));
 	}
