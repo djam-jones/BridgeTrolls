@@ -70,7 +70,6 @@ public class GameMagager : MonoBehaviour {
 				foreach(GameObject player in playerArray)
 				{
 					id = playerArray.IndexOf(player);
-					print(id);
 				}
 			}
 			return id;
