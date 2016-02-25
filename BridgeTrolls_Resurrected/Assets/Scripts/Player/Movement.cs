@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
+	public bool devKeyBoardInput = false;
+
 	[SerializeField, HideInInspector] private string _horizontalControl  = "Horizontal_P";
 	[SerializeField, HideInInspector] private string _verticalControl 	= "Vertical_P";
 
@@ -33,19 +35,32 @@ public class Movement : MonoBehaviour {
 
 	private void ClampedMove()
 	{
-		float h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
-		float v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+		float h;
+		float v;
 
 		Vector2 pos = transform.position;
 		pos.x = Mathf.Clamp(pos.x, _minClampedX, _maxClampedX);
 		pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
 		transform.position = pos;
 
+		if(!devKeyBoardInput)
+		{
+			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+		}
+		else 
+		{
+			h = Input.GetAxis( "Horizontal" ) * _speed * Time.deltaTime;
+			v = Input.GetAxis( "Vertical" ) * _speed * Time.deltaTime;
+		}
 		transform.Translate(new Vector2(h, v));
 	}
 
 	private void Move()
 	{
+		float h;
+		float v;
+
 		Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
 
 		pos.x = Mathf.Clamp(pos.x, _clampOffset, Screen.width - _clampOffset);
@@ -53,10 +68,17 @@ public class Movement : MonoBehaviour {
 		pos.z = (transform.position.z + 10);
 
 		transform.position = Camera.main.ScreenToWorldPoint(pos);
-		
-		float h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
-		float v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
 
+		if(!devKeyBoardInput)
+		{
+			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+		}
+		else
+		{
+			h = Input.GetAxis( "Horizontal" ) * _speed * Time.deltaTime;
+			v = Input.GetAxis( "Vertical" ) * _speed * Time.deltaTime;
+		}
 		transform.Translate(new Vector2(h, v));
 	}
 }

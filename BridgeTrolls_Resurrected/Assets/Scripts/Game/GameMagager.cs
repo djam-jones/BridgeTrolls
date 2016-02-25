@@ -71,7 +71,6 @@ public class GameMagager : MonoBehaviour {
 				{
 					id = playerArray.IndexOf(player);
 					id = (id + 1);
-					print("ID: " + id.ToString());
 				}
 			}
 			return id;
