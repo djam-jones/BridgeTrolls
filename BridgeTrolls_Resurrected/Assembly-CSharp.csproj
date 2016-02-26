@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\Game\ControllerConnection.cs" />
      <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
      <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
+     <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
+     <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />
      <Compile Include="Assets\Scripts\Menu\FadeScreen.cs" />
      <Compile Include="Assets\Scripts\Menu\HubHandler.cs" />
      <Compile Include="Assets\Scripts\Player\Movement.cs" />

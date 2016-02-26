@@ -53,7 +53,7 @@ public class Movement : MonoBehaviour {
 			h = Input.GetAxis( "Horizontal" ) * _speed * Time.deltaTime;
 			v = Input.GetAxis( "Vertical" ) * _speed * Time.deltaTime;
 		}
-		transform.Translate(new Vector2(h, v));
+		transform.Translate(new Vector2(h, v), Space.World);
 	}
 
 	private void Move()
@@ -79,6 +79,6 @@ public class Movement : MonoBehaviour {
 			h = Input.GetAxis( "Horizontal" ) * _speed * Time.deltaTime;
 			v = Input.GetAxis( "Vertical" ) * _speed * Time.deltaTime;
 		}
-		transform.Translate(new Vector2(h, v));
+		transform.Translate(new Vector2(h, v), Space.World);
 	}
 }
