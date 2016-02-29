@@ -10,14 +10,21 @@ public enum PanelState
 	Ready
 }
 
+public enum PlayerState
+{
+	Unready, 
+	Ready
+}
+
 public class HubHandler : MonoBehaviour {
 
 	[SerializeField, HideInInspector] private string _actionKey = "Submit";
 	[SerializeField, HideInInspector] private string _cancelKey = "Cancel";
 
 	public int panelID;
-	[HideInInspector] public PanelState _panelState;
-	[SerializeField, HideInInspector]private int _panelIndex = 0;
+	[HideInInspector] public PanelState panelState;
+	[HideInInspector] public PlayerState playerState;
+	[SerializeField, HideInInspector] private int _panelIndex = 0;
 
 	public int totalCharacters = 2;
 
@@ -29,6 +36,8 @@ public class HubHandler : MonoBehaviour {
 	void Awake()
 	{
 		_characterSelection = GetComponent<CharacterSelection>();
+		panelState = PanelState.WaitingToJoin;
+		playerState = PlayerState.Unready;
 	}
 
 	void Update()
@@ -43,7 +52,10 @@ public class HubHandler : MonoBehaviour {
 		switch(panelIndex)
 		{
 		case 0:
-			_panelState = PanelState.WaitingToJoin;
+			panelState = PanelState.WaitingToJoin;
+
+			playerState = PlayerState.Unready;
+
 			//Disabled Joystick/D-Pad controls.
 
 			_panelTexts[0].enabled = false;
@@ -57,7 +69,9 @@ public class HubHandler : MonoBehaviour {
 			_panelImages[5].gameObject.SetActive(false);
 			break;
 		case 1:
-			_panelState = PanelState.CharacterSelect;
+			panelState = PanelState.CharacterSelect;
+
+			playerState = PlayerState.Unready;
 
 			//Enable Joystick/D-Pad controls.
 			_characterSelection.Select();
@@ -73,8 +87,11 @@ public class HubHandler : MonoBehaviour {
 			_panelImages[5].gameObject.SetActive(true);
 			break;
 		case 2:
-			_panelState = PanelState.Ready;
-			//Disabled Joystick/D-Pad controls.
+			panelState = PanelState.Ready;
+
+			playerState = PlayerState.Ready;
+
+			_characterSelection.Confirm();
 
 			_panelTexts[0].text = "Player " + (panelID + 1).ToString();
 
@@ -110,6 +127,14 @@ public class HubHandler : MonoBehaviour {
 			{
 				_panelIndex--;
 			}
+		}
+	}
+
+	public void SendReady()
+	{
+		if(playerState == PlayerState.Ready)
+		{
+			//Send Message to get ready players.
 		}
 	}
 

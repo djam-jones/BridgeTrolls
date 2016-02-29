@@ -10,11 +10,11 @@ public class Movement : MonoBehaviour {
 
 	[SerializeField] private float _speed;
 
-	[SerializeField] private float _minClampedX;
-	[SerializeField] private float _maxClampedX;
+	[SerializeField] private float _minClampedX = -1.4f;
+	[SerializeField] private float _maxClampedX = 1.4f;
 
-	[SerializeField] private float _minClampedY;
-	[SerializeField] private float _maxClampedY;
+	[SerializeField] private float _minClampedY = -3.5f;
+	[SerializeField] private float _maxClampedY = 3.5f;
 
 	private float _clampOffset = 7;
 

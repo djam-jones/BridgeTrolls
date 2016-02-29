@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Game\ChosenCharacters.cs" />
      <Compile Include="Assets\Scripts\Game\ControllerConnection.cs" />
      <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
      <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
@@ -54,8 +55,7 @@
      <Compile Include="Assets\Scripts\Menu\HubHandler.cs" />
      <Compile Include="Assets\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerFactory.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerRoles.cs" />
      <Compile Include="Assets\Scripts\Player\Score.cs" />
      <Compile Include="Assets\Scripts\Player\SwitchTeam.cs" />
