@@ -14,10 +14,18 @@ public class Grab : MonoBehaviour
     private float currentTime;
     private float targetTime = 1;
 
+    private float cdTimer;
+    [SerializeField]
+    private float coolDown = 2;
+
+    private float releasetimer;
+    [SerializeField]
+    private float releaseTime = 1;
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && Input.GetButtonDown(grabButtton))
+        if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && Input.GetButtonDown(grabButtton) && cdTimer >= coolDown)
         {
             player = other.gameObject;
             connectPlayers();
@@ -31,6 +39,7 @@ public class Grab : MonoBehaviour
         HingeJoint2D connector = player.gameObject.AddComponent<HingeJoint2D>();
         connector.anchor = hingeOffset;
         connector.connectedBody = this.gameObject.GetComponent<Rigidbody2D>();
+        player.GetComponent<Movement>().enabled = false;
         grabbing = true;
     }
 
@@ -40,11 +49,13 @@ public class Grab : MonoBehaviour
         player.GetComponent<Rigidbody2D>().freezeRotation = true;
         player.transform.rotation = Quaternion.identity;    
         Destroy(player.GetComponent<HingeJoint2D>());
+        player.GetComponent<Movement>().enabled = true;
         player = null;
     }
 
     private void Update()
     {
+        cdTimer += Time.deltaTime;
         if(grabbing == true && currentTime < targetTime)
         {
             currentTime += Time.deltaTime;
@@ -54,6 +65,20 @@ public class Grab : MonoBehaviour
         {
             disconnectPlayers();
             currentTime = 0;
+            cdTimer = 0;
+            releasetimer = 0;
+        }
+        
+        if(grabbing == true)
+        {
+            releasetimer += Time.deltaTime;
+        }
+        if(releasetimer >= releaseTime && grabbing == true)
+        {
+            disconnectPlayers();
+            currentTime = 0;
+            cdTimer = 0;
+            releasetimer = 0;
         }
     }   
 }
