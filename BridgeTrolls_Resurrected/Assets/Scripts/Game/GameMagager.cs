@@ -66,6 +66,7 @@ public class GameMagager : MonoBehaviour {
 			playerCharacter = PlayerPrefs.GetString("CharacterName");
 
 			GameObject playerPrefab = PlayerFactory.CreatePlayer(playerCharacter, i);
+			playerPrefab.transform.position = new Vector2(-8.4f, Random.Range(4.5f, -4.5f));
 			Player playerScript = playerPrefab.GetComponent<Player>();
 
 			playerPrefab.name = "Player" + (i + 1); //Set the Player Name to PLAYER_NUM
