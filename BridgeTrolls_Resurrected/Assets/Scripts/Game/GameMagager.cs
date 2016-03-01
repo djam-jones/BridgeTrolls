@@ -11,6 +11,8 @@ public class GameMagager : MonoBehaviour {
     [SerializeField]GameObject prefabPlayer;
     [SerializeField]GameObject prefabEnemy;
 
+	public Sprite trollSprite;
+
 	private int id = 0;
 
 	public static GameMagager Instance {get; private set;}
@@ -36,10 +38,10 @@ public class GameMagager : MonoBehaviour {
 	
 	public void CheckAmountOfPlayers ()
     {
-		for (int i = 0; i < amountPlayers; i++)
-		{
+//		for (int i = 0; i < amountPlayers; i++)
+//		{
 			InstantiatePlayersAndAddToList();
-		}
+//		}
 		SetEnemyPlayer();
 	}
 
@@ -48,17 +50,31 @@ public class GameMagager : MonoBehaviour {
 		GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)]; 	//Pick a random player from the Player List.
 		enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile; 		//Set Role to Hostile and thus the Troll.
 
-		enemyPlayer.name = "Troll";													//Set Name to Troll.
+		enemyPlayer.name = enemyPlayer.name + " Troll";								//Set Name to Troll.
 		enemyPlayer.tag = "Enemy";													//Set Tag to Enemy.
 
 		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
-		enemyPlayer.GetComponent<SpriteRenderer>().color = Color.red; 				//TODO: Change this to sprites eventually. But for now only change color.
+		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//TODO: Change this to sprites eventually. But for now only change color.
 	}
 
 	private void InstantiatePlayersAndAddToList()
 	{
-		GameObject playerprefab = Instantiate(prefabPlayer, new Vector2(-8.4f, Random.Range(4.5f,-3.5f)), prefabPlayer.transform.rotation) as GameObject;
-		playerArray.Add(playerprefab);
+		string playerCharacter;
+
+		for(int i = 0; i < amountPlayers; i++)
+		{
+			playerCharacter = PlayerPrefs.GetString("CharacterName");
+
+			GameObject playerPrefab = PlayerFactory.CreatePlayer(playerCharacter, i);
+			Player playerScript = playerPrefab.GetComponent<Player>();
+
+			playerPrefab.name = "Player" + (i + 1); //Set the Player Name to PLAYER_NUM
+			playerPrefab.GetComponent<PlayerRoles>().playerRoles = Roles.Neutral;
+			playerScript.SetCharacter(playerCharacter);
+
+			//Add the Player Prefab to the Player Array.
+			playerArray.Add(playerPrefab);
+		}
 	}
 
 	public int GetPlayerId

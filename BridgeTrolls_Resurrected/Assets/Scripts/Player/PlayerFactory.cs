@@ -3,6 +3,12 @@ using System.Collections;
 
 public class PlayerFactory : MonoBehaviour {
 
+	/// <summary>
+	/// Creates the player.
+	/// </summary>
+	/// <returns>The player.</returns>
+	/// <param name="playerConstString">Player constant string.</param>
+	/// <param name="playerID">Player ID.</param>
 	public static GameObject CreatePlayer(string playerConstString, int playerID)
 	{
 		GameObject _playerObj = new GameObject();
@@ -21,11 +27,9 @@ public class PlayerFactory : MonoBehaviour {
 		string _animatorName = "";
 
 		//Sprite Implementation
-		Texture2D playerSprite = Resources.Load("Triangle") as Texture2D;
+		Texture2D playerSprite = Resources.Load("Sprites/GoblinRun") as Texture2D;
 		_spriteRenderer = _playerObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, playerSprite.width, playerSprite.height), new Vector2(0.5f, 0.5f));
-		_spriteRenderer.color = Color.green;
-
 
 		//Rigidbody2D Implementation
 		_rigid2D = _playerObj.AddComponent<Rigidbody2D>();
@@ -34,7 +38,6 @@ public class PlayerFactory : MonoBehaviour {
 
 		//Animator Implementation
 		_anim = _playerObj.AddComponent<Animator>();
-
 
 		//Collision Implementation
 		_boxCollider = _playerObj.AddComponent<BoxCollider2D>();
@@ -46,23 +49,42 @@ public class PlayerFactory : MonoBehaviour {
 
 		//Player Script Implementation
 		_player = _playerObj.AddComponent<Player>();
+		_player.playerType = playerConstString;
 		_player.playerNum = playerID;
 
 		//Script Implementations
-		_movement = _playerObj.AddComponent<Movement>();
 		_roles = _playerObj.AddComponent<PlayerRoles>();
+
+		_movement = _playerObj.AddComponent<Movement>();
+		_movement.speed = 3f;
+
 		_score = _playerObj.AddComponent<Score>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
 
 		switch(playerConstString)
 		{
-			
+			case CharacterDatabase.CHARACTER01:
+				_animatorName = "Character_One_Animator";
+				break;
+			case CharacterDatabase.CHARACTER02:
+				_animatorName = "Character_Two_Animator";
+				break;
+			case CharacterDatabase.CHARACTER03:
+				_animatorName = "Character_Three_Animator";
+				break;
+			case CharacterDatabase.CHARACTER04:
+				_animatorName = "Character_Four_Animator";
+				break;
 		}
 
 		//Implement Player Arrow/Color Indication?
+		PlayerIndicator indicator = _playerObj.AddComponent<PlayerIndicator>();
+		indicator.Init();
+		indicator.SetColor(CharacterDatabase.GetColorById(playerID));
 
-		_anim.runtimeAnimatorController = Resources.Load("Animations/Characters" + _animatorName) as RuntimeAnimatorController;
+		_anim.runtimeAnimatorController = Resources.Load("Animations/Characters/" + _animatorName) as RuntimeAnimatorController;
 
+		_player.SetCharacter(playerConstString);
 		return _playerObj;
 	}
 }

@@ -1,0 +1,961 @@
+fileFormatVersion: 2
+guid: e0275a81419a54d41925e42ebc450324
+timeCreated: 1456773370
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_UI_Characterselect_Banner400x600_Red_0
+    21300002: Art_UI_Characterselect_Banner400x600_Red_1
+    21300004: Art_UI_Characterselect_Banner400x600_Red_2
+    21300006: Art_UI_Characterselect_Banner400x600_Red_3
+    21300008: Art_UI_Characterselect_Banner400x600_Red_4
+    21300010: Art_UI_Characterselect_Banner400x600_Red_5
+    21300012: Art_UI_Characterselect_Banner400x600_Red_6
+    21300014: Art_UI_Characterselect_Banner400x600_Red_7
+    21300016: Art_UI_Characterselect_Banner400x600_Red_8
+    21300018: Art_UI_Characterselect_Banner400x600_Red_9
+    21300020: Art_UI_Characterselect_Banner400x600_Red_10
+    21300022: Art_UI_Characterselect_Banner400x600_Red_11
+    21300024: Art_UI_Characterselect_Banner400x600_Red_12
+    21300026: Art_UI_Characterselect_Banner400x600_Red_13
+    21300028: Art_UI_Characterselect_Banner400x600_Red_14
+    21300030: Art_UI_Characterselect_Banner400x600_Red_15
+    21300032: Art_UI_Characterselect_Banner400x600_Red_16
+    21300034: Art_UI_Characterselect_Banner400x600_Red_17
+    21300036: Art_UI_Characterselect_Banner400x600_Red_18
+    21300038: Art_UI_Characterselect_Banner400x600_Red_19
+    21300040: Art_UI_Characterselect_Banner400x600_Red_20
+    21300042: Art_UI_Characterselect_Banner400x600_Red_21
+    21300044: Art_UI_Characterselect_Banner400x600_Red_22
+    21300046: Art_UI_Characterselect_Banner400x600_Red_23
+    21300048: Art_UI_Characterselect_Banner400x600_Red_24
+    21300050: Art_UI_Characterselect_Banner400x600_Red_25
+    21300052: Art_UI_Characterselect_Banner400x600_Red_26
+    21300054: Art_UI_Characterselect_Banner400x600_Red_27
+    21300056: Art_UI_Characterselect_Banner400x600_Red_28
+    21300058: Art_UI_Characterselect_Banner400x600_Red_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_UI_Characterselect_Banner400x600_Red_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 93, y: 78}
+        - {x: 95, y: 81}
+        - {x: 95, y: 106}
+        - {x: 63, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 97}
+        - {x: -92, y: -4}
+        - {x: -89, y: -82}
+        - {x: -83, y: -92}
+        - {x: -64, y: -127}
+        - {x: -27, y: -150}
+        - {x: 27, y: -150}
+        - {x: 62, y: -136}
+        - {x: 90, y: -98}
+        - {x: 95, y: -76}
+        - {x: 95, y: 13}
+    - name: Art_UI_Characterselect_Banner400x600_Red_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 97}
+        - {x: -92, y: -86}
+        - {x: -59, y: -127}
+        - {x: -24, y: -145}
+        - {x: -10, y: -150}
+        - {x: 19, y: -150}
+        - {x: 67, y: -121}
+        - {x: 89, y: -97}
+        - {x: 95, y: -74}
+    - name: Art_UI_Characterselect_Banner400x600_Red_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 94}
+        - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 101}
+        - {x: -92, y: -86}
+        - {x: -90, y: -122}
+        - {x: -40, y: -149}
+        - {x: -35, y: -150}
+        - {x: 13, y: -150}
+        - {x: 68, y: -126}
+        - {x: 92, y: -84}
+        - {x: 93, y: 77}
+        - {x: 95, y: 81}
+    - name: Art_UI_Characterselect_Banner400x600_Red_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 94}
+        - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 97}
+        - {x: -92, y: -42}
+        - {x: -90, y: -102}
+        - {x: -50, y: -131}
+        - {x: -21, y: -150}
+        - {x: 15, y: -150}
+        - {x: 66, y: -125}
+        - {x: 91, y: -88}
+        - {x: 93, y: 77}
+        - {x: 95, y: 81}
+    - name: Art_UI_Characterselect_Banner400x600_Red_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 81}
+        - {x: 95, y: 94}
+        - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 97}
+        - {x: -92, y: -117}
+        - {x: -45, y: -150}
+        - {x: 17, y: -150}
+        - {x: 37, y: -146}
+        - {x: 74, y: -111}
+        - {x: 91, y: -84}
+        - {x: 93, y: 77}
+    - name: Art_UI_Characterselect_Banner400x600_Red_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 81}
+        - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 109}
+        - {x: -92, y: 96}
+        - {x: -92, y: -101}
+        - {x: -85, y: -115}
+        - {x: -23, y: -150}
+        - {x: 15, y: -150}
+        - {x: 37, y: -142}
+        - {x: 74, y: -113}
+        - {x: 93, y: -84}
+        - {x: 93, y: 77}
+    - name: Art_UI_Characterselect_Banner400x600_Red_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 150}
+        - {x: 44, y: 102}
+        - {x: -51, y: 149}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -92, y: 102}
+        - {x: -92, y: -106}
+        - {x: -64, y: -128}
+        - {x: -54, y: -111}
+        - {x: -53, y: -100}
+        - {x: -49, y: -110}
+        - {x: -40, y: -133}
+        - {x: -30, y: -150}
+        - {x: 27, y: -150}
+        - {x: 95, y: -104}
+        - {x: 95, y: 103}
+        - {x: 63, y: 150}
+    - name: Art_UI_Characterselect_Banner400x600_Red_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -67, y: 140}
+        - {x: -94, y: 97}
+        - {x: -94, y: -96}
+        - {x: -60, y: -130}
+        - {x: -21, y: -150}
+        - {x: 5, y: -150}
+        - {x: 19, y: -145}
+        - {x: 47, y: -140}
+        - {x: 95, y: -87}
+    - name: Art_UI_Characterselect_Banner400x600_Red_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 80}
+        - {x: 95, y: 94}
+        - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -67, y: 140}
+        - {x: -95, y: 96}
+        - {x: -95, y: -98}
+        - {x: -62, y: -134}
+        - {x: -25, y: -150}
+        - {x: 22, y: -150}
+        - {x: 53, y: -128}
+        - {x: 92, y: -85}
+        - {x: 93, y: 77}
+    - name: Art_UI_Characterselect_Banner400x600_Red_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1448
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 94}
+        - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -72, y: 106}
+        - {x: -96, y: 95}
+        - {x: -96, y: -104}
+        - {x: -71, y: -125}
+        - {x: -31, y: -150}
+        - {x: 8, y: -150}
+        - {x: 64, y: -131}
+        - {x: 92, y: -85}
+        - {x: 93, y: 77}
+        - {x: 95, y: 81}
+    - name: Art_UI_Characterselect_Banner400x600_Red_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 21}
+        - {x: 95, y: 105}
+        - {x: 66, y: 147}
+        - {x: 63, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 101}
+        - {x: -28, y: 127}
+        - {x: -49, y: 150}
+        - {x: -71, y: 150}
+        - {x: -67, y: 106}
+        - {x: -96, y: 95}
+        - {x: -97, y: 74}
+        - {x: -97, y: -104}
+        - {x: -72, y: -126}
+        - {x: -38, y: -150}
+        - {x: 20, y: -150}
+        - {x: 65, y: -135}
+        - {x: 90, y: -83}
+        - {x: 92, y: -10}
+    - name: Art_UI_Characterselect_Banner400x600_Red_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 26}
+        - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: 49, y: 94}
+        - {x: -24, y: 119}
+        - {x: -49, y: 150}
+        - {x: -84, y: 150}
+        - {x: -96, y: 95}
+        - {x: -98, y: 29}
+        - {x: -98, y: -116}
+        - {x: -72, y: -150}
+        - {x: 4, y: -150}
+        - {x: 60, y: -126}
+        - {x: 88, y: -84}
+        - {x: 91, y: -8}
+    - name: Art_UI_Characterselect_Banner400x600_Red_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: 49, y: 94}
+        - {x: -47, y: 95}
+        - {x: -49, y: 150}
+        - {x: -63, y: 150}
+        - {x: -67, y: 140}
+        - {x: -96, y: 95}
+        - {x: -98, y: 69}
+        - {x: -98, y: -89}
+        - {x: -74, y: -135}
+        - {x: -32, y: -150}
+        - {x: 6, y: -150}
+        - {x: 44, y: -144}
+        - {x: 95, y: -90}
+        - {x: 95, y: 105}
+        - {x: 63, y: 150}
+    - name: Art_UI_Characterselect_Banner400x600_Red_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: 49, y: 94}
+        - {x: -47, y: 95}
+        - {x: -49, y: 150}
+        - {x: -63, y: 150}
+        - {x: -67, y: 140}
+        - {x: -96, y: 95}
+        - {x: -99, y: 72}
+        - {x: -99, y: -122}
+        - {x: -63, y: -150}
+        - {x: 23, y: -150}
+        - {x: 43, y: -138}
+        - {x: 93, y: -84}
+        - {x: 95, y: -43}
+        - {x: 95, y: 104}
+    - name: Art_UI_Characterselect_Banner400x600_Red_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 143}
+        - {x: 94, y: 150}
+        - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: 24, y: 150}
+        - {x: -84, y: 150}
+        - {x: -96, y: 95}
+        - {x: -99, y: -46}
+        - {x: -99, y: -81}
+        - {x: -95, y: -90}
+        - {x: -92, y: -89}
+        - {x: -89, y: -102}
+        - {x: -75, y: -122}
+        - {x: -34, y: -150}
+        - {x: -1, y: -150}
+        - {x: 17, y: -144}
+        - {x: 69, y: -113}
+        - {x: 95, y: -108}
+    - name: Art_UI_Characterselect_Banner400x600_Red_15
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 150}
+        - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: 49, y: 94}
+        - {x: -47, y: 95}
+        - {x: -49, y: 150}
+        - {x: -63, y: 150}
+        - {x: -67, y: 140}
+        - {x: -67, y: 106}
+        - {x: -99, y: 100}
+        - {x: -99, y: -113}
+        - {x: -46, y: -150}
+        - {x: 7, y: -150}
+        - {x: 73, y: -117}
+        - {x: 88, y: -86}
+        - {x: 95, y: -9}
+        - {x: 95, y: 106}
+    - name: Art_UI_Characterselect_Banner400x600_Red_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: 49, y: 94}
+        - {x: -24, y: 119}
+        - {x: -49, y: 150}
+        - {x: -84, y: 150}
+        - {x: -96, y: 95}
+        - {x: -98, y: 38}
+        - {x: -98, y: -88}
+        - {x: -76, y: -126}
+        - {x: -68, y: -121}
+        - {x: -37, y: -150}
+        - {x: 15, y: -150}
+        - {x: 68, y: -131}
+        - {x: 91, y: -86}
+        - {x: 95, y: -30}
+        - {x: 95, y: 104}
+    - name: Art_UI_Characterselect_Banner400x600_Red_17
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 53, y: 150}
+        - {x: 48, y: 142}
+        - {x: -24, y: 119}
+        - {x: -49, y: 150}
+        - {x: -84, y: 150}
+        - {x: -96, y: 95}
+        - {x: -97, y: 84}
+        - {x: -97, y: -102}
+        - {x: -73, y: -131}
+        - {x: -65, y: -118}
+        - {x: -62, y: -106}
+        - {x: -35, y: -150}
+        - {x: 13, y: -150}
+        - {x: 76, y: -119}
+        - {x: 89, y: -80}
+        - {x: 95, y: -6}
+        - {x: 95, y: 104}
+    - name: Art_UI_Characterselect_Banner400x600_Red_18
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 105}
+        - {x: 66, y: 147}
+        - {x: 63, y: 150}
+        - {x: -81, y: 150}
+        - {x: -96, y: 95}
+        - {x: -97, y: 82}
+        - {x: -97, y: -100}
+        - {x: -72, y: -129}
+        - {x: -66, y: -120}
+        - {x: -60, y: -108}
+        - {x: -44, y: -132}
+        - {x: -35, y: -140}
+        - {x: -23, y: -150}
+        - {x: 7, y: -150}
+        - {x: 52, y: -131}
+        - {x: 94, y: -85}
+        - {x: 95, y: -59}
+    - name: Art_UI_Characterselect_Banner400x600_Red_19
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 848
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 106}
+        - {x: 63, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -72, y: 106}
+        - {x: -96, y: 95}
+        - {x: -91, y: -6}
+        - {x: -96, y: -38}
+        - {x: -96, y: -101}
+        - {x: -70, y: -124}
+        - {x: -64, y: -120}
+        - {x: -57, y: -142}
+        - {x: -33, y: -150}
+        - {x: 25, y: -150}
+        - {x: 48, y: -134}
+        - {x: 93, y: -85}
+        - {x: 95, y: -51}
+    - name: Art_UI_Characterselect_Banner400x600_Red_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -79, y: 106}
+        - {x: -95, y: 90}
+        - {x: -95, y: 78}
+        - {x: -90, y: 77}
+        - {x: -95, y: -50}
+        - {x: -95, y: -101}
+        - {x: -91, y: -110}
+        - {x: -27, y: -150}
+        - {x: 5, y: -150}
+        - {x: 57, y: -132}
+        - {x: 91, y: -83}
+        - {x: 95, y: -19}
+        - {x: 95, y: 94}
+    - name: Art_UI_Characterselect_Banner400x600_Red_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 16}
+        - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -70, y: 150}
+        - {x: -93, y: 104}
+        - {x: -93, y: -98}
+        - {x: -84, y: -110}
+        - {x: -64, y: -120}
+        - {x: -59, y: -120}
+        - {x: -43, y: -150}
+        - {x: 52, y: -150}
+        - {x: 95, y: -92}
+        - {x: 95, y: -51}
+        - {x: 92, y: -17}
+    - name: Art_UI_Characterselect_Banner400x600_Red_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 103}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -74, y: 150}
+        - {x: -90, y: 143}
+        - {x: -92, y: 127}
+        - {x: -92, y: -96}
+        - {x: -78, y: -103}
+        - {x: -61, y: -122}
+        - {x: -56, y: -119}
+        - {x: -51, y: -142}
+        - {x: -32, y: -150}
+        - {x: 43, y: -150}
+        - {x: 63, y: -123}
+        - {x: 91, y: -83}
+        - {x: 95, y: -16}
+    - name: Art_UI_Characterselect_Banner400x600_Red_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 97}
+        - {x: -92, y: -79}
+        - {x: -79, y: -107}
+        - {x: -49, y: -144}
+        - {x: -24, y: -150}
+        - {x: 33, y: -150}
+        - {x: 54, y: -136}
+        - {x: 90, y: -90}
+        - {x: 95, y: 76}
+    - name: Art_UI_Characterselect_Banner400x600_Red_24
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: -69, y: 150}
+        - {x: -92, y: 103}
+        - {x: -92, y: -17}
+        - {x: -90, y: -82}
+        - {x: -83, y: -92}
+        - {x: -81, y: -92}
+        - {x: -78, y: -90}
+        - {x: -73, y: -103}
+        - {x: -64, y: -115}
+        - {x: -44, y: -150}
+        - {x: 49, y: -150}
+        - {x: 93, y: -83}
+        - {x: 95, y: -44}
+        - {x: 95, y: 104}
+    - name: Art_UI_Characterselect_Banner400x600_Red_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 106}
+        - {x: 63, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -65, y: 150}
+        - {x: -92, y: 104}
+        - {x: -92, y: -74}
+        - {x: -89, y: -102}
+        - {x: -56, y: -123}
+        - {x: -49, y: -117}
+        - {x: -48, y: -110}
+        - {x: -38, y: -133}
+        - {x: -21, y: -150}
+        - {x: 47, y: -150}
+        - {x: 87, y: -98}
+        - {x: 91, y: -84}
+        - {x: 95, y: -27}
+    - name: Art_UI_Characterselect_Banner400x600_Red_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -150}
+        - {x: 26, y: -150}
+        - {x: 89, y: -125}
+        - {x: 95, y: -71}
+        - {x: 95, y: 116}
+        - {x: 64, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -67, y: 140}
+        - {x: -92, y: 100}
+        - {x: -92, y: -99}
+        - {x: -29, y: -150}
+        - {x: 13, y: -150}
+        - {x: 15, y: -148}
+        - {x: 16, y: -137}
+        - {x: 16, y: -134}
+        - {x: 17, y: -138}
+    - name: Art_UI_Characterselect_Banner400x600_Red_27
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -67, y: 140}
+        - {x: -92, y: 100}
+        - {x: -92, y: -82}
+        - {x: -63, y: -115}
+        - {x: -56, y: -120}
+        - {x: -49, y: -117}
+        - {x: -36, y: -133}
+        - {x: -21, y: -150}
+        - {x: 33, y: -150}
+        - {x: 91, y: -100}
+        - {x: 95, y: -41}
+        - {x: 95, y: 106}
+    - name: Art_UI_Characterselect_Banner400x600_Red_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 93, y: 77}
+        - {x: 95, y: 81}
+        - {x: 95, y: 104}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -52, y: 150}
+        - {x: -64, y: 150}
+        - {x: -67, y: 140}
+        - {x: -92, y: 100}
+        - {x: -92, y: -51}
+        - {x: -91, y: -82}
+        - {x: -68, y: -122}
+        - {x: -41, y: -138}
+        - {x: -16, y: -150}
+        - {x: 27, y: -150}
+        - {x: 43, y: -141}
+        - {x: 95, y: -92}
+        - {x: 95, y: -73}
+    - name: Art_UI_Characterselect_Banner400x600_Red_29
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 248
+        width: 400
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 81}
+        - {x: 95, y: 94}
+        - {x: 70, y: 98}
+        - {x: 65, y: 147}
+        - {x: 62, y: 150}
+        - {x: 49, y: 150}
+        - {x: 43, y: 104}
+        - {x: -45, y: 150}
+        - {x: -66, y: 150}
+        - {x: -71, y: 110}
+        - {x: -92, y: 97}
+        - {x: -92, y: -99}
+        - {x: -83, y: -116}
+        - {x: -10, y: -150}
+        - {x: 19, y: -150}
+        - {x: 38, y: -146}
+        - {x: 95, y: -98}
+        - {x: 95, y: 25}
+        - {x: 93, y: 77}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

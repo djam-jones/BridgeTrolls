@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour {
 	[SerializeField, HideInInspector] private string _horizontalControl  = "Horizontal_P";
 	[SerializeField, HideInInspector] private string _verticalControl 	= "Vertical_P";
 
-	[SerializeField] private float _speed;
+	public float speed;
 
 	[SerializeField] private float _minClampedX = -1.4f;
 	[SerializeField] private float _maxClampedX = 1.4f;
@@ -45,13 +45,13 @@ public class Movement : MonoBehaviour {
 
 		if(!devKeyBoardInput)
 		{
-			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
-			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * speed * Time.deltaTime;
+			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * speed * Time.deltaTime;
 		}
 		else 
 		{
-			h = Input.GetAxis( "Horizontal" ) * _speed * Time.deltaTime;
-			v = Input.GetAxis( "Vertical" ) * _speed * Time.deltaTime;
+			h = Input.GetAxis( "Horizontal" ) * speed * Time.deltaTime;
+			v = Input.GetAxis( "Vertical" ) * speed * Time.deltaTime;
 		}
 		transform.Translate(new Vector2(h, v), Space.World);
 	}
@@ -71,13 +71,13 @@ public class Movement : MonoBehaviour {
 
 		if(!devKeyBoardInput)
 		{
-			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
-			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * _speed * Time.deltaTime;
+			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * speed * Time.deltaTime;
+			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * speed * Time.deltaTime;
 		}
 		else
 		{
-			h = Input.GetAxis( "Horizontal" ) * _speed * Time.deltaTime;
-			v = Input.GetAxis( "Vertical" ) * _speed * Time.deltaTime;
+			h = Input.GetAxis( "Horizontal" ) * speed * Time.deltaTime;
+			v = Input.GetAxis( "Vertical" ) * speed * Time.deltaTime;
 		}
 		transform.Translate(new Vector2(h, v), Space.World);
 	}

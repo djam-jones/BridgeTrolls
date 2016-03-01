@@ -51,10 +51,15 @@ public class CharacterSelection : MonoBehaviour {
 
 	public void Confirm()
 	{
-		_selectedCharacterName = playableCharacters[_characterIndex];
-		_selectedCharacterSprite = characterSprites[_characterIndex];
+		for(int i = 0; i < 8; i++)
+		{
+			_selectedCharacterName = playableCharacters[_characterIndex];
+			_selectedCharacterSprite = characterSprites[_characterIndex];
 
-		print(_selectedCharacterName + " Confirmed!");
+			PlayerPrefs.SetString("CharacterName", _selectedCharacterName);
+
+			print(_selectedCharacterName + " Confirmed!");
+		}
 	}
 
 	/// <summary>
