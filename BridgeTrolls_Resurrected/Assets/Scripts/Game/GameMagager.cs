@@ -70,6 +70,7 @@ public class GameMagager : MonoBehaviour {
 			Player playerScript = playerPrefab.GetComponent<Player>();
 
 			playerPrefab.name = "Player" + (i + 1); //Set the Player Name to PLAYER_NUM
+			playerPrefab.tag = "Player";
 			playerPrefab.GetComponent<PlayerRoles>().playerRoles = Roles.Neutral;
 			playerScript.SetCharacter(playerCharacter);
 
