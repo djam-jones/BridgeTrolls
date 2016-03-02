@@ -23,6 +23,7 @@ public class PlayerFactory : MonoBehaviour {
 		PlayerRoles _roles;
 		Score _score;
 		SwitchTeam _switch;
+		AbilityHandler _abilityHandler;
 
 		string _animatorName = "";
 
@@ -60,6 +61,7 @@ public class PlayerFactory : MonoBehaviour {
 
 		_score = _playerObj.AddComponent<Score>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
+		_abilityHandler = _playerObj.AddComponent<AbilityHandler>();
 
 		switch(playerConstString)
 		{

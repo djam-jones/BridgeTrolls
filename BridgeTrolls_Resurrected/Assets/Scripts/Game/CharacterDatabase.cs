@@ -53,7 +53,7 @@ public class CharacterDatabase : MonoBehaviour {
 			color = Color.green;
 			break;
 		case 4:
-			color = new Color(255, 120, 0); //Orange
+			color = new Color(255, 120, 0, 255); //Orange
 			break;
 		case 5:
 			color = Color.cyan;

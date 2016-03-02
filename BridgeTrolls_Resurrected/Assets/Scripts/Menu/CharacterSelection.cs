@@ -56,7 +56,7 @@ public class CharacterSelection : MonoBehaviour {
 			_selectedCharacterName = playableCharacters[_characterIndex];
 			_selectedCharacterSprite = characterSprites[_characterIndex];
 
-			PlayerPrefs.SetString("CharacterName", _selectedCharacterName);
+			PlayerPrefs.SetString("CharacterName" + i.ToString(), _selectedCharacterName);
 
 			print(_selectedCharacterName + " Confirmed!");
 		}

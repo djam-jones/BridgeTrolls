@@ -55,6 +55,7 @@ public class HubHandler : MonoBehaviour {
 			panelState = PanelState.WaitingToJoin;
 
 			playerState = PlayerState.Unready;
+			CheckReady();
 
 			//Disabled Joystick/D-Pad controls.
 
@@ -72,6 +73,7 @@ public class HubHandler : MonoBehaviour {
 			panelState = PanelState.CharacterSelect;
 
 			playerState = PlayerState.Unready;
+			CheckReady();
 
 			//Enable Joystick/D-Pad controls.
 			_characterSelection.Select();
@@ -90,6 +92,7 @@ public class HubHandler : MonoBehaviour {
 			panelState = PanelState.Ready;
 
 			playerState = PlayerState.Ready;
+			CheckReady();
 
 			_characterSelection.Confirm();
 
@@ -130,11 +133,16 @@ public class HubHandler : MonoBehaviour {
 		}
 	}
 
-	public void SendReady()
+	public void CheckReady()
 	{
-		if(playerState == PlayerState.Ready)
+		if(playerState == PlayerState.Ready && playerState != PlayerState.Unready && !ReadyPlayers.Instance.readyPlayers.Contains(this))
 		{
-			//Send Message to get ready players.
+			//Add the Player to ready players list.
+			ReadyPlayers.Instance.readyPlayers.Add(this);
+		}
+		else if(playerState != PlayerState.Ready && playerState == PlayerState.Unready && ReadyPlayers.Instance.readyPlayers.Contains(this))
+		{
+			ReadyPlayers.Instance.readyPlayers.Remove(this);
 		}
 	}
 

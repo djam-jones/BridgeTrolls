@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -19,29 +20,25 @@ public class GameMagager : MonoBehaviour {
 
 	void Awake()
 	{
-		//Check if there are any conflicting instances
-		if(Instance != null && Instance != this)
+		CheckForInstance();
+
+		amountPlayers = PlayerPrefs.GetInt("PlayerCount");
+
+		Scene _scene = SceneManager.GetActiveScene();
+		if(_scene.name == "Main")
 		{
-			//If so Destroy those instances.
-			Destroy(gameObject);
+			print("This is the Main Scene and you CAN Create Players here.");
+			CheckAmountOfPlayers();
 		}
-		//Save Singleton instance.
-		Instance = this;
-
-		DontDestroyOnLoad(gameObject);
+		else if(_scene.name == "MainMenu")
+		{
+			Debug.LogWarning("This is the Main Menu Scene and you cannot Create Players here.");
+		}
 	}
-
-    void Start()
-    {
-		CheckAmountOfPlayers();
-    }
 	
 	public void CheckAmountOfPlayers ()
     {
-//		for (int i = 0; i < amountPlayers; i++)
-//		{
-			InstantiatePlayersAndAddToList();
-//		}
+		InstantiatePlayersAndAddToList();
 		SetEnemyPlayer();
 	}
 
@@ -49,12 +46,14 @@ public class GameMagager : MonoBehaviour {
 	{
 		GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)]; 	//Pick a random player from the Player List.
 		enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile; 		//Set Role to Hostile and thus the Troll.
+		enemyPlayer.GetComponent<PlayerIndicator>().yValue = 1.5f;
+		enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 1);
 
 		enemyPlayer.name = enemyPlayer.name + " Troll";								//Set Name to Troll.
 		enemyPlayer.tag = "Enemy";													//Set Tag to Enemy.
 
 		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
-		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//TODO: Change this to sprites eventually. But for now only change color.
+		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//Change sprite to the Troll sprite.
 	}
 
 	private void InstantiatePlayersAndAddToList()
@@ -77,6 +76,20 @@ public class GameMagager : MonoBehaviour {
 			//Add the Player Prefab to the Player Array.
 			playerArray.Add(playerPrefab);
 		}
+	}
+
+	private void CheckForInstance()
+	{
+		//Check if there are any conflicting instances
+		if(Instance != null && Instance != this)
+		{
+			//If so Destroy those instances.
+			Destroy(gameObject);
+		}
+		//Save Singleton instance.
+		Instance = this;
+
+		DontDestroyOnLoad(gameObject);
 	}
 
 	public int GetPlayerId

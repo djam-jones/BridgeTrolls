@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public enum MenuState
@@ -40,21 +41,24 @@ public class MenuHandler : MonoBehaviour {
 	{
 		CheckMenuIndex(_menuIndex);
 		PreState();
+		MainState();
 	}
 
 	public void PreState()
 	{
-		if(Input.GetButtonDown(SELECT_BUTTON) && _menuIndex == 0)
+		if(Input.GetButtonDown(SELECT_BUTTON) && menuState == MenuState.Pre)
 		{
 			_menuIndex = 1;
+			title.GetComponent<Animator>().SetTrigger("Up");
 		}
 	}
 
 	public void MainState()
 	{
-		if(Input.GetButtonDown(BACK_BUTTON) && _menuIndex == 1)
+		if(Input.GetButtonDown(BACK_BUTTON) && menuState == MenuState.Main)
 		{
 			_menuIndex = 0;
+			title.GetComponent<Animator>().SetTrigger("Down");
 		}
 	}
 
@@ -63,7 +67,7 @@ public class MenuHandler : MonoBehaviour {
 		_menuIndex = 2;
 	}
 
-	public void SettingsState()
+	public void OptionsState()
 	{
 		_menuIndex = 3;
 	}
