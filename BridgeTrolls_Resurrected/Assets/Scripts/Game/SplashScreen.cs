@@ -6,18 +6,27 @@ public class SplashScreen : MonoBehaviour {
 
 	public string sceneName;
 	public float waitingSeconds;
+	private float _timer;
+	FadeScreen _fade;
+
+	void Awake()
+	{
+		_fade = GetComponent<FadeScreen>();
+		_timer = 0f;
+	}
 
 	void Update()
 	{
-		StartCoroutine( LoadLevel(sceneName) );
+		LoadLevel(sceneName);
 	}
 
-	IEnumerator LoadLevel(string scene)
+	private void LoadLevel(string scene)
 	{
-		GameObject.Find("Main Camera").GetComponent<FadeScreen>().FadeToColor();
-		yield return new WaitForSeconds(waitingSeconds);
-		SceneManager.LoadScene(scene);
-		yield break;
+		_timer += Time.deltaTime;
+		if(_timer > waitingSeconds)
+		{
+			StartCoroutine(_fade.GoToScene(scene));
+		}
 	}
 
 }

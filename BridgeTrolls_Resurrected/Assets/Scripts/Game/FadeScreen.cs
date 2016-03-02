@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class FadeScreen : MonoBehaviour {
 
 	public Image overlayImage;
-	public Color fadeColor = new Color(0, 0, 0);
-	public float fadeSpeed = 1.5f;
+	public Color fadeColor = new Color(0, 0, 0, 1f);
+	public float fadeSpeed;
+	public float waitSeconds;
 	public bool isFading = true;
 
 	void Update()
@@ -21,15 +22,15 @@ public class FadeScreen : MonoBehaviour {
 	public void FadeToColor()
 	{
 		//Lerp the color of the overlay image to black.
-		overlayImage.color = Color.Lerp(overlayImage.color, fadeColor, fadeSpeed * Time.deltaTime);
+		overlayImage.color = Color.Lerp(overlayImage.color, fadeColor, Mathf.PingPong(Time.time, fadeSpeed));
 	}
 
 	public void FadeToClear()
 	{
 		//Lerp the color of the overlay image to clear, so that it is transparent.
-		overlayImage.color = Color.Lerp(overlayImage.color, Color.clear, fadeSpeed * Time.deltaTime);
+		overlayImage.color = Color.Lerp(overlayImage.color, Color.clear, Mathf.PingPong(Time.time, fadeSpeed));
 
-		if(overlayImage.color.a == 0)
+		if(overlayImage.color.a == 0f)
 		{
 			isFading = false;
 		}
@@ -38,7 +39,7 @@ public class FadeScreen : MonoBehaviour {
 	public IEnumerator GoToScene(string sceneName)
 	{
 		FadeToColor();
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(waitSeconds);
 		SceneManager.LoadScene(sceneName);
 	}
 }
