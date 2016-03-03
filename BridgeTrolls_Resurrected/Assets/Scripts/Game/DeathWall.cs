@@ -48,7 +48,7 @@ public class DeathWall : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            arrowX = new Vector3(10, 0, 0);
+            arrowX = new Vector3(12, 0, 0);
             StartCoroutine(RightToLeft());
         }
 
@@ -62,25 +62,25 @@ public class DeathWall : MonoBehaviour {
             Vector3 arrow = new Vector3(0, 0, 0);
             for (int i = 0; i < 6; i++)
             {
-                arrowY = new Vector3(0, Random.Range(-4.5f, 5.5f), 0);
+                arrowY = new Vector3(0, Random.Range(-5.5f, 5.5f), 0);
                 arrow = (arrowX + arrowY);
                 StartTheDeathWall(arrow);
             }
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1.2f);
         }
 
     }
 
     IEnumerator RightToLeft()
     {
-        for (int k = 1; k < 19; k++)
+        for (int k = 1; k < 20; k++)
         {
             arrowX -= new Vector3(1, 0, 0);
             Vector3 arrowY = new Vector3(0, 0, 0);
             Vector3 arrow = new Vector3(0, 0, 0);
             for (int i = 0; i < 6; i++)
             {
-                arrowY = new Vector3(0, Random.Range(-4.5f, 5.5f), 0);
+                arrowY = new Vector3(0, Random.Range(-5.5f, 5.5f), 0);
                 arrow = (arrowX + arrowY);
                 StartTheDeathWall(arrow);
             }

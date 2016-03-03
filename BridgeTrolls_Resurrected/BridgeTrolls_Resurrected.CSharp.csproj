@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Game\DeathWall.cs" />
     <Compile Include="Assets\Scripts\Game\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
+    <Compile Include="Assets\Scripts\Game\LoadingScreen.cs" />
     <Compile Include="Assets\Scripts\Game\ReadyPlayers.cs" />
     <Compile Include="Assets\Scripts\Game\ScoreC.cs" />
     <Compile Include="Assets\Scripts\Game\ScoreCounter.cs" />
