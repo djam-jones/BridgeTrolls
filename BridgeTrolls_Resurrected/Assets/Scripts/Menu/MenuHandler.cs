@@ -8,7 +8,7 @@ public enum MenuState
 	Pre, 
 	Main, 
 	CharSelect, 
-	Settings, 
+	Options, 
 	Credits
 }
 
@@ -37,11 +37,17 @@ public class MenuHandler : MonoBehaviour {
 	public MenuState menuState;
 	private int _menuIndex = 0;
 
+	//Floats
+	private float _timer;
+	private float _buttonTime = 3f;
+
 	void Update()
 	{
 		CheckMenuIndex(_menuIndex);
 		PreState();
 		MainState();
+		BackState();
+		print(_timer);
 	}
 
 	public void PreState()
@@ -59,6 +65,32 @@ public class MenuHandler : MonoBehaviour {
 		{
 			_menuIndex = 0;
 			title.GetComponent<Animator>().SetTrigger("Down");
+		}
+	}
+
+	public void BackState()
+	{
+		if(Input.GetButton(BACK_BUTTON) && menuState == MenuState.CharSelect)
+		{
+			_timer += Time.deltaTime; //Count seconds up to the Timer.
+
+			if(_timer >= _buttonTime) //If timer is greater than, or equals the _buttonTime value.
+			{
+				_menuIndex = 1; //Set the Menu Index value to 1.
+				_timer = 0; //Reset The Timer.
+			}
+		}
+		if(Input.GetButtonUp(BACK_BUTTON) && menuState == MenuState.CharSelect)
+		{
+			_timer = 0f; //Reset the Timer.
+		}
+		else if(Input.GetButton(BACK_BUTTON) && menuState == MenuState.Credits)
+		{
+			_menuIndex = 1;
+		}
+		else if(Input.GetButton(BACK_BUTTON) && menuState == MenuState.Options)
+		{
+			_menuIndex = 1;
 		}
 	}
 
@@ -98,7 +130,7 @@ public class MenuHandler : MonoBehaviour {
 			menuState = MenuState.CharSelect;
 			break;
 		case 3:
-			menuState = MenuState.Settings;
+			menuState = MenuState.Options;
 			break;
 		case 4:
 			menuState = MenuState.Credits;
@@ -135,7 +167,7 @@ public class MenuHandler : MonoBehaviour {
 				pressA.enabled = false;
 			break;
 
-			case MenuState.Settings:
+			case MenuState.Options:
 				mainMenu.SetActive(true);
 				charSelect.SetActive(false);
 				buttonsPanel.SetActive(false);

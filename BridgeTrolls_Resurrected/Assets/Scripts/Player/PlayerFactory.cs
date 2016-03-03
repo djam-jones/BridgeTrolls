@@ -12,6 +12,7 @@ public class PlayerFactory : MonoBehaviour {
 	public static GameObject CreatePlayer(string playerConstString, int playerID)
 	{
 		GameObject _playerObj = new GameObject();
+		GameObject _childObj = new GameObject();
 		Rigidbody2D _rigid2D;
 		Animator _anim;
 		SpriteRenderer _spriteRenderer;
@@ -24,6 +25,7 @@ public class PlayerFactory : MonoBehaviour {
 		Score _score;
 		SwitchTeam _switch;
 		AbilityHandler _abilityHandler;
+		SpriteStraightener _straightener;
 
 		string _animatorName = "";
 
@@ -62,6 +64,16 @@ public class PlayerFactory : MonoBehaviour {
 		_score = _playerObj.AddComponent<Score>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
 		_abilityHandler = _playerObj.AddComponent<AbilityHandler>();
+
+		//Child GameObject Implementation
+		_childObj.transform.parent = _playerObj.transform;
+		_straightener = _childObj.AddComponent<SpriteStraightener>();
+
+		Texture2D childSprite = Resources.Load("Sprites/GoblinRun") as Texture2D;
+		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
+		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
+
+
 
 		switch(playerConstString)
 		{

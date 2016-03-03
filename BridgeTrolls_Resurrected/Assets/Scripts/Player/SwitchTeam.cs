@@ -7,13 +7,15 @@ public class SwitchTeam : MonoBehaviour {
     {
         if (other.tag == ("Enemy"))
         {
-            Debug.Log("enemy");
-            tag = "Enemy"; 
+            tag = "Minion"; 
             transform.position = new Vector2(0, 0);
-            //Destroy(GetComponent<Movement>());
             PlayerRoles roles = GetComponent<PlayerRoles>();
             roles.ChangeRole(); 
-            Destroy(GetComponent<Score>());
+
+			if(!this.gameObject.GetComponent<Grab>())	
+				this.gameObject.AddComponent<Grab>();
+            
+			Destroy(GetComponent<Score>());
             Destroy(GetComponent<SwitchTeam>());
         }
     }

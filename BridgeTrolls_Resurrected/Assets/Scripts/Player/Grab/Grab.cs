@@ -20,10 +20,10 @@ public class Grab : MonoBehaviour
 
     private float releasetimer;
     [SerializeField]
-    private float releaseTime = 1;
+    private float releaseTime = 15;
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && Input.GetButtonDown(grabButtton) && cdTimer >= coolDown)
         {
