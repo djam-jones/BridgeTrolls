@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: e892e98dfdfca9642a9f9de1453a6a0e
+timeCreated: 1456993809
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bridge Trolls_Art_Animations_indicator (1)_0
+    21300002: Bridge Trolls_Art_Animations_indicator (1)_1
+    21300004: Bridge Trolls_Art_Animations_indicator (1)_2
+    21300006: Bridge Trolls_Art_Animations_indicator (1)_3
+    21300008: Bridge Trolls_Art_Animations_indicator (1)_4
+    21300010: Bridge Trolls_Art_Animations_indicator (1)_5
+    21300012: Bridge Trolls_Art_Animations_indicator (1)_6
+    21300014: Bridge Trolls_Art_Animations_indicator (1)_7
+    21300016: Bridge Trolls_Art_Animations_indicator (1)_8
+    21300018: Bridge Trolls_Art_Animations_indicator (1)_9
+    21300020: Bridge Trolls_Art_Animations_indicator (1)_10
+    21300022: Bridge Trolls_Art_Animations_indicator (1)_11
+    21300024: Bridge Trolls_Art_Animations_indicator (1)_12
+    21300026: Bridge Trolls_Art_Animations_indicator (1)_13
+    21300028: Bridge Trolls_Art_Animations_indicator (1)_14
+    21300030: Bridge Trolls_Art_Animations_indicator (1)_15
+    21300032: Bridge Trolls_Art_Animations_indicator (1)_16
+    21300034: Bridge Trolls_Art_Animations_indicator (1)_17
+    21300036: Bridge Trolls_Art_Animations_indicator (1)_18
+    21300038: Bridge Trolls_Art_Animations_indicator (1)_19
+    21300040: Bridge Trolls_Art_Animations_indicator (1)_20
+    21300042: Bridge Trolls_Art_Animations_indicator (1)_21
+    21300044: Bridge Trolls_Art_Animations_indicator (1)_22
+    21300046: Bridge Trolls_Art_Animations_indicator (1)_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bridge Trolls_Art_Animations_indicator (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7112
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_1
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 7112
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 7112
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_3
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 7112
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6032
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_5
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 6032
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 6032
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_7
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 6032
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4952
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_9
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 4952
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 4952
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_11
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 4952
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3872
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_13
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 3872
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 3872
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_15
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 3872
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2792
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_17
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 2792
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2792
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_19
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 2792
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: -539}
+        - {x: 480, y: -539}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1724
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: 527}
+        - {x: 480, y: 527}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_21
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1724
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: 527}
+        - {x: 480, y: 527}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1724
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: 527}
+        - {x: 480, y: 527}
+        - {x: 480, y: 539}
+    - name: Bridge Trolls_Art_Animations_indicator (1)_23
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1724
+        width: 960
+        height: 1078
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -480, y: 539}
+        - {x: -480, y: 527}
+        - {x: 480, y: 527}
+        - {x: 480, y: 539}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

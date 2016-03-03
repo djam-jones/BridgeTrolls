@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 34f54f8bf8e31094cab8b69da4736295
+timeCreated: 1456997732
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_0
+    21300002: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_1
+    21300004: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_2
+    21300006: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_3
+    21300008: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_4
+    21300010: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_5
+    21300012: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_6
+    21300014: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_7
+    21300016: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_8
+    21300018: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1457.0079, y: 1587.9287}
+        - {x: 1457.0079, y: 1580.9287}
+        - {x: 1465.0079, y: 1570.9287}
+        - {x: 1491.0079, y: 1564.9287}
+        - {x: 1575.0079, y: 1564.9287}
+        - {x: 1593.0079, y: 1580.9287}
+        - {x: 1593.0079, y: 1596.9287}
+        - {x: 1572.0079, y: 1605.9287}
+        - {x: 1501.0079, y: 1605.9287}
+        - {x: 1460.0079, y: 1592.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_1
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 6492
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1482.0079, y: 1579.9287}
+        - {x: 1485.0079, y: 1580.9287}
+        - {x: 1485.0079, y: 1599.9287}
+        - {x: 1369.0079, y: 1599.9287}
+        - {x: 1351.0079, y: 1569.9287}
+        - {x: 1351.0079, y: 1561.9287}
+        - {x: 1353.0079, y: 1556.9287}
+        - {x: 1464.0079, y: 1556.9287}
+        - {x: 1483.0079, y: 1575.9287}
+        - {x: 1482.0079, y: 1577.9287}
+        - {x: 1480.0079, y: 1579.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_2
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 6492
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1230.0078, y: 1571.9287}
+        - {x: 1175.0078, y: 1547.9287}
+        - {x: 1175.0078, y: 1526.9287}
+        - {x: 1292.0078, y: 1526.9287}
+        - {x: 1307.0078, y: 1548.9287}
+        - {x: 1307.0078, y: 1570.9287}
+        - {x: 1304.0078, y: 1571.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_3
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 6492
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1027.0078, y: 1510.9287}
+        - {x: 993.0078, y: 1501.9287}
+        - {x: 959.0078, y: 1460.9287}
+        - {x: 959.0078, y: 1454.9287}
+        - {x: 1045.0078, y: 1454.9287}
+        - {x: 1086.0078, y: 1475.9287}
+        - {x: 1086.0078, y: 1510.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4792
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 788.00793, y: 1409.9287}
+        - {x: 725.00793, y: 1351.9287}
+        - {x: 725.00793, y: 1336.9287}
+        - {x: 726.00793, y: 1335.9287}
+        - {x: 750.00793, y: 1335.9287}
+        - {x: 783.00793, y: 1339.9287}
+        - {x: 843.00793, y: 1381.9287}
+        - {x: 843.00793, y: 1409.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 4792
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 509.00793, y: 1221.9287}
+        - {x: 472.00793, y: 1144.9287}
+        - {x: 472.00793, y: 1126.9287}
+        - {x: 494.00793, y: 1126.9287}
+        - {x: 568.00793, y: 1175.9287}
+        - {x: 574.00793, y: 1199.9287}
+        - {x: 574.00793, y: 1221.9287}
+      - - {x: 546.00793, y: 1215.9287}
+        - {x: 549.00793, y: 1216.9287}
+        - {x: 549.00793, y: 1219.9287}
+        - {x: 546.00793, y: 1220.9287}
+        - {x: 544.00793, y: 1218.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_6
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 4792
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 347.0078, y: 977.9287}
+        - {x: 331.0078, y: 977.9287}
+        - {x: 300.0078, y: 959.9287}
+        - {x: 267.0078, y: 882.9287}
+        - {x: 267.0078, y: 864.9287}
+        - {x: 287.0078, y: 864.9287}
+        - {x: 350.0078, y: 929.9287}
+        - {x: 350.0078, y: 973.9287}
+      - - {x: 321.0078, y: 966.9287}
+        - {x: 324.0078, y: 967.9287}
+        - {x: 324.0078, y: 970.9287}
+        - {x: 321.0078, y: 971.9287}
+        - {x: 319.0078, y: 969.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_7
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 4792
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 164.00781, y: 678.9287}
+        - {x: 134.00781, y: 649.9287}
+        - {x: 119.00781, y: 586.9287}
+        - {x: 119.00781, y: 553.9287}
+        - {x: 137.00781, y: 553.9287}
+        - {x: 182.00781, y: 617.9287}
+        - {x: 182.00781, y: 675.9287}
+        - {x: 178.00781, y: 678.9287}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3092
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71.007935, y: 345.92847}
+        - {x: 63.007935, y: 354.92847}
+        - {x: 51.007935, y: 354.92847}
+        - {x: 25.007935, y: 316.92847}
+        - {x: 22.007935, y: 284.92847}
+        - {x: 22.007935, y: 224.92847}
+        - {x: 24.007935, y: 222.92847}
+        - {x: 30.007935, y: 222.92847}
+        - {x: 34.007935, y: 225.92847}
+        - {x: 58.007935, y: 257.92847}
+        - {x: 73.007935, y: 307.92847}
+        - {x: 73.007935, y: 326.92847}
+      - - {x: 40.007935, y: 336.92847}
+        - {x: 43.007935, y: 337.92847}
+        - {x: 43.007935, y: 340.92847}
+        - {x: 40.007935, y: 341.92847}
+        - {x: 38.007935, y: 339.92847}
+    - name: Bridge Trolls_Art_Animations_arrow animation 3 1700x1700_9
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3092
+        width: 1700
+        height: 1700
+      alignment: 9
+      pivot: {x: 0.03234828, y: 0.02827737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.007935, y: 76.92847}
+        - {x: -12.992065, y: 47.928467}
+        - {x: -12.992065, y: -15.071533}
+        - {x: 19.007935, y: -15.071533}
+        - {x: 38.007935, y: 19.928467}
+        - {x: 38.007935, y: 67.92847}
+        - {x: 34.007935, y: 76.92847}
+      - - {x: 7.0079346, y: 64.92847}
+        - {x: 7.0079346, y: 63.928467}
+        - {x: 9.007935, y: 61.928467}
+        - {x: 10.007935, y: 61.928467}
+        - {x: 13.007935, y: 64.92847}
+        - {x: 13.007935, y: 66.92847}
+        - {x: 10.007935, y: 67.92847}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

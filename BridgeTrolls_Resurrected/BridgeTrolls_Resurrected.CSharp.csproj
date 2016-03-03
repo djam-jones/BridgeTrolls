@@ -63,11 +63,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Game\CharacterDatabase.cs" />
+    <Compile Include="Assets\Scripts\Game\ControllerConnection.cs" />
+    <Compile Include="Assets\Scripts\Game\DeathWall.cs" />
+    <Compile Include="Assets\Scripts\Game\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
+    <Compile Include="Assets\Scripts\Game\ReadyPlayers.cs" />
+    <Compile Include="Assets\Scripts\Game\ScoreC.cs" />
+    <Compile Include="Assets\Scripts\Game\ScoreCounter.cs" />
+    <Compile Include="Assets\Scripts\Game\SplashScreen.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
+    <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
+    <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />
+    <Compile Include="Assets\Scripts\Menu\HubHandler.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuHandler.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuTransition.cs" />
+    <Compile Include="Assets\Scripts\Player\AbilityHandler.cs" />
+    <Compile Include="Assets\Scripts\Player\Grab\Grab.cs" />
+    <Compile Include="Assets\Scripts\Player\Grab\TapFree.cs" />
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerFactory.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerIndicator.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerRoles.cs" />
     <Compile Include="Assets\Scripts\Player\Score.cs" />
     <Compile Include="Assets\Scripts\Player\SwitchTeam.cs" />
+    <Compile Include="Assets\Scripts\SpriteStraightener.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

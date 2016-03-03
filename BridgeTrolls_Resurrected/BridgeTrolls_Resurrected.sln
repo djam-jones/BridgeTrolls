@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{61A4C7FA-1FE9-B98B-78A5-9CE75C0FBA44}") = "BridgeTrolls_Resurrected", "Assembly-CSharp.csproj", "{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeTrolls_Resurrected.CSharp", "BridgeTrolls_Resurrected.CSharp.csproj", "{9B60C03C-B90E-CEF5-0642-8B776CC7064B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FF814F3-AB55-FEAD-6F62-E0E093E3F966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B60C03C-B90E-CEF5-0642-8B776CC7064B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B60C03C-B90E-CEF5-0642-8B776CC7064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B60C03C-B90E-CEF5-0642-8B776CC7064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B60C03C-B90E-CEF5-0642-8B776CC7064B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
