@@ -15,12 +15,10 @@ public class Player : MonoBehaviour {
 		_playerRoles 	= GetComponent<PlayerRoles>();
 
 		playerType = "Typeless";
-
-		//playerNum = GameMagager.Instance.GetPlayerId;
 	}
 
 	public void SetCharacter(string characterName)
 	{
-
+		playerType = characterName;
 	}
 }

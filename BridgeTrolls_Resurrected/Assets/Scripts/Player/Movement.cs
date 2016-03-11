@@ -10,11 +10,11 @@ public class Movement : MonoBehaviour {
 
 	public float speed;
 
-	[SerializeField] private float _minClampedX = -1.4f;
-	[SerializeField] private float _maxClampedX = 1.4f;
+	[SerializeField] private float _minClampedX = -1.6f;
+	[SerializeField] private float _maxClampedX = 1.6f;
 
-	[SerializeField] private float _minClampedY = -3.5f;
-	[SerializeField] private float _maxClampedY = 3.5f;
+	[SerializeField] private float _minClampedY = -5.7f;
+	[SerializeField] private float _maxClampedY = 5.7f;
 
 	private float _clampOffset = 7;
 
@@ -29,6 +29,8 @@ public class Movement : MonoBehaviour {
 	{
 		if(_playerRolesScript.playerRoles == Roles.Neutral)
 			Move();
+		else if(_playerRolesScript.playerRoles == Roles.Minion)
+			Move();
 		else if(_playerRolesScript.playerRoles == Roles.Hostile)
 			ClampedMove();
 	}
@@ -39,8 +41,8 @@ public class Movement : MonoBehaviour {
 		float v;
 
 		Vector2 pos = transform.position;
-		pos.x = Mathf.Clamp(pos.x, _minClampedX, _maxClampedX);
-		pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
+			pos.x = Mathf.Clamp(pos.x, _minClampedX, _maxClampedX);
+			pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
 		transform.position = pos;
 
 		if(!devKeyBoardInput)
@@ -61,13 +63,16 @@ public class Movement : MonoBehaviour {
 		float h;
 		float v;
 
-		Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+//		Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+//			pos.x = Mathf.Clamp(pos.x, _clampOffset, Screen.width - _clampOffset);
+//			pos.y = Mathf.Clamp(pos.y, _clampOffset, Screen.height - _clampOffset);
+//			pos.z = (transform.position.z + 10);
+//		transform.position = Camera.main.ScreenToWorldPoint(pos);
 
-		pos.x = Mathf.Clamp(pos.x, _clampOffset, Screen.width - _clampOffset);
-		pos.y = Mathf.Clamp(pos.y, _clampOffset, Screen.height - _clampOffset);
-		pos.z = (transform.position.z + 10);
-
-		transform.position = Camera.main.ScreenToWorldPoint(pos);
+		Vector2 pos = transform.position;
+			pos.x = Mathf.Clamp(pos.x, -11.1f, 11.1f);
+			pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
+		transform.position = pos;
 
 		if(!devKeyBoardInput)
 		{

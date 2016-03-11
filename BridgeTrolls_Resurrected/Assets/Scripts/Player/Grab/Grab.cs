@@ -6,7 +6,7 @@ public class Grab : MonoBehaviour
     [SerializeField]
     private Vector2 hingeOffset = new Vector2(0, -1);
     [SerializeField]
-    private string grabButtton = "Fire1";
+    private string grabButton = "Fire1_P";
     private GameObject player;
     private bool grabbing = false;
 
@@ -25,7 +25,7 @@ public class Grab : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && Input.GetButtonDown(grabButtton) && cdTimer >= coolDown)
+		if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && Input.GetButtonDown(grabButton + GetComponent<Player>().playerNum) && cdTimer >= coolDown)
         {
             player = other.gameObject;
             connectPlayers();
@@ -61,7 +61,7 @@ public class Grab : MonoBehaviour
             currentTime += Time.deltaTime;
         }
 
-        if(grabbing == true && Input.GetButtonDown(grabButtton) && currentTime >= targetTime)
+		if(grabbing == true && Input.GetButtonDown(grabButton + GetComponent<Player>().playerNum) && currentTime >= targetTime)
         {
             disconnectPlayers();
             currentTime = 0;

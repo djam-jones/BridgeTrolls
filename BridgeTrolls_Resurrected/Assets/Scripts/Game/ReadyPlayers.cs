@@ -10,11 +10,13 @@ public class ReadyPlayers : MonoBehaviour {
 
 	private bool startedGame = false;
 
+	private GameModes GameModesInstance;
 	public static ReadyPlayers Instance {get; private set;}
 
 	void Awake()
 	{
 		CheckForInstance();
+		GameModesInstance = GetComponent<GameModes>();
 	}
 
 	void Update()
@@ -35,8 +37,13 @@ public class ReadyPlayers : MonoBehaviour {
 			//Set a Button to Start The Game.
 			if(Input.GetButtonDown(START_GAME_BUTTON))
 			{
-				//Load Level Scene
-				print("Starting Game!");
+				//Save the Game Mode.
+				PlayerPrefs.SetInt("GameMode", GameModesInstance.gameModeIndex);
+
+				//Save the game points.
+				PlayerPrefs.SetInt("AmountOfGamePoints", GameModesInstance.amountOfGamePoints);
+
+				//Save the Amount of Players playing.
 				PlayerPrefs.SetInt("PlayerCount", readyPlayers.Count);
 				startedGame = true;
 			}
@@ -53,6 +60,7 @@ public class ReadyPlayers : MonoBehaviour {
 			{
 				startGameBanner.SetActive(false);
 			}
+			else{}
 		}
 	}
 
@@ -67,6 +75,6 @@ public class ReadyPlayers : MonoBehaviour {
 		//Save Singleton instance.
 		Instance = this;
 
-		DontDestroyOnLoad(gameObject);
+//		DontDestroyOnLoad(gameObject);
 	}
 }

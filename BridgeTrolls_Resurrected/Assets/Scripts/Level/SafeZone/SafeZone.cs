@@ -25,11 +25,19 @@ public class SafeZone : MonoBehaviour
         player.GetComponent<Movement>().enabled = false;
     }
 
-    private void Update()
+    void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
             enablePlayerMovement();
         }
     }
+
+	private void CheckTriggerContent()
+	{
+		//Pseudo Code
+		//if every non-troll player is in this
+		//gameobject's trigger, 
+		//then Enable the Player's Movement.
+	}
 }

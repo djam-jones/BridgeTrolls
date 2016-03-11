@@ -7,6 +7,7 @@ public class CharacterDatabase : MonoBehaviour {
 	public const string CHARACTER02 = "Character02";
 	public const string CHARACTER03 = "Character03";
 	public const string CHARACTER04 = "Character04";
+	public const string TROLL		= "Troll";
 
 	/// <summary>
 	/// Gets the character by integer.
@@ -25,6 +26,8 @@ public class CharacterDatabase : MonoBehaviour {
 				return CHARACTER03;
 			case 3:
 				return CHARACTER04;
+			case 4:
+				return TROLL;
 		}
 		return "";
 	}
@@ -53,7 +56,7 @@ public class CharacterDatabase : MonoBehaviour {
 			color = Color.green;
 			break;
 		case 4:
-			color = new Color(255, 120, 0, 255); //Orange
+			color = new Color(1.0f, 0.47f, 0.0f); //Orange
 			break;
 		case 5:
 			color = Color.cyan;
@@ -66,5 +69,39 @@ public class CharacterDatabase : MonoBehaviour {
 			break;
 		}
 		return color;
+	}
+
+	public static Sprite GetSpriteById(int i)
+	{
+		Sprite sprite = new Sprite();
+
+		switch(i)
+		{
+		case 0:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_0") as Sprite;
+			break;
+		case 1:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_1") as Sprite;
+			break;
+		case 2:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_2") as Sprite;
+			break;
+		case 3:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_3") as Sprite;
+			break;
+		case 4:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_4") as Sprite;
+			break;
+		case 5:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_5") as Sprite;
+			break;
+		case 6:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_6") as Sprite;
+			break;
+		case 7:
+			sprite = Resources.Load("Spritesheets/Player_Indicators_7") as Sprite;
+			break;
+		}
+		return sprite;
 	}
 }
