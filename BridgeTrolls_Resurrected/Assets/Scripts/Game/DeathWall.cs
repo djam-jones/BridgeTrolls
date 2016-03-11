@@ -20,7 +20,6 @@ public class DeathWall : MonoBehaviour {
 	void Start()
 	{
 		timer = 60;
-
 	}
 	// Update is called once per frame
 	void Update () {
@@ -54,11 +53,10 @@ public class DeathWall : MonoBehaviour {
 			Flip = false;
 			StartCoroutine(RightToLeft());
 		}
+    }
 
-	}
 	IEnumerator LeftToRight()
 	{
-
 		yield return new WaitForSeconds(0.5f);
 		fadeOut(danger2);
 		for (int k = 1; k < 20; k++)
@@ -74,7 +72,6 @@ public class DeathWall : MonoBehaviour {
 			}
 			yield return new WaitForSeconds(1.2f);
 		}
-
 	}
 
 	IEnumerator RightToLeft()

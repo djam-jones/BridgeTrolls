@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/AbilityHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/DeathWall.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/Player.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="14" Column="3" />
@@ -13,10 +13,11 @@
       <File FileName="Assets/Scripts/Game/ScoreC.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/ScoreCounter.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/Tags.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/Movement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/Movement.cs" Line="50" Column="104" />
       <File FileName="Assets/Scripts/Game/PlayerFollowCameraZoom.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/AbilityHandler.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/Player/AbilityHandler.cs" Line="20" Column="16" />
+      <File FileName="Assets/Scripts/Game/DeathWall.cs" Line="6" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
