@@ -47,7 +47,6 @@ public class MenuHandler : MonoBehaviour {
 		PreState();
 		MainState();
 		BackState();
-		print(_timer);
 	}
 
 	public void PreState()

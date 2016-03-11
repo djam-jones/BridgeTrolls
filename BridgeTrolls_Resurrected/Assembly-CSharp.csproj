@@ -47,13 +47,17 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Game\CharacterDatabase.cs" />
      <Compile Include="Assets\Scripts\Game\ControllerConnection.cs" />
+     <Compile Include="Assets\Scripts\Game\DeathWall.cs" />
      <Compile Include="Assets\Scripts\Game\FadeScreen.cs" />
      <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
+     <Compile Include="Assets\Scripts\Game\GameModes.cs" />
      <Compile Include="Assets\Scripts\Game\LoadingScreen.cs" />
+     <Compile Include="Assets\Scripts\Game\PlayerFollowCameraZoom.cs" />
      <Compile Include="Assets\Scripts\Game\ReadyPlayers.cs" />
      <Compile Include="Assets\Scripts\Game\ScoreC.cs" />
      <Compile Include="Assets\Scripts\Game\ScoreCounter.cs" />
      <Compile Include="Assets\Scripts\Game\SplashScreen.cs" />
+     <Compile Include="Assets\Scripts\Game\Tags.cs" />
      <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
      <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
      <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />

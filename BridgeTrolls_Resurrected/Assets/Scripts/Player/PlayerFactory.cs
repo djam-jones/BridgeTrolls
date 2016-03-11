@@ -22,7 +22,7 @@ public class PlayerFactory : MonoBehaviour {
 		Player _player;
 		Movement _movement;
 		PlayerRoles _roles;
-		Score _score;
+		ScoreC _score;
 		SwitchTeam _switch;
 		AbilityHandler _abilityHandler;
 		SpriteStraightener _straightener;
@@ -44,6 +44,9 @@ public class PlayerFactory : MonoBehaviour {
 
 		//Collision Implementation
 		_boxCollider = _playerObj.AddComponent<BoxCollider2D>();
+//		_boxCollider.offset.y = -0.5f;
+//		_boxCollider.size.x = 0.35f;
+//		_boxCollider.size.y = 0.2f;
 
 		//Trigger Implementation
 		_boxTrigger = _playerObj.AddComponent<BoxCollider2D>();
@@ -61,7 +64,7 @@ public class PlayerFactory : MonoBehaviour {
 		_movement = _playerObj.AddComponent<Movement>();
 		_movement.speed = 3f;
 
-		_score = _playerObj.AddComponent<Score>();
+		_score = _playerObj.AddComponent<ScoreC>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
 		_abilityHandler = _playerObj.AddComponent<AbilityHandler>();
 
@@ -89,12 +92,16 @@ public class PlayerFactory : MonoBehaviour {
 			case CharacterDatabase.CHARACTER04:
 				_animatorName = "Character_Four_Animator";
 				break;
+			case CharacterDatabase.TROLL:
+				_animatorName = "Troll_Animator";
+				break;
 		}
 
-		//Implement Player Arrow/Color Indication?
+		//Implement Player Arrow/Color Indication
 		PlayerIndicator indicator = _playerObj.AddComponent<PlayerIndicator>();
 		indicator.Init();
 		indicator.SetColor(CharacterDatabase.GetColorById(playerID));
+//		indicator.SetSprite(CharacterDatabase.GetSpriteById(playerID));
 
 		_anim.runtimeAnimatorController = Resources.Load("Animations/Characters/" + _animatorName) as RuntimeAnimatorController;
 

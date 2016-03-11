@@ -27,6 +27,7 @@ public class LoadingScreen : MonoBehaviour {
 
 	IEnumerator LoadingLevel()
 	{
+		yield return new WaitForSeconds(4);
 		AsyncOperation aSync = SceneManager.LoadSceneAsync(1);
 
 		while(!aSync.isDone)

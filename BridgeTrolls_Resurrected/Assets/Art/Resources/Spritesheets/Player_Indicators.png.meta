@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 971dc8b381d424d87a740c21aae485c2
+timeCreated: 1457625169
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Player_Indicators_0
+    21300002: Player_Indicators_1
+    21300004: Player_Indicators_2
+    21300006: Player_Indicators_3
+    21300008: Player_Indicators_4
+    21300010: Player_Indicators_5
+    21300012: Player_Indicators_6
+    21300014: Player_Indicators_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Player_Indicators_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: -30.5}
+        - {x: -6, y: -27.5}
+        - {x: -10, y: -27.5}
+        - {x: -11, y: -30.5}
+      - - {x: 25, y: 28.5}
+        - {x: 19, y: 30.5}
+        - {x: -20, y: 30.5}
+        - {x: -26, y: 16.5}
+        - {x: -26, y: -21.5}
+        - {x: -9, y: -30.5}
+        - {x: 10, y: -30.5}
+        - {x: 25, y: -14.5}
+        - {x: 26, y: -8.5}
+        - {x: 26, y: 25.5}
+    - name: Player_Indicators_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 67
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: -30.5}
+        - {x: -5.5, y: -27.5}
+        - {x: -9.5, y: -27.5}
+        - {x: -10.5, y: -30.5}
+      - - {x: -15.5, y: 30.5}
+        - {x: -26.5, y: 18.5}
+        - {x: -26.5, y: -8.5}
+        - {x: -21.5, y: -24.5}
+        - {x: -10.5, y: -30.5}
+        - {x: 12.5, y: -30.5}
+        - {x: 26.5, y: -13.5}
+        - {x: 26.5, y: 29.5}
+        - {x: 17.5, y: 30.5}
+    - name: Player_Indicators_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 67
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: -30.5}
+        - {x: -5.5, y: -27.5}
+        - {x: -9.5, y: -27.5}
+        - {x: -10.5, y: -30.5}
+      - - {x: -15.5, y: 30.5}
+        - {x: -26.5, y: 18.5}
+        - {x: -26.5, y: -8.5}
+        - {x: -21.5, y: -24.5}
+        - {x: -10.5, y: -30.5}
+        - {x: 12.5, y: -30.5}
+        - {x: 26.5, y: -13.5}
+        - {x: 26.5, y: 29.5}
+        - {x: 17.5, y: 30.5}
+    - name: Player_Indicators_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 67
+        width: 57
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: -30.5}
+        - {x: -7.5, y: -27.5}
+        - {x: -11.5, y: -27.5}
+        - {x: -12.5, y: -30.5}
+      - - {x: -22.5, y: 30.5}
+        - {x: -28.5, y: 14.5}
+        - {x: -28.5, y: -11.5}
+        - {x: -20.5, y: -21.5}
+        - {x: -2.5, y: -30.5}
+        - {x: 7.5, y: -30.5}
+        - {x: 28.5, y: -21.5}
+        - {x: 28.5, y: 30.5}
+    - name: Player_Indicators_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 29}
+        - {x: -26, y: 19}
+        - {x: -26, y: -11}
+        - {x: -22, y: -25}
+        - {x: -16, y: -29}
+        - {x: 17, y: -29}
+        - {x: 26, y: -15}
+        - {x: 26, y: 29}
+    - name: Player_Indicators_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 8
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 29}
+        - {x: -26.5, y: 20}
+        - {x: -26.5, y: -21}
+        - {x: -14.5, y: -29}
+        - {x: 18.5, y: -29}
+        - {x: 26.5, y: -21}
+        - {x: 26.5, y: 29}
+    - name: Player_Indicators_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 8
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 29}
+        - {x: -26.5, y: 20}
+        - {x: -26.5, y: -21}
+        - {x: -14.5, y: -29}
+        - {x: 18.5, y: -29}
+        - {x: 26.5, y: -21}
+        - {x: 26.5, y: 29}
+    - name: Player_Indicators_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 8
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 29}
+        - {x: -28.5, y: 14}
+        - {x: -28.5, y: -16}
+        - {x: -13.5, y: -29}
+        - {x: 19.5, y: -29}
+        - {x: 28.5, y: -21}
+        - {x: 28.5, y: 29}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,13 +17,10 @@ public class AbilityHandler : MonoBehaviour {
         move = this.gameObject.GetComponent<Movement>();
     }
 
-    void Update()
-    {
-        if (Input.anyKey)
-        {
-            UseAbility();
-        }
-    }
+	void Update()
+	{
+		UseAbility();
+	}
 
     private void UseAbility()
     {

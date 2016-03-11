@@ -17,7 +17,13 @@ public class PlayerIndicator : MonoBehaviour {
 	public void SetColor(Color color)
 	{
 		SpriteRenderer spriteRenderer = _indicator.GetComponent<SpriteRenderer>();
-		color.a = 0.5f;
+		color.a = 0.75f;
 		spriteRenderer.color = color;
+	}
+
+	public void SetSprite(Sprite sprite)
+	{
+		SpriteRenderer spriteRenderer = _indicator.GetComponent<SpriteRenderer>();
+		spriteRenderer.sprite = sprite;
 	}
 }

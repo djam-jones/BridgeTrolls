@@ -65,6 +65,6 @@ public class ControllerConnection : MonoBehaviour, IControllerConnect<bool> {
 		//Save Singleton instance.
 		Instance = this;
 
-		DontDestroyOnLoad(gameObject);
+		//DontDestroyOnLoad(gameObject);
 	}
 }
