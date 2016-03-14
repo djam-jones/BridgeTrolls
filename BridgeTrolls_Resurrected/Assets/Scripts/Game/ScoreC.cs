@@ -26,11 +26,15 @@ public class ScoreC : MonoBehaviour
 			{
 				//Win Game.
 				print ("Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
+				PlayerPrefs.SetString( "PlayerThatWon", "Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
+
 				_gameModesScript.gameObject.GetComponent<GameMagager>().gameOver = true;
 			}
 			else if(GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _gameModesScript.gameObject.GetComponent<GameMagager>().allGoblins.Count == 0)
 			{
 				print ("Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
+				PlayerPrefs.SetString( "PlayerThatWon", "Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
+
 				_gameModesScript.gameObject.GetComponent<GameMagager>().gameOver = true;
 			}
 		}

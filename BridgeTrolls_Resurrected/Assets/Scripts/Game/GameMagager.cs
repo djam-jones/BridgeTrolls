@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,6 +23,9 @@ public class GameMagager : MonoBehaviour {
 
 	public Sprite trollSprite;
 
+	//Placeholder Win Text
+	public Text placeholderWinText;
+
 	private int id = 0;
 
 	public static GameMagager Instance {get; private set;}
@@ -43,6 +47,8 @@ public class GameMagager : MonoBehaviour {
 		{
 			Debug.LogWarning("This is the Main Menu Scene and you cannot Create Players here.");
 		}
+
+		placeholderWinText.enabled = false;
 	}
 
 	void Update()
@@ -115,10 +121,17 @@ public class GameMagager : MonoBehaviour {
 	{
 		if(gameOver)
 		{
-			
-
 			//TODO: Win Screen Pop-Up.
 			print("Game Over!");
+
+			placeholderWinText.enabled = true;
+			placeholderWinText.text = PlayerPrefs.GetString("PlayerThatWon") + " Won!";
+
+			//Disable all Player Movement.
+			for(int i = 0; i < playerArray.Count; i++)
+			{
+				playerArray[i].GetComponent<Movement>().enabled = false;
+			}
 
 			//Enable all GamePlay Scripts.
 			GetComponent<DeathWall>().enabled = false;

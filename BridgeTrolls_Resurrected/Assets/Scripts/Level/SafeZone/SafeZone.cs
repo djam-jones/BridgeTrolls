@@ -6,6 +6,7 @@ public class SafeZone : MonoBehaviour
 {
     [SerializeField]
     private List<GameObject> players;
+	public GameMagager gameManager;
 
     public void enablePlayerMovement()
     {
@@ -27,10 +28,7 @@ public class SafeZone : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            enablePlayerMovement();
-        }
+		CheckTriggerContent();
     }
 
 	private void CheckTriggerContent()
@@ -39,5 +37,13 @@ public class SafeZone : MonoBehaviour
 		//if every non-troll player is in this
 		//gameobject's trigger, 
 		//then Enable the Player's Movement.
+		//Vergelijk De trigger content met de AllGoblins Lijst 
+		//Van de Game Handler.
+
+		if(players.Count == gameManager.allGoblins.Count)
+		{
+			enablePlayerMovement();
+			DeathWall.Instance.Reset();
+		}
 	}
 }

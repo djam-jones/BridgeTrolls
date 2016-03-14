@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class DeathWall : MonoBehaviour {
+	
 	[SerializeField]private GameObject prefab1;
 	[SerializeField]private GameObject prefab2;
 	[SerializeField]private GameObject prefab3;
@@ -15,11 +16,16 @@ public class DeathWall : MonoBehaviour {
 	private Vector2 dangerposition;
 	private bool dangeronscreen = false;
 	private int randomNummer;
-	[SerializeField]public float timer;
+	public float timer;
+	[SerializeField, HideInInspector] private float _initialTime;
+
+	//Instance
+	public static DeathWall Instance {get; private set;}
 
 	void Start()
 	{
-		timer = 60;
+		_initialTime = 30;
+		timer = _initialTime;
 	}
 	// Update is called once per frame
 	void Update () {
@@ -155,5 +161,11 @@ public class DeathWall : MonoBehaviour {
 			}
 		}
 
+	}
+
+	public void Reset()
+	{
+		if(timer < _initialTime)
+			timer = _initialTime;
 	}
 }

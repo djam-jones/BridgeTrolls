@@ -1,0 +1,886 @@
+fileFormatVersion: 2
+guid: 75415dea747564ada9dcfaf130214f96
+timeCreated: 1457686283
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_Assets_Basegames_Logo600x464_0
+    21300002: Art_Assets_Basegames_Logo600x464_1
+    21300004: Art_Assets_Basegames_Logo600x464_2
+    21300006: Art_Assets_Basegames_Logo600x464_3
+    21300008: Art_Assets_Basegames_Logo600x464_4
+    21300010: Art_Assets_Basegames_Logo600x464_5
+    21300012: Art_Assets_Basegames_Logo600x464_6
+    21300014: Art_Assets_Basegames_Logo600x464_7
+    21300016: Art_Assets_Basegames_Logo600x464_8
+    21300018: Art_Assets_Basegames_Logo600x464_9
+    21300020: Art_Assets_Basegames_Logo600x464_10
+    21300022: Art_Assets_Basegames_Logo600x464_11
+    21300024: Art_Assets_Basegames_Logo600x464_12
+    21300026: Art_Assets_Basegames_Logo600x464_13
+    21300028: Art_Assets_Basegames_Logo600x464_14
+    21300030: Art_Assets_Basegames_Logo600x464_15
+    21300032: Art_Assets_Basegames_Logo600x464_16
+    21300034: Art_Assets_Basegames_Logo600x464_17
+    21300036: Art_Assets_Basegames_Logo600x464_18
+    21300038: Art_Assets_Basegames_Logo600x464_19
+    21300040: Art_Assets_Basegames_Logo600x464_20
+    21300042: Art_Assets_Basegames_Logo600x464_21
+    21300044: Art_Assets_Basegames_Logo600x464_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_Assets_Basegames_Logo600x464_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -116, y: 21.5}
+        - {x: -116, y: -122.5}
+        - {x: -109, y: -122.5}
+        - {x: -98, y: -117.5}
+        - {x: -88, y: -105.5}
+        - {x: -78, y: -89.5}
+        - {x: -68, y: -66.5}
+        - {x: -75, y: -84.5}
+        - {x: -76, y: -114.5}
+        - {x: -66, y: -130.5}
+        - {x: 39, y: -124.5}
+        - {x: 42, y: -122.5}
+        - {x: 48, y: -114.5}
+        - {x: 45, y: -119.5}
+        - {x: 41, y: -126.5}
+        - {x: 52, y: -150.5}
+        - {x: 114, y: -150.5}
+        - {x: 114, y: 153.5}
+        - {x: 77, y: 153.5}
+        - {x: 73, y: 152.5}
+        - {x: -76, y: 125.5}
+    - name: Art_Assets_Basegames_Logo600x464_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72, y: 153.5}
+        - {x: -84, y: 86.5}
+        - {x: -116, y: 5.5}
+        - {x: -116, y: -114.5}
+        - {x: -109, y: -119.5}
+        - {x: -98, y: -117.5}
+        - {x: -87, y: -105.5}
+        - {x: -68, y: -72.5}
+        - {x: -75, y: -84.5}
+        - {x: -76, y: -114.5}
+        - {x: -65, y: -130.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 48, y: -83.5}
+        - {x: 57, y: -79.5}
+        - {x: 53, y: -88.5}
+        - {x: 53, y: -96.5}
+        - {x: 55, y: -101.5}
+        - {x: 64, y: -103.5}
+        - {x: 54, y: -110.5}
+        - {x: 44, y: -121.5}
+        - {x: 38, y: -129.5}
+        - {x: 63, y: -151.5}
+        - {x: 115, y: -151.5}
+        - {x: 115, y: 29.5}
+        - {x: 111, y: 153.5}
+    - name: Art_Assets_Basegames_Logo600x464_2
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100, y: -123.5}
+        - {x: 95, y: -93.5}
+        - {x: 112, y: 153.5}
+        - {x: -24, y: 153.5}
+        - {x: -116, y: 48.5}
+        - {x: -116, y: -131.5}
+        - {x: -113, y: -133.5}
+        - {x: -98, y: -118.5}
+        - {x: -77, y: -89.5}
+        - {x: -68, y: -66.5}
+        - {x: -75, y: -84.5}
+        - {x: -76, y: -91.5}
+        - {x: -77, y: -114.5}
+        - {x: -65, y: -129.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 53, y: -98.5}
+        - {x: 44, y: -123.5}
+        - {x: 38, y: -132.5}
+        - {x: 76, y: -145.5}
+        - {x: 107, y: -151.5}
+        - {x: 114, y: -151.5}
+        - {x: 115, y: -150.5}
+        - {x: 115, y: -134.5}
+        - {x: 113, y: -126.5}
+    - name: Art_Assets_Basegames_Logo600x464_3
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109, y: 153.5}
+        - {x: 80, y: 153.5}
+        - {x: -112, y: 72.5}
+        - {x: -116, y: 20.5}
+        - {x: -116, y: -119.5}
+        - {x: -109, y: -119.5}
+        - {x: -98, y: -117.5}
+        - {x: -84, y: -99.5}
+        - {x: -71, y: -77.5}
+        - {x: -75, y: -84.5}
+        - {x: -75, y: -104.5}
+        - {x: -79, y: -126.5}
+        - {x: -10, y: -134.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 54, y: -102.5}
+        - {x: 59, y: -107.5}
+        - {x: 64, y: -107.5}
+        - {x: 52, y: -113.5}
+        - {x: 43, y: -129.5}
+        - {x: 52, y: -139.5}
+        - {x: 106, y: -152.5}
+        - {x: 115, y: -152.5}
+        - {x: 116, y: -151.5}
+        - {x: 116, y: -0.5}
+        - {x: 111, y: 148.5}
+    - name: Art_Assets_Basegames_Logo600x464_4
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 153.5}
+        - {x: -116, y: 41.5}
+        - {x: -116, y: -118.5}
+        - {x: -109, y: -122.5}
+        - {x: -92, y: -116.5}
+        - {x: -80, y: -93.5}
+        - {x: -66, y: -65.5}
+        - {x: -75, y: -83.5}
+        - {x: -75, y: -104.5}
+        - {x: -79, y: -126.5}
+        - {x: -10, y: -134.5}
+        - {x: 40, y: -124.5}
+        - {x: 47, y: -120.5}
+        - {x: 65, y: -109.5}
+        - {x: 66, y: -108.5}
+        - {x: 69, y: -108.5}
+        - {x: 77, y: -105.5}
+        - {x: 68, y: -108.5}
+        - {x: 53, y: -117.5}
+        - {x: 45, y: -124.5}
+        - {x: 44, y: -137.5}
+        - {x: 71, y: -152.5}
+        - {x: 116, y: -152.5}
+        - {x: 116, y: 153.5}
+    - name: Art_Assets_Basegames_Logo600x464_5
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 153.5}
+        - {x: -102, y: 59.5}
+        - {x: -116, y: -42.5}
+        - {x: -116, y: -117.5}
+        - {x: -110, y: -123.5}
+        - {x: -98, y: -118.5}
+        - {x: -80, y: -93.5}
+        - {x: -77, y: -87.5}
+        - {x: -70, y: -71.5}
+        - {x: -75, y: -83.5}
+        - {x: -75, y: -104.5}
+        - {x: -74, y: -113.5}
+        - {x: -71, y: -121.5}
+        - {x: -65, y: -128.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 42, y: -126.5}
+        - {x: 52, y: -141.5}
+        - {x: 73, y: -152.5}
+        - {x: 116, y: -152.5}
+        - {x: 116, y: 135.5}
+        - {x: 110, y: 153.5}
+    - name: Art_Assets_Basegames_Logo600x464_6
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 153.5}
+        - {x: -116, y: 41.5}
+        - {x: -116, y: -118.5}
+        - {x: -109, y: -122.5}
+        - {x: -92, y: -116.5}
+        - {x: -80, y: -93.5}
+        - {x: -66, y: -65.5}
+        - {x: -75, y: -83.5}
+        - {x: -75, y: -104.5}
+        - {x: -79, y: -126.5}
+        - {x: -10, y: -134.5}
+        - {x: 40, y: -124.5}
+        - {x: 47, y: -120.5}
+        - {x: 65, y: -109.5}
+        - {x: 66, y: -108.5}
+        - {x: 69, y: -108.5}
+        - {x: 77, y: -105.5}
+        - {x: 68, y: -108.5}
+        - {x: 53, y: -117.5}
+        - {x: 45, y: -124.5}
+        - {x: 44, y: -137.5}
+        - {x: 71, y: -152.5}
+        - {x: 116, y: -152.5}
+        - {x: 116, y: 153.5}
+    - name: Art_Assets_Basegames_Logo600x464_7
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 1437
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109, y: 153.5}
+        - {x: 80, y: 153.5}
+        - {x: -112, y: 72.5}
+        - {x: -116, y: 20.5}
+        - {x: -116, y: -119.5}
+        - {x: -109, y: -119.5}
+        - {x: -98, y: -117.5}
+        - {x: -84, y: -99.5}
+        - {x: -71, y: -77.5}
+        - {x: -75, y: -84.5}
+        - {x: -75, y: -104.5}
+        - {x: -79, y: -126.5}
+        - {x: -10, y: -134.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 54, y: -102.5}
+        - {x: 59, y: -107.5}
+        - {x: 64, y: -107.5}
+        - {x: 52, y: -113.5}
+        - {x: 43, y: -129.5}
+        - {x: 52, y: -139.5}
+        - {x: 106, y: -152.5}
+        - {x: 115, y: -152.5}
+        - {x: 116, y: -151.5}
+        - {x: 116, y: -0.5}
+        - {x: 111, y: 148.5}
+    - name: Art_Assets_Basegames_Logo600x464_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 152}
+        - {x: -101, y: 60}
+        - {x: -116, y: -17}
+        - {x: -116, y: -119}
+        - {x: -97, y: -124}
+        - {x: -79, y: -94}
+        - {x: -69, y: -70}
+        - {x: -75, y: -84}
+        - {x: -80, y: -107}
+        - {x: -67, y: -133}
+        - {x: 39, y: -128}
+        - {x: 51, y: -113}
+        - {x: 53, y: -98}
+        - {x: 53, y: -90}
+        - {x: 53, y: -99}
+        - {x: 54, y: -102}
+        - {x: 58, y: -105}
+        - {x: 64, y: -106}
+        - {x: 65, y: -105}
+        - {x: 73, y: -103}
+        - {x: 77, y: -101}
+        - {x: 72, y: -103}
+        - {x: 69, y: -105}
+        - {x: 55, y: -113}
+        - {x: 45, y: -121}
+        - {x: 41, y: -130}
+        - {x: 61, y: -146}
+        - {x: 88, y: -153}
+        - {x: 112, y: -153}
+        - {x: 115, y: -151}
+        - {x: 115, y: -40}
+        - {x: 113, y: 152}
+    - name: Art_Assets_Basegames_Logo600x464_9
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -116, y: 2}
+        - {x: -116, y: -117}
+        - {x: -111, y: -136}
+        - {x: -86, y: -105}
+        - {x: -68, y: -71}
+        - {x: -75, y: -84}
+        - {x: -76, y: -116}
+        - {x: -67, y: -131}
+        - {x: 39, y: -128}
+        - {x: 51, y: -113}
+        - {x: 53, y: -98}
+        - {x: 53, y: -90}
+        - {x: 47, y: -84}
+        - {x: 58, y: -80}
+        - {x: 53, y: -90}
+        - {x: 53, y: -98}
+        - {x: 56, y: -102}
+        - {x: 59, y: -103}
+        - {x: 66, y: -103}
+        - {x: 52, y: -113}
+        - {x: 44, y: -121}
+        - {x: 45, y: -129}
+        - {x: 48, y: -137}
+        - {x: 75, y: -141}
+        - {x: 100, y: -152}
+        - {x: 115, y: -152}
+        - {x: 115, y: 112}
+        - {x: 113, y: 152}
+        - {x: 78, y: 152}
+        - {x: -46, y: 92}
+        - {x: -99, y: 48}
+    - name: Art_Assets_Basegames_Logo600x464_10
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 106, y: 152}
+        - {x: 69, y: 152}
+        - {x: -7, y: 111}
+        - {x: -106, y: 54}
+        - {x: -116, y: -4}
+        - {x: -116, y: -117}
+        - {x: -112, y: -120}
+        - {x: -98, y: -121}
+        - {x: -79, y: -94}
+        - {x: -68, y: -71}
+        - {x: -75, y: -84}
+        - {x: -84, y: -126}
+        - {x: 10, y: -139}
+        - {x: 44, y: -122}
+        - {x: 47, y: -115}
+        - {x: 43, y: -123}
+        - {x: 37, y: -134}
+        - {x: 87, y: -152}
+        - {x: 114, y: -152}
+        - {x: 114, y: 109}
+        - {x: 111, y: 149}
+    - name: Art_Assets_Basegames_Logo600x464_11
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -116, y: 2}
+        - {x: -116, y: -117}
+        - {x: -111, y: -136}
+        - {x: -86, y: -105}
+        - {x: -68, y: -71}
+        - {x: -75, y: -84}
+        - {x: -76, y: -116}
+        - {x: -67, y: -131}
+        - {x: 39, y: -128}
+        - {x: 51, y: -113}
+        - {x: 53, y: -98}
+        - {x: 53, y: -90}
+        - {x: 47, y: -84}
+        - {x: 58, y: -80}
+        - {x: 53, y: -90}
+        - {x: 53, y: -98}
+        - {x: 56, y: -102}
+        - {x: 59, y: -103}
+        - {x: 66, y: -103}
+        - {x: 52, y: -113}
+        - {x: 44, y: -121}
+        - {x: 45, y: -129}
+        - {x: 48, y: -137}
+        - {x: 75, y: -141}
+        - {x: 100, y: -152}
+        - {x: 115, y: -152}
+        - {x: 115, y: 112}
+        - {x: 113, y: 152}
+        - {x: 78, y: 152}
+        - {x: -46, y: 92}
+        - {x: -99, y: 48}
+    - name: Art_Assets_Basegames_Logo600x464_12
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 152}
+        - {x: -101, y: 60}
+        - {x: -116, y: -17}
+        - {x: -116, y: -119}
+        - {x: -97, y: -124}
+        - {x: -79, y: -94}
+        - {x: -69, y: -70}
+        - {x: -75, y: -84}
+        - {x: -80, y: -107}
+        - {x: -67, y: -133}
+        - {x: 39, y: -128}
+        - {x: 51, y: -113}
+        - {x: 53, y: -98}
+        - {x: 53, y: -90}
+        - {x: 53, y: -99}
+        - {x: 54, y: -102}
+        - {x: 58, y: -105}
+        - {x: 64, y: -106}
+        - {x: 65, y: -105}
+        - {x: 73, y: -103}
+        - {x: 77, y: -101}
+        - {x: 72, y: -103}
+        - {x: 69, y: -105}
+        - {x: 55, y: -113}
+        - {x: 45, y: -121}
+        - {x: 41, y: -130}
+        - {x: 61, y: -146}
+        - {x: 88, y: -153}
+        - {x: 112, y: -153}
+        - {x: 115, y: -151}
+        - {x: 115, y: -40}
+        - {x: 113, y: 152}
+    - name: Art_Assets_Basegames_Logo600x464_13
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -116, y: -124}
+        - {x: -97, y: -124}
+        - {x: -79, y: -94}
+        - {x: -69, y: -70}
+        - {x: -73, y: -80}
+        - {x: -76, y: -92}
+        - {x: -74, y: -121}
+        - {x: -66, y: -130}
+        - {x: 39, y: -126}
+        - {x: 44, y: -122}
+        - {x: 48, y: -112}
+        - {x: 53, y: -98}
+        - {x: 53, y: -90}
+        - {x: 54, y: -103}
+        - {x: 44, y: -126}
+        - {x: 47, y: -135}
+        - {x: 58, y: -142}
+        - {x: 98, y: -153}
+        - {x: 116, y: -153}
+        - {x: 116, y: 152}
+        - {x: 47, y: 152}
+        - {x: -116, y: 94}
+      - - {x: 109, y: 153}
+        - {x: 110, y: 150}
+        - {x: 113, y: 150}
+        - {x: 115, y: 152}
+        - {x: 115, y: 153}
+    - name: Art_Assets_Basegames_Logo600x464_14
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 152}
+        - {x: -77, y: 107}
+        - {x: -116, y: 14}
+        - {x: -116, y: -123}
+        - {x: -114, y: -125}
+        - {x: -98, y: -121}
+        - {x: -79, y: -93}
+        - {x: -69, y: -70}
+        - {x: -75, y: -86}
+        - {x: -80, y: -107}
+        - {x: -67, y: -132}
+        - {x: 39, y: -127}
+        - {x: 52, y: -114}
+        - {x: 68, y: -110}
+        - {x: 52, y: -119}
+        - {x: 44, y: -126}
+        - {x: 47, y: -138}
+        - {x: 87, y: -153}
+        - {x: 116, y: -153}
+        - {x: 116, y: 152}
+    - name: Art_Assets_Basegames_Logo600x464_15
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 826
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 152}
+        - {x: -116, y: 62}
+        - {x: -116, y: -119}
+        - {x: -97, y: -125}
+        - {x: -79, y: -95}
+        - {x: -63, y: -57}
+        - {x: -58, y: -60}
+        - {x: -73, y: -83}
+        - {x: -76, y: -92}
+        - {x: -74, y: -122}
+        - {x: -66, y: -130}
+        - {x: 39, y: -126}
+        - {x: 44, y: -122}
+        - {x: 48, y: -112}
+        - {x: 44, y: -132}
+        - {x: 54, y: -144}
+        - {x: 102, y: -153}
+        - {x: 116, y: -153}
+        - {x: 116, y: 132}
+        - {x: 112, y: 152}
+    - name: Art_Assets_Basegames_Logo600x464_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112, y: -9.5}
+        - {x: -116, y: -51.5}
+        - {x: -116, y: -118.5}
+        - {x: -109, y: -122.5}
+        - {x: -92, y: -116.5}
+        - {x: -80, y: -93.5}
+        - {x: -66, y: -65.5}
+        - {x: -75, y: -83.5}
+        - {x: -75, y: -104.5}
+        - {x: -79, y: -126.5}
+        - {x: -10, y: -134.5}
+        - {x: 40, y: -124.5}
+        - {x: 47, y: -120.5}
+        - {x: 65, y: -109.5}
+        - {x: 66, y: -108.5}
+        - {x: 69, y: -108.5}
+        - {x: 77, y: -105.5}
+        - {x: 68, y: -108.5}
+        - {x: 53, y: -117.5}
+        - {x: 45, y: -124.5}
+        - {x: 43, y: -138.5}
+        - {x: 73, y: -152.5}
+        - {x: 116, y: -152.5}
+        - {x: 116, y: 142.5}
+        - {x: 115, y: 153.5}
+        - {x: 67, y: 153.5}
+        - {x: -93, y: 60.5}
+    - name: Art_Assets_Basegames_Logo600x464_17
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -126.5}
+        - {x: 95, y: -95.5}
+        - {x: 112, y: 153.5}
+        - {x: 51, y: 153.5}
+        - {x: -112, y: 72.5}
+        - {x: -116, y: 20.5}
+        - {x: -116, y: -119.5}
+        - {x: -109, y: -119.5}
+        - {x: -98, y: -117.5}
+        - {x: -84, y: -99.5}
+        - {x: -71, y: -77.5}
+        - {x: -75, y: -84.5}
+        - {x: -75, y: -104.5}
+        - {x: -79, y: -126.5}
+        - {x: -10, y: -134.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 54, y: -102.5}
+        - {x: 59, y: -107.5}
+        - {x: 64, y: -107.5}
+        - {x: 67, y: -106.5}
+        - {x: 53, y: -115.5}
+        - {x: 46, y: -123.5}
+        - {x: 27, y: -131.5}
+        - {x: 77, y: -152.5}
+        - {x: 116, y: -152.5}
+        - {x: 116, y: -131.5}
+        - {x: 107, y: -125.5}
+    - name: Art_Assets_Basegames_Logo600x464_18
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 153.5}
+        - {x: -116, y: 48.5}
+        - {x: -116, y: -131.5}
+        - {x: -113, y: -133.5}
+        - {x: -98, y: -118.5}
+        - {x: -77, y: -89.5}
+        - {x: -68, y: -66.5}
+        - {x: -75, y: -84.5}
+        - {x: -76, y: -91.5}
+        - {x: -77, y: -114.5}
+        - {x: -65, y: -129.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 53, y: -98.5}
+        - {x: 56, y: -103.5}
+        - {x: 59, y: -104.5}
+        - {x: 52, y: -111.5}
+        - {x: 42, y: -128.5}
+        - {x: 48, y: -137.5}
+        - {x: 83, y: -140.5}
+        - {x: 99, y: -151.5}
+        - {x: 114, y: -151.5}
+        - {x: 116, y: -146.5}
+        - {x: 116, y: -30.5}
+        - {x: 110, y: 153.5}
+    - name: Art_Assets_Basegames_Logo600x464_19
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103, y: -124.5}
+        - {x: 87, y: -123.5}
+        - {x: 99, y: -86.5}
+        - {x: 115, y: 100.5}
+        - {x: 115, y: 153.5}
+        - {x: 39, y: 153.5}
+        - {x: -116, y: 122.5}
+        - {x: -116, y: -123.5}
+        - {x: -98, y: -117.5}
+        - {x: -87, y: -105.5}
+        - {x: -68, y: -72.5}
+        - {x: -75, y: -84.5}
+        - {x: -76, y: -114.5}
+        - {x: -65, y: -130.5}
+        - {x: 40, y: -124.5}
+        - {x: 45, y: -119.5}
+        - {x: 53, y: -96.5}
+        - {x: 53, y: -88.5}
+        - {x: 48, y: -83.5}
+        - {x: 57, y: -79.5}
+        - {x: 53, y: -88.5}
+        - {x: 53, y: -96.5}
+        - {x: 45, y: -121.5}
+        - {x: 45, y: -127.5}
+        - {x: 48, y: -139.5}
+        - {x: 99, y: -150.5}
+        - {x: 114, y: -150.5}
+        - {x: 115, y: -149.5}
+        - {x: 115, y: -134.5}
+        - {x: 113, y: -127.5}
+    - name: Art_Assets_Basegames_Logo600x464_20
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77, y: 153.5}
+        - {x: 73, y: 152.5}
+        - {x: -76, y: 125.5}
+        - {x: -116, y: 21.5}
+        - {x: -116, y: -122.5}
+        - {x: -109, y: -122.5}
+        - {x: -98, y: -117.5}
+        - {x: -88, y: -105.5}
+        - {x: -78, y: -89.5}
+        - {x: -68, y: -66.5}
+        - {x: -75, y: -84.5}
+        - {x: -76, y: -114.5}
+        - {x: -66, y: -132.5}
+        - {x: 43, y: -123.5}
+        - {x: 47, y: -114.5}
+        - {x: 51, y: -102.5}
+        - {x: 47, y: -116.5}
+        - {x: 45, y: -119.5}
+        - {x: 43, y: -125.5}
+        - {x: 47, y: -137.5}
+        - {x: 93, y: -150.5}
+        - {x: 115, y: -150.5}
+        - {x: 115, y: 153.5}
+    - name: Art_Assets_Basegames_Logo600x464_21
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_Assets_Basegames_Logo600x464_22
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 215
+        width: 464
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

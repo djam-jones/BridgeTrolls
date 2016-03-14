@@ -30,7 +30,7 @@ public class PlayerFactory : MonoBehaviour {
 		string _animatorName = "";
 
 		//Sprite Implementation
-		Texture2D playerSprite = Resources.Load("Sprites/GoblinRun") as Texture2D;
+		Texture2D playerSprite = Resources.Load("Sprites/GoblinIdle") as Texture2D;
 		_spriteRenderer = _playerObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, playerSprite.width, playerSprite.height), new Vector2(0.5f, 0.5f));
 
@@ -72,7 +72,7 @@ public class PlayerFactory : MonoBehaviour {
 		_childObj.transform.parent = _playerObj.transform;
 		_straightener = _childObj.AddComponent<SpriteStraightener>();
 
-		Texture2D childSprite = Resources.Load("Sprites/GoblinRun") as Texture2D;
+		Texture2D childSprite = Resources.Load("Sprites/GoblinIdle") as Texture2D;
 		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
 
