@@ -8,6 +8,8 @@ public class AbilityHandler : MonoBehaviour {
     private Roles role;
     private bool DashUp = true;
     private Movement move;
+    [SerializeField] private Sprite Dash;
+    [SerializeField] private Sprite Idle;
 
     void Awake()
     {
@@ -55,11 +57,16 @@ public class AbilityHandler : MonoBehaviour {
 
         Debug.Log("dash");
         move.speed += 7;
+        GetComponent<SpriteRenderer>().sprite = Dash;
         yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().sprite = Idle;
         move.speed -= 7;
         DashUp = false;
         yield return new WaitForSeconds(3);
         DashUp = true;
+
+
+
     }
     public void Ability_Grab()
     {
