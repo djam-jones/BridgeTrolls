@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -18,6 +19,8 @@ public class DeathWall : MonoBehaviour {
 	private int randomNummer;
 	public float timer;
 	[SerializeField, HideInInspector] private float _initialTime;
+
+	public Text deathWallTimerText;
 
 	//Instance
 	public static DeathWall Instance {get; private set;}
@@ -50,7 +53,7 @@ public class DeathWall : MonoBehaviour {
 				danger2 = Instantiate(Danger2, dangerposition, transform.rotation) as GameObject;
 				Flip = true;
 				StartCoroutine(LeftToRight());  
-				timer = 60;
+				timer = _initialTime;
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.KeypadEnter))
@@ -59,6 +62,8 @@ public class DeathWall : MonoBehaviour {
 			Flip = false;
 			StartCoroutine(RightToLeft());
 		}
+
+		deathWallTimerText.text = timer.ToString("F1");
     }
 
 	IEnumerator LeftToRight()

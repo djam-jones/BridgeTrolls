@@ -1,0 +1,49 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+
+public class CountDown : MonoBehaviour
+{
+    [SerializeField]
+	private Text _countDownText;
+
+	[SerializeField]
+	private Text _pointsText;
+
+	[SerializeField]
+	private GameObject _beginScreen;
+
+    private string text;
+	private float timer = 3;
+		
+	void Awake()
+	{
+		_pointsText.text = PlayerPrefs.GetInt("AmountOfGamePoints").ToString();
+	}
+
+    void Update()
+    {
+		Countdown();
+    }
+
+	public void Countdown()
+	{
+		_countDownText.text = text;
+		text = timer.ToString("f0");
+		if (timer > 0)
+		{
+			timer -= 1 * Time.deltaTime;
+		}
+		else
+		{
+			SendMessage("StartGame", true);
+			StartCoroutine(DisableObject(_beginScreen));
+		}
+	}
+
+	private IEnumerator DisableObject(GameObject panel)
+	{
+		yield return new WaitForSeconds(0.5f);
+		panel.SetActive(false);
+	}
+}

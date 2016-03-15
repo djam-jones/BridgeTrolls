@@ -9,6 +9,7 @@ public class GameMagager : MonoBehaviour {
     public GameMagager manager;
 	private bool _isMainScene = false;
 	private bool _gamePaused;
+	private bool _gameStarted = false;
 	[HideInInspector] 
 	public bool gameOver = false;
 
@@ -23,8 +24,11 @@ public class GameMagager : MonoBehaviour {
 
 	public Sprite trollSprite;
 
-	//Placeholder Win Text
-	public Text placeholderWinText;
+	//Win Screen
+	public GameObject winScreen;
+	public Text winScreenText;
+
+	public FadeScreen _fadeScript;
 
 	private int id = 0;
 
@@ -46,16 +50,26 @@ public class GameMagager : MonoBehaviour {
 		else if(_scene.name == "MainMenu")
 		{
 			Debug.LogWarning("This is the Main Menu Scene and you cannot Create Players here.");
+			_isMainScene = false;
 		}
 
-		placeholderWinText.enabled = false;
+		//Disable all Player Movement at the Awake.
+		for(int i = 0; i < playerArray.Count; i++)
+		{
+			playerArray[i].GetComponent<Movement>().enabled = false;
+		}
+
+		//Disable all Gameplay Scripts at the Awake.
+		GetComponent<DeathWall>().enabled = false;
+		GetComponent<Pause>().enabled = false;
+
+		winScreen.SetActive(false);
 	}
 
 	void Update()
 	{
 		GetAllPlayerRoles();
 		GameOver();
-		PauseGame();
 		ForceQuitGame();
 	}
 	
@@ -88,7 +102,7 @@ public class GameMagager : MonoBehaviour {
 			playerCharacter = PlayerPrefs.GetString("CharacterName" + i);
 
 			GameObject playerPrefab = PlayerFactory.CreatePlayer(playerCharacter, i);
-			playerPrefab.transform.position = new Vector2(-8.4f, Random.Range(4.5f, -4.5f));
+			playerPrefab.transform.position = new Vector2(-8.4f, Random.Range(5f, -5f));
 			Player playerScript = playerPrefab.GetComponent<Player>();
 
 			playerPrefab.name = "Player" + (i + 1); //Set the Player Name to PLAYER_NUM
@@ -117,15 +131,40 @@ public class GameMagager : MonoBehaviour {
 		}
 	}
 
+	public void ReturnToMainMenu()
+	{
+		StartCoroutine( _fadeScript.GoToScene("MainMenu") );
+	}
+
+	public void Retry()
+	{
+		StartCoroutine( _fadeScript.GoToScene("Main") );
+	}
+
+	public void StartGame(bool gameStarted)
+	{
+		_gameStarted = gameStarted;
+
+		//Disable all Player Movement.
+		for(int i = 0; i < playerArray.Count; i++)
+		{
+			playerArray[i].GetComponent<Movement>().enabled = true;
+		}
+
+		//Enable all GamePlay Scripts.
+		GetComponent<DeathWall>().enabled = true;
+		GetComponent<Pause>().enabled = true;
+	}
+
 	private void GameOver()
 	{
 		if(gameOver)
 		{
-			//TODO: Win Screen Pop-Up.
-			print("Game Over!");
+			//Win Screen Pop-Up.
+			winScreen.SetActive(true);
+			winScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
 
-			placeholderWinText.enabled = true;
-			placeholderWinText.text = PlayerPrefs.GetString("PlayerThatWon") + " Won!";
+			print("Game Over!");
 
 			//Disable all Player Movement.
 			for(int i = 0; i < playerArray.Count; i++)
@@ -133,20 +172,9 @@ public class GameMagager : MonoBehaviour {
 				playerArray[i].GetComponent<Movement>().enabled = false;
 			}
 
-			//Enable all GamePlay Scripts.
+			//Disable all GamePlay Scripts.
 			GetComponent<DeathWall>().enabled = false;
-		}
-	}
-
-	private void PauseGame()
-	{
-		if(_isMainScene)
-		{
-			if(Input.GetButtonDown(START_GAME_BUTTON))
-			{
-				print("Game Paused.");
-				_gamePaused = true;
-			}
+			GetComponent<Pause>().enabled = false;
 		}
 	}
 

@@ -28,14 +28,12 @@ public class AbilityHandler : MonoBehaviour {
         {
             if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile)
             {
-                Ability_Grab();
+                Ability_Scratch();
             }
             else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile && DashUp == true)
             {
                 StartCoroutine(Ability_Dash());
             }
-
-            Debug.Log("WOOW A");
         }
         else if (Input.GetButtonDown(_actionKey_B + GetComponent<Player>().playerNum))
         {
@@ -68,9 +66,14 @@ public class AbilityHandler : MonoBehaviour {
 
 
     }
-    public void Ability_Grab()
+    public void Ability_Scratch()
     {
         Debug.Log("grab");
+		//TODO: Show Animation.
+
+		//Make a hitbox and use it with the animation.
+		//If a goblin player is in the hitbox,
+		//Do something...
     }
 
 }
