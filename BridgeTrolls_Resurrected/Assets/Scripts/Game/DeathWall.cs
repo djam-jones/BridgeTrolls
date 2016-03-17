@@ -49,7 +49,6 @@ public class DeathWall : MonoBehaviour {
 			if (timer < 0)
 			{
 				Destroy(danger);
-
 				danger2 = Instantiate(Danger2, dangerposition, transform.rotation) as GameObject;
 				Flip = true;
 				StartCoroutine(LeftToRight());  
@@ -68,8 +67,13 @@ public class DeathWall : MonoBehaviour {
 
 	IEnumerator LeftToRight()
 	{
-		yield return new WaitForSeconds(0.5f);
-		fadeOut(danger2);
+        Color dangercolor = danger2.GetComponentInChildren<SpriteRenderer>().color;
+        yield return new WaitForSeconds(0.5f);
+        for (float i = 1; i > 0; i -= 0.05f)
+        {
+            dangercolor = new Color(1, 1, 1, i);
+            yield return new WaitForSeconds(0.1f);
+        }
 		for (int k = 1; k < 20; k++)
 		{
 			arrowX += new Vector3(1, 0, 0);
@@ -97,33 +101,11 @@ public class DeathWall : MonoBehaviour {
 				arrowY = new Vector3(0, Random.Range(-5.5f, 5.5f), 0);
 				arrow = (arrowX + arrowY);
 				StartTheDeathWall(arrow);
-
 			}
 			yield return new WaitForSeconds(1.2f);
 		}
 	}
 
-	void fadeOut(GameObject danger)
-	{
-		Debug.Log("fadeout");
-		SpriteRenderer[] dangercolors = danger.GetComponentsInChildren<SpriteRenderer>();
-		Color dagcolor = dangercolors[0].color;
-		float duration = 1.0f;
-		Color colorstart = dangercolors[0].material.color;
-		Color colorEnd = new Color(colorstart.r, colorstart.g, colorstart.b, 0.0f);
-		for (float t = 0; t < duration; t += Time.deltaTime)
-		{
-			dagcolor = Color.Lerp(colorstart, colorEnd, t /duration);
-		}
-		/*if (dangercolors[0].color.a > 0)
-        {
-            dangercolors[0].color = new Color(0, 0, 0, Mathf.SmoothStep(255, 0, 0.1f * Time.deltaTime));
-        }
-        else if (dangercolors[0].color.a < 0)
-        {
-            Destroy(danger2);
-        }*/
-	}
 
 	void StartTheDeathWall(Vector3 HitLocation)
 	{
