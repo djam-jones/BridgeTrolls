@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour {
 	[SerializeField, HideInInspector] private string _verticalControl 	= "Vertical_P";
 
 	public float speed;
+	[SerializeField, HideInInspector] private float _scale;
 
 	[SerializeField] private float _minClampedX = -1.6f;
 	[SerializeField] private float _maxClampedX = 1.6f;
@@ -19,10 +20,15 @@ public class Movement : MonoBehaviour {
 	private float _clampOffset = 7;
 
 	private PlayerRoles _playerRolesScript;
+	private Rigidbody2D _rigidbody2D;
+
+	public bool facingRight;
 
 	void Awake()
 	{
 		_playerRolesScript = GetComponent<PlayerRoles>();
+		_rigidbody2D = GetComponent<Rigidbody2D>();
+		_scale = transform.localScale.x;
 	}
 
 	void FixedUpdate()
@@ -55,6 +61,16 @@ public class Movement : MonoBehaviour {
 			h = Input.GetAxis( "Horizontal" ) * speed * Time.deltaTime;
 			v = Input.GetAxis( "Vertical" ) * speed * Time.deltaTime;
 		}
+
+		if(h >= 0.01f)
+		{
+			transform.localScale = new Vector2(_scale, transform.localScale.y);
+		}
+		else if(h <= -0.01f)
+		{
+			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+		}
+
 		transform.Translate(new Vector2(h, v), Space.World);
 	}
 
@@ -62,12 +78,6 @@ public class Movement : MonoBehaviour {
 	{
 		float h;
 		float v;
-
-//		Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
-//			pos.x = Mathf.Clamp(pos.x, _clampOffset, Screen.width - _clampOffset);
-//			pos.y = Mathf.Clamp(pos.y, _clampOffset, Screen.height - _clampOffset);
-//			pos.z = (transform.position.z + 10);
-//		transform.position = Camera.main.ScreenToWorldPoint(pos);
 
 		Vector2 pos = transform.position;
 			pos.x = Mathf.Clamp(pos.x, -11.1f, 11.1f);
@@ -84,6 +94,16 @@ public class Movement : MonoBehaviour {
 			h = Input.GetAxis( "Horizontal" ) * speed * Time.deltaTime;
 			v = Input.GetAxis( "Vertical" ) * speed * Time.deltaTime;
 		}
+
+		if(h >= 0.01f)
+		{
+			transform.localScale = new Vector2(_scale, transform.localScale.y);
+		}
+		else if(h <= -0.01f)
+		{
+			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+		}
+
 		transform.Translate(new Vector2(h, v), Space.World);
 	}
 }

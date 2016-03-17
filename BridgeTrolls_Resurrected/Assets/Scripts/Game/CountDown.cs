@@ -14,7 +14,9 @@ public class CountDown : MonoBehaviour
 	private GameObject _beginScreen;
 
     private string text;
-	private float timer = 3;
+
+	[SerializeField]
+	private float timer = 5;
 		
 	void Awake()
 	{
@@ -43,7 +45,8 @@ public class CountDown : MonoBehaviour
 
 	private IEnumerator DisableObject(GameObject panel)
 	{
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
+		this.enabled = false;
 		panel.SetActive(false);
 	}
 }

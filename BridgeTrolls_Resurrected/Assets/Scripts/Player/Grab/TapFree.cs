@@ -18,6 +18,11 @@ public class TapFree : MonoBehaviour
 
     public Action releaseFunc;
 
+	void Awake()
+	{
+		tapButton = tapButton + GetComponent<Player>().playerNum.ToString();
+	}
+
     private void Start()
     {
         bar = this.transform.GetChild(0).gameObject;

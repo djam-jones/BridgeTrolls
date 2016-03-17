@@ -21,4 +21,12 @@ public class Player : MonoBehaviour {
 	{
 		playerType = characterName;
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.gameObject.tag == Tags.ARROW_TAG)
+		{
+			GetComponent<PlayerRoles>().ChangeRole();
+		}
+	}
 }

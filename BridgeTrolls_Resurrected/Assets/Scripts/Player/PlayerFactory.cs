@@ -25,6 +25,7 @@ public class PlayerFactory : MonoBehaviour {
 		ScoreC _score;
 		SwitchTeam _switch;
 		AbilityHandler _abilityHandler;
+		TapFree _tapFree;
 		SpriteStraightener _straightener;
 
 		string _animatorName = "";
@@ -62,11 +63,12 @@ public class PlayerFactory : MonoBehaviour {
 		_roles = _playerObj.AddComponent<PlayerRoles>();
 
 		_movement = _playerObj.AddComponent<Movement>();
-		_movement.speed = 3f;
+		_movement.speed = 4f;
 
 		_score = _playerObj.AddComponent<ScoreC>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
 		_abilityHandler = _playerObj.AddComponent<AbilityHandler>();
+		//_tapFree = _playerObj.AddComponent<TapFree>();
 
 		//Child GameObject Implementation
 		_childObj.transform.parent = _playerObj.transform;
@@ -75,8 +77,6 @@ public class PlayerFactory : MonoBehaviour {
 		Texture2D childSprite = Resources.Load("Sprites/Players/GoblinIdle") as Texture2D;
 		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
-
-
 
 		switch(playerConstString)
 		{
@@ -100,8 +100,8 @@ public class PlayerFactory : MonoBehaviour {
 		//Implement Player Arrow/Color Indication
 		PlayerIndicator indicator = _playerObj.AddComponent<PlayerIndicator>();
 		indicator.Init();
-//		indicator.SetColor(CharacterDatabase.GetColorById(playerID));
-		indicator.SetSprite(CharacterDatabase.GetSpriteById(playerID));
+		indicator.SetColor(CharacterDatabase.GetColorById(playerID));
+//		indicator.SetSprite(CharacterDatabase.GetSpriteById(playerID));
 
 		_anim.runtimeAnimatorController = Resources.Load("Animations/Characters/" + _animatorName) as RuntimeAnimatorController;
 

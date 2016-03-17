@@ -87,7 +87,7 @@ public class GameMagager : MonoBehaviour {
 		enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 1);
 
 		enemyPlayer.name = enemyPlayer.name + " Troll";								//Set Name to Troll.
-		enemyPlayer.tag = Tags.TROLL_TAG;													//Set Tag to Enemy.
+		enemyPlayer.tag = Tags.TROLL_TAG;											//Set Tag to Enemy.
 
 		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
 		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//Change sprite to the Troll sprite.
@@ -148,7 +148,8 @@ public class GameMagager : MonoBehaviour {
 		//Disable all Player Movement.
 		for(int i = 0; i < playerArray.Count; i++)
 		{
-			playerArray[i].GetComponent<Movement>().enabled = true;
+			if(_gameStarted)
+				playerArray[i].GetComponent<Movement>().enabled = true;
 		}
 
 		//Enable all GamePlay Scripts.
@@ -164,7 +165,7 @@ public class GameMagager : MonoBehaviour {
 			winScreen.SetActive(true);
 			winScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
 
-			print("Game Over!");
+			_gameStarted = false;
 
 			//Disable all Player Movement.
 			for(int i = 0; i < playerArray.Count; i++)

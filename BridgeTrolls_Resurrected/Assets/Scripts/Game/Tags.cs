@@ -11,4 +11,5 @@ public class Tags : MonoBehaviour {
 	public const string FINISH_R_TAG = "FinishR";
 	public const string SCREEN_BOUND_OBJECT_TAG = "Screen Bound";
 	public const string RULE_SET_PANEL_TAG = "Rule Set Panel";
+	public const string ARROW_TAG = "Arrow";
 }
