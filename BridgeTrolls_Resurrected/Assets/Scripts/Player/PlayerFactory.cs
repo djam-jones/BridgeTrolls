@@ -52,9 +52,10 @@ public class PlayerFactory : MonoBehaviour {
 		_boxColliderOffset = _boxCollider.offset;
 		_boxColliderSize = _boxCollider.size;
 
-		_boxColliderOffset.y = -0.5f;
-		_boxColliderSize.x = 0.35f;
-		_boxColliderSize.y = 0.2f;
+		_boxColliderOffset.x = -0.025f;
+		_boxColliderOffset.y = -0.375f;
+		_boxColliderSize.x = 0.5f;
+		_boxColliderSize.y = 0.35f;
 
 		_boxCollider.offset = _boxColliderOffset;
 		_boxCollider.size = _boxColliderSize;
@@ -86,7 +87,7 @@ public class PlayerFactory : MonoBehaviour {
 
 		Texture2D barSprite = Resources.Load("Square-2") as Texture2D;
 		_spriteRenderer = _barObj.AddComponent<SpriteRenderer>();
-		_spriteRenderer.sprite = Sprite.Create(barSprite, new Rect(0, 0, barSprite.width, barSprite.height / 2), new Vector2(0.5f, 0.5f));
+		_spriteRenderer.sprite = Sprite.Create(barSprite, new Rect(0, 0, barSprite.width, barSprite.height), new Vector2(0.5f, 0.5f));
 		_spriteRenderer.color = new Color(0f, 0.5f, 0.16f);
 
 		//Child GameObject Implementation

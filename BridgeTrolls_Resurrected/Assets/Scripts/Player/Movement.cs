@@ -14,8 +14,8 @@ public class Movement : MonoBehaviour {
 	[SerializeField] private float _minClampedX = -1.6f;
 	[SerializeField] private float _maxClampedX = 1.6f;
 
-	[SerializeField] private float _minClampedY = -5.7f;
-	[SerializeField] private float _maxClampedY = 5.7f;
+	[SerializeField] private float _minClampedY = -6f;
+	[SerializeField] private float _maxClampedY = 6f;
 
 	private float _clampOffset = 7;
 
@@ -82,7 +82,7 @@ public class Movement : MonoBehaviour {
 		float v;
 
 		Vector2 pos = transform.position;
-			pos.x = Mathf.Clamp(pos.x, -11.1f, 11.1f);
+			pos.x = Mathf.Clamp(pos.x, -11.5f, 11.5f);
 			pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
 		transform.position = pos;
 

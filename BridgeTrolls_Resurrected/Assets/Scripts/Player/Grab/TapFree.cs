@@ -13,7 +13,7 @@ public class TapFree : MonoBehaviour
     private float shrinkAmt = 0.25f;
     [SerializeField]
     private float barSize = 1.1f;
-    [SerializeField]
+	[SerializeField, HideInInspector]
     private string tapButton = "";
 
     public Action releaseFunc;

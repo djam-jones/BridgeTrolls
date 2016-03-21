@@ -5,9 +5,9 @@ using System.Collections;
 public enum Modes
 {
 	Standard, 
-	Time, 
-	Stocks, 
-	Teams
+	KingOfTheBridge, 
+	ArrowEscape, 
+	Stocks
 }
 
 public class GameModes : MonoBehaviour {
@@ -16,10 +16,13 @@ public class GameModes : MonoBehaviour {
 	public static GameModes Instance {get; private set;}
 
 	//Enumerator
-	[HideInInspector] public Modes gameMode;
-	[HideInInspector] public int gameModeIndex;
+	[HideInInspector] 
+	public Modes gameMode;
+	[HideInInspector]
+	public int gameModeIndex;
 
 	//Savable Game Mode Points;
+	[SerializeField]
 	public int amountOfGamePoints;
 
 	//Standard Game Mode
@@ -63,15 +66,15 @@ public class GameModes : MonoBehaviour {
 			amountOfGamePoints = initialTotalGamePoints;
 			break;
 		case 1:
-			gameMode = Modes.Time;
+			gameMode = Modes.KingOfTheBridge;
 			amountOfGamePoints = gameTime;
 			break;
 		case 2:
-			gameMode = Modes.Stocks;
+			gameMode = Modes.ArrowEscape;
 			amountOfGamePoints = initialStocks;
 			break;
 		case 3:
-			gameMode = Modes.Teams;
+			gameMode = Modes.Stocks;
 			break;
 		}
 	}
