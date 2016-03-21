@@ -7,7 +7,7 @@ public class SafeZone : MonoBehaviour
     [SerializeField]
     private List<GameObject> players;
 	public GameMagager gameManager;
-	public DONOTUSEDeathWall deathWallScript;
+	public DeathWall deathWallScript;
 
 	void Update()
 	{
@@ -41,7 +41,7 @@ public class SafeZone : MonoBehaviour
 		if(players.Count == gameManager.allGoblins.Count)
 		{
 			enablePlayerMovement();
-			deathWallScript.Reset();
+			//deathWallScript.Reset();
 		}
 	}
 }

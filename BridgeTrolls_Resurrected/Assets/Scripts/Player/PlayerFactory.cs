@@ -30,6 +30,8 @@ public class PlayerFactory : MonoBehaviour {
 		SpriteStraightener _straightener;
 
 		string _animatorName = "";
+		Vector2 _boxColliderOffset;
+		Vector2 _boxColliderSize;
 
 		//Sprite Implementation
 		Texture2D playerSprite = Resources.Load("Sprites/Players/GoblinIdle") as Texture2D;
@@ -46,9 +48,16 @@ public class PlayerFactory : MonoBehaviour {
 
 		//Collision Implementation
 		_boxCollider = _playerObj.AddComponent<BoxCollider2D>();
-//		_boxCollider.offset.y = -0.5f;
-//		_boxCollider.size.x = 0.35f;
-//		_boxCollider.size.y = 0.2f;
+
+		_boxColliderOffset = _boxCollider.offset;
+		_boxColliderSize = _boxCollider.size;
+
+		_boxColliderOffset.y = -0.5f;
+		_boxColliderSize.x = 0.35f;
+		_boxColliderSize.y = 0.2f;
+
+		_boxCollider.offset = _boxColliderOffset;
+		_boxCollider.size = _boxColliderSize;
 
 		//Trigger Implementation
 		_boxTrigger = _playerObj.AddComponent<BoxCollider2D>();

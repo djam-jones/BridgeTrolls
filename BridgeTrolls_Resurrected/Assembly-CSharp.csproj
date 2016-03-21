@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Game\CharacterDatabase.cs" />
      <Compile Include="Assets\Scripts\Game\ControllerConnection.cs" />
      <Compile Include="Assets\Scripts\Game\CountDown.cs" />
+     <Compile Include="Assets\Scripts\Game\DONOTUSEDeathWall.cs" />
      <Compile Include="Assets\Scripts\Game\DeathWall.cs" />
      <Compile Include="Assets\Scripts\Game\FadeScreen.cs" />
      <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
