@@ -63,9 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CountDown.cs" />
     <Compile Include="Assets\Scripts\Game\CharacterDatabase.cs" />
     <Compile Include="Assets\Scripts\Game\ControllerConnection.cs" />
+    <Compile Include="Assets\Scripts\Game\CountDown.cs" />
+    <Compile Include="Assets\Scripts\Game\DONOTUSEDeathWall.cs" />
     <Compile Include="Assets\Scripts\Game\DeathWall.cs" />
     <Compile Include="Assets\Scripts\Game\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\Game\GameMagager.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\Game\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Game\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\Game\Tags.cs" />
+    <Compile Include="Assets\Scripts\Game\WinScreen.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
     <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
     <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />
@@ -95,7 +97,7 @@
     <Compile Include="Assets\Scripts\Player\Score.cs" />
     <Compile Include="Assets\Scripts\Player\SwitchTeam.cs" />
     <Compile Include="Assets\Scripts\SpriteStraightener.cs" />
-    <Compile Include="Assets\WinScreen.cs" />
+    <Compile Include="Assets\Tutorial.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

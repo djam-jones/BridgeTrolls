@@ -7,7 +7,7 @@ public class SafeZone : MonoBehaviour
     [SerializeField]
     private List<GameObject> players;
 	public GameMagager gameManager;
-	public DeathWall deathWallScript;
+	public DONOTUSEDeathWall deathWallScript;
 
 	void Update()
 	{
