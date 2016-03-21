@@ -64,11 +64,13 @@ public class Movement : MonoBehaviour {
 
 		if(h >= 0.01f)
 		{
-			transform.localScale = new Vector2(_scale, transform.localScale.y);
+//			transform.localScale = new Vector2(_scale, transform.localScale.y);
+			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 		else if(h <= -0.01f)
 		{
-			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+			gameObject.GetComponent<SpriteRenderer>().flipX = true;
 		}
 
 		transform.Translate(new Vector2(h, v), Space.World);

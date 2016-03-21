@@ -3,21 +3,21 @@ using System.Collections;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField]private Canvas pauseMenu;
+	[SerializeField] private GameObject pauseMenu;
 	//Start Button
 	[SerializeField] private const string START_GAME_BUTTON = "StartGameButton";
 
 	void Awake()
 	{
-		pauseMenu.enabled = false;
+		pauseMenu.SetActive(false);
 	}
 
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.P) && pauseMenu.enabled == false || Input.GetButtonDown(START_GAME_BUTTON) && pauseMenu.enabled == false)
+		if (Input.GetKeyDown(KeyCode.P) && pauseMenu.activeInHierarchy == false || Input.GetButtonDown(START_GAME_BUTTON) && pauseMenu.activeInHierarchy == false)
         {
             Debug.Log("disable");
-            pauseMenu.enabled = true;
+			pauseMenu.SetActive(true);
 
 			//Disable Movement for every Player.
 			for(int i = 0; i < GetComponent<GameMagager>().playerArray.Count; i++)
@@ -27,7 +27,7 @@ public class Pause : MonoBehaviour
             
 			GetComponent<DeathWall>().enabled = false;
         }
-		else if (Input.GetKeyDown(KeyCode.P) && pauseMenu.enabled == true || Input.GetButtonDown(START_GAME_BUTTON) && pauseMenu.enabled == true)
+		else if (Input.GetKeyDown(KeyCode.P) && pauseMenu.activeInHierarchy == true || Input.GetButtonDown(START_GAME_BUTTON) && pauseMenu.activeInHierarchy == true)
         {
 			ContinueGame();
         }
@@ -35,12 +35,14 @@ public class Pause : MonoBehaviour
 
 	public void ContinueGame()
 	{
-		pauseMenu.enabled = false;
+		pauseMenu.SetActive(false);
 
 		//Enable Movement for every Player.
 		for(int i = 0; i < GetComponent<GameMagager>().playerArray.Count; i++)
 		{
 			GetComponent<GameMagager>().playerArray[i].GetComponent<Movement>().enabled = true;
 		}
+
+		GetComponent<DeathWall>().enabled = true;
 	}
 }

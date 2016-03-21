@@ -5,9 +5,9 @@ public class SwitchTeam : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == ("Enemy"))
+		if (other.tag == Tags.TROLL_TAG || other.tag == Tags.ARROW_TAG)
         {
-            tag = "Minion"; 
+			tag = Tags.MINION_TAG; 
             transform.position = new Vector2(0, 0);
             PlayerRoles roles = GetComponent<PlayerRoles>();
             roles.ChangeRole();

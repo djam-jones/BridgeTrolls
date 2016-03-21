@@ -13,6 +13,7 @@ public class PlayerFactory : MonoBehaviour {
 	{
 		GameObject _playerObj = new GameObject();
 		GameObject _childObj = new GameObject();
+		GameObject _barObj = new GameObject();
 		Rigidbody2D _rigid2D;
 		Animator _anim;
 		SpriteRenderer _spriteRenderer;
@@ -68,7 +69,16 @@ public class PlayerFactory : MonoBehaviour {
 		_score = _playerObj.AddComponent<ScoreC>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
 		_abilityHandler = _playerObj.AddComponent<AbilityHandler>();
-		//_tapFree = _playerObj.AddComponent<TapFree>();
+		_tapFree = _playerObj.AddComponent<TapFree>();
+
+		//Bar GameObject Implementation
+		_barObj.transform.parent = _playerObj.transform;
+		_barObj.transform.position = new Vector2(0, 0.75f);
+
+		Texture2D barSprite = Resources.Load("Square-2") as Texture2D;
+		_spriteRenderer = _barObj.AddComponent<SpriteRenderer>();
+		_spriteRenderer.sprite = Sprite.Create(barSprite, new Rect(0, 0, barSprite.width, barSprite.height / 2), new Vector2(0.5f, 0.5f));
+		_spriteRenderer.color = new Color(0f, 0.5f, 0.16f);
 
 		//Child GameObject Implementation
 		_childObj.transform.parent = _playerObj.transform;

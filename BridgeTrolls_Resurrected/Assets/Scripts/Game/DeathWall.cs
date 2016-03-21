@@ -153,6 +153,8 @@ public class DeathWall : MonoBehaviour {
 	public void Reset()
 	{
 		if(timer < _initialTime)
+		{
 			timer = _initialTime;
+		}
 	}
 }

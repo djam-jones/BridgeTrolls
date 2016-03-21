@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerIndicator : MonoBehaviour {
 
 	private GameObject _indicator;
-	[HideInInspector] public float yValue = 1f;
+	[HideInInspector] public float yValue = 0.75f;
 
 	public void Init()
 	{
@@ -21,9 +21,9 @@ public class PlayerIndicator : MonoBehaviour {
 		spriteRenderer.color = color;
 	}
 
-	public void SetSprite(Sprite sprite)
+	public void SetSprite(Texture2D sprite)
 	{
 		SpriteRenderer spriteRenderer = _indicator.GetComponent<SpriteRenderer>();
-		spriteRenderer.sprite = sprite;
+		spriteRenderer.sprite = Sprite.Create(sprite, new Rect(0, 0, sprite.width, sprite.height), new Vector2(0.5f, 0.5f));
 	}
 }
