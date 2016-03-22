@@ -55,6 +55,7 @@ public class GameModes : MonoBehaviour {
 		SwitchGameModes(gameModeIndex);
 		if(pointsText != null)
 			pointsText.text = amountOfGamePoints.ToString();
+		else{}
 	}
 
 	private void SwitchGameModes(int index)
@@ -71,10 +72,11 @@ public class GameModes : MonoBehaviour {
 			break;
 		case 2:
 			gameMode = Modes.ArrowEscape;
-			amountOfGamePoints = initialStocks;
+			//amountOfGamePoints = initialStocks;
 			break;
 		case 3:
 			gameMode = Modes.Stocks;
+			amountOfGamePoints = initialStocks;
 			break;
 		}
 	}

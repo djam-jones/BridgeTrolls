@@ -22,6 +22,9 @@ public class GameMagager : MonoBehaviour {
 	public List<GameObject> allGoblins = new List<GameObject>();
 	public List<GameObject> allMinions = new List<GameObject>();
 
+	[HideInInspector]
+	public List<GameObject> rightSidedPlayers = new List<GameObject>();
+
 	public Sprite trollSprite;
 
 	//Win Screen
