@@ -6,15 +6,11 @@ public class ScoreC : MonoBehaviour
     public int score;
     public bool beenRight = false;
 
-	private GameObject _gameManager;
-	private GameModes _gameModesScript;
-	private GameMagager _gameManagerScript;
+	private GameObject _gameHandler;
 
 	void Awake()
 	{
-		_gameManager = GameObject.Find("GameHandeler");
-		_gameModesScript = _gameManager.GetComponent<GameModes>();
-		_gameManagerScript = _gameManager.GetComponent<GameMagager>();
+		_gameHandler = GameObject.Find("GameHandeler");
 	}
 
 	void Update()
@@ -25,34 +21,34 @@ public class ScoreC : MonoBehaviour
 
 	public void CheckRightList()
 	{
-		if( beenRight && !_gameManagerScript.rightSidedPlayers.Contains(this.gameObject) )
+		if( beenRight && !_gameHandler.GetComponent<GameMagager>().rightSidedPlayers.Contains(this.gameObject) )
 		{
-			_gameManagerScript.rightSidedPlayers.Add(this.gameObject);
+			GameMagager.Instance.rightSidedPlayers.Add(this.gameObject);
 		}
-		else if(!beenRight && _gameManagerScript.rightSidedPlayers.Contains(this.gameObject))
+		else if(!beenRight && _gameHandler.GetComponent<GameMagager>().rightSidedPlayers.Contains(this.gameObject))
 		{
-			_gameManagerScript.rightSidedPlayers.Remove(this.gameObject);
+			GameMagager.Instance.rightSidedPlayers.Remove(this.gameObject);
 		}
 	}
 
 	private void StandardGameModeInstance()
 	{
-		if(_gameModesScript.gameMode == Modes.Standard)
+		if(_gameHandler.GetComponent<GameModes>().gameMode == Modes.Standard)
 		{
-			if(score == PlayerPrefs.GetInt("AmountOfGamePoints") && GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && _gameManagerScript.allGoblins.Count != 0)
+			if(score == PlayerPrefs.GetInt("AmountOfGamePoints") && GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && _gameHandler.GetComponent<GameMagager>().allGoblins.Count != 0)
 			{
 				//Win Game.
 				print ("Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
 				PlayerPrefs.SetString( "PlayerThatWon", "Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
-				_gameManagerScript.gameOver = true;
+				_gameHandler.GetComponent<GameMagager>().gameOver = true;
 			}
-			else if(GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _gameManagerScript.allGoblins.Count == 0)
+			else if(GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _gameHandler.GetComponent<GameMagager>().allGoblins.Count == 0)
 			{
 				print ("Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
 				PlayerPrefs.SetString( "PlayerThatWon", "Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
-				_gameManagerScript.gameOver = true;
+				_gameHandler.GetComponent<GameMagager>().gameOver = true;
 			}
 		}
 	}

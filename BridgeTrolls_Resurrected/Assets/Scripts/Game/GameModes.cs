@@ -12,9 +12,6 @@ public enum Modes
 
 public class GameModes : MonoBehaviour {
 
-	//Instance
-	public static GameModes Instance {get; private set;}
-
 	//Enumerator
 	[HideInInspector] 
 	public Modes gameMode;
@@ -44,6 +41,9 @@ public class GameModes : MonoBehaviour {
 	public Text pointsText;
 	public Button leftSelectionArrow;
 	public Button rightSelectionArrow;
+
+	//Instance
+	public static GameModes Instance {get; private set;}
 
 	void Awake()
 	{
