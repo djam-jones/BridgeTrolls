@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Game\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Game\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\Game\Tags.cs" />
+    <Compile Include="Assets\Scripts\Game\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Game\WinScreen.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
     <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\Menu\HubHandler.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuHandler.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuTransition.cs" />
+    <Compile Include="Assets\Scripts\Menu\Options.cs" />
     <Compile Include="Assets\Scripts\Menu\Pause.cs" />
     <Compile Include="Assets\Scripts\Player\AbilityHandler.cs" />
     <Compile Include="Assets\Scripts\Player\Grab\Grab.cs" />
@@ -97,7 +99,6 @@
     <Compile Include="Assets\Scripts\Player\Score.cs" />
     <Compile Include="Assets\Scripts\Player\SwitchTeam.cs" />
     <Compile Include="Assets\Scripts\SpriteStraightener.cs" />
-    <Compile Include="Assets\Tutorial.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

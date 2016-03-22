@@ -6,10 +6,14 @@ using System.Collections.Generic;
 public class DeathWall : MonoBehaviour {
 
 	private RuntimeAnimatorController animations;
+    private GameObject newarrow;
+    private List<GameObject> arrowlist = new List<GameObject>();
 
 	[SerializeField]private GameObject arrow;
+    [SerializeField]private GameObject StartWallAnimation;
+    [SerializeField]private GameObject AfterWallAnimation;
 
-	[SerializeField]private RuntimeAnimatorController sprite1;
+    [SerializeField]private RuntimeAnimatorController sprite1;
 	[SerializeField]private RuntimeAnimatorController sprite2;
 	[SerializeField]private RuntimeAnimatorController sprite3;
 	// Use this for initialization
@@ -23,38 +27,133 @@ public class DeathWall : MonoBehaviour {
 	{
 		if (Input.GetKeyDown(KeyCode.A))
 		{
-			StartCoroutine(spawnArrows());
+			StartCoroutine(spawnArrowsToRight());
 		}
-	}
 
-	IEnumerator spawnArrows()
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            StartCoroutine(spawnArrowsToLeft());
+        }
+	}
+    IEnumerator spawnArrowsToLeft()
+    {
+
+        GameObject newDangerAnim = Instantiate(StartWallAnimation, new Vector2(5.81f, 0), transform.rotation) as GameObject;
+        yield return new WaitForSeconds(3f);
+        Destroy(newDangerAnim);
+        GameObject newDangerAnimAfter = Instantiate(AfterWallAnimation, new Vector2(5.81f, 0), transform.rotation) as GameObject;
+
+        SpriteRenderer[] dangercolor = newDangerAnimAfter.GetComponentsInChildren<SpriteRenderer>();
+        yield return new WaitForSeconds(0.2f);
+
+        for (float i = 1; i > 0; i -= 0.05f)
+        {
+            dangercolor[0].color = new Color(1, 1, 1, i);
+            yield return new WaitForSeconds(0.1f);
+
+            if (i < 0.1f)
+            {
+                Destroy(newDangerAnimAfter);
+            }
+        }
+
+        for (int x = 10; x >= -10; x--)
+        {
+            for(int y = 5; y>= -6; y--)
+            {
+                Vector2 position = new Vector2(x + Random.Range(0.5f, -0.5f), y + Random.Range(0.5f, -0.5f));
+                if (position.y > 5.07)
+                {
+                    position.y = 4.9f;
+                }
+                if (position.x > 10)
+                {
+                    position.x = 10;
+                }
+                else if (position.x < -10)
+                {
+                    position.x = -10;
+                }
+                arrow.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)(RandomSprite(animations));
+                newarrow = Instantiate(arrow, position, transform.rotation) as GameObject;
+                arrowlist.Add(newarrow);
+                newarrow.GetComponent<SpriteRenderer>().flipX = false;
+                newarrow.GetComponent<SpriteRenderer>().sortingOrder = ((int)newarrow.transform.position.y * -1) + 7;
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+        StartCoroutine(removeArrows());
+    }
+	IEnumerator spawnArrowsToRight()
 	{
-		for (int x = -10; x <= 10; x += 1)
+        GameObject newDangerAnim = Instantiate(StartWallAnimation, new Vector2(-5.88f, 0), transform.rotation) as GameObject;
+        yield return new WaitForSeconds(3f);
+        Destroy(newDangerAnim);
+        GameObject newDangerAnimAfter = Instantiate(AfterWallAnimation, new Vector2(-5.88f, 0), transform.rotation) as GameObject;
+
+        SpriteRenderer[] dangercolor = newDangerAnimAfter.GetComponentsInChildren<SpriteRenderer>();
+        yield return new WaitForSeconds(0.2f);
+
+        for (float i = 1; i > 0; i -= 0.05f)
+        {
+            dangercolor[0].color = new Color(1, 1, 1, i);
+            yield return new WaitForSeconds(0.1f);
+
+            if (i < 0.1f)
+            {
+                Destroy(newDangerAnimAfter);
+            }
+        }
+
+        for (int x = -10; x <= 10; x += 1)
 		{
 
 			for (int y = -6; y <=  5; y += 1)
 			{
-				Vector2 position = new Vector2(x + Random.Range(0.5f,-0.5f),y + Random.Range(0.5f,-0.5f));
-				if (position.y > 5.07)
-				{
-					position.y = 4.9f;
-				}
-				if(position.x > 10)
-				{
-					position.x = 10;
-				}
-				else if(position.x < -10)
-				{
-					position.x = -10;
-				}
-				arrow.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)(RandomSprite(animations));
-				GameObject newarrow = Instantiate(arrow, position, transform.rotation) as GameObject;
-				newarrow.GetComponent<SpriteRenderer>().sortingOrder = ((int)newarrow.transform.position.y *-1) + 7;
+                Vector2 position = new Vector2(x + Random.Range(0.5f, -0.5f), y + Random.Range(0.5f, -0.5f));
+                if (position.y > 5.07)
+                {
+                    position.y = 4.9f;
+                }
+                if (position.x > 10)
+                {
+                    position.x = 10;
+                }
+                else if (position.x < -10)
+                {
+                    position.x = -10;
+                }
+                arrow.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)(RandomSprite(animations));
+				newarrow = Instantiate(arrow, position, transform.rotation) as GameObject;
+                arrowlist.Add(newarrow);
+                newarrow.GetComponent<SpriteRenderer>().flipX = true;
+                newarrow.GetComponent<SpriteRenderer>().sortingOrder = ((int)newarrow.transform.position.y *-1) + 7;
 				yield return new WaitForSeconds(0.01f);
 			}
 		}
-
+        StartCoroutine(removeArrows());
 	}
+
+    IEnumerator removeArrows()
+    {
+        for (float i = 1; i > 0; i -= 0.05f)
+        {
+            for (int j = 0; j < arrowlist.Count; j++)
+            { 
+                arrowlist[j].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, i);
+            }
+            yield return new WaitForSeconds(0.1f);
+
+            if (i < 0.1f)
+            {
+                foreach(GameObject arrow in arrowlist)
+                {
+                    Destroy(arrow);
+                }
+                arrowlist.Clear();
+            }
+        }
+    }
 
 	RuntimeAnimatorController  RandomSprite(RuntimeAnimatorController sprite)
 	{
