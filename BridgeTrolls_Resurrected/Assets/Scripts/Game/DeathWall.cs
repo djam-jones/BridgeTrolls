@@ -20,7 +20,7 @@ public class DeathWall : MonoBehaviour {
 	[SerializeField]private RuntimeAnimatorController sprite2;
 	[SerializeField]private RuntimeAnimatorController sprite3;
 
-	public Text deathWallTimerText;
+	[SerializeField]public Text deathWallTimerText;
 
 	// Update is called once per frame
 	void Update()

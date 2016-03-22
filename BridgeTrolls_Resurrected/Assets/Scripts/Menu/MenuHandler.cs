@@ -23,7 +23,7 @@ public class MenuHandler : MonoBehaviour {
 	public GameObject buttonsPanel;
 
 	//Texts
-	public Text title;
+	public Image title;
 	public Text pressA;
 
 	//Axes
