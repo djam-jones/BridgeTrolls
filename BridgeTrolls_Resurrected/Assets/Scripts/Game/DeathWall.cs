@@ -19,11 +19,8 @@ public class DeathWall : MonoBehaviour {
     [SerializeField]private RuntimeAnimatorController sprite1;
 	[SerializeField]private RuntimeAnimatorController sprite2;
 	[SerializeField]private RuntimeAnimatorController sprite3;
-	// Use this for initialization
-	void Start()
-	{
 
-	}
+	public Text deathWallTimerText;
 
 	// Update is called once per frame
 	void Update()
@@ -44,6 +41,8 @@ public class DeathWall : MonoBehaviour {
             StartCoroutine(spawnArrowsToLeft());
             deadplaying = true;
         }
+
+		deathWallTimerText.text = timer.ToString("F1");
 	}
     IEnumerator spawnArrowsToLeft()
     {
@@ -174,6 +173,15 @@ public class DeathWall : MonoBehaviour {
 		}
 		return sprite;
 
+	}
+
+	public void Reset()
+	{
+		if(timer < 30)
+			timer = 30;
+
+		if(deadplaying = true)
+			deadplaying = false;
 	}
 
 }

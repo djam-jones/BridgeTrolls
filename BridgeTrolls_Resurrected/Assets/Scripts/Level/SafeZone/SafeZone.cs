@@ -41,7 +41,7 @@ public class SafeZone : MonoBehaviour
 		if(players.Count == gameManager.allGoblins.Count)
 		{
 			enablePlayerMovement();
-			//deathWallScript.Reset();
+			deathWallScript.Reset();
 		}
 	}
 }
