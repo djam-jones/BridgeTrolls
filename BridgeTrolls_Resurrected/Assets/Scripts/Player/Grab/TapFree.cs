@@ -6,22 +6,17 @@ public class TapFree : MonoBehaviour
 {
     private GameObject bar;
     [SerializeField]
-    private float strength = 3;
+    private float strength = 0.75f;
     [SerializeField]
     private float growAmt = 0.15f;
     [SerializeField]
     private float shrinkAmt = 0.25f;
     [SerializeField]
-    private float barSize = 1.1f;
+    private float barSize = 0.9f;
 	[SerializeField, HideInInspector]
-    private string tapButton = "";
+    private string tapButton = "Fire1_P";
 
     public Action releaseFunc;
-
-	void Awake()
-	{
-		tapButton = tapButton + GetComponent<Player>().playerNum.ToString();
-	}
 
     private void Start()
     {
@@ -42,7 +37,7 @@ public class TapFree : MonoBehaviour
     private void Update()
     {
         //Debug.Log(grabber);
-        if(Input.GetKeyDown(tapButton))
+		if(Input.GetButtonDown(tapButton + GetComponentInParent<Player>().playerNum.ToString()))
         {
             bar.transform.localScale += new Vector3(growAmt, 0, 0);
         }

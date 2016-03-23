@@ -94,6 +94,19 @@ public class GameMagager : MonoBehaviour {
 
 		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
 		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//Change sprite to the Troll sprite.
+
+		//Set the Box Collider needs to those of the Troll.
+		BoxCollider2D _boxCollider = enemyPlayer.GetComponents<BoxCollider2D>()[0];
+		Vector2 _boxColliderOffset;
+		Vector2 _boxColliderSize;
+
+		_boxColliderOffset.x = 0.1306415f;
+		_boxColliderOffset.y = -0.8419237f;
+		_boxColliderSize.x = 1f;
+		_boxColliderSize.y = 0.75f;
+
+		_boxCollider.offset = _boxColliderOffset;
+		_boxCollider.size = _boxColliderSize;
 	}
 
 	private void InstantiatePlayersAndAddToList()

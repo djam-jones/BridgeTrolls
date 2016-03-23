@@ -14,8 +14,8 @@ public class Movement : MonoBehaviour {
 	[SerializeField] private float _minClampedX = -1.6f;
 	[SerializeField] private float _maxClampedX = 1.6f;
 
-	[SerializeField] private float _minClampedY = -6f;
-	[SerializeField] private float _maxClampedY = 6f;
+	[SerializeField] private float _minClampedY = -6.5f;
+	[SerializeField] private float _maxClampedY = 6.5f;
 
 	private float _clampOffset = 7;
 
@@ -34,9 +34,9 @@ public class Movement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		if(_playerRolesScript.playerRoles == Roles.Neutral)
-			Move();
+			Move(-11.5f, 11.5f);
 		else if(_playerRolesScript.playerRoles == Roles.Minion)
-			Move();
+			Move(-9.5f, 9.5f);
 		else if(_playerRolesScript.playerRoles == Roles.Hostile)
 			ClampedMove();
 	}
@@ -76,13 +76,13 @@ public class Movement : MonoBehaviour {
 		transform.Translate(new Vector2(h, v), Space.World);
 	}
 
-	private void Move()
+	private void Move(float clampMin, float clampMax)
 	{
 		float h;
 		float v;
 
 		Vector2 pos = transform.position;
-			pos.x = Mathf.Clamp(pos.x, -11.5f, 11.5f);
+			pos.x = Mathf.Clamp(pos.x, clampMin, clampMax);
 			pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
 		transform.position = pos;
 

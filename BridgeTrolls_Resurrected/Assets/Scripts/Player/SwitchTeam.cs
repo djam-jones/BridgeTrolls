@@ -19,6 +19,7 @@ public class SwitchTeam : MonoBehaviour
 				if(!this.gameObject.GetComponent<Grab>())	
 					this.gameObject.AddComponent<Grab>();
 	            
+				Destroy(GetComponent<TapFree>());
 				Destroy(GetComponent<Score>());
 	            Destroy(GetComponent<SwitchTeam>());
 			}

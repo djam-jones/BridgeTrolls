@@ -17,8 +17,20 @@ public class Player : MonoBehaviour {
 		playerType = "Typeless";
 	}
 
+	void Update()
+	{
+		SetSortingOrder();
+
+		transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
+	}
+
 	public void SetCharacter(string characterName)
 	{
 		playerType = characterName;
+	}
+
+	private void SetSortingOrder()
+	{
+		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * 1);
 	}
 }

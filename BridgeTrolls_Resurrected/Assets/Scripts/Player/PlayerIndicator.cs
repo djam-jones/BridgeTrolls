@@ -12,6 +12,7 @@ public class PlayerIndicator : MonoBehaviour {
 		_indicator = Instantiate(newIndicator, this.transform.position + new Vector3(0f, yValue, 0f), newIndicator.transform.rotation) as GameObject;
 		_indicator.transform.parent = this.transform;
 		_indicator.transform.localScale *= 0.4f;
+		_indicator.GetComponent<SpriteRenderer>().sortingOrder = 10;
 	}
 
 	public void SetColor(Color color)

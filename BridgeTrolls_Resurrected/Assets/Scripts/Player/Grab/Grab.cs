@@ -40,6 +40,8 @@ public class Grab : MonoBehaviour
         connector.anchor = hingeOffset;
         connector.connectedBody = this.gameObject.GetComponent<Rigidbody2D>();
         player.GetComponent<Movement>().enabled = false;
+		player.transform.GetChild(0).gameObject.SetActive(true);
+		player.transform.GetChild(0).GetComponent<TapFree>().releaseFunc = disconnectPlayers;
         grabbing = true;
     }
 
@@ -50,6 +52,7 @@ public class Grab : MonoBehaviour
         player.transform.rotation = Quaternion.identity;    
         Destroy(player.GetComponent<HingeJoint2D>());
         player.GetComponent<Movement>().enabled = true;
+		player.transform.GetChild(0).gameObject.SetActive(false);
         player = null;
     }
 

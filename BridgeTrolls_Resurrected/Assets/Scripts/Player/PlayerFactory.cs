@@ -14,6 +14,7 @@ public class PlayerFactory : MonoBehaviour {
 		GameObject _playerObj = new GameObject();
 		GameObject _childObj = new GameObject();
 		GameObject _barObj = new GameObject();
+		GameObject _grabStuff = new GameObject();
 		Rigidbody2D _rigid2D;
 		Animator _anim;
 		SpriteRenderer _spriteRenderer;
@@ -79,18 +80,28 @@ public class PlayerFactory : MonoBehaviour {
 		_score = _playerObj.AddComponent<ScoreC>();
 		_switch = _playerObj.AddComponent<SwitchTeam>();
 		_abilityHandler = _playerObj.AddComponent<AbilityHandler>();
-		_tapFree = _playerObj.AddComponent<TapFree>();
+
+		//Grab Stuff Implementation
+		_grabStuff.name = "Grab Stuff";
+		_grabStuff.transform.parent = _playerObj.transform;
+		_grabStuff.transform.position = new Vector2(0, 0f);
+		_grabStuff.SetActive(false);
+		_tapFree = _grabStuff.AddComponent<TapFree>();
 
 		//Bar GameObject Implementation
-		_barObj.transform.parent = _playerObj.transform;
+		_barObj.name = "Tapping Bar";
+		_barObj.transform.parent = _grabStuff.transform;
 		_barObj.transform.position = new Vector2(0, 0.75f);
+		_barObj.transform.localScale = new Vector3(1, 0.1f, 1);
 
 		Texture2D barSprite = Resources.Load("Square-2") as Texture2D;
 		_spriteRenderer = _barObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(barSprite, new Rect(0, 0, barSprite.width, barSprite.height), new Vector2(0.5f, 0.5f));
 		_spriteRenderer.color = new Color(0f, 0.5f, 0.16f);
+		_spriteRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
 
 		//Child GameObject Implementation
+		_childObj.name = "Straighthened Sprite";
 		_childObj.transform.parent = _playerObj.transform;
 		_straightener = _childObj.AddComponent<SpriteStraightener>();
 

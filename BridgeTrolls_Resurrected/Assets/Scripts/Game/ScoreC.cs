@@ -46,7 +46,7 @@ public class ScoreC : MonoBehaviour
 			else if(GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _gameHandler.GetComponent<GameMagager>().allGoblins.Count == 0)
 			{
 				print ("Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
-				PlayerPrefs.SetString( "PlayerThatWon", "Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
+				PlayerPrefs.SetString( "PlayerThatWon", "Troll " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
 				_gameHandler.GetComponent<GameMagager>().gameOver = true;
 			}
