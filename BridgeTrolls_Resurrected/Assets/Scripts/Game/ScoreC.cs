@@ -42,6 +42,7 @@ public class ScoreC : MonoBehaviour
 				PlayerPrefs.SetString( "PlayerThatWon", "Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
 				_gameHandler.GetComponent<GameMagager>().gameOver = true;
+				_gameHandler.GetComponent<GameMagager>().trollWins = false;
 			}
 			else if(GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _gameHandler.GetComponent<GameMagager>().allGoblins.Count == 0)
 			{
@@ -49,6 +50,7 @@ public class ScoreC : MonoBehaviour
 				PlayerPrefs.SetString( "PlayerThatWon", "Troll " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
 				_gameHandler.GetComponent<GameMagager>().gameOver = true;
+				_gameHandler.GetComponent<GameMagager>().trollWins = true;
 			}
 		}
 	}

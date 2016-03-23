@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour {
 	private PlayerRoles _playerRolesScript;
 	private Rigidbody2D _rigidbody2D;
 
-	public bool facingRight;
+	public bool facingRight = false;
 
 	void Awake()
 	{
@@ -64,13 +64,13 @@ public class Movement : MonoBehaviour {
 
 		if(h >= 0.01f)
 		{
-//			transform.localScale = new Vector2(_scale, transform.localScale.y);
-			gameObject.GetComponent<SpriteRenderer>().flipX = false;
+//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+			gameObject.GetComponent<SpriteRenderer>().flipX = true;
 		}
 		else if(h <= -0.01f)
 		{
-//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
-			gameObject.GetComponent<SpriteRenderer>().flipX = true;
+//			transform.localScale = new Vector2(_scale, transform.localScale.y);
+			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 
 		transform.Translate(new Vector2(h, v), Space.World);
@@ -99,11 +99,13 @@ public class Movement : MonoBehaviour {
 
 		if(h >= 0.01f)
 		{
-			transform.localScale = new Vector2(_scale, transform.localScale.y);
+//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+			gameObject.GetComponent<SpriteRenderer>().flipX = true;
 		}
 		else if(h <= -0.01f)
 		{
-			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+//			transform.localScale = new Vector2(_scale, transform.localScale.y);
+			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 
 		transform.Translate(new Vector2(h, v), Space.World);

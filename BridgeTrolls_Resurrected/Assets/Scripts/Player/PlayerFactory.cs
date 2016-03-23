@@ -12,7 +12,7 @@ public class PlayerFactory : MonoBehaviour {
 	public static GameObject CreatePlayer(string playerConstString, int playerID)
 	{
 		GameObject _playerObj = new GameObject();
-		GameObject _childObj = new GameObject();
+//		GameObject _childObj = new GameObject();
 		GameObject _barObj = new GameObject();
 		GameObject _grabStuff = new GameObject();
 		Rigidbody2D _rigid2D;
@@ -101,13 +101,13 @@ public class PlayerFactory : MonoBehaviour {
 		_spriteRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
 
 		//Child GameObject Implementation
-		_childObj.name = "Straighthened Sprite";
-		_childObj.transform.parent = _playerObj.transform;
-		_straightener = _childObj.AddComponent<SpriteStraightener>();
-
-		Texture2D childSprite = Resources.Load("Sprites/Players/GoblinIdle") as Texture2D;
-		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
-		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
+//		_childObj.name = "Straighthened Sprite";
+//		_childObj.transform.parent = _playerObj.transform;
+//		_straightener = _childObj.AddComponent<SpriteStraightener>();
+//
+//		Texture2D childSprite = Resources.Load("Sprites/Players/GoblinIdle") as Texture2D;
+//		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
+//		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
 
 		switch(playerConstString)
 		{
@@ -131,8 +131,8 @@ public class PlayerFactory : MonoBehaviour {
 		//Implement Player Arrow/Color Indication
 		PlayerIndicator indicator = _playerObj.AddComponent<PlayerIndicator>();
 		indicator.Init();
-		indicator.SetColor(CharacterDatabase.GetColorById(playerID));
-//		indicator.SetSprite(CharacterDatabase.GetSpriteById(playerID));
+//		indicator.SetColor(CharacterDatabase.GetColorById(playerID));
+		indicator.SetSprite(CharacterDatabase.GetSpriteById(playerID));
 
 		_anim.runtimeAnimatorController = Resources.Load("Animations/Characters/" + _animatorName) as RuntimeAnimatorController;
 

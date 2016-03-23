@@ -74,43 +74,32 @@ public class CharacterDatabase : MonoBehaviour {
 	public static Texture2D GetSpriteById(int i)
 	{
 		Texture2D sprite = new Texture2D(56, 60);
-		Object[] sprites;
-		sprites = Resources.LoadAll("Spritesheets/Player_Indicators");
-		sprite = (Texture2D)sprites[i];
 
 		switch(i)
 		{
 		case 0:
-			sprite = sprites[0] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_0") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_0") as Texture2D;
 			break;
 		case 1:
-			sprite = sprites[1] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_1") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_1") as Texture2D;
 			break;
 		case 2:
-			sprite = sprites[2] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_2") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_2") as Texture2D;
 			break;
 		case 3:
-			sprite = sprites[3] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_3") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_3") as Texture2D;
 			break;
 		case 4:
-			sprite = sprites[4] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_4") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_4") as Texture2D;
 			break;
 		case 5:
-			sprite = sprites[5] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_5") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_5") as Texture2D;
 			break;
 		case 6:
-			sprite = sprites[6] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_6") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_6") as Texture2D;
 			break;
 		case 7:
-			sprite = sprites[7] as Texture2D;
-//			sprite = Resources.Load("Spritesheets/Player_Indicators_7") as Texture2D;
+			sprite = Resources.Load("Sprites/PlayerIndicators/Player_Indicators_7") as Texture2D;
 			break;
 		}
 		return sprite;

@@ -3,6 +3,13 @@ using System.Collections;
 
 public class SwitchTeam : MonoBehaviour 
 {
+	[SerializeField] private Texture2D _minionSprite;
+
+	void Awake()
+	{
+		_minionSprite = Resources.Load("Sprites/Players/Minion") as Texture2D;
+	}
+
     void OnTriggerEnter2D(Collider2D other)
     {
 		PlayerRoles roles = GetComponent<PlayerRoles>();
@@ -14,7 +21,8 @@ public class SwitchTeam : MonoBehaviour
 				tag = Tags.MINION_TAG; 
 	            transform.position = new Vector2(0, 0);
 	            roles.ChangeRole();
-				GetComponent<SpriteRenderer>().color = new Color(0.56f, 0, 0.8f);
+				GetComponent<SpriteRenderer>().sprite = Sprite.Create(_minionSprite, new Rect(0, 0, _minionSprite.width, _minionSprite.height), new Vector2(0.5f, 0.5f));
+//				GetComponent<SpriteRenderer>().color = new Color(0.56f, 0, 0.8f);
 
 				if(!this.gameObject.GetComponent<Grab>())	
 					this.gameObject.AddComponent<Grab>();

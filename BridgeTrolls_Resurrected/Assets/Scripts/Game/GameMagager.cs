@@ -10,8 +10,10 @@ public class GameMagager : MonoBehaviour {
 	private bool _isMainScene = false;
 	private bool _gamePaused;
 	private bool _gameStarted = false;
-	[HideInInspector] 
+	[HideInInspector]
 	public bool gameOver = false;
+	[HideInInspector]
+	public bool trollWins;
 
 	//Start Button
 	[SerializeField] private const string START_GAME_BUTTON = "StartGameButton";
@@ -30,6 +32,8 @@ public class GameMagager : MonoBehaviour {
 	//Win Screen
 	public GameObject winScreen;
 	public Text winScreenText;
+	public GameObject trollWinScreen;
+	public Text trollWinScreenText;
 
 	public FadeScreen _fadeScript;
 
@@ -67,6 +71,7 @@ public class GameMagager : MonoBehaviour {
 		GetComponent<Pause>().enabled = false;
 
 		winScreen.SetActive(false);
+		trollWinScreen.SetActive(false);
 	}
 
 	void Update()
@@ -178,9 +183,16 @@ public class GameMagager : MonoBehaviour {
 		if(gameOver)
 		{
 			//Win Screen Pop-Up.
-			winScreen.SetActive(true);
-			winScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
-
+			if(!trollWins)
+			{
+				winScreen.SetActive(true);
+				winScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
+			}
+			else if(trollWins)
+			{
+				trollWinScreen.SetActive(true);
+				trollWinScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
+			}
 			_gameStarted = false;
 
 			//Disable all Player Movement.
