@@ -20,8 +20,7 @@ public class Player : MonoBehaviour {
 	void Update()
 	{
 		SetSortingOrder();
-
-		transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
+		this.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
 	}
 
 	public void SetCharacter(string characterName)
@@ -31,6 +30,6 @@ public class Player : MonoBehaviour {
 
 	private void SetSortingOrder()
 	{
-		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * 1);
+		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * 1) + 8;
 	}
 }

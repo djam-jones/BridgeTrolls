@@ -1,22 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Grab/TapFree.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Grab/Grab.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game/GameMagager.cs" Line="73" Column="3" />
-      <File FileName="Assets/Scripts/Game/GameModes.cs" Line="46" Column="54" />
-      <File FileName="Assets/Scripts/Player/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="29" Column="20" />
+      <File FileName="Assets/Scripts/Game/GameMagager.cs" Line="88" Column="115" />
+      <File FileName="Assets/Scripts/Game/GameModes.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/Player.cs" Line="24" Column="82" />
+      <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="15" Column="63" />
+      <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="110" Column="136" />
       <File FileName="Assets/Scripts/Game/CharacterDatabase.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/ReadyPlayers.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/CountDown.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Game/DeathWall.cs" Line="23" Column="18" />
-      <File FileName="Assets/Scripts/Game/ScoreC.cs" Line="55" Column="2" />
-      <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="44" Column="4" />
-      <File FileName="Assets/Scripts/Menu/MenuHandler.cs" Line="26" Column="14" />
-      <File FileName="Assets/Scripts/Player/Grab/TapFree.cs" Line="17" Column="38" />
+      <File FileName="Assets/Scripts/Player/Movement.cs" Line="39" Column="22" />
+      <File FileName="Assets/Scripts/Game/DeathWall.cs" Line="17" Column="20" />
+      <File FileName="Assets/Scripts/Game/ScoreC.cs" Line="49" Column="51" />
+      <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Player/SwitchTeam.cs" Line="22" Column="37" />
+      <File FileName="Assets/Scripts/Player/Grab/TapFree.cs" Line="40" Column="57" />
+      <File FileName="Assets/Scripts/Player/Grab/Grab.cs" Line="55" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

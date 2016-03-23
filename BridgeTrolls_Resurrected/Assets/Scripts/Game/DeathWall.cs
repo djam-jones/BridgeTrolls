@@ -33,13 +33,13 @@ public class DeathWall : MonoBehaviour {
 
 		if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count == 0 && deadplaying == false)
 		{
+			deadplaying = true;
 			StartCoroutine(spawnArrowsToRight());
-            deadplaying = true;
 		}
         else if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count != 0 && deadplaying == false)
         {
+			deadplaying = true;
             StartCoroutine(spawnArrowsToLeft());
-            deadplaying = true;
         }
 
 		deathWallTimerText.text = timer.ToString("F1");
@@ -174,6 +174,9 @@ public class DeathWall : MonoBehaviour {
 
 		if(deadplaying = true)
 			deadplaying = false;
+
+		StopCoroutine("spawnArrowsToRight");
+		StopCoroutine("spawnArrowsToLeft");
 	}
 
 }
