@@ -5,16 +5,16 @@ using System.Collections.Generic;
 
 public class DeathWall : MonoBehaviour {
 
-	private RuntimeAnimatorController animations;
+    private RuntimeAnimatorController animations;
     private GameObject newarrow;
     private List<GameObject> arrowlist = new List<GameObject>();
     private bool deadplaying;
 
-	[SerializeField]private GameObject arrow;
+    [SerializeField]private GameObject arrow;
     [SerializeField]private GameObject StartWallAnimation;
     [SerializeField]private GameObject AfterWallAnimation;
 
-    [SerializeField]private float timer;
+    [Range(0,30),SerializeField]private float timer;
     
     [SerializeField]private RuntimeAnimatorController sprite1;
 	[SerializeField]private RuntimeAnimatorController sprite2;
@@ -46,9 +46,9 @@ public class DeathWall : MonoBehaviour {
 	}
     IEnumerator spawnArrowsToLeft()
     {
-            StartCoroutine(dangerzone(new Vector2(5.81f, 0)));
+            StartCoroutine(dangerzone(new Vector2(5.8f, 0.61f)));
             yield return new WaitForSeconds(3f);
-            for (int x = 10; x >= -10; x--)
+            for (int x = 12; x >= -10; x--)
             {
                 for (int y = 5; y >= -6; y--)
                 {
@@ -56,10 +56,6 @@ public class DeathWall : MonoBehaviour {
                     if (position.y > 5.07)
                     {
                         position.y = 4.9f;
-                    }
-                    if (position.x > 10)
-                    {
-                        position.x = 10;
                     }
                     else if (position.x < -10)
                     {
@@ -78,9 +74,9 @@ public class DeathWall : MonoBehaviour {
     }
 	IEnumerator spawnArrowsToRight()
 	{
-            StartCoroutine(dangerzone(new Vector2(-5.88f, 0)));
+            StartCoroutine(dangerzone(new Vector2(-5.74f, 0.61f)));
             yield return new WaitForSeconds(3f);
-            for (int x = -10; x <= 10; x += 1)
+            for (int x = -12; x <= 10; x += 1)
             {
 
                 for (int y = -6; y <= 5; y += 1)
@@ -93,10 +89,6 @@ public class DeathWall : MonoBehaviour {
                     if (position.x > 10)
                     {
                         position.x = 10;
-                    }
-                    else if (position.x < -10)
-                    {
-                        position.x = -10;
                     }
                     arrow.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)(RandomSprite(animations));
                     newarrow = Instantiate(arrow, position, transform.rotation) as GameObject;
