@@ -31,12 +31,12 @@ public class DeathWall : MonoBehaviour {
             timer = 30;
         }
 
-		if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count == 0 && deadplaying == false)
+		if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count != GameMagager.Instance.allGoblins.Count && deadplaying == false)
 		{
 			deadplaying = true;
 			StartCoroutine(spawnArrowsToRight());
 		}
-        else if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count != 0 && deadplaying == false)
+        else if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count == GameMagager.Instance.allGoblins.Count && deadplaying == false)
         {
 			deadplaying = true;
             StartCoroutine(spawnArrowsToLeft());

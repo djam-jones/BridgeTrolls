@@ -55,9 +55,9 @@ public class AbilityHandler : MonoBehaviour {
 
         Debug.Log("dash");
         move.speed += 7;
-        GetComponent<SpriteRenderer>().sprite = Dash;
+        //GetComponent<SpriteRenderer>().sprite = Dash;
         yield return new WaitForSeconds(0.1f);
-        GetComponent<SpriteRenderer>().sprite = Idle;
+        //GetComponent<SpriteRenderer>().sprite = Idle;
         move.speed -= 7;
         DashUp = false;
         yield return new WaitForSeconds(3);

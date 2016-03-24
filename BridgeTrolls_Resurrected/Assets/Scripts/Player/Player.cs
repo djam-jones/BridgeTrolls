@@ -30,6 +30,6 @@ public class Player : MonoBehaviour {
 
 	private void SetSortingOrder()
 	{
-		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * 1) + 8;
+		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * -1) + 8;
 	}
 }
