@@ -28,7 +28,7 @@ public class DeathWall : MonoBehaviour {
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            timer = 30;
+            timer = 10;
         }
 
 		if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count != GameMagager.Instance.allGoblins.Count && deadplaying == false)
