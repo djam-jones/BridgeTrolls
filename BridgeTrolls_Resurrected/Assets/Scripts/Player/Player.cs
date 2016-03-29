@@ -6,6 +6,8 @@ public class Player : MonoBehaviour {
 	public int playerNum;
 	public string playerType;
 
+	GameObject _smokeObject;
+
 	PlayerRoles _playerRoles;
 	Movement _movement;
 
@@ -13,6 +15,8 @@ public class Player : MonoBehaviour {
 	{
 		_movement 		= GetComponent<Movement>();
 		_playerRoles 	= GetComponent<PlayerRoles>();
+
+		_smokeObject = transform.GetChild(2);
 
 		playerType = "Typeless";
 	}
@@ -31,5 +35,12 @@ public class Player : MonoBehaviour {
 	private void SetSortingOrder()
 	{
 		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * -1) + 8;
+	}
+
+	public IEnumerator Poof()
+	{
+		_smokeObject.SetActive(true);
+		yield return new WaitForSeconds(1.2f);
+		_smokeObject.SetActive(false);
 	}
 }

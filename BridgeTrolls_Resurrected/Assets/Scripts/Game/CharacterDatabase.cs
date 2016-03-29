@@ -73,7 +73,7 @@ public class CharacterDatabase : MonoBehaviour {
 
 	public static Texture2D GetSpriteById(int i)
 	{
-		Texture2D sprite = new Texture2D(56, 60);
+		Texture2D sprite = new Texture2D(46, 56);
 
 		switch(i)
 		{

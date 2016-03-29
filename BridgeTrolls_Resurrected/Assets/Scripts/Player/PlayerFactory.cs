@@ -12,7 +12,7 @@ public class PlayerFactory : MonoBehaviour {
 	public static GameObject CreatePlayer(string playerConstString, int playerID)
 	{
 		GameObject _playerObj = new GameObject();
-//		GameObject _childObj = new GameObject();
+		GameObject _childObj = new GameObject();
 		GameObject _barObj = new GameObject();
 		GameObject _grabStuff = new GameObject();
 		Rigidbody2D _rigid2D;
@@ -33,6 +33,9 @@ public class PlayerFactory : MonoBehaviour {
 		string _animatorName = "";
 		Vector2 _boxColliderOffset;
 		Vector2 _boxColliderSize;
+		Vector2 _boxTriggerOffset;
+		Vector2 _boxTriggerSize;
+
 
 		//Sprite Implementation
 		Texture2D playerSprite = Resources.Load("Sprites/Players/GoblinIdle") as Texture2D;
@@ -65,6 +68,16 @@ public class PlayerFactory : MonoBehaviour {
 		_boxTrigger = _playerObj.AddComponent<BoxCollider2D>();
 		_boxTrigger.isTrigger = true;
 
+		_boxTriggerOffset = _boxTrigger.offset;
+		_boxTriggerSize = _boxTrigger.size;
+
+		_boxTriggerOffset.x = -0.025f;
+		_boxTriggerOffset.y = -0.375f;
+		_boxTriggerSize.x  = 0.5f;
+		_boxTriggerSize.y = 0.35f;
+
+		_boxTrigger.offset = _boxTriggerOffset;
+		_boxTrigger.size = _boxTriggerSize;
 
 		//Player Script Implementation
 		_player = _playerObj.AddComponent<Player>();
@@ -97,7 +110,7 @@ public class PlayerFactory : MonoBehaviour {
 		Texture2D barSprite = Resources.Load("Square-2") as Texture2D;
 		_spriteRenderer = _barObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(barSprite, new Rect(0, 0, barSprite.width, barSprite.height), new Vector2(0.5f, 0.5f));
-		_spriteRenderer.color = new Color(0f, 0.5f, 0.16f);
+		_spriteRenderer.color = new Color(1f, 0.5f, 0.16f);
 		_spriteRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
 
 		//Child GameObject Implementation
@@ -108,6 +121,15 @@ public class PlayerFactory : MonoBehaviour {
 //		Texture2D childSprite = Resources.Load("Sprites/Players/GoblinIdle") as Texture2D;
 //		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
 //		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
+
+		//Smoke GameObject Implementation
+		_childObj.name = "Smoke Poof";
+		_childObj.transform.parent = _playerObj.transform;
+		_childObj.SetActive(false);
+
+		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
+		_anim = _childObj.AddComponent<Animator>();
+
 
 		switch(playerConstString)
 		{

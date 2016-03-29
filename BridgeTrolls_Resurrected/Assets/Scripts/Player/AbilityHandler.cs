@@ -5,21 +5,32 @@ public class AbilityHandler : MonoBehaviour {
 
     [SerializeField, HideInInspector] private string _actionKey_A = "Fire1_P";
     [SerializeField, HideInInspector] private string _actionKey_B = "Fire2_P";
-    private Roles role;
-    private bool DashUp = true;
-    private Movement move;
+
+	private bool _dashUp = true;
+	private bool _inCooldown = false;
+
+	private float _fadeSpeed = 3f;
+
+	private Roles _role;
+	private Movement _move;
+	private SpriteRenderer _spriteRenderer;
+
     [SerializeField] private Sprite Dash;
     [SerializeField] private Sprite Idle;
 
     void Awake()
     {
-        role = this.gameObject.GetComponent<PlayerRoles>().playerRoles;
-        move = this.gameObject.GetComponent<Movement>();
+        _role = this.gameObject.GetComponent<PlayerRoles>().playerRoles;
+        _move = this.gameObject.GetComponent<Movement>();
+		//_spriteRenderer = transform.GetChild(1).GetComponent<SpriteRenderer>();
     }
 
 	void Update()
 	{
 		UseAbility();
+
+		if(_inCooldown)
+			Cooldown(transform.GetChild(1).GetComponent<SpriteRenderer>());
 	}
 
     private void UseAbility()
@@ -30,7 +41,7 @@ public class AbilityHandler : MonoBehaviour {
             {
                 Ability_Scratch();
             }
-            else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile && DashUp == true)
+            else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile && _dashUp == true)
             {
                 StartCoroutine(Ability_Dash());
             }
@@ -54,26 +65,32 @@ public class AbilityHandler : MonoBehaviour {
         DashUp = true;*/
 
         Debug.Log("dash");
-        move.speed += 7;
+        _move.speed += 7;
         //GetComponent<SpriteRenderer>().sprite = Dash;
         yield return new WaitForSeconds(0.1f);
         //GetComponent<SpriteRenderer>().sprite = Idle;
-        move.speed -= 7;
-        DashUp = false;
+        _move.speed -= 7;
+        _dashUp = false;
+		_inCooldown = true;
         yield return new WaitForSeconds(3);
-        DashUp = true;
-
-
-
+        _dashUp = true;
+		_inCooldown = false;
+//		_spriteRenderer.color = Color.white;
     }
+
     public void Ability_Scratch()
     {
-        Debug.Log("grab");
+        Debug.Log("scratch");
 		//TODO: Show Animation.
 
 		//Make a hitbox and use it with the animation.
 		//If a goblin player is in the hitbox,
 		//Do something...
     }
+
+	public void Cooldown(SpriteRenderer renderer)
+	{
+		renderer.color = Color.Lerp(Color.white, new Color(0.52f, 0.318f, 1f), Mathf.PingPong(Time.time * _fadeSpeed, 1.0f));
+	}
 
 }

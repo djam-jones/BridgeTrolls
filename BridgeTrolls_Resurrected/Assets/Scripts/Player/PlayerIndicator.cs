@@ -11,6 +11,7 @@ public class PlayerIndicator : MonoBehaviour {
 		GameObject newIndicator = Resources.Load("PlayerArrow", typeof(GameObject)) as GameObject;
 		_indicator = Instantiate(newIndicator, this.transform.position + new Vector3(0f, yValue, 0f), newIndicator.transform.rotation) as GameObject;
 		_indicator.transform.parent = this.transform;
+		_indicator.transform.localScale *= 1.1f;
 		_indicator.GetComponent<SpriteRenderer>().sortingOrder = 10;
 	}
 
