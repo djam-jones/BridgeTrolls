@@ -6,7 +6,7 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 
 	private List<GameObject> _allTargets = new List<GameObject>();
 
-	private float _boundingBoxPadding = 1f;
+	private float _boundingBoxPadding = 2f;
 
 	private float _minimumOrthographicSize = 4.5f;
 
