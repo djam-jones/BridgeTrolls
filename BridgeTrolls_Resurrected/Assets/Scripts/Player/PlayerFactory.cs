@@ -15,6 +15,7 @@ public class PlayerFactory : MonoBehaviour {
 		GameObject _childObj = new GameObject();
 		GameObject _barObj = new GameObject();
 		GameObject _grabStuff = new GameObject();
+		GameObject _tapIndicator = new GameObject();
 		Rigidbody2D _rigid2D;
 		Animator _anim;
 		SpriteRenderer _spriteRenderer;
@@ -35,6 +36,8 @@ public class PlayerFactory : MonoBehaviour {
 		Vector2 _boxColliderSize;
 		Vector2 _boxTriggerOffset;
 		Vector2 _boxTriggerSize;
+		Animator _smokeAnim;
+		Animator _tapAnim;
 
 
 		//Sprite Implementation
@@ -110,8 +113,18 @@ public class PlayerFactory : MonoBehaviour {
 		Texture2D barSprite = Resources.Load("Square-2") as Texture2D;
 		_spriteRenderer = _barObj.AddComponent<SpriteRenderer>();
 		_spriteRenderer.sprite = Sprite.Create(barSprite, new Rect(0, 0, barSprite.width, barSprite.height), new Vector2(0.5f, 0.5f));
-		_spriteRenderer.color = new Color(1f, 0.5f, 0.16f);
+		_spriteRenderer.color = new Color(1f, 0.1f, 0.1f);
 		_spriteRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
+
+		//Tap Indicator GameObject Implementation
+		_tapIndicator.name = "Tap Button";
+		_tapIndicator.transform.parent = _grabStuff.transform;
+		_tapIndicator.transform.position = new Vector2(0, 0.925f);
+
+		_spriteRenderer = _tapIndicator.AddComponent<SpriteRenderer>();
+		_spriteRenderer.GetComponent<SpriteRenderer>().sortingOrder = 12;
+		_tapAnim = _tapIndicator.AddComponent<Animator>();
+		_tapAnim.runtimeAnimatorController = Resources.Load("Animations/Tap/Tap_Indicator_Animator") as RuntimeAnimatorController;
 
 		//Child GameObject Implementation
 //		_childObj.name = "Straighthened Sprite";
@@ -122,14 +135,15 @@ public class PlayerFactory : MonoBehaviour {
 //		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
 //		_spriteRenderer.sprite = Sprite.Create(playerSprite, new Rect(0, 0, childSprite.width, childSprite.height), new Vector2(0.5f, 0.5f));
 
+
 		//Smoke GameObject Implementation
 		_childObj.name = "Smoke Poof";
 		_childObj.transform.parent = _playerObj.transform;
-		_childObj.SetActive(false);
 
 		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
-		_anim = _childObj.AddComponent<Animator>();
-
+		_straightener = _childObj.AddComponent<SpriteStraightener>();
+		_smokeAnim = _childObj.AddComponent<Animator>();
+		_smokeAnim.runtimeAnimatorController = Resources.Load("Animations/Smoke/Smoke_Animator") as RuntimeAnimatorController;
 
 		switch(playerConstString)
 		{

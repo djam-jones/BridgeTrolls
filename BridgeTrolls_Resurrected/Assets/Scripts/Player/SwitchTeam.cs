@@ -21,7 +21,7 @@ public class SwitchTeam : MonoBehaviour
 			{
 				tag = Tags.MINION_TAG; 
 	            //transform.position = new Vector2(0, 0);
-				player.Poof();
+				StartCoroutine(player.Poof());
 	            roles.ChangeRole();
 				GetComponent<SpriteRenderer>().sprite = Sprite.Create(_minionSprite, new Rect(0, 0, _minionSprite.width, _minionSprite.height), new Vector2(0.5f, 0.5f));
 //				GetComponent<SpriteRenderer>().color = new Color(0.56f, 0, 0.8f);

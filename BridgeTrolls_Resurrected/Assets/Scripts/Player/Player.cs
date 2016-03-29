@@ -16,15 +16,20 @@ public class Player : MonoBehaviour {
 		_movement 		= GetComponent<Movement>();
 		_playerRoles 	= GetComponent<PlayerRoles>();
 
-		_smokeObject = transform.GetChild(2);
-
 		playerType = "Typeless";
+	}
+
+	void Start()
+	{
+		_smokeObject = this.transform.GetChild(1).gameObject;
+		_smokeObject.SetActive(false);
 	}
 
 	void Update()
 	{
 		SetSortingOrder();
-		this.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
+		this.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
+		_smokeObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
 	}
 
 	public void SetCharacter(string characterName)

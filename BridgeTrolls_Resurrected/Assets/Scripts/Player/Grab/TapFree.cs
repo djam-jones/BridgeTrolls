@@ -5,6 +5,7 @@ using System;
 public class TapFree : MonoBehaviour
 {
     private GameObject bar;
+	private GameObject indicator;
     [SerializeField]
     private float strength = 0.75f;
     [SerializeField]
@@ -21,11 +22,11 @@ public class TapFree : MonoBehaviour
     private void Start()
     {
         bar = this.transform.GetChild(0).gameObject;
+		indicator = this.transform.GetChild(1).gameObject;
         
         if(bar == null)
         {
             Debug.Log("No sprite found");
-            
         }
         else
         {

@@ -22,15 +22,19 @@ public class AbilityHandler : MonoBehaviour {
     {
         _role = this.gameObject.GetComponent<PlayerRoles>().playerRoles;
         _move = this.gameObject.GetComponent<Movement>();
-		//_spriteRenderer = transform.GetChild(1).GetComponent<SpriteRenderer>();
     }
+
+	void Start()
+	{
+		_spriteRenderer = transform.GetChild(2).GetComponent<SpriteRenderer>();
+	}
 
 	void Update()
 	{
 		UseAbility();
 
 		if(_inCooldown)
-			Cooldown(transform.GetChild(1).GetComponent<SpriteRenderer>());
+			Cooldown(_spriteRenderer);
 	}
 
     private void UseAbility()
@@ -75,7 +79,7 @@ public class AbilityHandler : MonoBehaviour {
         yield return new WaitForSeconds(3);
         _dashUp = true;
 		_inCooldown = false;
-//		_spriteRenderer.color = Color.white;
+		_spriteRenderer.color = Color.white;
     }
 
     public void Ability_Scratch()

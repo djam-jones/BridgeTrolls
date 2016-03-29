@@ -16,7 +16,7 @@ public class Grab : MonoBehaviour
 
     private float cdTimer;
     [SerializeField]
-    private float coolDown = 2;
+    private float coolDown = 3;
 
     private float releasetimer;
     [SerializeField]
@@ -83,5 +83,10 @@ public class Grab : MonoBehaviour
             cdTimer = 0;
             releasetimer = 0;
         }
+
+		if(cdTimer < coolDown)
+			GetComponent<AbilityHandler>().Cooldown( transform.GetChild(2).GetComponent<SpriteRenderer>() );
+		else
+			transform.GetChild(2).GetComponent<SpriteRenderer>().color = Color.white;
     }   
 }
