@@ -8,6 +8,7 @@ public class CharacterDatabase : MonoBehaviour {
 	public const string CHARACTER03 = "Character03";
 	public const string CHARACTER04 = "Character04";
 	public const string TROLL		= "Troll";
+	public const string MINION		= "Minion";
 
 	/// <summary>
 	/// Gets the character by integer.
@@ -28,6 +29,8 @@ public class CharacterDatabase : MonoBehaviour {
 				return CHARACTER04;
 			case 4:
 				return TROLL;
+			case 5:
+				return MINION;
 		}
 		return "";
 	}

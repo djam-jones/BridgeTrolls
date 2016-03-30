@@ -64,6 +64,7 @@ public class GameMagager : MonoBehaviour {
 		for(int i = 0; i < playerArray.Count; i++)
 		{
 			playerArray[i].GetComponent<Movement>().enabled = false;
+			playerArray[i].GetComponent<AbilityHandler>().enabled = false;
 		}
 
 		//Disable all Gameplay Scripts at the Awake.
@@ -76,8 +77,11 @@ public class GameMagager : MonoBehaviour {
 
 	void Update()
 	{
-		GetAllPlayerRoles();
-		GameOver();
+		if(_isMainScene)
+		{
+			GetAllPlayerRoles();
+			GameOver();
+		}
 		ForceQuitGame();
 	}
 	
@@ -99,6 +103,8 @@ public class GameMagager : MonoBehaviour {
 
 		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
 		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//Change sprite to the Troll sprite.
+
+		enemyPlayer.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Characters/Troll_Animator") as RuntimeAnimatorController;
 
 		//Set the Box Collider needs to those of the Troll.
 		BoxCollider2D _boxCollider = enemyPlayer.GetComponents<BoxCollider2D>()[0];
@@ -123,8 +129,9 @@ public class GameMagager : MonoBehaviour {
 			playerCharacter = PlayerPrefs.GetString("CharacterName" + i);
 
 			GameObject playerPrefab = PlayerFactory.CreatePlayer(playerCharacter, i);
-			playerPrefab.transform.position = new Vector2(-8.4f, Random.Range(5f, -5f));
 			Player playerScript = playerPrefab.GetComponent<Player>();
+
+			playerPrefab.transform.position = new Vector2(-8.4f, Random.Range(5f, -5f));
 
 			playerPrefab.name = "Player" + (i + 1); //Set the Player Name to PLAYER_NUM
 			playerPrefab.tag = Tags.PLAYER_TAG;
@@ -171,6 +178,7 @@ public class GameMagager : MonoBehaviour {
 		{
 			if(_gameStarted)
 				playerArray[i].GetComponent<Movement>().enabled = true;
+				playerArray[i].GetComponent<AbilityHandler>().enabled = true;
 		}
 
 		//Enable all GamePlay Scripts.

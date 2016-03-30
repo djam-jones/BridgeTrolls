@@ -1,50 +1,42 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
-public class Tutorial : MonoBehaviour
-{
-    [SerializeField]
-    private GameObject[] screens;
-    [SerializeField]
-    private float slideSpeed = 3;
-    [SerializeField]
-    private int selectedSlide = 0;
-    [SerializeField]
-    private int targetSlide;
-    private float slideDistance = 17.5f;
+public class Tutorial : MonoBehaviour {
 
-    private bool sliding = false;
+	[SerializeField, HideInInspector] private const string _actionKey = "ContinueButton";
 
-    void Start()
-    {
-        makeSlides();
-        slideToSlide(2);
-    }
+	public GameObject tutorialScreen;
 
-    void Update()
-    {
-        if (this.transform.position.x > -targetSlide * slideDistance)
-        {
-            this.transform.Translate(Vector2.left * Time.deltaTime * slideSpeed, 0);
-        }
-        else if (this.transform.position.x + 1 < -targetSlide * slideDistance)
-        {
-            this.transform.Translate(Vector2.right * Time.deltaTime * slideSpeed, 0);
-        }
-    }
+	CountDown _cDown;
+	Animator _anim;
 
-    private void makeSlides()
-    {
-        for (int i = 0; i < screens.Length; i++)
-        {
-            GameObject newSlide = Instantiate(screens[i], new Vector2(i * slideDistance, 0), Quaternion.identity) as GameObject;
-            newSlide.transform.parent = this.gameObject.transform;
-        }
-    }
+	void Awake()
+	{
+		_anim = tutorialScreen.GetComponent<Animator>();
 
-    public void slideToSlide(int target)
-    {
-        targetSlide = target;
-        selectedSlide = target;
-    }
+		_cDown = GetComponent<CountDown>();
+		_cDown.enabled = false;
+	}
+
+	void Update()
+	{
+		Continue();
+	}
+
+	private void Continue()
+	{
+		if(Input.GetButtonDown(_actionKey))
+		{
+			_anim.SetTrigger("Hide");
+			StartCoroutine(Wait(1.5f));
+		}
+	}
+
+	IEnumerator Wait(float seconds)
+	{
+		yield return new WaitForSeconds(seconds);
+		tutorialScreen.SetActive(false);
+		_cDown.enabled = true;
+	}
 }

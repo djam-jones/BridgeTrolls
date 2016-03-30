@@ -115,7 +115,7 @@ public class HubHandler : MonoBehaviour {
 	{
 		if(Input.GetButtonDown(_actionKey + panelID.ToString()))
 		{
-			if(_panelIndex >= 0 && _panelIndex < 2)
+			if(_panelIndex >= 0 && _panelIndex < totalCharacters)
 			{
 				_panelIndex++;
 			}
@@ -126,7 +126,7 @@ public class HubHandler : MonoBehaviour {
 	{
 		if(Input.GetButtonDown(_cancelKey + panelID.ToString()))
 		{
-			if(_panelIndex > 0 && _panelIndex <= 2)
+			if(_panelIndex > 0 && _panelIndex <= totalCharacters)
 			{
 				_panelIndex--;
 			}

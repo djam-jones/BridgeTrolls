@@ -26,6 +26,9 @@ public class MenuHandler : MonoBehaviour {
 	public Image title;
 	public Text pressA;
 
+	//BackDoor
+	public GameObject backDoor;
+
 	//Axes
 	private const string SELECT_X_AXIS = "HorizontalMenu";
 	private const string SELECT_Y_AXIS = "VerticalMenu";
@@ -40,7 +43,16 @@ public class MenuHandler : MonoBehaviour {
 
 	//Floats
 	private float _timer;
-	private float _buttonTime = 3f;
+	private float _buttonTime = 1.5f;
+
+	Animator _openAnimator;
+	Animation _doorAnimations;
+
+	void Awake()
+	{
+		_openAnimator = backDoor.GetComponent<Animator>();
+		_doorAnimations = backDoor.GetComponent<Animation>();
+	}
 
 	void Update()
 	{
@@ -74,6 +86,9 @@ public class MenuHandler : MonoBehaviour {
 		{
 			_timer += Time.deltaTime; //Count seconds up to the Timer.
 
+//			_openAnimator.SetTrigger("Open"); //Play Opening Animation.
+			_doorAnimations.Play("Open");
+
 			if(_timer >= _buttonTime) //If timer is greater than, or equals the _buttonTime value.
 			{
 				_menuIndex = 1; //Set the Menu Index value to 1.
@@ -82,6 +97,9 @@ public class MenuHandler : MonoBehaviour {
 		}
 		if(Input.GetButtonUp(BACK_BUTTON) && menuState == MenuState.CharSelect)
 		{
+//			_openAnimator.SetTrigger("Close"); //Play Closing Animation.
+			_doorAnimations.Play("Close");
+
 			_timer = 0f; //Reset the Timer.
 		}
 		else if(Input.GetButton(BACK_BUTTON) && menuState == MenuState.Credits)

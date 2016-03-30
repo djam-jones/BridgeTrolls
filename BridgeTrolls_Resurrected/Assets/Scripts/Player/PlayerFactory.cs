@@ -162,6 +162,9 @@ public class PlayerFactory : MonoBehaviour {
 			case CharacterDatabase.TROLL:
 				_animatorName = "Troll_Animator";
 				break;
+			case CharacterDatabase.MINION:
+				_animatorName = "Minion_Animator";
+				break;
 		}
 
 		//Implement Player Arrow/Color Indication

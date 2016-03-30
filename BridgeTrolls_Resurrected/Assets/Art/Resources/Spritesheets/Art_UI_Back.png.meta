@@ -1,0 +1,867 @@
+fileFormatVersion: 2
+guid: 1e2b21e165154488f86034bd696f8f52
+timeCreated: 1459337827
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_UI_Back_0
+    21300002: Art_UI_Back_1
+    21300004: Art_UI_Back_2
+    21300006: Art_UI_Back_3
+    21300008: Art_UI_Back_4
+    21300010: Art_UI_Back_5
+    21300012: Art_UI_Back_6
+    21300014: Art_UI_Back_7
+    21300016: Art_UI_Back_8
+    21300018: Art_UI_Back_9
+    21300020: Art_UI_Back_10
+    21300022: Art_UI_Back_11
+    21300024: Art_UI_Back_12
+    21300026: Art_UI_Back_13
+    21300028: Art_UI_Back_14
+    21300030: Art_UI_Back_15
+    21300032: Art_UI_Back_16
+    21300034: Art_UI_Back_17
+    21300036: Art_UI_Back_18
+    21300038: Art_UI_Back_19
+    21300040: Art_UI_Back_20
+    21300042: Art_UI_Back_21
+    21300044: Art_UI_Back_22
+    21300046: Art_UI_Back_23
+    21300048: Art_UI_Back_24
+    21300050: Art_UI_Back_25
+    21300052: Art_UI_Back_26
+    21300054: Art_UI_Back_27
+    21300056: Art_UI_Back_28
+    21300058: Art_UI_Back_29
+    21300060: Art_UI_Back_30
+    21300062: Art_UI_Back_31
+    21300064: Art_UI_Back_32
+    21300066: Art_UI_Back_33
+    21300068: Art_UI_Back_34
+    21300070: Art_UI_Back_35
+    21300072: Art_UI_Back_36
+    21300074: Art_UI_Back_37
+    21300076: Art_UI_Back_38
+    21300078: Art_UI_Back_39
+    21300080: Art_UI_Back_40
+    21300082: Art_UI_Back_41
+    21300084: Art_UI_Back_42
+    21300086: Art_UI_Back_43
+    21300088: Art_UI_Back_44
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_UI_Back_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_4
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_5
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_6
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 895
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_10
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_11
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_12
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_13
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 754
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_14
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_18
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_19
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_20
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 613
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_22
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_23
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_24
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_25
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_26
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_27
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 472
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_28
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_29
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_30
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_31
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_32
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_33
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_34
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 331
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_35
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_36
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_37
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_38
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_39
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_40
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_41
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 190
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_42
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 49
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_43
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 49
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    - name: Art_UI_Back_44
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 49
+        width: 112
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 126}
+        - {x: -56, y: 106}
+        - {x: -56, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 122}
+        - {x: 53, y: 126}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

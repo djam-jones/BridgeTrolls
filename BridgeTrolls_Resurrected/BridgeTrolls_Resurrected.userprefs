@@ -1,27 +1,29 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
+﻿<Properties StartupItem="BridgeTrolls_Resurrected.CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerIndicator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/AbilityHandler.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/AbilityHandler.cs" Line="71" Column="27" />
+      <File FileName="Assets/Scripts/Player/AbilityHandler.cs" Line="72" Column="26" />
       <File FileName="Assets/Scripts/Game/GameMagager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/GameModes.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/Player.cs" Line="42" Column="86" />
       <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="4" Column="47" />
-      <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="54" Column="59" />
-      <File FileName="Assets/Scripts/Game/CharacterDatabase.cs" Line="76" Column="42" />
+      <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="144" Column="64" />
+      <File FileName="Assets/Scripts/Game/CharacterDatabase.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/ReadyPlayers.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/CountDown.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/DeathWall.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/ScoreC.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Player/Movement.cs" Line="4" Column="41" />
       <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/Grab/TapFree.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/Grab/Grab.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/SwitchTeam.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/SwitchTeam.cs" Line="24" Column="35" />
+      <File FileName="Assets/Scripts/Player/Grab/TapFree.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/Player/Grab/Grab.cs" Line="68" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/Djamali/Desktop/Stage201617/Base_Games/BridgeTrolls/BridgeTrolls_Resurrected/Assets/Scripts/Player/Grab/TapFree.cs" line="14" column="37" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

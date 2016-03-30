@@ -7,6 +7,7 @@ public enum Modes
 	Standard, 
 	KingOfTheBridge, 
 	ArrowEscape, 
+	Arena, 
 	Stocks
 }
 
