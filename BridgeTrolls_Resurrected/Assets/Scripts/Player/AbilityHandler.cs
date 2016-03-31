@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class AbilityHandler : MonoBehaviour {
 
@@ -52,8 +53,17 @@ public class AbilityHandler : MonoBehaviour {
         }
         else if (Input.GetButtonDown(_actionKey_B + GetComponent<Player>().playerNum))
         {
-            
-            Debug.Log("WOOOW B");
+
+            if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile)
+            {
+                //StartCoroutine(Ability_Roar());
+            }
+
+            else if ( GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
+            {
+                Debug.Log("WOOOW B");
+            }
+
         }
     }
 
@@ -90,6 +100,33 @@ public class AbilityHandler : MonoBehaviour {
 		//Make a hitbox and use it with the animation.
 		//If a goblin player is in the hitbox,
 		//Do something...
+    }
+
+    IEnumerator  Ability_Roar()
+    {
+        GameMagager manager = GameObject.Find("GameHandeler").GetComponent<GameMagager>();
+        Debug.Log("Roar");
+
+        //play animation
+
+        List<GameObject> goblin = manager.allGoblins;
+
+       
+        Debug.Log(goblin.Count);
+        for (int g = 0; g < goblin.Count; g++)
+        {
+            goblin[g].GetComponent<Movement>().enabled = false;
+            goblin[g].transform.Translate(Vector3.right * 4 * Time.deltaTime);
+            for (int i = 0; i < 4; i++)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                goblin[g].transform.rotation = rotation;
+            }
+            goblin[g].transform.rotation = new Quaternion(0, 0, 0, 0);
+            yield return new WaitForSeconds(0.5f);
+            goblin[g].GetComponent<Movement>().enabled = true;
+        }
+        yield return null;
     }
 
 	public void Cooldown(SpriteRenderer renderer)
