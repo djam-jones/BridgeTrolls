@@ -35,6 +35,8 @@ public class GameMagager : MonoBehaviour {
 	public GameObject trollWinScreen;
 	public Text trollWinScreenText;
 
+	[SerializeField] public Text trollIndicationText;
+
 	public FadeScreen _fadeScript;
 
 	private int id = 0;
@@ -98,6 +100,8 @@ public class GameMagager : MonoBehaviour {
 		enemyPlayer.GetComponent<PlayerIndicator>().yValue = 1.5f;
 		enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 1);
 
+		StartCoroutine(TrollIndicationTextFade(enemyPlayer));
+
 		enemyPlayer.name = enemyPlayer.name + " Troll";								//Set Name to Troll.
 		enemyPlayer.tag = Tags.TROLL_TAG;											//Set Tag to Enemy.
 
@@ -133,7 +137,7 @@ public class GameMagager : MonoBehaviour {
 
 			playerPrefab.transform.position = new Vector2(-8.4f, Random.Range(5f, -5f));
 
-			playerPrefab.name = "Player" + (i + 1); //Set the Player Name to PLAYER_NUM
+			playerPrefab.name = "Player " + (i + 1); //Set the Player Name to PLAYER_NUM
 			playerPrefab.tag = Tags.PLAYER_TAG;
 			playerPrefab.GetComponent<PlayerRoles>().playerRoles = Roles.Neutral;
 			playerScript.SetCharacter(playerCharacter);
@@ -213,6 +217,13 @@ public class GameMagager : MonoBehaviour {
 			GetComponent<DeathWall>().enabled = false;
 			GetComponent<Pause>().enabled = false;
 		}
+	}
+
+	private IEnumerator TrollIndicationTextFade(GameObject troll)
+	{
+		trollIndicationText.text = troll.name + " is the Troll.";
+		yield return new WaitForSeconds(1.5f);
+		trollIndicationText.color = Color.Lerp(trollIndicationText.color, Color.clear, Mathf.PingPong(Time.time, 1));
 	}
 
 	private void ForceQuitGame()
