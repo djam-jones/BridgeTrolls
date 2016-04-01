@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour {
 		if(_playerRolesScript.playerRoles == Roles.Neutral)
 			Move(-11.6f, 11.6f);
 		else if(_playerRolesScript.playerRoles == Roles.Minion)
-			Move(-7.25f, 7.25f);
+			Move(-7.55f, 7.55f);
 		else if(_playerRolesScript.playerRoles == Roles.Hostile)
 			ClampedMove();
 	}

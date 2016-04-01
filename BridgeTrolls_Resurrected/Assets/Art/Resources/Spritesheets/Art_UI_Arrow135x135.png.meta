@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 64bdb05bb81404fa3a3d932467d1a827
+timeCreated: 1459505051
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_UI_Arrow135x135_0
+    21300002: Art_UI_Arrow135x135_1
+    21300004: Art_UI_Arrow135x135_2
+    21300006: Art_UI_Arrow135x135_3
+    21300008: Art_UI_Arrow135x135_4
+    21300010: Art_UI_Arrow135x135_5
+    21300012: Art_UI_Arrow135x135_6
+    21300014: Art_UI_Arrow135x135_7
+    21300016: Art_UI_Arrow135x135_8
+    21300018: Art_UI_Arrow135x135_9
+    21300020: Art_UI_Arrow135x135_10
+    21300022: Art_UI_Arrow135x135_11
+    21300024: Art_UI_Arrow135x135_12
+    21300026: Art_UI_Arrow135x135_13
+    21300028: Art_UI_Arrow135x135_14
+    21300030: Art_UI_Arrow135x135_15
+    21300032: Art_UI_Arrow135x135_16
+    21300034: Art_UI_Arrow135x135_17
+    21300036: Art_UI_Arrow135x135_18
+    21300038: Art_UI_Arrow135x135_19
+    21300040: Art_UI_Arrow135x135_20
+    21300042: Art_UI_Arrow135x135_21
+    21300044: Art_UI_Arrow135x135_22
+    21300046: Art_UI_Arrow135x135_23
+    21300048: Art_UI_Arrow135x135_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_UI_Arrow135x135_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.5, y: 64.5}
+        - {x: -23.5, y: 64.5}
+        - {x: -54.5, y: 21.5}
+        - {x: -55.5, y: 15.5}
+        - {x: -55.5, y: -17.5}
+        - {x: -54.5, y: -24.5}
+        - {x: -16.5, y: -60.5}
+        - {x: 29.5, y: -60.5}
+        - {x: 49.5, y: -41.5}
+        - {x: 49.5, y: 41.5}
+    - name: Art_UI_Arrow135x135_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 64.5}
+        - {x: -55.5, y: 25.5}
+        - {x: -55.5, y: -26.5}
+        - {x: -15.5, y: -61.5}
+        - {x: 29.5, y: -61.5}
+        - {x: 49.5, y: -42.5}
+        - {x: 49.5, y: 55.5}
+        - {x: 24.5, y: 64.5}
+    - name: Art_UI_Arrow135x135_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 64.5}
+        - {x: -55.5, y: 56.5}
+        - {x: -55.5, y: -36.5}
+        - {x: -17.5, y: -61.5}
+        - {x: 48.5, y: -61.5}
+        - {x: 50.5, y: -52.5}
+        - {x: 50.5, y: 60.5}
+        - {x: 42.5, y: 64.5}
+    - name: Art_UI_Arrow135x135_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.5, y: 65.5}
+        - {x: -17.5, y: 65.5}
+        - {x: -56.5, y: 44.5}
+        - {x: -56.5, y: -25.5}
+        - {x: -16.5, y: -62.5}
+        - {x: 26.5, y: -62.5}
+        - {x: 29.5, y: -57.5}
+        - {x: 50.5, y: -38.5}
+        - {x: 50.5, y: 54.5}
+    - name: Art_UI_Arrow135x135_4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 65.5}
+        - {x: -56.5, y: 23.5}
+        - {x: -56.5, y: -54.5}
+        - {x: -30.5, y: -62.5}
+        - {x: 46.5, y: -62.5}
+        - {x: 51.5, y: -49.5}
+        - {x: 51.5, y: 49.5}
+        - {x: 36.5, y: 65.5}
+    - name: Art_UI_Arrow135x135_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 66.5}
+        - {x: -50.5, y: 57.5}
+        - {x: -57.5, y: 49.5}
+        - {x: -57.5, y: -30.5}
+        - {x: -38.5, y: -63.5}
+        - {x: 50.5, y: -63.5}
+        - {x: 51.5, y: -59.5}
+        - {x: 51.5, y: 66.5}
+    - name: Art_UI_Arrow135x135_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 415
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.5, y: 66.5}
+        - {x: -57.5, y: 24.5}
+        - {x: -57.5, y: -47.5}
+        - {x: -38.5, y: -63.5}
+        - {x: 30.5, y: -63.5}
+        - {x: 52.5, y: -56.5}
+        - {x: 52.5, y: 50.5}
+        - {x: 37.5, y: 66.5}
+    - name: Art_UI_Arrow135x135_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 67.5}
+        - {x: -57.5, y: 34.5}
+        - {x: -57.5, y: -53.5}
+        - {x: -20.5, y: -64.5}
+        - {x: 52.5, y: -64.5}
+        - {x: 52.5, y: 54.5}
+        - {x: 48.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 67.5}
+        - {x: -58.5, y: 23.5}
+        - {x: -58.5, y: -26.5}
+        - {x: -18.5, y: -64.5}
+        - {x: 32.5, y: -64.5}
+        - {x: 52.5, y: -41.5}
+        - {x: 52.5, y: 42.5}
+        - {x: 34.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 67.5}
+        - {x: -58.5, y: 37.5}
+        - {x: -58.5, y: -39.5}
+        - {x: -56.5, y: -47.5}
+        - {x: -16.5, y: -65.5}
+        - {x: 32.5, y: -65.5}
+        - {x: 53.5, y: -43.5}
+        - {x: 53.5, y: 44.5}
+        - {x: 36.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_10
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.5, y: 67.5}
+        - {x: -18.5, y: 67.5}
+        - {x: -59.5, y: 24.5}
+        - {x: -59.5, y: -28.5}
+        - {x: -20.5, y: -65.5}
+        - {x: 32.5, y: -65.5}
+        - {x: 53.5, y: -44.5}
+        - {x: 53.5, y: 45.5}
+    - name: Art_UI_Arrow135x135_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67.5}
+        - {x: -59.5, y: 23.5}
+        - {x: -59.5, y: -27.5}
+        - {x: -22.5, y: -66.5}
+        - {x: 32.5, y: -66.5}
+        - {x: 54.5, y: -49.5}
+        - {x: 54.5, y: 49.5}
+        - {x: 38.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_12
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67.5}
+        - {x: -59.5, y: 23.5}
+        - {x: -59.5, y: -27.5}
+        - {x: -22.5, y: -66.5}
+        - {x: 32.5, y: -66.5}
+        - {x: 54.5, y: -49.5}
+        - {x: 54.5, y: 49.5}
+        - {x: 38.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67.5}
+        - {x: -59.5, y: 23.5}
+        - {x: -59.5, y: -27.5}
+        - {x: -22.5, y: -66.5}
+        - {x: 32.5, y: -66.5}
+        - {x: 54.5, y: -49.5}
+        - {x: 54.5, y: 49.5}
+        - {x: 38.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67.5}
+        - {x: -59.5, y: 23.5}
+        - {x: -59.5, y: -27.5}
+        - {x: -22.5, y: -66.5}
+        - {x: 32.5, y: -66.5}
+        - {x: 54.5, y: -49.5}
+        - {x: 54.5, y: 49.5}
+        - {x: 38.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67.5}
+        - {x: -59.5, y: 23.5}
+        - {x: -59.5, y: -27.5}
+        - {x: -22.5, y: -66.5}
+        - {x: 32.5, y: -66.5}
+        - {x: 54.5, y: -49.5}
+        - {x: 54.5, y: 49.5}
+        - {x: 38.5, y: 67.5}
+    - name: Art_UI_Arrow135x135_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52.5, y: 44.5}
+        - {x: 28.5, y: 67.5}
+        - {x: -19.5, y: 67.5}
+        - {x: -58.5, y: 24.5}
+        - {x: -58.5, y: -28.5}
+        - {x: -16.5, y: -64.5}
+        - {x: 26.5, y: -64.5}
+        - {x: 29.5, y: -63.5}
+        - {x: 52.5, y: -43.5}
+    - name: Art_UI_Arrow135x135_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 65.5}
+        - {x: -56.5, y: 33.5}
+        - {x: -56.5, y: -53.5}
+        - {x: -21.5, y: -62.5}
+        - {x: 51.5, y: -62.5}
+        - {x: 51.5, y: 56.5}
+        - {x: 48.5, y: 65.5}
+    - name: Art_UI_Arrow135x135_18
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 63.5}
+        - {x: -25.5, y: 63.5}
+        - {x: -49.5, y: 49.5}
+        - {x: -55.5, y: 28.5}
+        - {x: -55.5, y: -28.5}
+        - {x: -16.5, y: -60.5}
+        - {x: 29.5, y: -60.5}
+        - {x: 49.5, y: -41.5}
+        - {x: 49.5, y: 41.5}
+    - name: Art_UI_Arrow135x135_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: 61.5}
+        - {x: -15.5, y: 61.5}
+        - {x: -53.5, y: 31.5}
+        - {x: -53.5, y: -49.5}
+        - {x: -15.5, y: -59.5}
+        - {x: 38.5, y: -59.5}
+        - {x: 47.5, y: -43.5}
+        - {x: 47.5, y: 41.5}
+    - name: Art_UI_Arrow135x135_20
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 145
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 60.5}
+        - {x: -34.5, y: 60.5}
+        - {x: -51.5, y: 21.5}
+        - {x: -51.5, y: -41.5}
+        - {x: -22.5, y: -56.5}
+        - {x: -14.5, y: -57.5}
+        - {x: 31.5, y: -57.5}
+        - {x: 46.5, y: -39.5}
+        - {x: 46.5, y: 40.5}
+    - name: Art_UI_Arrow135x135_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 58.5}
+        - {x: -50.5, y: 23.5}
+        - {x: -50.5, y: -40.5}
+        - {x: -24.5, y: -55.5}
+        - {x: 42.5, y: -55.5}
+        - {x: 45.5, y: -46.5}
+        - {x: 45.5, y: 53.5}
+        - {x: 32.5, y: 58.5}
+    - name: Art_UI_Arrow135x135_22
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 10
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 60.5}
+        - {x: -52.5, y: 23.5}
+        - {x: -52.5, y: -23.5}
+        - {x: -15.5, y: -57.5}
+        - {x: 44.5, y: -57.5}
+        - {x: 46.5, y: -50.5}
+        - {x: 46.5, y: 60.5}
+    - name: Art_UI_Arrow135x135_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 10
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 62.5}
+        - {x: -53.5, y: 24.5}
+        - {x: -53.5, y: -40.5}
+        - {x: -26.5, y: -58.5}
+        - {x: 35.5, y: -58.5}
+        - {x: 48.5, y: -45.5}
+        - {x: 48.5, y: 59.5}
+        - {x: 42.5, y: 62.5}
+    - name: Art_UI_Arrow135x135_24
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 10
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.5, y: 64.5}
+        - {x: -23.5, y: 64.5}
+        - {x: -54.5, y: 21.5}
+        - {x: -55.5, y: 15.5}
+        - {x: -55.5, y: -17.5}
+        - {x: -54.5, y: -24.5}
+        - {x: -16.5, y: -60.5}
+        - {x: 29.5, y: -60.5}
+        - {x: 49.5, y: -41.5}
+        - {x: 49.5, y: 41.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

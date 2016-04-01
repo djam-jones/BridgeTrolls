@@ -42,6 +42,29 @@ public class Player : MonoBehaviour {
 		GetComponent<SpriteRenderer>().sortingOrder = ((int)transform.position.y * -1) + 8;
 	}
 
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.gameObject.tag == "Player")
+		{
+			ForcePushbackByDash();
+		}
+	}
+
+	private void ForcePushbackByDash(GameObject other)
+	{
+		if(GetComponent<PlayerRoles>().playerRoles == Roles.Minion)
+		{
+			if(other.transform.position.y > this.transform.position.y)
+			{
+				//Force Up
+			}
+			else if(other.transform.position.y > this.transform.position.y)
+			{
+				//Force Down
+			}
+		}
+	}
+
 	public IEnumerator Poof()
 	{
 		_smokeObject.SetActive(true);
