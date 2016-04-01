@@ -7,7 +7,7 @@ public class AbilityHandler : MonoBehaviour {
     [SerializeField, HideInInspector] private string _actionKey_A = "Fire1_P";
     [SerializeField, HideInInspector] private string _actionKey_B = "Fire2_P";
 
-	private bool _dashUp = true;
+	public bool _dashUp = true;
 	private bool _inCooldown = false;
 
 	private float _fadeSpeed = 3f;
@@ -56,7 +56,7 @@ public class AbilityHandler : MonoBehaviour {
 
             if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile)
             {
-                //StartCoroutine(Ability_Roar());
+                Ability_Roar();
             }
 
             else if ( GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
@@ -102,7 +102,7 @@ public class AbilityHandler : MonoBehaviour {
 		//Do something...
     }
 
-    IEnumerator  Ability_Roar()
+    private void  Ability_Roar()
     {
         GameMagager manager = GameObject.Find("GameHandeler").GetComponent<GameMagager>();
         Debug.Log("Roar");
@@ -110,23 +110,11 @@ public class AbilityHandler : MonoBehaviour {
         //play animation
 
         List<GameObject> goblin = manager.allGoblins;
-
-       
-        Debug.Log(goblin.Count);
-        for (int g = 0; g < goblin.Count; g++)
-        {
-            goblin[g].GetComponent<Movement>().enabled = false;
-            goblin[g].transform.Translate(Vector3.right * 4 * Time.deltaTime);
-            for (int i = 0; i < 4; i++)
-            {
-                Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
-                goblin[g].transform.rotation = rotation;
-            }
-            goblin[g].transform.rotation = new Quaternion(0, 0, 0, 0);
-            yield return new WaitForSeconds(0.5f);
-            goblin[g].GetComponent<Movement>().enabled = true;
+        for (int i = 0; i < goblin.Count; i++)
+        { 
+            goblin[i].transform.position = new Vector2(goblin[i].transform.position.x * Random.insideUnitCircle.x , goblin[i].transform.position.y * Random.insideUnitCircle.y);
         }
-        yield return null;
+
     }
 
 	public void Cooldown(SpriteRenderer renderer)
