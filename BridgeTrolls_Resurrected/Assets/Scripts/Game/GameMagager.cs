@@ -36,6 +36,9 @@ public class GameMagager : MonoBehaviour {
 	public Text trollWinScreenText;
 
 	[SerializeField] public Text trollIndicationText;
+	[SerializeField] public Image directionIndicator;
+	private RectTransform _rectTransform;
+	private float _rectTransformXScale;
 
 	public FadeScreen _fadeScript;
 
@@ -69,6 +72,9 @@ public class GameMagager : MonoBehaviour {
 			playerArray[i].GetComponent<AbilityHandler>().enabled = false;
 		}
 
+		_rectTransform = directionIndicator.GetComponent<RectTransform>();
+		_rectTransformXScale = _rectTransform.localScale.x;
+
 		//Disable all Gameplay Scripts at the Awake.
 		GetComponent<DeathWall>().enabled = false;
 		GetComponent<Pause>().enabled = false;
@@ -85,6 +91,16 @@ public class GameMagager : MonoBehaviour {
 			GameOver();
 		}
 		ForceQuitGame();
+
+		if(rightSidedPlayers.Count == allGoblins.Count)
+		{
+			_rectTransformXScale = -1;
+		}
+		else if(rightSidedPlayers.Count != allGoblins.Count)
+		{
+			_rectTransformXScale = 1;
+		}
+		print(rightSidedPlayers.Count);
 	}
 	
 	public void CheckAmountOfPlayers ()

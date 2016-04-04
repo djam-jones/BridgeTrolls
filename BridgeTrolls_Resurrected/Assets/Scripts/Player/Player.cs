@@ -44,23 +44,31 @@ public class Player : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if(other.gameObject.tag == "Player")
+		if(other.gameObject.tag == Tags.PLAYER_TAG && this.gameObject.tag == Tags.MINION_TAG)
 		{
-			ForcePushbackByDash();
+			StartCoroutine(ForcePushbackByDash(this.gameObject));
 		}
 	}
 
-	private void ForcePushbackByDash(GameObject other)
+	private IEnumerator ForcePushbackByDash(GameObject other)
 	{
-		if(GetComponent<PlayerRoles>().playerRoles == Roles.Minion)
+		if(GetComponent<PlayerRoles>().playerRoles == Roles.Minion && other.GetComponent<AbilityHandler>()._dashUp)
 		{
 			if(other.transform.position.y > this.transform.position.y)
 			{
 				//Force Up
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
+				yield return new WaitForSeconds(0.05f);
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -500));
+				yield break;
 			}
-			else if(other.transform.position.y > this.transform.position.y)
+			else if(other.transform.position.y < this.transform.position.y)
 			{
 				//Force Down
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -500));
+				yield return new WaitForSeconds(0.05f);
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
+				yield break;
 			}
 		}
 	}
