@@ -284,23 +284,23 @@ public class GameMagager : MonoBehaviour {
 //		DontDestroyOnLoad(gameObject);
 	}
 
-	public int GetPlayerId
-	{
-		get
-		{
-			for(int i = 0; i < playerArray.Count; i++)
-			{
-				foreach(GameObject player in playerArray)
-				{
-					id = playerArray.IndexOf(player);
-					id = (id + 1);
-				}
-			}
-			return id;
-		}
-		set
-		{
-			id = value;
-		}
-	}
+//	public int GetPlayerId
+//	{
+//		get
+//		{
+//			for(int i = 0; i < playerArray.Count; i++)
+//			{
+//				foreach(GameObject player in playerArray)
+//				{
+//					id = playerArray.IndexOf(player);
+//					id = (id + 1);
+//				}
+//			}
+//			return id;
+//		}
+//		set
+//		{
+//			id = value;
+//		}
+//	}
 }
