@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
      <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
      <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />
+     <Compile Include="Assets\Scripts\Menu\ControllerAssigner.cs" />
      <Compile Include="Assets\Scripts\Menu\HubHandler.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuHandler.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuTransition.cs" />
