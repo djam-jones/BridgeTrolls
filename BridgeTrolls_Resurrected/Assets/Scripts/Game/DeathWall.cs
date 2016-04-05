@@ -46,7 +46,7 @@ public class DeathWall : MonoBehaviour {
 	}
     IEnumerator spawnArrowsToLeft()
     {
-            StartCoroutine(dangerzone(new Vector2(5.8f, 0.61f)));
+            StartCoroutine(dangerzone(new Vector2(7.61f, -1.24f)));
             yield return new WaitForSeconds(3f);
             for (int x = 12; x >= -10; x--)
             {
@@ -74,7 +74,7 @@ public class DeathWall : MonoBehaviour {
     }
 	IEnumerator spawnArrowsToRight()
 	{
-            StartCoroutine(dangerzone(new Vector2(-5.74f, 0.61f)));
+            StartCoroutine(dangerzone(new Vector2(-7.61f, 1.24f)));
             yield return new WaitForSeconds(3f);
             for (int x = -12; x <= 10; x += 1)
             {
@@ -126,7 +126,7 @@ public class DeathWall : MonoBehaviour {
     {
         deadplaying = true; 
         GameObject newDangerAnim = Instantiate(StartWallAnimation, position, transform.rotation) as GameObject;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         Destroy(newDangerAnim);
         GameObject newDangerAnimAfter = Instantiate(AfterWallAnimation, position, transform.rotation) as GameObject;
 
