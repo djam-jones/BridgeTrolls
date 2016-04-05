@@ -52,7 +52,7 @@ public class Player : MonoBehaviour {
 
 	private IEnumerator ForcePushbackByDash(GameObject other)
 	{
-		if(GetComponent<PlayerRoles>().playerRoles == Roles.Minion && other.GetComponent<AbilityHandler>()._dashUp)
+		if(GetComponent<PlayerRoles>().playerRoles == Roles.Minion && other.GetComponent<AbilityHandler>()._dashUp == true)
 		{
 			if(other.transform.position.y > this.transform.position.y)
 			{
