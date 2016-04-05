@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\Game\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\Game\Tags.cs" />
     <Compile Include="Assets\Scripts\Game\Tutorial.cs" />
-    <Compile Include="Assets\Scripts\Game\TutorialOne.cs" />
     <Compile Include="Assets\Scripts\Game\WinScreen.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ControllerInterfaces.cs" />
     <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
