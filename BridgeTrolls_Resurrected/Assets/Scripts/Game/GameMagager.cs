@@ -36,6 +36,9 @@ public class GameMagager : MonoBehaviour {
 	public Text trollWinScreenText;
 
 	[SerializeField] public Text trollIndicationText;
+	[SerializeField] public Image directionIndicator;
+	private RectTransform _rectTransform;
+	private float _rectTransformXScale;
 
 	public FadeScreen _fadeScript;
 
@@ -69,6 +72,9 @@ public class GameMagager : MonoBehaviour {
 			playerArray[i].GetComponent<AbilityHandler>().enabled = false;
 		}
 
+		_rectTransform = directionIndicator.GetComponent<RectTransform>();
+		_rectTransformXScale = _rectTransform.localScale.x;
+
 		//Disable all Gameplay Scripts at the Awake.
 		GetComponent<DeathWall>().enabled = false;
 		GetComponent<Pause>().enabled = false;
@@ -85,6 +91,16 @@ public class GameMagager : MonoBehaviour {
 			GameOver();
 		}
 		ForceQuitGame();
+
+		if(rightSidedPlayers.Count == allGoblins.Count)
+		{
+			_rectTransformXScale = -1;
+		}
+		else if(rightSidedPlayers.Count != allGoblins.Count)
+		{
+			_rectTransformXScale = 1;
+		}
+		print(rightSidedPlayers.Count);
 	}
 	
 	public void CheckAmountOfPlayers ()
@@ -98,9 +114,9 @@ public class GameMagager : MonoBehaviour {
 		GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)]; 	//Pick a random player from the Player List.
 		enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile; 		//Set Role to Hostile and thus the Troll.
 		enemyPlayer.GetComponent<PlayerIndicator>().yValue = 1.5f;
-		enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 1);
+		enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 0.5f);
 
-		StartCoroutine(TrollIndicationTextFade(enemyPlayer));
+//		StartCoroutine(TrollIndicationTextFade(enemyPlayer));
 
 		enemyPlayer.name = enemyPlayer.name + " Troll";								//Set Name to Troll.
 		enemyPlayer.tag = Tags.TROLL_TAG;											//Set Tag to Enemy.
@@ -115,13 +131,26 @@ public class GameMagager : MonoBehaviour {
 		Vector2 _boxColliderOffset;
 		Vector2 _boxColliderSize;
 
-		_boxColliderOffset.x = 0.1306415f;
+		_boxColliderOffset.x = -0.1739898f;
 		_boxColliderOffset.y = -0.8419237f;
-		_boxColliderSize.x = 1f;
+		_boxColliderSize.x = 2.636648f;
 		_boxColliderSize.y = 0.75f;
 
 		_boxCollider.offset = _boxColliderOffset;
 		_boxCollider.size = _boxColliderSize;
+
+		//Set the Box Trigger needs to those of the Troll.
+		BoxCollider2D _boxTrigger = enemyPlayer.GetComponents<BoxCollider2D>()[1];
+		Vector2 _boxTriggerOffset;
+		Vector2 _boxTriggerSize;
+
+		_boxTriggerOffset.x = -0.1739898f;
+		_boxTriggerOffset.y = -0.8419237f;
+		_boxTriggerSize.x = 2.636648f;
+		_boxTriggerSize.y = 0.75f;
+
+		_boxTrigger.offset = _boxTriggerOffset;
+		_boxTrigger.size = _boxTriggerSize;
 	}
 
 	private void InstantiatePlayersAndAddToList()
@@ -255,23 +284,23 @@ public class GameMagager : MonoBehaviour {
 //		DontDestroyOnLoad(gameObject);
 	}
 
-	public int GetPlayerId
-	{
-		get
-		{
-			for(int i = 0; i < playerArray.Count; i++)
-			{
-				foreach(GameObject player in playerArray)
-				{
-					id = playerArray.IndexOf(player);
-					id = (id + 1);
-				}
-			}
-			return id;
-		}
-		set
-		{
-			id = value;
-		}
-	}
+//	public int GetPlayerId
+//	{
+//		get
+//		{
+//			for(int i = 0; i < playerArray.Count; i++)
+//			{
+//				foreach(GameObject player in playerArray)
+//				{
+//					id = playerArray.IndexOf(player);
+//					id = (id + 1);
+//				}
+//			}
+//			return id;
+//		}
+//		set
+//		{
+//			id = value;
+//		}
+//	}
 }

@@ -1,21 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/MenuHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/Movement.cs" Line="38" Column="58" />
-      <File FileName="Assets/Scripts/Game/GameMagager.cs" Line="28" Column="43" />
-      <File FileName="Assets/Scripts/Game/GameModes.cs" Line="10" Column="9" />
-      <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="4" Column="47" />
-      <File FileName="Assets/Scripts/Player/Player.cs" Line="16" Column="42" />
-      <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="176" Column="123" />
-      <File FileName="Assets/Scripts/Game/CharacterDatabase.cs" Line="33" Column="19" />
+      <File FileName="Assets/Scripts/Player/Movement.cs" Line="18" Column="53" />
+      <File FileName="Assets/Scripts/Game/PlayerFollowCameraZoom.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/GameMagager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/GameModes.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/Player.cs" Line="55" Column="118" />
+      <File FileName="Assets/Scripts/Game/CharacterDatabase.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/ReadyPlayers.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="9" Column="33" />
-      <File FileName="Assets/Scripts/Menu/CharacterSelection.cs" Line="59" Column="43" />
-      <File FileName="Assets/Scripts/Menu/HubHandler.cs" Line="129" Column="56" />
-      <File FileName="Assets/Scripts/Game/CountDown.cs" Line="24" Column="3" />
-      <File FileName="Assets/Scripts/Menu/MenuHandler.cs" Line="90" Column="30" />
-      <File FileName="Assets/Scripts/Game/Tutorial.cs" Line="7" Column="87" />
+      <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menu/CharacterSelection.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menu/HubHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/CountDown.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menu/MenuHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/AbilityHandler.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

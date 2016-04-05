@@ -72,7 +72,8 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 			maxY = Mathf.Max(maxY, position.y);
 		}
 
-		return Rect.MinMaxRect(minX - _boundingBoxPadding,
+		return Rect.MinMaxRect(
+			minX - _boundingBoxPadding,
 			maxY + _boundingBoxPadding,
 			maxX + _boundingBoxPadding,
 			minY - _boundingBoxPadding);

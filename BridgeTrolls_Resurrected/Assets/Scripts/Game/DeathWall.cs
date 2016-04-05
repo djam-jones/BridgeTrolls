@@ -172,7 +172,7 @@ public class DeathWall : MonoBehaviour {
 		if(timer < 30)
 			timer = 30;
 
-		if(deadplaying = true)
+		if(deadplaying == true)
 			deadplaying = false;
 
 		StopCoroutine("spawnArrowsToRight");

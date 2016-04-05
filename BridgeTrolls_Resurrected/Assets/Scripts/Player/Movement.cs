@@ -17,17 +17,18 @@ public class Movement : MonoBehaviour {
 	[SerializeField] private float _minClampedY = -6.5f;
 	[SerializeField] private float _maxClampedY = 6.5f;
 
-	private float _clampOffset = 7;
-
 	private PlayerRoles _playerRolesScript;
 	private Rigidbody2D _rigidbody2D;
+	private Animator 	_anim;
 
 	public bool facingRight = false;
+	private bool _isMoving = false;
 
 	void Awake()
 	{
 		_playerRolesScript = GetComponent<PlayerRoles>();
 		_rigidbody2D = GetComponent<Rigidbody2D>();
+		_anim = GetComponent<Animator>();
 		_scale = transform.localScale.x;
 	}
 
@@ -36,9 +37,16 @@ public class Movement : MonoBehaviour {
 		if(_playerRolesScript.playerRoles == Roles.Neutral)
 			Move(-11.6f, 11.6f);
 		else if(_playerRolesScript.playerRoles == Roles.Minion)
-			Move(-7.25f, 7.25f);
+			Move(-7.55f, 7.55f);
 		else if(_playerRolesScript.playerRoles == Roles.Hostile)
 			ClampedMove();
+
+		if(_isMoving) {
+			_anim.SetTrigger("Go_Run");
+		}
+		else {
+			_anim.SetTrigger("Go_Idle");
+		}
 	}
 
 	private void ClampedMove()
@@ -73,6 +81,9 @@ public class Movement : MonoBehaviour {
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 
+		//Checks the Moving bool
+		CheckMoving(h, v);
+
 		transform.Translate(new Vector2(h, v), Space.World);
 	}
 
@@ -99,15 +110,30 @@ public class Movement : MonoBehaviour {
 
 		if(h >= 0.01f)
 		{
-//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
+			//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
 			gameObject.GetComponent<SpriteRenderer>().flipX = true;
 		}
 		else if(h <= -0.01f)
 		{
-//			transform.localScale = new Vector2(_scale, transform.localScale.y);
+			//			transform.localScale = new Vector2(_scale, transform.localScale.y);
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 
+		//Checks the Moving bool
+		CheckMoving(h, v);
+
 		transform.Translate(new Vector2(h, v), Space.World);
+	}
+
+	/// <summary>
+	/// Changes the isMoving Bool, depending on the H float value.
+	/// </summary>
+	/// <param name="movingFactor">Moving factor.</param>
+	private void CheckMoving(float movingFactorX, float movingFactorY)
+	{
+		if(movingFactorX >= 0.01f || movingFactorX <= -0.01f || movingFactorY >= 0.01f || movingFactorY <= -0.01f)
+			_isMoving = true;
+		else
+			_isMoving = false;
 	}
 }

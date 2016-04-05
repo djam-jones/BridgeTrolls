@@ -21,6 +21,7 @@ public class SafeZone : MonoBehaviour
             for (int i = 0; i < players.Count; i++)
             {
                 players[i].GetComponent<Movement>().enabled = true;
+				players[i].GetComponent<AbilityHandler>().enabled = true;
             }
             players.Clear();
         }
@@ -30,6 +31,7 @@ public class SafeZone : MonoBehaviour
     {
         players.Add(player);
         player.GetComponent<Movement>().enabled = false;
+		player.GetComponent<AbilityHandler>().enabled = false;
     }
 		
 	/// <summary>
