@@ -43,12 +43,18 @@ public class HubHandler : MonoBehaviour {
 	void Update()
 	{
 		CheckState(_panelIndex);
+		SetPanelID();
 
 		CheckReady();
 		CheckInCharacterSelect();
 
 		ProgressState();
 		RegressState();
+	}
+
+	private void SetPanelID()
+	{
+		panelID = ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex];
 	}
 
 	private void CheckState(int panelIndex)
@@ -146,12 +152,12 @@ public class HubHandler : MonoBehaviour {
 
 	public void CheckInCharacterSelect()
 	{
-		if(panelState != PanelState.Ready && panelState == PanelState.CharacterSelect && !ReadyPlayers.Instance.playersInCharacterSelect.Contains(this))
+		if(panelState == PanelState.CharacterSelect && !ReadyPlayers.Instance.playersInCharacterSelect.Contains(this))
 		{
 			//Add this Hub to PlayersInCharacterSelect List.
 			ReadyPlayers.Instance.playersInCharacterSelect.Add(this);
 		}
-		else if(panelState == PanelState.Ready && panelState != PanelState.CharacterSelect && ReadyPlayers.Instance.playersInCharacterSelect.Contains(this))
+		else if(panelState != PanelState.CharacterSelect && ReadyPlayers.Instance.playersInCharacterSelect.Contains(this))
 		{
 			//Remove this Hub to PlayersInCharacterSelect List.
 			ReadyPlayers.Instance.playersInCharacterSelect.Remove(this);
