@@ -23,6 +23,7 @@ public class Pause : MonoBehaviour
 			for(int i = 0; i < GetComponent<GameMagager>().playerArray.Count; i++)
 			{
 				GetComponent<GameMagager>().playerArray[i].GetComponent<Movement>().enabled = false;
+				GetComponent<GameMagager>().playerArray[i].GetComponent<AbilityHandler>().enabled = false;
 			}
             
 			GetComponent<DeathWall>().enabled = false;
@@ -41,6 +42,7 @@ public class Pause : MonoBehaviour
 		for(int i = 0; i < GetComponent<GameMagager>().playerArray.Count; i++)
 		{
 			GetComponent<GameMagager>().playerArray[i].GetComponent<Movement>().enabled = true;
+			GetComponent<GameMagager>().playerArray[i].GetComponent<AbilityHandler>().enabled = true;
 		}
 
 		GetComponent<DeathWall>().enabled = true;

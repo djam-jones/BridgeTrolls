@@ -55,13 +55,11 @@ public class GameMagager : MonoBehaviour {
 		Scene _scene = SceneManager.GetActiveScene();
 		if(_scene.name == "Main")
 		{
-			print("This is the Main Scene and you CAN Create Players here.");
 			CheckAmountOfPlayers();
 			_isMainScene = true;
 		}
 		else if(_scene.name == "MainMenu")
 		{
-			Debug.LogWarning("This is the Main Menu Scene and you cannot Create Players here.");
 			_isMainScene = false;
 		}
 
@@ -89,18 +87,17 @@ public class GameMagager : MonoBehaviour {
 		{
 			GetAllPlayerRoles();
 			GameOver();
+
+			if(rightSidedPlayers.Count == allGoblins.Count)
+			{
+				_rectTransformXScale = -1;
+			}
+			else if(rightSidedPlayers.Count != allGoblins.Count)
+			{
+				_rectTransformXScale = 1;
+			}
 		}
 		ForceQuitGame();
-
-		if(rightSidedPlayers.Count == allGoblins.Count)
-		{
-			_rectTransformXScale = -1;
-		}
-		else if(rightSidedPlayers.Count != allGoblins.Count)
-		{
-			_rectTransformXScale = 1;
-		}
-		print(rightSidedPlayers.Count);
 	}
 	
 	public void CheckAmountOfPlayers ()
@@ -240,6 +237,7 @@ public class GameMagager : MonoBehaviour {
 			for(int i = 0; i < playerArray.Count; i++)
 			{
 				playerArray[i].GetComponent<Movement>().enabled = false;
+				playerArray[i].GetComponent<AbilityHandler>().enabled = false;
 			}
 
 			//Disable all GamePlay Scripts.
