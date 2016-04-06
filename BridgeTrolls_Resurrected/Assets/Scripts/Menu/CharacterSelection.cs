@@ -27,7 +27,8 @@ public class CharacterSelection : MonoBehaviour {
 
 	public void Select()
 	{
-		if(Input.GetButtonDown(_rightControls + GetComponent<HubHandler>().panelID))
+//		if(Input.GetButtonDown(_rightControls + GetComponent<HubHandler>().panelID))
+		if(Input.GetButtonDown(_rightControls + ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex]))
 		{
 			NextCharacter();
 			NextSprite();
@@ -37,7 +38,8 @@ public class CharacterSelection : MonoBehaviour {
 				_characterIndex++;
 			}
 		}
-		else if(Input.GetButtonDown(_leftControls + GetComponent<HubHandler>().panelID))
+//		else if(Input.GetButtonDown(_leftControls + GetComponent<HubHandler>().panelID))
+		else if(Input.GetButtonDown(_leftControls + ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex]))
 		{
 			PreviousCharacter();
 			PreviousSprite();

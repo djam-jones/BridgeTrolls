@@ -1,0 +1,2520 @@
+fileFormatVersion: 2
+guid: 3d458b08f3e32414fad2b63539db63a4
+timeCreated: 1459941029
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_UI_CC_Banner366x600-2_0
+    21300002: Art_UI_CC_Banner366x600-2_1
+    21300004: Art_UI_CC_Banner366x600-2_2
+    21300006: Art_UI_CC_Banner366x600-2_3
+    21300008: Art_UI_CC_Banner366x600-2_4
+    21300010: Art_UI_CC_Banner366x600-2_5
+    21300012: Art_UI_CC_Banner366x600-2_6
+    21300014: Art_UI_CC_Banner366x600-2_7
+    21300016: Art_UI_CC_Banner366x600-2_8
+    21300018: Art_UI_CC_Banner366x600-2_9
+    21300020: Art_UI_CC_Banner366x600-2_10
+    21300022: Art_UI_CC_Banner366x600-2_11
+    21300024: Art_UI_CC_Banner366x600-2_12
+    21300026: Art_UI_CC_Banner366x600-2_13
+    21300028: Art_UI_CC_Banner366x600-2_14
+    21300030: Art_UI_CC_Banner366x600-2_15
+    21300032: Art_UI_CC_Banner366x600-2_16
+    21300034: Art_UI_CC_Banner366x600-2_17
+    21300036: Art_UI_CC_Banner366x600-2_18
+    21300038: Art_UI_CC_Banner366x600-2_19
+    21300040: Art_UI_CC_Banner366x600-2_20
+    21300042: Art_UI_CC_Banner366x600-2_21
+    21300044: Art_UI_CC_Banner366x600-2_22
+    21300046: Art_UI_CC_Banner366x600-2_23
+    21300048: Art_UI_CC_Banner366x600-2_24
+    21300050: Art_UI_CC_Banner366x600-2_25
+    21300052: Art_UI_CC_Banner366x600-2_26
+    21300054: Art_UI_CC_Banner366x600-2_27
+    21300056: Art_UI_CC_Banner366x600-2_28
+    21300058: Art_UI_CC_Banner366x600-2_29
+    21300060: Art_UI_CC_Banner366x600-2_30
+    21300062: Art_UI_CC_Banner366x600-2_31
+    21300064: Art_UI_CC_Banner366x600-2_32
+    21300066: Art_UI_CC_Banner366x600-2_33
+    21300068: Art_UI_CC_Banner366x600-2_34
+    21300070: Art_UI_CC_Banner366x600-2_35
+    21300072: Art_UI_CC_Banner366x600-2_36
+    21300074: Art_UI_CC_Banner366x600-2_37
+    21300076: Art_UI_CC_Banner366x600-2_38
+    21300078: Art_UI_CC_Banner366x600-2_39
+    21300080: Art_UI_CC_Banner366x600-2_40
+    21300082: Art_UI_CC_Banner366x600-2_41
+    21300084: Art_UI_CC_Banner366x600-2_42
+    21300086: Art_UI_CC_Banner366x600-2_43
+    21300088: Art_UI_CC_Banner366x600-2_44
+    21300090: Art_UI_CC_Banner366x600-2_45
+    21300092: Art_UI_CC_Banner366x600-2_46
+    21300094: Art_UI_CC_Banner366x600-2_47
+    21300096: Art_UI_CC_Banner366x600-2_48
+    21300098: Art_UI_CC_Banner366x600-2_49
+    21300100: Art_UI_CC_Banner366x600-2_50
+    21300102: Art_UI_CC_Banner366x600-2_51
+    21300104: Art_UI_CC_Banner366x600-2_52
+    21300106: Art_UI_CC_Banner366x600-2_53
+    21300108: Art_UI_CC_Banner366x600-2_54
+    21300110: Art_UI_CC_Banner366x600-2_55
+    21300112: Art_UI_CC_Banner366x600-2_56
+    21300114: Art_UI_CC_Banner366x600-2_57
+    21300116: Art_UI_CC_Banner366x600-2_58
+    21300118: Art_UI_CC_Banner366x600-2_59
+    21300120: Art_UI_CC_Banner366x600-2_60
+    21300122: Art_UI_CC_Banner366x600-2_61
+    21300124: Art_UI_CC_Banner366x600-2_62
+    21300126: Art_UI_CC_Banner366x600-2_63
+    21300128: Art_UI_CC_Banner366x600-2_64
+    21300130: Art_UI_CC_Banner366x600-2_65
+    21300132: Art_UI_CC_Banner366x600-2_66
+    21300134: Art_UI_CC_Banner366x600-2_67
+    21300136: Art_UI_CC_Banner366x600-2_68
+    21300138: Art_UI_CC_Banner366x600-2_69
+    21300140: Art_UI_CC_Banner366x600-2_70
+    21300142: Art_UI_CC_Banner366x600-2_71
+    21300144: Art_UI_CC_Banner366x600-2_72
+    21300146: Art_UI_CC_Banner366x600-2_73
+    21300148: Art_UI_CC_Banner366x600-2_74
+    21300150: Art_UI_CC_Banner366x600-2_75
+    21300152: Art_UI_CC_Banner366x600-2_76
+    21300154: Art_UI_CC_Banner366x600-2_77
+    21300156: Art_UI_CC_Banner366x600-2_78
+    21300158: Art_UI_CC_Banner366x600-2_79
+    21300160: Art_UI_CC_Banner366x600-2_80
+    21300162: Art_UI_CC_Banner366x600-2_81
+    21300164: Art_UI_CC_Banner366x600-2_82
+    21300166: Art_UI_CC_Banner366x600-2_83
+    21300168: Art_UI_CC_Banner366x600-2_84
+    21300170: Art_UI_CC_Banner366x600-2_85
+    21300172: Art_UI_CC_Banner366x600-2_86
+    21300174: Art_UI_CC_Banner366x600-2_87
+    21300176: Art_UI_CC_Banner366x600-2_88
+    21300178: Art_UI_CC_Banner366x600-2_89
+    21300180: Art_UI_CC_Banner366x600-2_90
+    21300182: Art_UI_CC_Banner366x600-2_91
+    21300184: Art_UI_CC_Banner366x600-2_92
+    21300186: Art_UI_CC_Banner366x600-2_93
+    21300188: Art_UI_CC_Banner366x600-2_94
+    21300190: Art_UI_CC_Banner366x600-2_95
+    21300192: Art_UI_CC_Banner366x600-2_96
+    21300194: Art_UI_CC_Banner366x600-2_97
+    21300196: Art_UI_CC_Banner366x600-2_98
+    21300198: Art_UI_CC_Banner366x600-2_99
+    21300200: Art_UI_CC_Banner366x600-2_100
+    21300202: Art_UI_CC_Banner366x600-2_101
+    21300204: Art_UI_CC_Banner366x600-2_102
+    21300206: Art_UI_CC_Banner366x600-2_103
+    21300208: Art_UI_CC_Banner366x600-2_104
+    21300210: Art_UI_CC_Banner366x600-2_105
+    21300212: Art_UI_CC_Banner366x600-2_106
+    21300214: Art_UI_CC_Banner366x600-2_107
+    21300216: Art_UI_CC_Banner366x600-2_108
+    21300218: Art_UI_CC_Banner366x600-2_109
+    21300220: Art_UI_CC_Banner366x600-2_110
+    21300222: Art_UI_CC_Banner366x600-2_111
+    21300224: Art_UI_CC_Banner366x600-2_112
+    21300226: Art_UI_CC_Banner366x600-2_113
+    21300228: Art_UI_CC_Banner366x600-2_114
+    21300230: Art_UI_CC_Banner366x600-2_115
+    21300232: Art_UI_CC_Banner366x600-2_116
+    21300234: Art_UI_CC_Banner366x600-2_117
+    21300236: Art_UI_CC_Banner366x600-2_118
+    21300238: Art_UI_CC_Banner366x600-2_119
+    21300240: Art_UI_CC_Banner366x600-2_120
+    21300242: Art_UI_CC_Banner366x600-2_121
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_UI_CC_Banner366x600-2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -59}
+        - {x: -41, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+    - name: Art_UI_CC_Banner366x600-2_1
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -38.5, y: 75}
+        - {x: -45.5, y: 56}
+        - {x: -45.5, y: -52}
+        - {x: -18.5, y: -75}
+        - {x: 28.5, y: -75}
+        - {x: 46.5, y: -51}
+        - {x: 46.5, y: 48}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_2
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -47}
+        - {x: -30, y: -62}
+        - {x: -14, y: -75}
+        - {x: 12, y: -75}
+        - {x: 46, y: -59}
+        - {x: 46, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+    - name: Art_UI_CC_Banner366x600-2_3
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -67}
+        - {x: -33.5, y: -75}
+        - {x: 21.5, y: -75}
+        - {x: 46.5, y: -56}
+        - {x: 46.5, y: 51}
+        - {x: 36.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_4
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -43, y: 75}
+        - {x: -46, y: 72}
+        - {x: -46, y: -56}
+        - {x: -38, y: -65}
+        - {x: -17, y: -75}
+        - {x: 25, y: -75}
+        - {x: 46, y: -62}
+        - {x: 46, y: 70}
+        - {x: 45, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_5
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -66}
+        - {x: -21.5, y: -75}
+        - {x: 15.5, y: -75}
+        - {x: 46.5, y: -48}
+        - {x: 46.5, y: 52}
+        - {x: 36.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_6
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -41, y: 75}
+        - {x: -46, y: 68}
+        - {x: -46, y: -69}
+        - {x: -33, y: -75}
+        - {x: 17, y: -75}
+        - {x: 27, y: -72}
+        - {x: 46, y: -42}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_7
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -58}
+        - {x: -11.5, y: -75}
+        - {x: 25.5, y: -75}
+        - {x: 46.5, y: -62}
+        - {x: 46.5, y: 55}
+        - {x: 42.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_8
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 75}
+        - {x: -43, y: 75}
+        - {x: -46, y: 72}
+        - {x: -46, y: -60}
+        - {x: -18, y: -75}
+        - {x: 16, y: -75}
+        - {x: 46, y: -61}
+        - {x: 46, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+    - name: Art_UI_CC_Banner366x600-2_9
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 75}
+        - {x: -45.5, y: 57}
+        - {x: -45.5, y: -60}
+        - {x: -28.5, y: -75}
+        - {x: 24.5, y: -75}
+        - {x: 46.5, y: -67}
+        - {x: 46.5, y: 52}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_10
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 6, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 54}
+        - {x: -46, y: -71}
+        - {x: -45, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 64}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_11
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -9.5, y: 75}
+        - {x: -38.5, y: 75}
+        - {x: -45.5, y: 74}
+        - {x: -45.5, y: -60}
+        - {x: -19.5, y: -75}
+        - {x: 46.5, y: -75}
+        - {x: 46.5, y: 74}
+        - {x: 42.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_12
+      rect:
+        serializedVersion: 2
+        x: 4392
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -39, y: 75}
+        - {x: -46, y: 63}
+        - {x: -46, y: -63}
+        - {x: -35, y: -75}
+        - {x: 23, y: -75}
+        - {x: 46, y: -62}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_13
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 75}
+        - {x: -45.5, y: 52}
+        - {x: -45.5, y: -69}
+        - {x: -31.5, y: -75}
+        - {x: 26.5, y: -75}
+        - {x: 46.5, y: -51}
+        - {x: 46.5, y: 53}
+        - {x: 35.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_14
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -55}
+        - {x: -18, y: -75}
+        - {x: 44, y: -75}
+        - {x: 46, y: -66}
+        - {x: 46, y: 69}
+        - {x: 32, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_15
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -14.5, y: 75}
+        - {x: -36.5, y: 75}
+        - {x: -45.5, y: 73}
+        - {x: -45.5, y: -59}
+        - {x: -31.5, y: -72}
+        - {x: -18.5, y: -75}
+        - {x: 33.5, y: -75}
+        - {x: 46.5, y: -64}
+        - {x: 46.5, y: 53}
+        - {x: 41.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_16
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -48}
+        - {x: -17, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_17
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -52}
+        - {x: -44.5, y: -54}
+        - {x: -18.5, y: -75}
+        - {x: 20.5, y: -75}
+        - {x: 46.5, y: -55}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_18
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 74}
+        - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 6, y: 75}
+        - {x: -41, y: 75}
+        - {x: -46, y: 68}
+        - {x: -46, y: -58}
+        - {x: -45, y: -71}
+        - {x: -28, y: -75}
+        - {x: 28, y: -75}
+        - {x: 43, y: -68}
+        - {x: 46, y: -46}
+        - {x: 46, y: 63}
+    - name: Art_UI_CC_Banner366x600-2_19
+      rect:
+        serializedVersion: 2
+        x: 6954
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -57}
+        - {x: -18.5, y: -75}
+        - {x: 40.5, y: -75}
+        - {x: 46.5, y: -55}
+        - {x: 46.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_20
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -56}
+        - {x: -36, y: -61}
+        - {x: -9, y: -74}
+        - {x: -7, y: -75}
+        - {x: 15, y: -75}
+        - {x: 46, y: -51}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_21
+      rect:
+        serializedVersion: 2
+        x: 7686
+        y: 3496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -53}
+        - {x: -20.5, y: -75}
+        - {x: 46.5, y: -75}
+        - {x: 46.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -59}
+        - {x: -30, y: -68}
+        - {x: -14, y: -75}
+        - {x: 19, y: -75}
+        - {x: 46, y: -46}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_23
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -75}
+        - {x: 30.5, y: -75}
+        - {x: 46.5, y: -66}
+        - {x: 46.5, y: 56}
+        - {x: 42.5, y: 75}
+        - {x: -45.5, y: 75}
+        - {x: -45.5, y: -61}
+    - name: Art_UI_CC_Banner366x600-2_24
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -62}
+        - {x: -43, y: -75}
+        - {x: 21, y: -75}
+        - {x: 46, y: -51}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_25
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -9.5, y: 75}
+        - {x: -38.5, y: 75}
+        - {x: -45.5, y: 74}
+        - {x: -45.5, y: -60}
+        - {x: -14.5, y: -75}
+        - {x: 20.5, y: -75}
+        - {x: 46.5, y: -47}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_26
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 75}
+        - {x: -46, y: -69}
+        - {x: -27, y: -75}
+        - {x: 31, y: -75}
+        - {x: 46, y: -66}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_27
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -75}
+        - {x: 30.5, y: -75}
+        - {x: 46.5, y: -66}
+        - {x: 46.5, y: 56}
+        - {x: 42.5, y: 75}
+        - {x: -45.5, y: 75}
+        - {x: -45.5, y: -61}
+    - name: Art_UI_CC_Banner366x600-2_28
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -59}
+        - {x: -30, y: -68}
+        - {x: -14, y: -75}
+        - {x: 19, y: -75}
+        - {x: 46, y: -46}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_29
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -55}
+        - {x: -35.5, y: -75}
+        - {x: 46.5, y: -75}
+        - {x: 46.5, y: 53}
+        - {x: 40.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_30
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -43, y: 75}
+        - {x: -46, y: 71}
+        - {x: -46, y: -73}
+        - {x: -33, y: -75}
+        - {x: 22, y: -75}
+        - {x: 46, y: -63}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_31
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 75}
+        - {x: -45.5, y: 74}
+        - {x: -45.5, y: -61}
+        - {x: -34.5, y: -72}
+        - {x: -20.5, y: -75}
+        - {x: 29.5, y: -75}
+        - {x: 46.5, y: -48}
+        - {x: 46.5, y: 68}
+        - {x: 37.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_32
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -58}
+        - {x: -41, y: -75}
+        - {x: 20, y: -75}
+        - {x: 46, y: -50}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_33
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -14.5, y: 75}
+        - {x: -36.5, y: 75}
+        - {x: -45.5, y: 73}
+        - {x: -45.5, y: -58}
+        - {x: -22.5, y: -70}
+        - {x: -11.5, y: -75}
+        - {x: 18.5, y: -75}
+        - {x: 46.5, y: -46}
+        - {x: 46.5, y: 47}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_34
+      rect:
+        serializedVersion: 2
+        x: 4392
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -42, y: 75}
+        - {x: -46, y: 70}
+        - {x: -46, y: -58}
+        - {x: -44, y: -69}
+        - {x: -25, y: -75}
+        - {x: 24, y: -75}
+        - {x: 43, y: -69}
+        - {x: 46, y: -49}
+        - {x: 46, y: 62}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_35
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -45.5, y: 75}
+        - {x: -45.5, y: -54}
+        - {x: -13.5, y: -75}
+        - {x: 15.5, y: -75}
+        - {x: 18.5, y: -74}
+        - {x: 38.5, y: -55}
+        - {x: 46.5, y: -44}
+        - {x: 46.5, y: 53}
+    - name: Art_UI_CC_Banner366x600-2_36
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 75}
+        - {x: -46, y: -53}
+        - {x: -36, y: -61}
+        - {x: -15, y: -75}
+        - {x: 11, y: -75}
+        - {x: 23, y: -68}
+        - {x: 46, y: -55}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_37
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -43.5, y: 75}
+        - {x: -45.5, y: 63}
+        - {x: -45.5, y: -62}
+        - {x: -30.5, y: -75}
+        - {x: 23.5, y: -75}
+        - {x: 46.5, y: -66}
+        - {x: 46.5, y: 47}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_38
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -39, y: 75}
+        - {x: -46, y: 58}
+        - {x: -46, y: -54}
+        - {x: -26, y: -75}
+        - {x: 20, y: -75}
+        - {x: 46, y: -45}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_39
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 75}
+        - {x: -45.5, y: 57}
+        - {x: -45.5, y: -60}
+        - {x: -28.5, y: -75}
+        - {x: 24.5, y: -75}
+        - {x: 46.5, y: -67}
+        - {x: 46.5, y: 52}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_40
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -36, y: 75}
+        - {x: -36, y: 71}
+        - {x: -46, y: 53}
+        - {x: -46, y: -50}
+        - {x: -18, y: -75}
+        - {x: 23, y: -75}
+        - {x: 45, y: -63}
+        - {x: 46, y: -53}
+        - {x: 46, y: 62}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_41
+      rect:
+        serializedVersion: 2
+        x: 6954
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -52}
+        - {x: -25.5, y: -75}
+        - {x: 24.5, y: -75}
+        - {x: 46.5, y: -67}
+        - {x: 46.5, y: 59}
+        - {x: 43.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_42
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: -56}
+        - {x: -26, y: -75}
+        - {x: 30, y: -75}
+        - {x: 46, y: -67}
+        - {x: 46, y: 64}
+        - {x: 43, y: 75}
+        - {x: -46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_43
+      rect:
+        serializedVersion: 2
+        x: 7686
+        y: 2896
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 75}
+        - {x: -45.5, y: 65}
+        - {x: -45.5, y: -54}
+        - {x: -42.5, y: -72}
+        - {x: -35.5, y: -75}
+        - {x: 23.5, y: -75}
+        - {x: 46.5, y: -52}
+        - {x: 46.5, y: 68}
+        - {x: 37.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -42, y: 75}
+        - {x: -46, y: 72}
+        - {x: -46, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_45
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -8.5, y: 75}
+        - {x: -37.5, y: 75}
+        - {x: -45.5, y: 73}
+        - {x: -45.5, y: -60}
+        - {x: -18.5, y: -75}
+        - {x: 12.5, y: -75}
+        - {x: 34.5, y: -62}
+        - {x: 46.5, y: -46}
+        - {x: 46.5, y: 52}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_46
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -40, y: 75}
+        - {x: -46, y: 64}
+        - {x: -46, y: -61}
+        - {x: -23, y: -75}
+        - {x: 20, y: -75}
+        - {x: 45, y: -65}
+        - {x: 46, y: -52}
+        - {x: 46, y: 62}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_47
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -61}
+        - {x: -14.5, y: -75}
+        - {x: 19.5, y: -75}
+        - {x: 46.5, y: -52}
+        - {x: 46.5, y: 66}
+        - {x: 42.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_48
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -47}
+        - {x: -30, y: -62}
+        - {x: -21, y: -68}
+        - {x: -9, y: -75}
+        - {x: 19, y: -75}
+        - {x: 46, y: -59}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_49
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -56}
+        - {x: -24.5, y: -75}
+        - {x: 44.5, y: -75}
+        - {x: 46.5, y: -48}
+        - {x: 46.5, y: 62}
+        - {x: 35.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_50
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 6, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 54}
+        - {x: -46, y: -71}
+        - {x: -45, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 64}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_51
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -38.5, y: 75}
+        - {x: -45.5, y: 73}
+        - {x: -45.5, y: -65}
+        - {x: -41.5, y: -75}
+        - {x: -34.5, y: -75}
+        - {x: -23.5, y: -57}
+        - {x: -23.5, y: -53}
+        - {x: -23.5, y: -55}
+        - {x: -19.5, y: -67}
+        - {x: -15.5, y: -75}
+        - {x: 19.5, y: -75}
+        - {x: 46.5, y: -59}
+        - {x: 46.5, y: 48}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_52
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -46}
+        - {x: -32, y: -63}
+        - {x: -18, y: -75}
+        - {x: 24, y: -75}
+        - {x: 46, y: -67}
+        - {x: 46, y: 62}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_53
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -58}
+        - {x: -32.5, y: -74}
+        - {x: -27.5, y: -75}
+        - {x: 31.5, y: -75}
+        - {x: 46.5, y: -63}
+        - {x: 46.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_54
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: -45, y: 75}
+        - {x: -46, y: 69}
+        - {x: -46, y: -63}
+        - {x: -31, y: -75}
+        - {x: 22, y: -75}
+        - {x: 46, y: -48}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_55
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 75}
+        - {x: -45.5, y: 55}
+        - {x: -45.5, y: -53}
+        - {x: -23.5, y: -75}
+        - {x: 21.5, y: -75}
+        - {x: 46.5, y: -61}
+        - {x: 46.5, y: 55}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_56
+      rect:
+        serializedVersion: 2
+        x: 4392
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 6, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 54}
+        - {x: -46, y: -54}
+        - {x: -38, y: -75}
+        - {x: 42, y: -75}
+        - {x: 46, y: -74}
+        - {x: 46, y: 63}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_57
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -43.5, y: 75}
+        - {x: -45.5, y: 67}
+        - {x: -45.5, y: -58}
+        - {x: -20.5, y: -75}
+        - {x: 22.5, y: -75}
+        - {x: 46.5, y: -49}
+        - {x: 46.5, y: 47}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_58
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 62}
+        - {x: 33, y: 75}
+        - {x: -41, y: 75}
+        - {x: -46, y: 66}
+        - {x: -46, y: -60}
+        - {x: -29, y: -61}
+        - {x: -25, y: -56}
+        - {x: -25, y: -67}
+        - {x: -11, y: -75}
+        - {x: 19, y: -75}
+        - {x: 25, y: -71}
+        - {x: 46, y: -43}
+    - name: Art_UI_CC_Banner366x600-2_59
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -62}
+        - {x: -28.5, y: -75}
+        - {x: 20.5, y: -75}
+        - {x: 46.5, y: -60}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_60
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 6, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 54}
+        - {x: -46, y: -58}
+        - {x: -39, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 63}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_61
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -62}
+        - {x: -22.5, y: -75}
+        - {x: 31.5, y: -75}
+        - {x: 46.5, y: -47}
+        - {x: 46.5, y: 52}
+        - {x: 37.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_62
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 75}
+        - {x: -46, y: -60}
+        - {x: -39, y: -75}
+        - {x: 46, y: -75}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_63
+      rect:
+        serializedVersion: 2
+        x: 6954
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.5, y: 75}
+        - {x: -44.5, y: 72}
+        - {x: -45.5, y: 67}
+        - {x: -45.5, y: -56}
+        - {x: -32.5, y: -67}
+        - {x: -16.5, y: -75}
+        - {x: 24.5, y: -75}
+        - {x: 46.5, y: -62}
+        - {x: 46.5, y: 55}
+        - {x: 42.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_64
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 54}
+        - {x: 33, y: 74}
+        - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -53}
+        - {x: -20, y: -75}
+        - {x: 15, y: -75}
+        - {x: 45, y: -53}
+        - {x: 46, y: -43}
+    - name: Art_UI_CC_Banner366x600-2_65
+      rect:
+        serializedVersion: 2
+        x: 7686
+        y: 2296
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -14.5, y: 75}
+        - {x: -34.5, y: 75}
+        - {x: -43.5, y: 72}
+        - {x: -45.5, y: 58}
+        - {x: -45.5, y: -66}
+        - {x: -35.5, y: -75}
+        - {x: 22.5, y: -75}
+        - {x: 46.5, y: -59}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -36, y: 75}
+        - {x: -36, y: 71}
+        - {x: -46, y: 55}
+        - {x: -46, y: -52}
+        - {x: -14, y: -75}
+        - {x: 29, y: -75}
+        - {x: 46, y: -67}
+        - {x: 46, y: 72}
+        - {x: 45, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_67
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -14.5, y: 75}
+        - {x: -35.5, y: 75}
+        - {x: -43.5, y: 72}
+        - {x: -45.5, y: 61}
+        - {x: -45.5, y: -65}
+        - {x: -36.5, y: -75}
+        - {x: 18.5, y: -75}
+        - {x: 46.5, y: -63}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_68
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -64}
+        - {x: -42, y: -75}
+        - {x: 43, y: -75}
+        - {x: 46, y: -50}
+        - {x: 46, y: 62}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_69
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -61}
+        - {x: -24.5, y: -75}
+        - {x: 37.5, y: -75}
+        - {x: 46.5, y: -69}
+        - {x: 46.5, y: 59}
+        - {x: 43.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_70
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 75}
+        - {x: -37, y: 75}
+        - {x: -46, y: 49}
+        - {x: -46, y: -48}
+        - {x: -24, y: -75}
+        - {x: 37, y: -75}
+        - {x: 46, y: -72}
+        - {x: 46, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+    - name: Art_UI_CC_Banner366x600-2_71
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -39.5, y: 75}
+        - {x: -45.5, y: 55}
+        - {x: -45.5, y: -67}
+        - {x: -31.5, y: -75}
+        - {x: 27.5, y: -75}
+        - {x: 46.5, y: -54}
+        - {x: 46.5, y: 47}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_72
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -48}
+        - {x: -30, y: -64}
+        - {x: -18, y: -75}
+        - {x: 41, y: -75}
+        - {x: 46, y: -48}
+        - {x: 46, y: 65}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_73
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 75}
+        - {x: -45.5, y: 74}
+        - {x: -45.5, y: -61}
+        - {x: -29.5, y: -75}
+        - {x: 31.5, y: -75}
+        - {x: 38.5, y: -74}
+        - {x: 46.5, y: -63}
+        - {x: 46.5, y: 55}
+        - {x: 42.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_74
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -37, y: 75}
+        - {x: -46, y: 49}
+        - {x: -46, y: -58}
+        - {x: -33, y: -75}
+        - {x: 13, y: -75}
+        - {x: 46, y: -52}
+        - {x: 46, y: 56}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_75
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.5, y: 47}
+        - {x: 45.5, y: 48}
+        - {x: 34.5, y: 75}
+        - {x: -45.5, y: 75}
+        - {x: -45.5, y: -46}
+        - {x: -39.5, y: -56}
+        - {x: -11.5, y: -75}
+        - {x: 13.5, y: -75}
+        - {x: 34.5, y: -59}
+        - {x: 46.5, y: -44}
+    - name: Art_UI_CC_Banner366x600-2_76
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -46, y: 75}
+        - {x: -46, y: -63}
+        - {x: -43, y: -75}
+        - {x: 43, y: -75}
+        - {x: 46, y: -52}
+        - {x: 46, y: 63}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_77
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 75}
+        - {x: -45.5, y: 74}
+        - {x: -45.5, y: -61}
+        - {x: -29.5, y: -75}
+        - {x: 31.5, y: -75}
+        - {x: 38.5, y: -74}
+        - {x: 46.5, y: -63}
+        - {x: 46.5, y: 55}
+        - {x: 42.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_78
+      rect:
+        serializedVersion: 2
+        x: 4392
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -48}
+        - {x: -30, y: -64}
+        - {x: -18, y: -75}
+        - {x: 41, y: -75}
+        - {x: 46, y: -48}
+        - {x: 46, y: 65}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_79
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 75}
+        - {x: -39.5, y: 75}
+        - {x: -45.5, y: 55}
+        - {x: -45.5, y: -67}
+        - {x: -31.5, y: -75}
+        - {x: 27.5, y: -75}
+        - {x: 46.5, y: -54}
+        - {x: 46.5, y: 47}
+        - {x: 45.5, y: 48}
+    - name: Art_UI_CC_Banner366x600-2_80
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 75}
+        - {x: -42, y: 75}
+        - {x: -46, y: 72}
+        - {x: -46, y: -60}
+        - {x: -30, y: -75}
+        - {x: 32, y: -75}
+        - {x: 46, y: -70}
+        - {x: 46, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+    - name: Art_UI_CC_Banner366x600-2_81
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 75}
+        - {x: -45.5, y: 58}
+        - {x: -45.5, y: -53}
+        - {x: -24.5, y: -75}
+        - {x: 26.5, y: -75}
+        - {x: 46.5, y: -66}
+        - {x: 46.5, y: 53}
+        - {x: 36.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_82
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -37, y: 75}
+        - {x: -46, y: 49}
+        - {x: -46, y: -46}
+        - {x: -27, y: -75}
+        - {x: 28, y: -75}
+        - {x: 38, y: -73}
+        - {x: 46, y: -66}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_83
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -14.5, y: 75}
+        - {x: -35.5, y: 75}
+        - {x: -43.5, y: 72}
+        - {x: -45.5, y: 61}
+        - {x: -45.5, y: -65}
+        - {x: -36.5, y: -75}
+        - {x: 18.5, y: -75}
+        - {x: 46.5, y: -63}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_84
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 74}
+        - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 52}
+        - {x: -46, y: -56}
+        - {x: -14, y: -75}
+        - {x: 17, y: -75}
+        - {x: 19, y: -74}
+        - {x: 46, y: -50}
+        - {x: 46, y: 54}
+    - name: Art_UI_CC_Banner366x600-2_85
+      rect:
+        serializedVersion: 2
+        x: 6954
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 75}
+        - {x: -45.5, y: 75}
+        - {x: -45.5, y: -63}
+        - {x: -44.5, y: -71}
+        - {x: -28.5, y: -60}
+        - {x: -24.5, y: -56}
+        - {x: -24.5, y: -53}
+        - {x: -24.5, y: -68}
+        - {x: -10.5, y: -75}
+        - {x: 15.5, y: -75}
+        - {x: 31.5, y: -64}
+        - {x: 46.5, y: -45}
+        - {x: 46.5, y: 49}
+    - name: Art_UI_CC_Banner366x600-2_86
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 54}
+        - {x: 33, y: 74}
+        - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -41, y: 75}
+        - {x: -46, y: 66}
+        - {x: -46, y: -62}
+        - {x: -24, y: -75}
+        - {x: 11, y: -75}
+        - {x: 32, y: -65}
+        - {x: 46, y: -43}
+    - name: Art_UI_CC_Banner366x600-2_87
+      rect:
+        serializedVersion: 2
+        x: 7686
+        y: 1696
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -8.5, y: 75}
+        - {x: -36.5, y: 75}
+        - {x: -45.5, y: 73}
+        - {x: -45.5, y: -61}
+        - {x: -30.5, y: -75}
+        - {x: 26.5, y: -75}
+        - {x: 46.5, y: -62}
+        - {x: 46.5, y: 58}
+        - {x: 43.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 55}
+        - {x: -46, y: -51}
+        - {x: -29, y: -66}
+        - {x: -11, y: -75}
+        - {x: 14, y: -75}
+        - {x: 46, y: -50}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_89
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 75}
+        - {x: -45.5, y: 64}
+        - {x: -45.5, y: -62}
+        - {x: -25.5, y: -75}
+        - {x: 44.5, y: -75}
+        - {x: 46.5, y: -70}
+        - {x: 46.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_90
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 6, y: 75}
+        - {x: -38, y: 75}
+        - {x: -46, y: 54}
+        - {x: -46, y: -50}
+        - {x: -29, y: -65}
+        - {x: -9, y: -75}
+        - {x: 16, y: -75}
+        - {x: 46, y: -51}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_91
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.5, y: 48}
+        - {x: 34.5, y: 75}
+        - {x: -45.5, y: 75}
+        - {x: -45.5, y: -68}
+        - {x: -27.5, y: -75}
+        - {x: 31.5, y: -75}
+        - {x: 46.5, y: -52}
+        - {x: 46.5, y: 47}
+    - name: Art_UI_CC_Banner366x600-2_92
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 75}
+        - {x: -46, y: -72}
+        - {x: -44, y: -75}
+        - {x: 40, y: -75}
+        - {x: 46, y: -53}
+        - {x: 46, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_93
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.5, y: 75}
+        - {x: -45.5, y: 70}
+        - {x: -45.5, y: -54}
+        - {x: -33.5, y: -75}
+        - {x: 34.5, y: -75}
+        - {x: 46.5, y: -72}
+        - {x: 46.5, y: 51}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_94
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 62}
+        - {x: 33, y: 75}
+        - {x: -39, y: 75}
+        - {x: -46, y: 60}
+        - {x: -46, y: -51}
+        - {x: -18, y: -75}
+        - {x: 12, y: -75}
+        - {x: 33, y: -64}
+        - {x: 46, y: -43}
+    - name: Art_UI_CC_Banner366x600-2_95
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 75}
+        - {x: -45.5, y: 59}
+        - {x: -45.5, y: -54}
+        - {x: -12.5, y: -75}
+        - {x: 22.5, y: -75}
+        - {x: 46.5, y: -50}
+        - {x: 46.5, y: 52}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_96
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 54}
+        - {x: 33, y: 74}
+        - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 7, y: 75}
+        - {x: -42, y: 75}
+        - {x: -46, y: 69}
+        - {x: -46, y: -68}
+        - {x: -45, y: -74}
+        - {x: -35, y: -75}
+        - {x: 6, y: -75}
+        - {x: 19, y: -70}
+        - {x: 31, y: -61}
+        - {x: 46, y: -47}
+    - name: Art_UI_CC_Banner366x600-2_97
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 75}
+        - {x: 22.5, y: 71}
+        - {x: -8.5, y: 75}
+        - {x: -37.5, y: 75}
+        - {x: -45.5, y: 73}
+        - {x: -45.5, y: -61}
+        - {x: -29.5, y: -75}
+        - {x: 29.5, y: -75}
+        - {x: 45.5, y: -65}
+        - {x: 46.5, y: -49}
+        - {x: 46.5, y: 60}
+        - {x: 35.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_98
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 75}
+        - {x: 24, y: 75}
+        - {x: 22, y: 72}
+        - {x: 5, y: 75}
+        - {x: -43, y: 75}
+        - {x: -46, y: 71}
+        - {x: -46, y: -67}
+        - {x: -45, y: -75}
+        - {x: 25, y: -75}
+        - {x: 46, y: -58}
+        - {x: 46, y: 54}
+        - {x: 33, y: 74}
+    - name: Art_UI_CC_Banner366x600-2_99
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 75}
+        - {x: -45.5, y: -47}
+        - {x: -32.5, y: -62}
+        - {x: -26.5, y: -60}
+        - {x: -23.5, y: -57}
+        - {x: -23.5, y: -53}
+        - {x: -23.5, y: -55}
+        - {x: -19.5, y: -67}
+        - {x: -10.5, y: -75}
+        - {x: 9.5, y: -75}
+        - {x: 34.5, y: -65}
+        - {x: 46.5, y: -46}
+        - {x: 46.5, y: 53}
+        - {x: 34.5, y: 75}
+    - name: Art_UI_CC_Banner366x600-2_100
+      rect:
+        serializedVersion: 2
+        x: 4392
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_101
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_102
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_103
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_104
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_105
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_106
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_107
+      rect:
+        serializedVersion: 2
+        x: 6954
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_108
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_109
+      rect:
+        serializedVersion: 2
+        x: 7686
+        y: 1096
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_111
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_112
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_113
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_114
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_115
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_116
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_117
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_118
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_119
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_120
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Art_UI_CC_Banner366x600-2_121
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 496
+        width: 366
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

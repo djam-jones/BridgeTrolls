@@ -43,6 +43,10 @@ public class HubHandler : MonoBehaviour {
 	void Update()
 	{
 		CheckState(_panelIndex);
+
+		CheckReady();
+		CheckInCharacterSelect();
+
 		ProgressState();
 		RegressState();
 	}
@@ -53,9 +57,7 @@ public class HubHandler : MonoBehaviour {
 		{
 		case 0:
 			panelState = PanelState.WaitingToJoin;
-
 			playerState = PlayerState.Unready;
-			CheckReady();
 
 			//Disabled Joystick/D-Pad controls.
 
@@ -71,9 +73,7 @@ public class HubHandler : MonoBehaviour {
 			break;
 		case 1:
 			panelState = PanelState.CharacterSelect;
-
 			playerState = PlayerState.Unready;
-			CheckReady();
 
 			//Enable Joystick/D-Pad controls.
 			_characterSelection.Select();
@@ -90,9 +90,7 @@ public class HubHandler : MonoBehaviour {
 			break;
 		case 2:
 			panelState = PanelState.Ready;
-
 			playerState = PlayerState.Ready;
-			CheckReady();
 
 			_characterSelection.Confirm();
 
@@ -143,6 +141,20 @@ public class HubHandler : MonoBehaviour {
 		else if(playerState != PlayerState.Ready && playerState == PlayerState.Unready && ReadyPlayers.Instance.readyPlayers.Contains(this))
 		{
 			ReadyPlayers.Instance.readyPlayers.Remove(this);
+		}
+	}
+
+	public void CheckInCharacterSelect()
+	{
+		if(panelState != PanelState.Ready && panelState == PanelState.CharacterSelect && !ReadyPlayers.Instance.playersInCharacterSelect.Contains(this))
+		{
+			//Add this Hub to PlayersInCharacterSelect List.
+			ReadyPlayers.Instance.playersInCharacterSelect.Add(this);
+		}
+		else if(panelState == PanelState.Ready && panelState != PanelState.CharacterSelect && ReadyPlayers.Instance.playersInCharacterSelect.Contains(this))
+		{
+			//Remove this Hub to PlayersInCharacterSelect List.
+			ReadyPlayers.Instance.playersInCharacterSelect.Remove(this);
 		}
 	}
 

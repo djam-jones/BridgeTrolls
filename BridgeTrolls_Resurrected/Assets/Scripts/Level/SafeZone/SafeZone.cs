@@ -14,7 +14,7 @@ public class SafeZone : MonoBehaviour
 		CheckTriggerContent();
 	}
 
-    public void enablePlayerMovement()
+    public void EnablePlayerMovement()
     {
         if(players.Count != 0)
         {
@@ -27,12 +27,17 @@ public class SafeZone : MonoBehaviour
         }
     }
 
-    public void addDisabledPlayer(GameObject player)
+    public void AddDisabledPlayer(GameObject player)
     {
+		DisablePlayer(player);
         players.Add(player);
-        player.GetComponent<Movement>().enabled = false;
-		player.GetComponent<AbilityHandler>().enabled = false;
     }
+
+	public void DisablePlayer(GameObject player)
+	{
+		player.GetComponent<Movement>().enabled = false;
+		player.GetComponent<AbilityHandler>().enabled = false;
+	}
 		
 	/// <summary>
 	/// Checks if every non-troll/minion player is in this trigger.
@@ -42,7 +47,7 @@ public class SafeZone : MonoBehaviour
 	{
 		if(players.Count == gameManager.allGoblins.Count)
 		{
-			enablePlayerMovement();
+			EnablePlayerMovement();
 			deathWallScript.Reset();
 		}
 	}
