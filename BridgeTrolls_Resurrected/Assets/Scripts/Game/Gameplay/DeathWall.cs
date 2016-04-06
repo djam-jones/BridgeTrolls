@@ -22,11 +22,13 @@ public class DeathWall : MonoBehaviour {
 
 	[SerializeField]public Text deathWallTimerText;
 
+    private bool playtimer = true;
+
 	// Update is called once per frame
 	void Update()
 	{
         timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (timer <= 0 || playtimer == false)
         {
             timer = 30;
         }
@@ -46,8 +48,10 @@ public class DeathWall : MonoBehaviour {
 	}
     IEnumerator spawnArrowsToLeft()
     {
-            StartCoroutine(dangerzone(new Vector2(7.61f, -1.24f)));
-            yield return new WaitForSeconds(3f);
+        StartCoroutine(dangerzone(new Vector2(7.61f, -0.59f)));
+        
+        yield return new WaitForSeconds(3f);
+        playtimer = false;
             for (int x = 12; x >= -10; x--)
             {
                 for (int y = 5; y >= -6; y--)
@@ -73,10 +77,12 @@ public class DeathWall : MonoBehaviour {
 
     }
 	IEnumerator spawnArrowsToRight()
-	{
-            StartCoroutine(dangerzone(new Vector2(-7.61f, 1.24f)));
-            yield return new WaitForSeconds(3f);
-            for (int x = -12; x <= 10; x += 1)
+    { 
+        StartCoroutine(dangerzone(new Vector2(-7.61f, 0.59f)));
+        
+        yield return new WaitForSeconds(3f);
+        playtimer = false;
+        for (int x = -12; x <= 10; x += 1)
             {
 
                 for (int y = -6; y <= 5; y += 1)
@@ -120,6 +126,7 @@ public class DeathWall : MonoBehaviour {
                 arrowlist.Clear();
             }
         }
+        playtimer = true;
     }
 
     IEnumerator dangerzone(Vector2 position)

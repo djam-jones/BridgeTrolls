@@ -112,7 +112,7 @@ public class AbilityHandler : MonoBehaviour {
         List<GameObject> goblin = manager.allGoblins;
         for (int i = 0; i < goblin.Count; i++)
         { 
-            goblin[i].transform.position = new Vector2(goblin[i].transform.position.x * Random.insideUnitCircle.x , goblin[i].transform.position.y * Random.insideUnitCircle.y);
+            goblin[i].transform.position = new Vector2(goblin[i].transform.position.x * Random.insideUnitCircle.x * 4, goblin[i].transform.position.y * Random.insideUnitCircle.y * 4);
         }
 
     }
