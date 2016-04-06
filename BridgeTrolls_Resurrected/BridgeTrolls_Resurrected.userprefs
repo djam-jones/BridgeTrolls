@@ -1,23 +1,17 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
+﻿<Properties StartupItem="BridgeTrolls_Resurrected.CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/ControllerAssigner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/General/PlayerFollowCameraZoom.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Game/PlayerFollowCameraZoom.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Game/GameMagager.cs" Line="267" Column="38" />
-      <File FileName="Assets/Scripts/Game/GameModes.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerIndicator.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Player/PlayerFactory.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Player/Player.cs" Line="19" Column="25" />
-      <File FileName="Assets/Scripts/Game/CharacterDatabase.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Game/ReadyPlayers.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Level/SafeZone/SafeZone.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/CharacterSelection.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/HubHandler.cs" Line="22" Column="73" />
-      <File FileName="Assets/Scripts/Game/CountDown.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/MenuHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/AbilityHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/ControllerAssigner.cs" Line="19" Column="4" />
+      <File FileName="Assets/Scripts/Game/General/GameMagager.cs" Line="22" Column="67" />
+      <File FileName="Assets/Scripts/Menu/CharacterSelection.cs" Line="42" Column="142" />
+      <File FileName="Assets/Scripts/Menu/HubHandler.cs" Line="38" Column="60" />
+      <File FileName="Assets/Scripts/Menu/MenuHandler.cs" Line="104" Column="1" />
+      <File FileName="Assets/Scripts/Menu/ControllerAssigner.cs" Line="44" Column="4" />
+      <File FileName="Assets/Scripts/Game/General/ReadyPlayers.cs" Line="75" Column="24" />
+      <File FileName="Assets/Scripts/Game/General/PlayerFollowCameraZoom.cs" Line="37" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
