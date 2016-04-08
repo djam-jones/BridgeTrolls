@@ -12,6 +12,7 @@ public class AbilityHandler : MonoBehaviour {
 
 	private float _fadeSpeed = 3f;
 
+	private Player _player;
 	private Roles _role;
 	private Movement _move;
 	private SpriteRenderer _spriteRenderer;
@@ -80,9 +81,8 @@ public class AbilityHandler : MonoBehaviour {
 
         Debug.Log("dash");
         _move.speed += 7;
-        //GetComponent<SpriteRenderer>().sprite = Dash;
+//		StartCoroutine( _player.DashPoof() );
         yield return new WaitForSeconds(0.1f);
-        //GetComponent<SpriteRenderer>().sprite = Idle;
         _move.speed -= 7;
         _dashUp = false;
 		_inCooldown = true;

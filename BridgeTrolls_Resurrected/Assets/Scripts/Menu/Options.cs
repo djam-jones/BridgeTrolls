@@ -4,26 +4,41 @@ using System.Collections;
 
 public class Options : MonoBehaviour {
 
-	public void FullScreenToggle(Toggle isFullscreen)
-	{
-		Screen.fullScreen = isFullscreen;
-			
-		if(!isFullscreen)
-			Screen.SetResolution(1152, 648, isFullscreen);
-		else if(isFullscreen)
-			Screen.SetResolution(1920, 1080, isFullscreen);
+	public Toggle fullScreenToggleUI;
+	public Slider musicSliderUI;
+	public Slider soundFxSliderUI;
 
-		print("Fullscreen is " + Screen.fullScreen);
+	AudioSource[] _audioSources;
+	bool _fullScreen = true;
+
+	int _xSizeResolution = 1920;
+	int _ySizeResolution = 1080;
+
+	void Awake()
+	{
+		_audioSources = GameObject.Find("Audio Handler").GetComponents<AudioSource>();
+
+//		fullScreenToggleUI.onValueChanged.AddListener(FullScreenToggle);
+	}
+
+	void Update()
+	{
+		Screen.fullScreen = _fullScreen;
+	}
+
+	public void FullScreenToggle()
+	{
+		_fullScreen = !_fullScreen;
 	}
 
 	public void MusicVolume()
 	{
-		//Do Something Cool.
+		_audioSources[0].volume = musicSliderUI.value;
 	}
 
 	public void SoundVolume()
 	{
-		//Do Something Cool.
+		_audioSources[1].volume = soundFxSliderUI.value;
 	}
 
 	public void Controls()
@@ -34,5 +49,15 @@ public class Options : MonoBehaviour {
 	public void ShowTutorialToggle()
 	{
 		//Do Something Cool.
+	}
+
+	public void SetResolution()
+	{
+		//Do Something Cool.
+	}
+
+	public void SetQuality()
+	{
+		
 	}
 }

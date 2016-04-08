@@ -143,7 +143,7 @@ public class PlayerFactory : MonoBehaviour {
 		_spriteRenderer = _childObj.AddComponent<SpriteRenderer>();
 		_straightener = _childObj.AddComponent<SpriteStraightener>();
 		_smokeAnim = _childObj.AddComponent<Animator>();
-		_smokeAnim.runtimeAnimatorController = Resources.Load("Animations/Smoke/Smoke_Animator") as RuntimeAnimatorController;
+		_smokeAnim.runtimeAnimatorController = Resources.Load("Animations/Player Effects/Smoke_Animator") as RuntimeAnimatorController;
 
 		switch(playerConstString)
 		{

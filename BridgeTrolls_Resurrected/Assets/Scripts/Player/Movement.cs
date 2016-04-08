@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour {
 	[SerializeField] private float _minClampedY = -6.5f;
 	[SerializeField] private float _maxClampedY = 6.5f;
 
+	private Player _player;
 	private PlayerRoles _playerRolesScript;
 	private Rigidbody2D _rigidbody2D;
 	private Animator 	_anim;
@@ -26,6 +27,7 @@ public class Movement : MonoBehaviour {
 
 	void Awake()
 	{
+		_player = GetComponent<Player>();
 		_playerRolesScript = GetComponent<PlayerRoles>();
 		_rigidbody2D = GetComponent<Rigidbody2D>();
 		_anim = GetComponent<Animator>();

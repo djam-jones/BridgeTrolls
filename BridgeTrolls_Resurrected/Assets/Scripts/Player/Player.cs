@@ -6,7 +6,7 @@ public class Player : MonoBehaviour {
 	public int playerNum;
 	public string playerType;
 
-	GameObject _smokeObject;
+	GameObject _effectObject;
 
 	PlayerRoles _playerRoles;
 	Movement _movement;
@@ -21,15 +21,15 @@ public class Player : MonoBehaviour {
 
 	void Start()
 	{
-		_smokeObject = this.transform.GetChild(1).gameObject;
-		_smokeObject.SetActive(false);
+		_effectObject = this.transform.GetChild(1).gameObject;
+		_effectObject.SetActive(false);
 	}
 
 	void Update()
 	{
 		SetSortingOrder();
 		this.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
-		_smokeObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
+		_effectObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
 	}
 
 	public void SetCharacter(string characterName)
@@ -75,8 +75,27 @@ public class Player : MonoBehaviour {
 
 	public IEnumerator Poof()
 	{
-		_smokeObject.SetActive(true);
+		_effectObject.SetActive(true);
+		_effectObject.GetComponent<Animator>().SetTrigger("Poof_Effect");
 		yield return new WaitForSeconds(1.2f);
-		_smokeObject.SetActive(false);
+		_effectObject.SetActive(false);
+	}
+
+	public IEnumerator DashPoof()
+	{
+		_effectObject.SetActive(true);
+		_effectObject.GetComponent<Animator>().SetTrigger("Dash_Effect");
+		yield return new WaitForSeconds(1f);
+		_effectObject.SetActive(false);
+		yield break;
+	}
+
+	public IEnumerator RunPoof()
+	{
+		_effectObject.SetActive(true);
+		_effectObject.GetComponent<Animator>().SetTrigger("Run_Effect");
+		yield return new WaitForSeconds(1f);
+		_effectObject.SetActive(false);
+		yield break;
 	}
 }
