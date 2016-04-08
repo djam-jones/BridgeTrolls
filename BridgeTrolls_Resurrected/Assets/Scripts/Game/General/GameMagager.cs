@@ -24,7 +24,6 @@ public class GameMagager : MonoBehaviour {
 	public List<GameObject> allGoblins = new List<GameObject>();
 	public List<GameObject> allMinions = new List<GameObject>();
 
-	[HideInInspector]
 	public List<GameObject> rightSidedPlayers = new List<GameObject>();
 
 	public Sprite trollSprite;
@@ -36,9 +35,12 @@ public class GameMagager : MonoBehaviour {
 	public Text trollWinScreenText;
 
 	[SerializeField] public Text trollIndicationText;
+
 	[SerializeField] public Image directionIndicator;
+	[SerializeField] public Text directionText;
+
 	private RectTransform _rectTransform;
-	private float _rectTransformXScale;
+	private Vector3 _rectTransformScale;
 
 	public FadeScreen _fadeScript;
 
@@ -71,7 +73,8 @@ public class GameMagager : MonoBehaviour {
 		}
 
 		_rectTransform = directionIndicator.GetComponent<RectTransform>();
-		_rectTransformXScale = _rectTransform.localScale.x;
+		_rectTransformScale = _rectTransform.localScale;
+		_rectTransform.localScale = _rectTransformScale;
 
 		//Disable all Gameplay Scripts at the Awake.
 		GetComponent<DeathWall>().enabled = false;
@@ -88,13 +91,15 @@ public class GameMagager : MonoBehaviour {
 			GetAllPlayerRoles();
 			GameOver();
 
-			if(rightSidedPlayers.Count == allGoblins.Count)
+			if(rightSidedPlayers.Count != allGoblins.Count)
 			{
-				_rectTransformXScale = -1;
+				_rectTransformScale.x = -1;
+				directionText.text = "Move Right!";
 			}
-			else if(rightSidedPlayers.Count != allGoblins.Count)
+			else if(rightSidedPlayers.Count == allGoblins.Count)
 			{
-				_rectTransformXScale = 1;
+				_rectTransformScale.x = 1;
+				directionText.text = "Move Left!";
 			}
 		}
 		ForceQuitGame();

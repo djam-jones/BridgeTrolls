@@ -43,7 +43,7 @@ public class HubHandler : MonoBehaviour {
 	void Update()
 	{
 		CheckState(_panelIndex);
-		SetPanelID();
+//		SetPanelID();
 
 		CheckReady();
 		CheckInCharacterSelect();
@@ -54,7 +54,7 @@ public class HubHandler : MonoBehaviour {
 
 	private void SetPanelID()
 	{
-		panelID = ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex];
+		panelID = ControllerAssigner.Instance.ControllerIndex;
 	}
 
 	private void CheckState(int panelIndex)
