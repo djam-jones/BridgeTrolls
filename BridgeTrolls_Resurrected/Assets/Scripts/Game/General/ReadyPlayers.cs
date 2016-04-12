@@ -8,10 +8,12 @@ public class ReadyPlayers : MonoBehaviour {
 	[SerializeField] public List<HubHandler> playersInCharacterSelect = new List<HubHandler>();
 
 	public GameObject startGameBanner;
+	public GameObject transitionLockDoors;
 	[SerializeField] private const string START_GAME_BUTTON = "StartGameButton";
 
 	private bool startedGame = false;
 
+	private FadeScreen _fadeScript;
 	private GameModes GameModesInstance;
 	public static ReadyPlayers Instance {get; private set;}
 
@@ -19,6 +21,9 @@ public class ReadyPlayers : MonoBehaviour {
 	{
 		CheckForInstance();
 		GameModesInstance = GetComponent<GameModes>();
+		_fadeScript = GameObject.Find("Main Camera").GetComponent<FadeScreen>();
+
+		transitionLockDoors.SetActive(false);
 	}
 
 	void Update()
@@ -27,7 +32,7 @@ public class ReadyPlayers : MonoBehaviour {
 
 		if(startedGame)
 		{
-			StartCoroutine( GameObject.Find("Main Camera").GetComponent<FadeScreen>().GoToScene("Main") );
+			StartCoroutine( _fadeScript.GoToScene("Main") );
 		}
 	}
 
@@ -41,9 +46,12 @@ public class ReadyPlayers : MonoBehaviour {
 				startGameBanner.SetActive(true);
 			}
 			else{}
+
 			//Set a Button to Start The Game.
 			if(Input.GetButtonDown(START_GAME_BUTTON))
 			{
+				transitionLockDoors.SetActive(true);
+
 				//Save the Game Mode.
 				PlayerPrefs.SetInt("GameMode", GameModesInstance.gameModeIndex);
 
@@ -52,6 +60,7 @@ public class ReadyPlayers : MonoBehaviour {
 
 				//Save the Amount of Players playing.
 				PlayerPrefs.SetInt("PlayerCount", readyPlayers.Count);
+
 				startedGame = true;
 			}
 		}

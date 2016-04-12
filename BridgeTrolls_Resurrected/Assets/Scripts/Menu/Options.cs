@@ -7,9 +7,14 @@ public class Options : MonoBehaviour {
 	public Toggle fullScreenToggleUI;
 	public Slider musicSliderUI;
 	public Slider soundFxSliderUI;
+	public Dropdown resolutionDropdownUI;
+	public Dropdown qualityDropdownUI;
+
+	private QualityLevel _qualityLevel;
 
 	AudioSource[] _audioSources;
 	bool _fullScreen = true;
+	bool _showTutorial = true;
 
 	int _xSizeResolution = 1920;
 	int _ySizeResolution = 1080;
@@ -17,8 +22,6 @@ public class Options : MonoBehaviour {
 	void Awake()
 	{
 		_audioSources = GameObject.Find("Audio Handler").GetComponents<AudioSource>();
-
-//		fullScreenToggleUI.onValueChanged.AddListener(FullScreenToggle);
 	}
 
 	void Update()
@@ -48,16 +51,27 @@ public class Options : MonoBehaviour {
 
 	public void ShowTutorialToggle()
 	{
-		//Do Something Cool.
+		_showTutorial = !_showTutorial;
+		PlayerPrefs.SetString("ShowTutorial", _showTutorial.ToString());
 	}
 
 	public void SetResolution()
 	{
-		//Do Something Cool.
+		if(resolutionDropdownUI.value == 0)
+			Screen.SetResolution(1920, 1080, _fullScreen);
+		else if(resolutionDropdownUI.value == 1)
+			Screen.SetResolution(1280, 720, _fullScreen);
+		else if(resolutionDropdownUI.value == 2)
+			Screen.SetResolution(1024, 576, _fullScreen);
 	}
 
 	public void SetQuality()
 	{
-		
+		if(qualityDropdownUI.value == 0)
+			_qualityLevel = QualityLevel.Fantastic;
+		else if(qualityDropdownUI.value == 1)
+			_qualityLevel = QualityLevel.Good;
+		else if(qualityDropdownUI.value == 2)
+			_qualityLevel = QualityLevel.Fastest;
 	}
 }

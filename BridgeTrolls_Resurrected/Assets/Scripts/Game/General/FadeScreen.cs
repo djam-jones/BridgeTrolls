@@ -22,13 +22,13 @@ public class FadeScreen : MonoBehaviour {
 	public void FadeToColor()
 	{
 		//Lerp the color of the overlay image to black.
-		overlayImage.color = Color.Lerp(overlayImage.color, fadeColor, Mathf.PingPong(Time.time, fadeSpeed));
+		overlayImage.color = Color.Lerp(overlayImage.color, fadeColor, Mathf.PingPong(Time.time * fadeSpeed, 1.0f));
 	}
 
 	public void FadeToClear()
 	{
 		//Lerp the color of the overlay image to clear, so that it is transparent.
-		overlayImage.color = Color.Lerp(overlayImage.color, Color.clear, Mathf.PingPong(Time.time, fadeSpeed));
+		overlayImage.color = Color.Lerp(overlayImage.color, Color.clear, Mathf.PingPong(Time.time * fadeSpeed, 1.0f));
 
 		if(overlayImage.color.a == 0f)
 		{
@@ -38,7 +38,7 @@ public class FadeScreen : MonoBehaviour {
 
 	public IEnumerator GoToScene(string sceneName)
 	{
-		FadeToColor();
+		//FadeToColor();
 		yield return new WaitForSeconds(waitSeconds);
 		SceneManager.LoadScene(sceneName);
 	}

@@ -18,6 +18,7 @@ public class MenuHandler : MonoBehaviour {
 	public GameObject mainMenu;
 	public GameObject charSelect;
 	public GameObject optionsMenu;
+	public GameObject creditsScreen;
 
 	//Panels
 	public GameObject buttonsPanel;
@@ -166,6 +167,7 @@ public class MenuHandler : MonoBehaviour {
 				charSelect.SetActive(false);
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(false);
+				creditsScreen.SetActive(false);
 				title.enabled = true;
 				pressA.enabled = true;
 			break;
@@ -175,6 +177,7 @@ public class MenuHandler : MonoBehaviour {
 				charSelect.SetActive(false);
 				buttonsPanel.SetActive(true);
 				optionsMenu.SetActive(false);
+				creditsScreen.SetActive(false);
 				title.enabled = true;
 				pressA.enabled = false;
 			break;
@@ -184,6 +187,7 @@ public class MenuHandler : MonoBehaviour {
 				charSelect.SetActive(true);
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(false);
+				creditsScreen.SetActive(false);
 				title.enabled = false;
 				pressA.enabled = false;
 			break;
@@ -193,6 +197,7 @@ public class MenuHandler : MonoBehaviour {
 				charSelect.SetActive(false);
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(true);
+				creditsScreen.SetActive(false);
 				title.enabled = true;
 				pressA.enabled = false;
 			break;
@@ -202,6 +207,7 @@ public class MenuHandler : MonoBehaviour {
 				charSelect.SetActive(false);
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(false);
+				creditsScreen.SetActive(true);
 				title.enabled = true;
 				pressA.enabled = false;
 			break;

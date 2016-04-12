@@ -8,6 +8,8 @@ public class Tutorial : MonoBehaviour {
 
 	public GameObject tutorialScreen;
 
+	private bool _showThis;
+
 	StartScreenHandler _cDown;
 	Animator _anim;
 
@@ -17,11 +19,20 @@ public class Tutorial : MonoBehaviour {
 
 		_cDown = GetComponent<StartScreenHandler>();
 		_cDown.enabled = false;
+
+		if(PlayerPrefs.GetString("ShowTutorial") == "True")
+			_showThis = true;
+		else if(PlayerPrefs.GetString("ShowTutorial") == "False")
+			_showThis = false;
 	}
 
 	void Update()
 	{
-		Continue();
+		if(_showThis)
+			Continue();
+		else
+			tutorialScreen.SetActive(false);
+			_cDown.enabled = true;
 	}
 
 	private void Continue()

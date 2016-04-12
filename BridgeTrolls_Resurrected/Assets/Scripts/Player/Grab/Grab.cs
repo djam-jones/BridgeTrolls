@@ -35,7 +35,7 @@ public class Grab : MonoBehaviour
     private void connectPlayers()
     {
         
-        player.GetComponent<Rigidbody2D>().freezeRotation = false;
+		player.GetComponent<Rigidbody2D>().freezeRotation = true;
         HingeJoint2D connector = player.gameObject.AddComponent<HingeJoint2D>();
         connector.anchor = hingeOffset;
         connector.connectedBody = this.gameObject.GetComponent<Rigidbody2D>();
