@@ -46,7 +46,8 @@ public class StartScreenHandler : MonoBehaviour
 	private IEnumerator DisableObject(GameObject panel)
 	{
 		yield return new WaitForSeconds(0.25f);
-		this.enabled = false;
 		panel.SetActive(false);
+		this.enabled = false;
+		yield return null;
 	}
 }

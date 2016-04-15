@@ -14,6 +14,7 @@ public class ReadyPlayers : MonoBehaviour {
 	private bool startedGame = false;
 
 	private FadeScreen _fadeScript;
+	private ScreenManager _screenManager;
 	private GameModes GameModesInstance;
 	public static ReadyPlayers Instance {get; private set;}
 
@@ -22,7 +23,11 @@ public class ReadyPlayers : MonoBehaviour {
 		CheckForInstance();
 		GameModesInstance = GetComponent<GameModes>();
 		_fadeScript = GameObject.Find("Main Camera").GetComponent<FadeScreen>();
+		_screenManager = GameObject.Find("Loading Screen Manager").GetComponent<ScreenManager>();
+	}
 
+	void Start()
+	{
 		transitionLockDoors.SetActive(false);
 	}
 
@@ -32,7 +37,7 @@ public class ReadyPlayers : MonoBehaviour {
 
 		if(startedGame)
 		{
-			StartCoroutine( _fadeScript.GoToScene("Main") );
+			StartCoroutine( _screenManager.LoadScene("Main") );
 		}
 	}
 
@@ -51,6 +56,7 @@ public class ReadyPlayers : MonoBehaviour {
 			if(Input.GetButtonDown(START_GAME_BUTTON))
 			{
 				transitionLockDoors.SetActive(true);
+				GameObject.Find("Audio Handler").GetComponents<AudioSource>()[0].Stop();
 
 				//Save the Game Mode.
 				PlayerPrefs.SetInt("GameMode", GameModesInstance.gameModeIndex);

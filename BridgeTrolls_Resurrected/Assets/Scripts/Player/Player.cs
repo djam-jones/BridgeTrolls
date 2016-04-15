@@ -76,7 +76,7 @@ public class Player : MonoBehaviour {
 	public IEnumerator Poof()
 	{
 		_effectObject.SetActive(true);
-		_effectObject.GetComponent<Animator>().SetTrigger("Poof_Effect");
+		_effectObject.GetComponent<Animator>().Play("Poof");
 		yield return new WaitForSeconds(1.2f);
 		_effectObject.SetActive(false);
 	}
@@ -84,18 +84,18 @@ public class Player : MonoBehaviour {
 	public IEnumerator DashPoof()
 	{
 		_effectObject.SetActive(true);
-		_effectObject.GetComponent<Animator>().SetTrigger("Dash_Effect");
+		_effectObject.GetComponent<Animator>().Play("DashEffect_Animation");
 		yield return new WaitForSeconds(1f);
 		_effectObject.SetActive(false);
-		yield break;
+		yield return null;
 	}
 
 	public IEnumerator RunPoof()
 	{
 		_effectObject.SetActive(true);
-		_effectObject.GetComponent<Animator>().SetTrigger("Run_Effect");
+		_effectObject.GetComponent<Animator>().Play("RunEffect_Animation");
 		yield return new WaitForSeconds(1f);
 		_effectObject.SetActive(false);
-		yield break;
+		yield return null;
 	}
 }

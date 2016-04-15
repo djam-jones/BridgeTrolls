@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class GameMagager : MonoBehaviour {
 	
     public GameMagager manager;
-	private bool _isMainScene = false;
+	[HideInInspector] public bool isMainScene;
 	private bool _gamePaused;
 	private bool _gameStarted = false;
 	[HideInInspector]
@@ -34,6 +34,8 @@ public class GameMagager : MonoBehaviour {
 	public GameObject trollWinScreen;
 	public Text trollWinScreenText;
 
+	public GameObject transitionLock;
+
 	[SerializeField] public Text trollIndicationText;
 
 	[SerializeField] public Image directionIndicator;
@@ -42,7 +44,9 @@ public class GameMagager : MonoBehaviour {
 	private RectTransform _rectTransform;
 	private Vector3 _rectTransformScale;
 
-	public FadeScreen _fadeScript;
+	public FadeScreen fadeScript;
+	public AudioHandler audioHandlerScript;
+	public ScreenManager _screenManager;
 
 	private int id = 0;
 
@@ -58,12 +62,14 @@ public class GameMagager : MonoBehaviour {
 		if(_scene.name == "Main")
 		{
 			CheckAmountOfPlayers();
-			_isMainScene = true;
+			isMainScene = true;
 		}
 		else if(_scene.name == "MainMenu")
 		{
-			_isMainScene = false;
+			isMainScene = false;
 		}
+
+		_screenManager = GameObject.Find("Loading Screen Manager").GetComponent<ScreenManager>();
 
 		//Disable all Player Movement at the Awake.
 		for(int i = 0; i < playerArray.Count; i++)
@@ -82,11 +88,18 @@ public class GameMagager : MonoBehaviour {
 
 		winScreen.SetActive(false);
 		trollWinScreen.SetActive(false);
+		if(isMainScene) 
+		{
+			transitionLock.SetActive(true);
+			audioHandlerScript.GetComponents<AudioSource>()[1].clip = audioHandlerScript.allSoundEffects[0];
+			audioHandlerScript.GetComponents<AudioSource>()[1].Play();
+			transitionLock.GetComponent<Animator>().Play("Transition_Open");
+		}
 	}
 
 	void Update()
 	{
-		if(_isMainScene)
+		if(isMainScene)
 		{
 			GetAllPlayerRoles();
 			GameOver();
@@ -196,12 +209,16 @@ public class GameMagager : MonoBehaviour {
 
 	public void ReturnToMainMenu()
 	{
-		StartCoroutine( _fadeScript.GoToScene("MainMenu") );
+		audioHandlerScript.GetComponents<AudioSource>()[0].Stop();
+		transitionLock.GetComponent<Animator>().Play("Transition_Close");
+		StartCoroutine( _screenManager.LoadScene("MainMenu") );
 	}
 
 	public void Retry()
 	{
-		StartCoroutine( _fadeScript.GoToScene("Main") );
+		audioHandlerScript.GetComponents<AudioSource>()[0].Stop();
+		transitionLock.GetComponent<Animator>().Play("Transition_Close");
+		StartCoroutine( _screenManager.LoadScene("Main") );
 	}
 
 	public void StartGame(bool gameStarted)
@@ -236,7 +253,6 @@ public class GameMagager : MonoBehaviour {
 				trollWinScreen.SetActive(true);
 				trollWinScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
 			}
-			_gameStarted = false;
 
 			//Disable all Player Movement.
 			for(int i = 0; i < playerArray.Count; i++)
@@ -249,6 +265,7 @@ public class GameMagager : MonoBehaviour {
 			GetComponent<DeathWall>().enabled = false;
 			GetComponent<Pause>().enabled = false;
 		}
+		_gameStarted = false;
 	}
 
 	private IEnumerator TrollIndicationTextFade(GameObject troll)
@@ -269,6 +286,7 @@ public class GameMagager : MonoBehaviour {
 			{
 				print("Application Quitting...");
 				Application.Quit();
+				PlayerPrefs.DeleteAll();
 			}
 		}
 	}

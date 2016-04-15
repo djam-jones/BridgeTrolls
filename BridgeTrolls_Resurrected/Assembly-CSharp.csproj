@@ -54,7 +54,6 @@
      <Compile Include="Assets\Scripts\Game\General\FadeScreen.cs" />
      <Compile Include="Assets\Scripts\Game\General\GameMagager.cs" />
      <Compile Include="Assets\Scripts\Game\General\GameModes.cs" />
-     <Compile Include="Assets\Scripts\Game\General\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\Game\General\PlayerFollowCameraZoom.cs" />
      <Compile Include="Assets\Scripts\Game\General\ReadyPlayers.cs" />
      <Compile Include="Assets\Scripts\Game\General\SplashScreen.cs" />
@@ -62,6 +61,8 @@
      <Compile Include="Assets\Scripts\Game\In-Game Menu\StartScreenHandler.cs" />
      <Compile Include="Assets\Scripts\Game\In-Game Menu\Tutorial.cs" />
      <Compile Include="Assets\Scripts\Game\In-Game Menu\WinScreen.cs" />
+     <Compile Include="Assets\Scripts\Game\Loading Screen\PunManager.cs" />
+     <Compile Include="Assets\Scripts\Game\Loading Screen\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IControllerConnection.cs" />
      <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
      <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />

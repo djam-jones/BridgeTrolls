@@ -4,6 +4,9 @@ using System.Collections;
 public class Pause : MonoBehaviour
 {
 	[SerializeField] private GameObject pauseMenu;
+
+	private bool _menuIsActive;
+
 	//Start Button
 	[SerializeField] private const string START_GAME_BUTTON = "StartGameButton";
 
@@ -25,7 +28,7 @@ public class Pause : MonoBehaviour
         {
 			ContinueGame();
         }
-    }
+	}
 
 	public void PauseGame()
 	{
@@ -43,6 +46,7 @@ public class Pause : MonoBehaviour
 
 	public void ContinueGame()
 	{
+		
 		pauseMenu.SetActive(false);
 
 		//Enable Movement for every Player.

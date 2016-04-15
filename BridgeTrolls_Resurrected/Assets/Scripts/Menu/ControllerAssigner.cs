@@ -26,7 +26,7 @@ public class ControllerAssigner : MonoBehaviour
 		{
 			if(Input.GetButtonDown(_actionKey + _controllerButtonNameArray[i]))
 			{
-				print(_controllerButtonNameArray[i]);
+//				print(_controllerButtonNameArray[i]);
 				allControllersInOrder.Add(_controllerButtonNameArray[i]);
 			}
 		}

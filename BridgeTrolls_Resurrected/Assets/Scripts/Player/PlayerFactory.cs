@@ -53,34 +53,34 @@ public class PlayerFactory : MonoBehaviour {
 		//Animator Implementation
 		_anim = _playerObj.AddComponent<Animator>();
 
-		//Collision Implementation
-		_boxCollider = _playerObj.AddComponent<BoxCollider2D>();
-
-		_boxColliderOffset = _boxCollider.offset;
-		_boxColliderSize = _boxCollider.size;
-
-		_boxColliderOffset.x = -0.025f;
-		_boxColliderOffset.y = -0.375f;
-		_boxColliderSize.x = 0.5f;
-		_boxColliderSize.y = 0.35f;
-
-		_boxCollider.offset = _boxColliderOffset;
-		_boxCollider.size = _boxColliderSize;
-
 		//Trigger Implementation
 		_boxTrigger = _playerObj.AddComponent<BoxCollider2D>();
 		_boxTrigger.isTrigger = true;
 
-		_boxTriggerOffset = _boxTrigger.offset;
-		_boxTriggerSize = _boxTrigger.size;
+//		_boxTriggerOffset = _boxTrigger.offset;
+//		_boxTriggerSize = _boxTrigger.size;
+//
+//		_boxTriggerOffset.x = -0.025f;
+//		_boxTriggerOffset.y = -0.375f;
+//		_boxTriggerSize.x  = 0.5f;
+//		_boxTriggerSize.y = 0.35f;
+//
+//		_boxTrigger.offset = _boxTriggerOffset;
+//		_boxTrigger.size = _boxTriggerSize;
 
-		_boxTriggerOffset.x = -0.025f;
-		_boxTriggerOffset.y = -0.375f;
-		_boxTriggerSize.x  = 0.5f;
-		_boxTriggerSize.y = 0.35f;
-
-		_boxTrigger.offset = _boxTriggerOffset;
-		_boxTrigger.size = _boxTriggerSize;
+		//Collision Implementation
+		_boxCollider = _playerObj.AddComponent<BoxCollider2D>();
+		
+		_boxColliderOffset = _boxCollider.offset;
+		_boxColliderSize = _boxCollider.size;
+		
+		_boxColliderOffset.x = -0.025f;
+		_boxColliderOffset.y = -0.375f;
+		_boxColliderSize.x = 0.5f;
+		_boxColliderSize.y = 0.35f;
+		
+		_boxCollider.offset = _boxColliderOffset;
+		_boxCollider.size = _boxColliderSize;
 
 		//Player Script Implementation
 		_player = _playerObj.AddComponent<Player>();

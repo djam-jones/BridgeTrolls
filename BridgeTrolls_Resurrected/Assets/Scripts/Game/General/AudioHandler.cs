@@ -10,12 +10,22 @@ public class AudioHandler : MonoBehaviour {
 	//'Load' the value of the Music & SFX Slider/volume
 
 	AudioSource[] _audioSources;
+	public AudioClip[] allMusic = new AudioClip[2];
+	public AudioClip[] allSoundEffects;
 	Scene _scene;
 
 	void Awake()
 	{
 		_audioSources = GetComponents<AudioSource>();
+	}
 
+	void Update()
+	{
+		SaveVolume();
+	}
+
+	private void SaveVolume()
+	{
 		if(_scene.name == "MainMenu")
 		{
 			PlayerPrefs.SetFloat("MusicVolume", _audioSources[0].volume);
