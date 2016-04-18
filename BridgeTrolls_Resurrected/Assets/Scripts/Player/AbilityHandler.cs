@@ -2,26 +2,31 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class AbilityHandler : MonoBehaviour {
+public class AbilityHandler : MonoBehaviour
+{
 
-    [SerializeField, HideInInspector] private string _actionKey_A = "Fire1_P";
-    [SerializeField, HideInInspector] private string _actionKey_B = "Fire2_P";
+    [SerializeField, HideInInspector]
+    private string _actionKey_A = "Fire1_P";
+    [SerializeField, HideInInspector]
+    private string _actionKey_B = "Fire2_P";
 
-	public bool _dashUp = true;
-	private bool _inCooldown = false;
-	private bool isRawring = false;
+    public bool _dashUp = true;
+    private bool _inCooldown = false;
+    private bool isRawring = false;
 
-	private float _fadeSpeed = 3f;
+    private float _fadeSpeed = 3f;
 
-	private Player _player;
-	private Roles _role;
-	private Movement _move;
-	private GameMagager manager;
-	private SpriteRenderer _spriteRenderer;
-	private Animator _anim;
+    private Player _player;
+    private Roles _role;
+    private Movement _move;
+    private GameMagager manager;
+    private SpriteRenderer _spriteRenderer;
+    private Animator _anim;
 
-    [SerializeField] private Sprite Dash;
-    [SerializeField] private Sprite Idle;
+    [SerializeField]
+    private Sprite Dash;
+    [SerializeField]
+    private Sprite Idle;
 
     void Awake()
     {
@@ -31,22 +36,22 @@ public class AbilityHandler : MonoBehaviour {
         _move = this.gameObject.GetComponent<Movement>();
     }
 
-	void Start()
-	{
-		_spriteRenderer = transform.GetChild(2).GetComponent<SpriteRenderer>();
-		_anim = GetComponent<Animator>();
-	}
+    void Start()
+    {
+        _spriteRenderer = transform.GetChild(2).GetComponent<SpriteRenderer>();
+        _anim = GetComponent<Animator>();
+    }
 
-	void Update()
-	{
-		UseAbility();
+    void Update()
+    {
+        UseAbility();
 
-		if(_inCooldown)
-			Cooldown(_spriteRenderer);
+        if (_inCooldown)
+            Cooldown(_spriteRenderer);
 
         if (isRawring)
             StartCoroutine(Ability_Roar());
-	}
+    }
 
     private void UseAbility()
     {
@@ -60,6 +65,10 @@ public class AbilityHandler : MonoBehaviour {
             {
                 StartCoroutine(Ability_Dash());
             }
+            else if(GetComponent<PlayerRoles>().playerRoles == Roles.Minion && GetComponent<Grab>().grabReady == true)
+            {
+                StartCoroutine(Ability_Grab());
+            }
         }
         else if (Input.GetButtonDown(_actionKey_B + GetComponent<Player>().playerNum))
         {
@@ -69,9 +78,9 @@ public class AbilityHandler : MonoBehaviour {
                 isRawring = true;
             }
 
-            else if ( GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
+            else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
             {
-//                Debug.Log("WOOOW B");
+                //                Debug.Log("WOOOW B");
             }
 
         }
@@ -88,38 +97,49 @@ public class AbilityHandler : MonoBehaviour {
         yield return new WaitForSeconds(3f);
         DashUp = true;*/
 
-//        Debug.Log("dash");
+        //        Debug.Log("dash");
         _move.speed += 7;
-		_anim.SetTrigger("Go_Dash");
-		StartCoroutine( _player.DashPoof() );
+        _anim.SetTrigger("Go_Dash");
         yield return new WaitForSeconds(0.1f);
         _move.speed -= 7;
         _dashUp = false;
-		_inCooldown = true;
+        _inCooldown = true;
         yield return new WaitForSeconds(3);
         _dashUp = true;
-		_inCooldown = false;
-		_spriteRenderer.color = Color.white;
+        _inCooldown = false;
+        _spriteRenderer.color = Color.white;
+    }
+
+    IEnumerator Ability_Grab()
+    {
+        Grab grabScript = GetComponent<Grab>();
+        _move.speed += 6;
+        yield return new WaitForSeconds(0.1f);
+        _move.speed -= 6;
+        grabScript.grabReady = false;
+        yield return new WaitForSeconds(3);
+        grabScript.grabReady = true;
+        _spriteRenderer.color = Color.magenta;
     }
 
     public void Ability_Scratch()
     {
-//        Debug.Log("scratch");
-		//Play Animation.
-		_anim.SetTrigger("Go_Grab");
+        //        Debug.Log("scratch");
+        //Play Animation.
+        _anim.SetTrigger("Go_Grab");
 
-		//Make a hitbox and use it with the animation.
-		//If a goblin player is in the hitbox,
-		//Do something...
+        //Make a hitbox and use it with the animation.
+        //If a goblin player is in the hitbox,
+        //Do something...
     }
 
-    IEnumerator  Ability_Roar()
+    IEnumerator Ability_Roar()
     {
-//        Debug.Log("Roar");
+        //        Debug.Log("Roar");
 
         //play animation
-		_anim.SetTrigger("Go_Roar");
-        
+        _anim.SetTrigger("Go_Roar");
+
         List<GameObject> goblin = manager.allGoblins;
         for (int i = 0; i < goblin.Count; i++)
         {
@@ -127,20 +147,20 @@ public class AbilityHandler : MonoBehaviour {
             Vector2 newPosition = Random.insideUnitCircle * 2.5f;
             newPosition.x += goblin[i].transform.position.x;
             newPosition.y += goblin[i].transform.position.y;
-            goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition,Time.deltaTime * 6f);
+            goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition, Time.deltaTime * 6f);
         }
         yield return new WaitForSeconds(0.25f);
         isRawring = false;
-		_inCooldown = true;
-		yield return new WaitForSeconds(3f);
-		_inCooldown = false;
-		_spriteRenderer.color = Color.white;
+        _inCooldown = true;
+        yield return new WaitForSeconds(3f);
+        _inCooldown = false;
+        _spriteRenderer.color = Color.white;
         yield return null;
     }
 
-	public void Cooldown(SpriteRenderer renderer)
-	{
-		renderer.color = Color.Lerp(Color.white, new Color(0.52f, 0.318f, 1f), Mathf.PingPong(Time.time * _fadeSpeed, 1.0f));
-	}
+    public void Cooldown(SpriteRenderer renderer)
+    {
+        renderer.color = Color.Lerp(Color.white, new Color(0.52f, 0.318f, 1f), Mathf.PingPong(Time.time * _fadeSpeed, 1.0f));
+    }
 
 }
