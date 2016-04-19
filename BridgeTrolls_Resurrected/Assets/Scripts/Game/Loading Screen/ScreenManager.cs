@@ -4,8 +4,6 @@ using System.Collections;
 
 public class ScreenManager : MonoBehaviour {
 
-	[SerializeField] private string _scene = "";
-
 	public IEnumerator LoadScene(string sceneName)
 	{
 		//Load the Loading Screen scene.

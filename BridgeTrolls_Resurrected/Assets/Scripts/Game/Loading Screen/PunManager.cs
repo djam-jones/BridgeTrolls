@@ -5,7 +5,7 @@ using System.Collections;
 public class PunManager : MonoBehaviour {
 
 	//Array for puns.
-	public string[] trollPuns = new string[16];
+	public string[] trollPuns = new string[17];
 
 	//Text for pun usage.
 	public Text punText;

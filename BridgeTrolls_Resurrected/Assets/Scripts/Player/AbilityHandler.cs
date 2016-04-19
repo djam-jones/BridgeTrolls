@@ -91,9 +91,10 @@ public class AbilityHandler : MonoBehaviour {
 //        Debug.Log("dash");
         _move.speed += 7;
 		_anim.SetTrigger("Go_Dash");
-		StartCoroutine( _player.DashPoof() );
+		//StartCoroutine( _player.DashPoof() );
         yield return new WaitForSeconds(0.1f);
         _move.speed -= 7;
+		//StopCoroutine( _player.DashPoof() );
         _dashUp = false;
 		_inCooldown = true;
         yield return new WaitForSeconds(3);

@@ -142,7 +142,7 @@ public class GameMagager : MonoBehaviour {
 		enemyPlayer.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Characters/Troll_Animator") as RuntimeAnimatorController;
 
 		//Set the Box Collider needs to those of the Troll.
-		BoxCollider2D _boxCollider = enemyPlayer.GetComponents<BoxCollider2D>()[0];
+		BoxCollider2D _boxCollider = enemyPlayer.GetComponents<BoxCollider2D>()[1];
 		Vector2 _boxColliderOffset;
 		Vector2 _boxColliderSize;
 
@@ -155,10 +155,11 @@ public class GameMagager : MonoBehaviour {
 		_boxCollider.size = _boxColliderSize;
 
 		//Set the Box Trigger needs to those of the Troll.
-		BoxCollider2D _boxTrigger = enemyPlayer.GetComponents<BoxCollider2D>()[1];
+		BoxCollider2D _boxTrigger = enemyPlayer.GetComponents<BoxCollider2D>()[0];
 		Vector2 _boxTriggerOffset;
 		Vector2 _boxTriggerSize;
 
+		_boxTrigger.enabled = false;
 		_boxTriggerOffset.x = -0.1739898f;
 		_boxTriggerOffset.y = -0.8419237f;
 		_boxTriggerSize.x = 2.636648f;
@@ -218,7 +219,8 @@ public class GameMagager : MonoBehaviour {
 	{
 		audioHandlerScript.GetComponents<AudioSource>()[0].Stop();
 		transitionLock.GetComponent<Animator>().Play("Transition_Close");
-		StartCoroutine( _screenManager.LoadScene("Main") );
+		StartCoroutine( Wait(2) );
+		StartCoroutine(_screenManager.LoadScene("Main"));
 	}
 
 	public void StartGame(bool gameStarted)
@@ -289,6 +291,11 @@ public class GameMagager : MonoBehaviour {
 				PlayerPrefs.DeleteAll();
 			}
 		}
+	}
+
+	private IEnumerator Wait(float seconds)
+	{
+		yield return new WaitForSeconds(seconds);
 	}
 
 	private void CheckForInstance()

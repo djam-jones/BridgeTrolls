@@ -34,11 +34,6 @@ public class ReadyPlayers : MonoBehaviour {
 	void Update()
 	{
 		CheckReadyPlayers();
-
-		if(startedGame)
-		{
-			StartCoroutine( _screenManager.LoadScene("Main") );
-		}
 	}
 
 	private void CheckReadyPlayers()
@@ -67,6 +62,7 @@ public class ReadyPlayers : MonoBehaviour {
 				//Save the Amount of Players playing.
 				PlayerPrefs.SetInt("PlayerCount", readyPlayers.Count);
 
+				StartCoroutine(_screenManager.LoadScene("Main"));
 				startedGame = true;
 			}
 		}
