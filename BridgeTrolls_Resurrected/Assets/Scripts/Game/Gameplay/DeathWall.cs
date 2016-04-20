@@ -8,6 +8,8 @@ public class DeathWall : MonoBehaviour {
     private RuntimeAnimatorController animations;
     private GameObject newarrow;
     private List<GameObject> arrowlist = new List<GameObject>();
+
+    private bool needtoflip;
     private bool deadplaying;
 
     [SerializeField]private GameObject arrow;
@@ -48,6 +50,7 @@ public class DeathWall : MonoBehaviour {
 	}
     IEnumerator spawnArrowsToLeft()
     {
+        needtoflip = true;
         StartCoroutine(dangerzone(new Vector2(7.61f, -0.59f)));
         
         yield return new WaitForSeconds(3f);
@@ -77,7 +80,8 @@ public class DeathWall : MonoBehaviour {
 
     }
 	IEnumerator spawnArrowsToRight()
-    { 
+    {
+        needtoflip = false;
         StartCoroutine(dangerzone(new Vector2(-7.61f, 0.59f)));
         
         yield return new WaitForSeconds(3f);
@@ -133,10 +137,25 @@ public class DeathWall : MonoBehaviour {
     {
         deadplaying = true; 
         GameObject newDangerAnim = Instantiate(StartWallAnimation, position, transform.rotation) as GameObject;
+        if (needtoflip == true)
+        {
+            newDangerAnim.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if (needtoflip == false)
+        {
+            newDangerAnim.GetComponent<SpriteRenderer>().flipX = true;
+        }
         yield return new WaitForSeconds(1f);
         Destroy(newDangerAnim);
         GameObject newDangerAnimAfter = Instantiate(AfterWallAnimation, position, transform.rotation) as GameObject;
-
+        if (needtoflip == true)
+        {
+            newDangerAnimAfter.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if (needtoflip == false)
+        {
+            newDangerAnimAfter.GetComponent<SpriteRenderer>().flipX = true;
+        }
         SpriteRenderer[] dangercolor = newDangerAnimAfter.GetComponentsInChildren<SpriteRenderer>();
         yield return new WaitForSeconds(0.2f);
 

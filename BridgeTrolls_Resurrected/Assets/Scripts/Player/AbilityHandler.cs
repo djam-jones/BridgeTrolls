@@ -67,11 +67,18 @@ public class AbilityHandler : MonoBehaviour {
                 israwring = true;
             }
 
-            else if ( GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
+            else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
             {
                 Debug.Log("WOOOW B");
             }
 
+        }
+        else if (Input.GetButtonDown(_actionKey_A + GetComponent<Player>().playerNum))
+        {
+            if (GetComponent<PlayerRoles>().playerRoles == Roles.Minion)
+            {
+                Ability_MinionGrab();
+            }
         }
     }
 
@@ -107,6 +114,11 @@ public class AbilityHandler : MonoBehaviour {
 		//Make a hitbox and use it with the animation.
 		//If a goblin player is in the hitbox,
 		//Do something...
+    }
+
+    public void Ability_MinionGrab()
+    {
+        
     }
 
     IEnumerator  Ability_Roar()

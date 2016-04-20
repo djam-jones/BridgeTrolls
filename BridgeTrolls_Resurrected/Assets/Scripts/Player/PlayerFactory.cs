@@ -71,7 +71,7 @@ public class PlayerFactory : MonoBehaviour {
 		_boxTrigger = _playerObj.AddComponent<BoxCollider2D>();
 		_boxTrigger.isTrigger = true;
 
-		_boxTriggerOffset = _boxTrigger.offset;
+		/*_boxTriggerOffset = _boxTrigger.offset;
 		_boxTriggerSize = _boxTrigger.size;
 
 		_boxTriggerOffset.x = -0.025f;
@@ -80,7 +80,7 @@ public class PlayerFactory : MonoBehaviour {
 		_boxTriggerSize.y = 0.35f;
 
 		_boxTrigger.offset = _boxTriggerOffset;
-		_boxTrigger.size = _boxTriggerSize;
+		_boxTrigger.size = _boxTriggerSize;*/
 
 		//Player Script Implementation
 		_player = _playerObj.AddComponent<Player>();
