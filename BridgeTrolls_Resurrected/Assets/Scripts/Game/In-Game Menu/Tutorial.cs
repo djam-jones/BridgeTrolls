@@ -36,11 +36,16 @@ public class Tutorial : MonoBehaviour {
 		}
 	}
 
+	void Update()
+	{
+		if(_showThis)
+			Continue();
+	}
+
 	private void Continue()
 	{
 		if(Input.GetButtonDown(_actionKey))
 		{
-			print("hello");
 			_anim.SetTrigger("Hide");
 			StartCoroutine(Wait(1.25f));
 		}

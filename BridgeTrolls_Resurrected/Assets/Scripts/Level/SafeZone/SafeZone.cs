@@ -23,6 +23,7 @@ public class SafeZone : MonoBehaviour
                 players[i].GetComponent<Movement>().enabled = true;
 				players[i].GetComponent<AbilityHandler>().enabled = true;
             }
+			gameManager.currentRound += 1;
             players.Clear();
         }
     }

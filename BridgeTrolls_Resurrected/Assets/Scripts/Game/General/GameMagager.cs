@@ -14,6 +14,8 @@ public class GameMagager : MonoBehaviour {
 	public bool gameOver = false;
 	[HideInInspector]
 	public bool trollWins;
+	[HideInInspector]
+	public int currentRound = 0;
 
 	//Start Button
 	[SerializeField] private const string START_GAME_BUTTON = "StartGameButton";
@@ -105,7 +107,7 @@ public class GameMagager : MonoBehaviour {
 			GetAllPlayerRoles();
 			GameOver();
 
-			roundIndicator.text = "Butts" + " / " + PlayerPrefs.GetInt("AmountOfGamePoints").ToString();
+			roundIndicator.text = currentRound.ToString() + " / " + PlayerPrefs.GetInt("AmountOfGamePoints").ToString();
 
 			if(rightSidedPlayers.Count != allGoblins.Count)
 			{
