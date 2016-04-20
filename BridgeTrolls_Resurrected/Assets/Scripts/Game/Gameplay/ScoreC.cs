@@ -38,7 +38,6 @@ public class ScoreC : MonoBehaviour
 			if(score == PlayerPrefs.GetInt("AmountOfGamePoints") && GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && _gameHandler.GetComponent<GameMagager>().allGoblins.Count != 0)
 			{
 				//Win Game.
-				//print ("Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
 				PlayerPrefs.SetString( "PlayerThatWon", "Player " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
 				_gameHandler.GetComponent<GameMagager>().gameOver = true;
@@ -46,7 +45,6 @@ public class ScoreC : MonoBehaviour
 			}
 			else if(GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _gameHandler.GetComponent<GameMagager>().allGoblins.Count == 0)
 			{
-				//print ("Troll Player " + (gameObject.GetComponent<Player>().playerNum + 1) + " Won!");
 				PlayerPrefs.SetString( "PlayerThatWon", "Troll " + (gameObject.GetComponent<Player>().playerNum + 1).ToString() );
 
 				_gameHandler.GetComponent<GameMagager>().gameOver = true;

@@ -40,6 +40,7 @@ public class GameMagager : MonoBehaviour {
 
 	[SerializeField] public Image directionIndicator;
 	[SerializeField] public Text directionText;
+	[SerializeField] public Text roundIndicator;
 
 	private RectTransform _rectTransform;
 	private Vector3 _rectTransformScale;
@@ -103,6 +104,8 @@ public class GameMagager : MonoBehaviour {
 		{
 			GetAllPlayerRoles();
 			GameOver();
+
+			roundIndicator.text = "Butts" + " / " + PlayerPrefs.GetInt("AmountOfGamePoints").ToString();
 
 			if(rightSidedPlayers.Count != allGoblins.Count)
 			{
