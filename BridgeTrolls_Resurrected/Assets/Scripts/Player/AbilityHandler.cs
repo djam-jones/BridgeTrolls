@@ -9,15 +9,16 @@ public class AbilityHandler : MonoBehaviour {
 
 	public bool _dashUp = true;
 	private bool _inCooldown = false;
-    private bool israwring = false;
+	private bool isRawring = false;
 
 	private float _fadeSpeed = 3f;
 
 	private Player _player;
 	private Roles _role;
 	private Movement _move;
+	private GameMagager manager;
 	private SpriteRenderer _spriteRenderer;
-    private GameMagager manager;
+	private Animator _anim;
 
     [SerializeField] private Sprite Dash;
     [SerializeField] private Sprite Idle;
@@ -33,6 +34,7 @@ public class AbilityHandler : MonoBehaviour {
 	void Start()
 	{
 		_spriteRenderer = transform.GetChild(2).GetComponent<SpriteRenderer>();
+		_anim = GetComponent<Animator>();
 	}
 
 	void Update()
@@ -42,7 +44,7 @@ public class AbilityHandler : MonoBehaviour {
 		if(_inCooldown)
 			Cooldown(_spriteRenderer);
 
-        if (israwring)
+        if (isRawring)
             StartCoroutine(Ability_Roar());
 	}
 
@@ -64,12 +66,12 @@ public class AbilityHandler : MonoBehaviour {
             if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile)
             {
                 //Ability_Roar();
-                israwring = true;
+                isRawring = true;
             }
 
             else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
             {
-                Debug.Log("WOOOW B");
+//                Debug.Log("WOOOW B");
             }
 
         }
@@ -93,11 +95,13 @@ public class AbilityHandler : MonoBehaviour {
         yield return new WaitForSeconds(3f);
         DashUp = true;*/
 
-        Debug.Log("dash");
+//        Debug.Log("dash");
         _move.speed += 7;
-//		StartCoroutine( _player.DashPoof() );
+		_anim.SetTrigger("Go_Dash");
+		//StartCoroutine( _player.DashPoof() );
         yield return new WaitForSeconds(0.1f);
         _move.speed -= 7;
+		//StopCoroutine( _player.DashPoof() );
         _dashUp = false;
 		_inCooldown = true;
         yield return new WaitForSeconds(3);
@@ -108,8 +112,9 @@ public class AbilityHandler : MonoBehaviour {
 
     public void Ability_Scratch()
     {
-        Debug.Log("scratch");
-		//TODO: Show Animation.
+//        Debug.Log("scratch");
+		//Play Animation.
+		_anim.SetTrigger("Go_Grab");
 
 		//Make a hitbox and use it with the animation.
 		//If a goblin player is in the hitbox,
@@ -123,22 +128,26 @@ public class AbilityHandler : MonoBehaviour {
 
     IEnumerator  Ability_Roar()
     {
-        Debug.Log("Roar");
+//        Debug.Log("Roar");
 
         //play animation
-        
+		_anim.SetTrigger("Go_Roar");
         
         List<GameObject> goblin = manager.allGoblins;
         for (int i = 0; i < goblin.Count; i++)
         {
             Vector2 startPosition = goblin[i].transform.position;
-            Vector2 newPosition = Random.insideUnitCircle * 2;
+            Vector2 newPosition = Random.insideUnitCircle * 2.5f;
             newPosition.x += goblin[i].transform.position.x;
             newPosition.y += goblin[i].transform.position.y;
             goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition,Time.deltaTime * 6f);
         }
-        yield return new WaitForSeconds(1f);
-        israwring = false;
+        yield return new WaitForSeconds(0.25f);
+        isRawring = false;
+		_inCooldown = true;
+		yield return new WaitForSeconds(3f);
+		_inCooldown = false;
+		_spriteRenderer.color = Color.white;
         yield return null;
     }
 

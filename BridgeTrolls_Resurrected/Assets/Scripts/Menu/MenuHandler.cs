@@ -47,12 +47,10 @@ public class MenuHandler : MonoBehaviour {
 	private float _buttonTime = 1.5f;
 
 	Animator _openAnimator;
-	Animation _doorAnimations;
 
 	void Awake()
 	{
 		_openAnimator = backDoor.GetComponent<Animator>();
-		_doorAnimations = backDoor.GetComponent<Animation>();
 	}
 
 	void Update()
@@ -88,7 +86,7 @@ public class MenuHandler : MonoBehaviour {
 			_timer += Time.deltaTime; //Count seconds up to the Timer.
 
 //			_openAnimator.SetTrigger("Open"); //Play Opening Animation.
-			_doorAnimations.Play("Open");
+			_openAnimator.Play("Open");
 
 			if(_timer >= _buttonTime) //If timer is greater than, or equals the _buttonTime value.
 			{
@@ -99,7 +97,7 @@ public class MenuHandler : MonoBehaviour {
 		if(Input.GetButtonUp(BACK_BUTTON) && menuState == MenuState.CharSelect)
 		{
 //			_openAnimator.SetTrigger("Close"); //Play Closing Animation.
-			_doorAnimations.Play("Close");
+			_openAnimator.Play("Close");
 
 			_timer = 0f; //Reset the Timer.
 		}

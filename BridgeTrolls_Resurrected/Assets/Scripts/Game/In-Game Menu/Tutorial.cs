@@ -16,31 +16,33 @@ public class Tutorial : MonoBehaviour {
 	void Awake()
 	{
 		_anim = tutorialScreen.GetComponent<Animator>();
-
+		
 		_cDown = GetComponent<StartScreenHandler>();
 		_cDown.enabled = false;
 
-		if(PlayerPrefs.GetString("ShowTutorial") == "True")
+		if(PlayerPrefs.GetString("ShowTutorial") == "True" && PlayerPrefs.HasKey("ShowTutorial"))
 			_showThis = true;
-		else if(PlayerPrefs.GetString("ShowTutorial") == "False")
+		else if(PlayerPrefs.GetString("ShowTutorial") == "False" && PlayerPrefs.HasKey("ShowTutorial"))
 			_showThis = false;
-	}
 
-	void Update()
-	{
 		if(_showThis)
+		{
 			Continue();
-		else
+		}
+		else if(!_showThis)
+		{
 			tutorialScreen.SetActive(false);
 			_cDown.enabled = true;
+		}
 	}
 
 	private void Continue()
 	{
 		if(Input.GetButtonDown(_actionKey))
 		{
+			print("hello");
 			_anim.SetTrigger("Hide");
-			StartCoroutine(Wait(1.5f));
+			StartCoroutine(Wait(1.25f));
 		}
 	}
 
@@ -49,5 +51,6 @@ public class Tutorial : MonoBehaviour {
 		yield return new WaitForSeconds(seconds);
 		tutorialScreen.SetActive(false);
 		_cDown.enabled = true;
+		yield break;
 	}
 }

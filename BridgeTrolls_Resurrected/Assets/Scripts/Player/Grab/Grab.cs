@@ -22,10 +22,12 @@ public class Grab : MonoBehaviour
     [SerializeField]
     private float releaseTime = 15;
 
+    public bool grabReady = true;
+
 
     private void OnTriggerStay2D(Collider2D other)
     {
-		if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && Input.GetButtonDown(grabButton + GetComponent<Player>().playerNum) && cdTimer >= coolDown)
+		if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && grabReady == true)
         {
             player = other.gameObject;
             connectPlayers();

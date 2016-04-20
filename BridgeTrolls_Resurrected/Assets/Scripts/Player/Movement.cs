@@ -44,10 +44,10 @@ public class Movement : MonoBehaviour {
 			ClampedMove();
 
 		if(_isMoving) {
-			_anim.SetTrigger("Go_Run");
+			_anim.Play("Run");
 		}
 		else {
-			_anim.SetTrigger("Go_Idle");
+			_anim.Play("Idle");
 		}
 	}
 

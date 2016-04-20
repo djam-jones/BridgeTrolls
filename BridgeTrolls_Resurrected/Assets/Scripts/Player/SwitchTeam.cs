@@ -3,11 +3,11 @@ using System.Collections;
 
 public class SwitchTeam : MonoBehaviour 
 {
-	[SerializeField] private Texture2D _minionSprite;
+	[SerializeField] private RuntimeAnimatorController _minionAnimator;
 
 	void Awake()
 	{
-		_minionSprite = Resources.Load("Sprites/Players/Minion") as Texture2D;
+		_minionAnimator = Resources.Load("Animations/Characters/Minion_Animator") as RuntimeAnimatorController;
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -22,8 +22,8 @@ public class SwitchTeam : MonoBehaviour
 				tag = Tags.MINION_TAG; 
 				StartCoroutine(player.Poof());
 	            roles.ChangeRole();
-				GetComponent<SpriteRenderer>().sprite = Sprite.Create(_minionSprite, new Rect(0, 0, _minionSprite.width, _minionSprite.height), new Vector2(0.5f, 0.5f));
-				GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Characters/Minion_Animator") as RuntimeAnimatorController;
+				//GetComponent<SpriteRenderer>().sprite = Sprite.Create(_minionSprite, new Rect(0, 0, _minionSprite.width, _minionSprite.height), new Vector2(0.5f, 0.5f));
+				GetComponent<Animator>().runtimeAnimatorController = _minionAnimator;
 
 				if(!this.gameObject.GetComponent<Grab>())	
 					this.gameObject.AddComponent<Grab>();
