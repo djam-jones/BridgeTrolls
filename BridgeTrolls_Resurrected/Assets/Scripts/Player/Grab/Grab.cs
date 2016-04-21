@@ -27,7 +27,7 @@ public class Grab : MonoBehaviour
 
 	private void OnTriggerStay2D(Collider2D other)
 	{
-		if (other.tag == "Player" && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && grabReady == true)
+		if (other.tag == Tags.PLAYER_TAG && other.GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && other.GetComponent<HingeJoint2D>() == null && grabReady == false)
 		{
 			player = other.gameObject;
 			connectPlayers();
