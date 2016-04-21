@@ -116,8 +116,10 @@ public class AbilityHandler : MonoBehaviour
 		yield return new WaitForSeconds(0.1f);
 		_move.speed -= 6;
 		grabScript.grabReady = false;
+		_inCooldown = true;
 		yield return new WaitForSeconds(3);
 		grabScript.grabReady = true;
+		_inCooldown = false;
 		_spriteRenderer.color = Color.white;
 	}
 
