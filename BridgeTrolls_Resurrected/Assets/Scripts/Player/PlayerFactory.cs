@@ -18,6 +18,7 @@ public class PlayerFactory : MonoBehaviour {
 		GameObject _tapIndicator = new GameObject();
 		Rigidbody2D _rigid2D;
 		Animator _anim;
+        AudioSource _audioSource;
 		SpriteRenderer _spriteRenderer;
 		BoxCollider2D _boxCollider;
 		BoxCollider2D _boxTrigger;
@@ -52,6 +53,10 @@ public class PlayerFactory : MonoBehaviour {
 
 		//Animator Implementation
 		_anim = _playerObj.AddComponent<Animator>();
+
+        //AudioSource Implementation
+        _audioSource = _playerObj.AddComponent<AudioSource>();
+        _audioSource.loop = false;
 
 		//Collision Implementation
 		_boxCollider = _playerObj.AddComponent<BoxCollider2D>();

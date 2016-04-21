@@ -32,11 +32,13 @@ public class HubHandler : MonoBehaviour {
 	[SerializeField] private Image[] _panelImages = new Image[6];
 
 	private CharacterSelection _characterSelection;
+    private AudioHandler _audioHandler;
 
-	void Awake()
+    void Awake()
 	{
 		_characterSelection = GetComponent<CharacterSelection>();
-		panelState = PanelState.WaitingToJoin;
+        _audioHandler = GameObject.Find("Audio Handler").GetComponent<AudioHandler>();
+        panelState = PanelState.WaitingToJoin;
 		playerState = PlayerState.Unready;
 	}
 
@@ -98,7 +100,7 @@ public class HubHandler : MonoBehaviour {
 			panelState = PanelState.Ready;
 			playerState = PlayerState.Ready;
 
-			_characterSelection.Confirm();
+            _characterSelection.Confirm();
 
 			_panelTexts[0].text = "Player " + (panelID + 1).ToString();
 
@@ -141,8 +143,10 @@ public class HubHandler : MonoBehaviour {
 	{
 		if(playerState == PlayerState.Ready && playerState != PlayerState.Unready && !ReadyPlayers.Instance.readyPlayers.Contains(this))
 		{
-			//Add the Player to ready players list.
-			ReadyPlayers.Instance.readyPlayers.Add(this);
+            _audioHandler.PlaySound(26);
+
+            //Add the Player to ready players list.
+            ReadyPlayers.Instance.readyPlayers.Add(this);
 		}
 		else if(playerState != PlayerState.Ready && playerState == PlayerState.Unready && ReadyPlayers.Instance.readyPlayers.Contains(this))
 		{

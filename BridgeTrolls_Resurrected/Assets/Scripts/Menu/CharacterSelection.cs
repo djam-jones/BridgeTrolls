@@ -14,7 +14,6 @@ public class CharacterSelection : MonoBehaviour {
 	private Sprite _selectedCharacterSprite;
 
 	private int _characterIndex;
-
 	public Image characterHolder;
 
 	void Update()
@@ -58,12 +57,12 @@ public class CharacterSelection : MonoBehaviour {
 			_selectedCharacterName = playableCharacters[_characterIndex];
 			_selectedCharacterSprite = characterSprites[_characterIndex];
 
-			CharacterDatabase.GetCharacterByInt(i);
+            CharacterDatabase.GetCharacterByInt(i);
 			PlayerPrefs.SetString("CharacterName" + i.ToString(), _selectedCharacterName);
-
+            
 			print(_selectedCharacterName + " Confirmed!");
 		}
-	}
+    }
 
 	/// <summary>
 	/// Goes to the Next String in the array for the selected character.

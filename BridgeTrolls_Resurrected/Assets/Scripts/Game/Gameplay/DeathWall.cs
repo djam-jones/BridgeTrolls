@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public class DeathWall : MonoBehaviour {
 
     private RuntimeAnimatorController animations;
+    private AudioHandler _audioHandeler;
+    private AudioSource _audioSource;
     private GameObject newarrow;
     private List<GameObject> arrowlist = new List<GameObject>();
 
@@ -24,25 +26,42 @@ public class DeathWall : MonoBehaviour {
 
 	[SerializeField]public Text deathWallTimerText;
 
-    private bool playtimer = true;
+    [HideInInspector] public bool playtimer = true;
+
+    void Awake()
+    {
+        _audioHandeler = GameObject.Find("Audio Handler").GetComponent<AudioHandler>();
+    }
 
 	// Update is called once per frame
 	void Update()
 	{
         timer -= Time.deltaTime;
+
+        if (timer <= 2.5f)
+        {
+            PlayAudio();
+        }
+
+        if(timer <= 1.1f)
+        {
+            PlayAudio2();
+        }
+
         if (timer <= 0 || playtimer == false)
         {
+          
             timer = 30;
         }
 
 		if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count != GameMagager.Instance.allGoblins.Count && deadplaying == false)
 		{
-			deadplaying = true;
+            deadplaying = true;
 			StartCoroutine(spawnArrowsToRight());
 		}
         else if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count == GameMagager.Instance.allGoblins.Count && deadplaying == false)
         {
-			deadplaying = true;
+            deadplaying = true;
             StartCoroutine(spawnArrowsToLeft());
         }
 
@@ -116,7 +135,7 @@ public class DeathWall : MonoBehaviour {
         for (float i = 1; i > 0; i -= 0.05f)
         {
             for (int j = 0; j < arrowlist.Count; j++)
-            { 
+            {
                 arrowlist[j].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, i);
             }
             yield return new WaitForSeconds(0.1f);
@@ -172,7 +191,17 @@ public class DeathWall : MonoBehaviour {
         deadplaying = false;
     }
 
-	RuntimeAnimatorController  RandomSprite(RuntimeAnimatorController sprite)
+    void PlayAudio()
+    {
+        _audioHandeler.PlaySound(1);
+    }
+
+    void PlayAudio2()
+    {
+        _audioHandeler.PlaySound(2);
+    }
+
+    RuntimeAnimatorController  RandomSprite(RuntimeAnimatorController sprite)
 	{
 		int random = Random.Range(1, 4);
 

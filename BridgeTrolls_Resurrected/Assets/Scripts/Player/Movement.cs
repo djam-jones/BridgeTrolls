@@ -19,8 +19,11 @@ public class Movement : MonoBehaviour {
 
 	private Player _player;
 	private PlayerRoles _playerRolesScript;
+    private AudioHandler _audioHandler;
+
 	private Rigidbody2D _rigidbody2D;
 	private Animator 	_anim;
+    private AudioSource _audioSource;
 
 	public bool facingRight = false;
 	private bool _isMoving = false;
@@ -29,14 +32,24 @@ public class Movement : MonoBehaviour {
 	{
 		_player = GetComponent<Player>();
 		_playerRolesScript = GetComponent<PlayerRoles>();
+        _audioHandler = GameObject.Find("Audio Handler").GetComponent<AudioHandler>();
 		_rigidbody2D = GetComponent<Rigidbody2D>();
 		_anim = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
 		_scale = transform.localScale.x;
-	}
+
+     
+    }
 
 	void FixedUpdate()
 	{
-		if(_playerRolesScript.playerRoles == Roles.Neutral)
+        if (_playerRolesScript.playerRoles == Roles.Neutral || _playerRolesScript.playerRoles == Roles.Minion)
+            _audioSource.clip = _audioHandler.allSoundEffects[16];
+        else if (_playerRolesScript.playerRoles == Roles.Hostile)
+            _audioSource.clip = _audioHandler.allSoundEffects[18];
+
+
+        if (_playerRolesScript.playerRoles == Roles.Neutral)
 			Move(-11.6f, 11.6f);
 		else if(_playerRolesScript.playerRoles == Roles.Minion)
 			Move(-7.55f, 7.55f);
@@ -138,4 +151,9 @@ public class Movement : MonoBehaviour {
 		else
 			_isMoving = false;
 	}
+
+    public void PlayMoveSound()
+    {
+        _audioSource.Play();
+    }
 }

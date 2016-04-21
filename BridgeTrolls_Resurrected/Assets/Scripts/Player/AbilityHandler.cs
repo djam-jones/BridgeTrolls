@@ -72,9 +72,8 @@ public class AbilityHandler : MonoBehaviour
 		}
 		else if (Input.GetButtonDown(_actionKey_B + GetComponent<Player>().playerNum))
 		{
-			if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile)
+			if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _inCooldown == false)
 			{
-				//Ability_Roar();
 				isRawring = true;
 			}
 
@@ -152,7 +151,7 @@ public class AbilityHandler : MonoBehaviour
 		yield return new WaitForSeconds(0.25f);
 		isRawring = false;
 		_inCooldown = true;
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(7f);
 		_inCooldown = false;
 		_spriteRenderer.color = Color.white;
 		yield return null;

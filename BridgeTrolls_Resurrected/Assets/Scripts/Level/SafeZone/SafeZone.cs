@@ -16,7 +16,7 @@ public class SafeZone : MonoBehaviour
 
     public void EnablePlayerMovement()
     {
-        if(players.Count != 0)
+        if(players.Count != 0 && deathWallScript.playtimer == true)
         {
             for (int i = 0; i < players.Count; i++)
             {

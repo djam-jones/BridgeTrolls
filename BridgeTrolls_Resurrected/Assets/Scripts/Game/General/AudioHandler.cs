@@ -38,4 +38,10 @@ public class AudioHandler : MonoBehaviour {
 		}
 	}
 
+    public void PlaySound(int sfx)
+    {
+        _audioSources[1].clip = allSoundEffects[sfx];
+        _audioSources[1].Play();
+    }
+
 }

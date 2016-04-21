@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AudioPlayer.cs" />
     <Compile Include="Assets\Scripts\Game\Characters\CharacterDatabase.cs" />
     <Compile Include="Assets\Scripts\Game\Gameplay\DeathWall.cs" />
     <Compile Include="Assets\Scripts\Game\Gameplay\ScoreC.cs" />
