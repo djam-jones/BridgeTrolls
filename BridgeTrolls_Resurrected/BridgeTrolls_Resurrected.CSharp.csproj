@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\Game\General\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\Game\General\GameMagager.cs" />
     <Compile Include="Assets\Scripts\Game\General\GameModes.cs" />
-    <Compile Include="Assets\Scripts\Game\General\LoadingScreen.cs" />
     <Compile Include="Assets\Scripts\Game\General\PlayerFollowCameraZoom.cs" />
     <Compile Include="Assets\Scripts\Game\General\ReadyPlayers.cs" />
     <Compile Include="Assets\Scripts\Game\General\SplashScreen.cs" />
@@ -80,6 +79,8 @@
     <Compile Include="Assets\Scripts\Game\In-Game Menu\StartScreenHandler.cs" />
     <Compile Include="Assets\Scripts\Game\In-Game Menu\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Game\In-Game Menu\WinScreen.cs" />
+    <Compile Include="Assets\Scripts\Game\Loading Screen\PunManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Loading Screen\ScreenManager.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IControllerConnection.cs" />
     <Compile Include="Assets\Scripts\Level\SafeZone\SafeZone.cs" />
     <Compile Include="Assets\Scripts\Menu\CharacterSelection.cs" />
@@ -97,8 +98,10 @@
     <Compile Include="Assets\Scripts\Player\PlayerIndicator.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerRoles.cs" />
     <Compile Include="Assets\Scripts\Player\Score.cs" />
+    <Compile Include="Assets\Scripts\Player\ScratchAbility.cs" />
     <Compile Include="Assets\Scripts\Player\SwitchTeam.cs" />
     <Compile Include="Assets\Scripts\SpriteStraightener.cs" />
+    <Compile Include="Assets\Scripts\Tools\FlashFriend.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
