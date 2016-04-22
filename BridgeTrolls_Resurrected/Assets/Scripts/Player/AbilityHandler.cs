@@ -125,11 +125,11 @@ public class AbilityHandler : MonoBehaviour
 		//Play Animation.
 		_anim.SetTrigger("Go_Grab");
 		_inScratch = true;
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.5f);
 		_inScratch = false;
 		scratchAvailable = false;
 		_inCooldown = true;
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(1);
 		scratchAvailable = true;
 		_inCooldown = false;
 		_spriteRenderer.color = Color.white;

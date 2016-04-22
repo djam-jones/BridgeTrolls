@@ -133,10 +133,7 @@ public class GameMagager : MonoBehaviour {
     {
         GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)];   //Pick a random player from the Player List.
         enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile;        //Set Role to Hostile and thus the Troll.
-        enemyPlayer.GetComponent<PlayerIndicator>().yValue = 1.5f;
         enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 0.5f);
-
-        //		StartCoroutine(TrollIndicationTextFade(enemyPlayer));
 
         enemyPlayer.name = enemyPlayer.name + " Troll";                             //Set Name to Troll.
         enemyPlayer.tag = Tags.TROLL_TAG;                                           //Set Tag to Enemy.
@@ -152,10 +149,10 @@ public class GameMagager : MonoBehaviour {
 		Vector2 _boxColliderOffset;
 		Vector2 _boxColliderSize;
 
-		_boxColliderOffset.x = -0.1739898f;
-		_boxColliderOffset.y = -0.8419237f;
-		_boxColliderSize.x = 2.636648f;
-		_boxColliderSize.y = 0.75f;
+		_boxColliderOffset.x = -0.231294f;
+		_boxColliderOffset.y = -0.769804f;
+		_boxColliderSize.x = 1f;
+		_boxColliderSize.y = 1f;
 
 		_boxCollider.offset = _boxColliderOffset;
 		_boxCollider.size = _boxColliderSize;
@@ -164,8 +161,7 @@ public class GameMagager : MonoBehaviour {
 		BoxCollider2D _boxTrigger = enemyPlayer.GetComponents<BoxCollider2D>()[0];
 		Vector2 _boxTriggerOffset;
 		Vector2 _boxTriggerSize;
-
-		_boxTrigger.enabled = false;
+        
 		_boxTriggerOffset.x = -0.1739898f;
 		_boxTriggerOffset.y = -0.8419237f;
 		_boxTriggerSize.x = 2.636648f;
