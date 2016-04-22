@@ -10,9 +10,11 @@ public class AbilityHandler : MonoBehaviour
 	[SerializeField, HideInInspector]
 	private string _actionKey_B = "Fire2_P";
 
-	public bool _dashUp = true;
+	public bool dashUp = true;
+	public bool scratchAvailable = true;
 	private bool _inCooldown = false;
-	private bool isRawring = false;
+	private bool _isRawring = false;
+	private bool _inScratch = false;
 
 	private float _fadeSpeed = 3f;
 
@@ -49,7 +51,7 @@ public class AbilityHandler : MonoBehaviour
 		if (_inCooldown)
 			Cooldown(_spriteRenderer);
 
-		if (isRawring)
+		if (_isRawring)
 			StartCoroutine(Ability_Roar());
 	}
 
@@ -57,11 +59,11 @@ public class AbilityHandler : MonoBehaviour
 	{
 		if (Input.GetButtonDown(_actionKey_A + GetComponent<Player>().playerNum))
 		{
-			if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile)
+			if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && scratchAvailable == true)
 			{
-				Ability_Scratch();
+				StartCoroutine(Ability_Scratch());
 			}
-			else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile && _dashUp == true)
+			else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile && dashUp == true)
 			{
 				StartCoroutine(Ability_Dash());
 			}
@@ -74,14 +76,8 @@ public class AbilityHandler : MonoBehaviour
 		{
 			if (GetComponent<PlayerRoles>().playerRoles == Roles.Hostile && _inCooldown == false)
 			{
-				isRawring = true;
+				_isRawring = true;
 			}
-
-			else if (GetComponent<PlayerRoles>().playerRoles == Roles.Neutral && GetComponent<PlayerRoles>().playerRoles != Roles.Hostile)
-			{
-				//                Debug.Log("WOOOW B");
-			}
-
 		}
 	}
 
@@ -101,10 +97,10 @@ public class AbilityHandler : MonoBehaviour
 		_anim.SetTrigger("Go_Dash");
 		yield return new WaitForSeconds(0.1f);
 		_move.speed -= 7;
-		_dashUp = false;
+		dashUp = false;
 		_inCooldown = true;
 		yield return new WaitForSeconds(3);
-		_dashUp = true;
+		dashUp = true;
 		_inCooldown = false;
 		_spriteRenderer.color = Color.white;
 	}
@@ -123,21 +119,24 @@ public class AbilityHandler : MonoBehaviour
 		_spriteRenderer.color = Color.white;
 	}
 
-	public void Ability_Scratch()
+	public IEnumerator Ability_Scratch()
 	{
 		//        Debug.Log("scratch");
 		//Play Animation.
 		_anim.SetTrigger("Go_Grab");
-
-		//Make a hitbox and use it with the animation.
-		//If a goblin player is in the hitbox,
-		//Do something...
+		_inScratch = true;
+		yield return new WaitForSeconds(0.1f);
+		_inScratch = false;
+		scratchAvailable = false;
+		_inCooldown = true;
+		yield return new WaitForSeconds(3);
+		scratchAvailable = true;
+		_inCooldown = false;
+		_spriteRenderer.color = Color.white;
 	}
 
 	IEnumerator Ability_Roar()
 	{
-		//        Debug.Log("Roar");
-
 		//play animation
 		_anim.SetTrigger("Go_Roar");
 
@@ -145,18 +144,26 @@ public class AbilityHandler : MonoBehaviour
 		for (int i = 0; i < goblin.Count; i++)
 		{
 			Vector2 startPosition = goblin[i].transform.position;
-			Vector2 newPosition = Random.insideUnitCircle * 2.5f;
+			Vector2 newPosition = Random.insideUnitCircle * 3f;
 			newPosition.x += goblin[i].transform.position.x;
 			newPosition.y += goblin[i].transform.position.y;
-			goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition, Time.deltaTime * 6f);
+			goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition, Time.deltaTime * 7f);
 		}
 		yield return new WaitForSeconds(0.25f);
-		isRawring = false;
+		_isRawring = false;
 		_inCooldown = true;
 		yield return new WaitForSeconds(7f);
 		_inCooldown = false;
 		_spriteRenderer.color = Color.white;
 		yield return null;
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.tag == Tags.PLAYER_TAG && _inScratch)
+		{
+			other.GetComponent<SwitchTeam>().Switch();
+		}
 	}
 
 	public void Cooldown(SpriteRenderer renderer)
