@@ -38,26 +38,20 @@ public class DeathWall : MonoBehaviour {
 	{
         timer -= Time.deltaTime;
 
-        if (timer <= 2.5f)
+        if (timer <= 2f)
         {
             PlayAudio();
         }
 
-        if(timer <= 1.1f)
-        {
-            PlayAudio2();
-        }
-
         if (timer <= 0 || playtimer == false)
         {
-          
             timer = 30;
         }
 
 		if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count != GameMagager.Instance.allGoblins.Count && deadplaying == false)
 		{
             deadplaying = true;
-			StartCoroutine(spawnArrowsToRight());
+            StartCoroutine(spawnArrowsToRight());
 		}
         else if (timer < 3 && GameMagager.Instance.rightSidedPlayers.Count == GameMagager.Instance.allGoblins.Count && deadplaying == false)
         {
@@ -74,7 +68,9 @@ public class DeathWall : MonoBehaviour {
         
         yield return new WaitForSeconds(3f);
         playtimer = false;
-            for (int x = 12; x >= -10; x--)
+
+        PlayAudio2();
+        for (int x = 12; x >= -10; x--)
             {
                 for (int y = 5; y >= -6; y--)
                 {
@@ -105,6 +101,8 @@ public class DeathWall : MonoBehaviour {
         
         yield return new WaitForSeconds(3f);
         playtimer = false;
+
+        PlayAudio2();
         for (int x = -12; x <= 10; x += 1)
             {
 
