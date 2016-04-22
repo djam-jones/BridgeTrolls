@@ -40,12 +40,13 @@ public class HubHandler : MonoBehaviour {
         _audioHandler = GameObject.Find("Audio Handler").GetComponent<AudioHandler>();
         panelState = PanelState.WaitingToJoin;
 		playerState = PlayerState.Unready;
+
+        //SetPanelID();
 	}
 
 	void Update()
 	{
 		CheckState(_panelIndex);
-//		SetPanelID();
 
 		CheckReady();
 		CheckInCharacterSelect();

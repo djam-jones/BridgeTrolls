@@ -11,7 +11,7 @@ public class TapFree : MonoBehaviour
     [SerializeField]
     private float growAmt = 0.15f;
     [SerializeField]
-    private float shrinkAmt = 0.25f;
+    private float shrinkAmt = 0.20f;
     [SerializeField]
     private float barSize = 0.9f;
 	[SerializeField, HideInInspector]

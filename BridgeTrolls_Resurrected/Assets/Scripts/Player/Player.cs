@@ -17,8 +17,9 @@ public class Player : MonoBehaviour {
 		_playerRoles 	= GetComponent<PlayerRoles>();
 
 		playerType = "Typeless";
+        SetControllerID();
 	}
-
+    
 	void Start()
 	{
 		_effectObject = this.transform.GetChild(1).gameObject;
@@ -31,6 +32,11 @@ public class Player : MonoBehaviour {
 		this.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
 		_effectObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
 	}
+
+    public void SetControllerID()
+    {
+        playerNum = ControllerAssigner.Instance.ControllerIndex;
+    }
 
 	public void SetCharacter(string characterName)
 	{

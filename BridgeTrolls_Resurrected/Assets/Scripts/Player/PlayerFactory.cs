@@ -125,7 +125,8 @@ public class PlayerFactory : MonoBehaviour {
 		//Tap Indicator GameObject Implementation
 		_tapIndicator.name = "Tap Button";
 		_tapIndicator.transform.parent = _grabStuff.transform;
-		_tapIndicator.transform.position = new Vector2(0, 0.925f);
+		_tapIndicator.transform.position = new Vector2(0, 1f);
+        _tapIndicator.transform.localScale = new Vector2(0.5f, 0.5f);
 
 		_spriteRenderer = _tapIndicator.AddComponent<SpriteRenderer>();
 		_spriteRenderer.GetComponent<SpriteRenderer>().sortingOrder = 12;
