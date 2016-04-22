@@ -63,12 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AudioPlayer.cs" />
     <Compile Include="Assets\Scripts\Game\Characters\CharacterDatabase.cs" />
     <Compile Include="Assets\Scripts\Game\Gameplay\DeathWall.cs" />
     <Compile Include="Assets\Scripts\Game\Gameplay\ScoreC.cs" />
     <Compile Include="Assets\Scripts\Game\Gameplay\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Game\General\AudioHandler.cs" />
+    <Compile Include="Assets\Scripts\Game\General\AudioPlayer.cs" />
     <Compile Include="Assets\Scripts\Game\General\ControllerConnection.cs" />
     <Compile Include="Assets\Scripts\Game\General\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\Game\General\GameMagager.cs" />
