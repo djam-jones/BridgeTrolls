@@ -129,22 +129,23 @@ public class GameMagager : MonoBehaviour {
 		SetEnemyPlayer();
 	}
 
-	private void SetEnemyPlayer()
-	{
-		GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)]; 	//Pick a random player from the Player List.
-		enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile; 		//Set Role to Hostile and thus the Troll.
-		enemyPlayer.GetComponent<PlayerIndicator>().yValue = 1.5f;
-		enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 0.5f);
+    private void SetEnemyPlayer()
+    {
+        GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)];   //Pick a random player from the Player List.
+        enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile;        //Set Role to Hostile and thus the Troll.
+        enemyPlayer.GetComponent<PlayerIndicator>().yValue = 1.5f;
+        enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 0.5f);
 
-//		StartCoroutine(TrollIndicationTextFade(enemyPlayer));
+        //		StartCoroutine(TrollIndicationTextFade(enemyPlayer));
 
-		enemyPlayer.name = enemyPlayer.name + " Troll";								//Set Name to Troll.
-		enemyPlayer.tag = Tags.TROLL_TAG;											//Set Tag to Enemy.
+        enemyPlayer.name = enemyPlayer.name + " Troll";                             //Set Name to Troll.
+        enemyPlayer.tag = Tags.TROLL_TAG;                                           //Set Tag to Enemy.
 
-		enemyPlayer.transform.position = new Vector2(0, 0); 						//Set Position to zero.
-		enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite; 			//Change sprite to the Troll sprite.
+        enemyPlayer.transform.position = new Vector2(0, 0);                         //Set Position to zero.
+        enemyPlayer.GetComponent<SpriteRenderer>().sprite = trollSprite;            //Change sprite to the Troll sprite.
 
-		enemyPlayer.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Characters/Troll_Animator") as RuntimeAnimatorController;
+        enemyPlayer.GetComponent<Animator>().runtimeAnimatorController = Resources.Load("Animations/Characters/Troll_Animator") as RuntimeAnimatorController;
+        enemyPlayer.transform.GetChild(2).transform.position = new Vector2(0, 1.75f);
 
 		//Set the Box Collider needs to those of the Troll.
 		BoxCollider2D _boxCollider = enemyPlayer.GetComponents<BoxCollider2D>()[1];

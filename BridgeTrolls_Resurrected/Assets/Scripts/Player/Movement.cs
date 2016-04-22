@@ -8,7 +8,9 @@ public class Movement : MonoBehaviour {
 	[SerializeField, HideInInspector] private string _horizontalControl  = "Horizontal_P";
 	[SerializeField, HideInInspector] private string _verticalControl 	= "Vertical_P";
 
-	public float speed;
+    private Vector3 _autoMoveDir;
+
+	public float speed= 4;
 	[SerializeField, HideInInspector] private float _scale;
 
 	[SerializeField] private float _minClampedX = -1.6f;
@@ -27,6 +29,7 @@ public class Movement : MonoBehaviour {
 
 	public bool facingRight = false;
 	private bool _isMoving = false;
+    private bool _autoMove = false;
 
 	void Awake()
 	{
@@ -63,6 +66,25 @@ public class Movement : MonoBehaviour {
 			_anim.Play("Idle");
 		}
 	}
+
+    public IEnumerator StartAutoMove(Vector3 dir, float time, float _speed = 4)
+    {
+        
+        if(dir.x == 0)
+        {
+            dir.x = 0.2f;
+        }
+        if (dir.y == 0)
+        {
+            dir.y = 0.2f;
+        }
+
+        _autoMove = true;
+        _autoMoveDir = dir;
+        speed = _speed;
+       yield return new WaitForSeconds(time);
+        _autoMove = false;
+    }
 
 	private void ClampedMove()
 	{
@@ -112,18 +134,24 @@ public class Movement : MonoBehaviour {
 			pos.y = Mathf.Clamp(pos.y, _minClampedY, _maxClampedY);
 		transform.position = pos;
 
-		if(!devKeyBoardInput)
-		{
-			h = Input.GetAxis( _horizontalControl + GetComponent<Player>().playerNum ) * speed * Time.deltaTime;
-			v = Input.GetAxis( _verticalControl   + GetComponent<Player>().playerNum ) * speed * Time.deltaTime;
-		}
-		else
-		{
-			h = Input.GetAxis( "Horizontal" ) * speed * Time.deltaTime;
-			v = Input.GetAxis( "Vertical" ) * speed * Time.deltaTime;
-		}
+        if (!devKeyBoardInput)
+        {
+            h = Input.GetAxis(_horizontalControl + GetComponent<Player>().playerNum) * speed * Time.deltaTime;
+            v = Input.GetAxis(_verticalControl + GetComponent<Player>().playerNum) * speed * Time.deltaTime;
+        }
+        else
+        {
+            h = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+            v = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        }
 
-		if(h >= 0.01f)
+        if (_autoMove == true)
+        {
+            h = _autoMoveDir.x * speed * Time.deltaTime;
+            v = _autoMoveDir.y * speed * Time.deltaTime;
+        }
+
+        if (h >= 0.01f)
 		{
 			//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
 			gameObject.GetComponent<SpriteRenderer>().flipX = true;

@@ -143,11 +143,12 @@ public class AbilityHandler : MonoBehaviour
 		List<GameObject> goblin = manager.allGoblins;
 		for (int i = 0; i < goblin.Count; i++)
 		{
-			Vector2 startPosition = goblin[i].transform.position;
-			Vector2 newPosition = Random.insideUnitCircle * 3f;
-			newPosition.x += goblin[i].transform.position.x;
-			newPosition.y += goblin[i].transform.position.y;
-			goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition, Time.deltaTime * 7f);
+            StartCoroutine(goblin[i].GetComponent<Movement>().StartAutoMove(new Vector3(Random.Range(-1,1),Random.Range(-1, 1), 0), 1));
+		//	Vector2 startPosition = goblin[i].transform.position;
+		//	Vector2 newPosition = Random.insideUnitCircle * 100;
+		//	newPosition.x += goblin[i].transform.position.x;
+		//	newPosition.y += goblin[i].transform.position.y;
+		//	goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition, Time.deltaTime/10);
 		}
 		yield return new WaitForSeconds(0.25f);
 		_isRawring = false;
