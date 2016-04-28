@@ -38,6 +38,8 @@ public class SafeZone : MonoBehaviour
 	{
 		player.GetComponent<Movement>().enabled = false;
 		player.GetComponent<AbilityHandler>().enabled = false;
+
+		player.GetComponent<Animator>().Play("Idle");
 	}
 		
 	/// <summary>

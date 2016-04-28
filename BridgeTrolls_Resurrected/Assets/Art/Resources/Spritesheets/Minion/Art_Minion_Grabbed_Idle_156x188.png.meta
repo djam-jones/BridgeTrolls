@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: ffb4d7c69c56145ea9dcf242a4baee8e
+timeCreated: 1461594201
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_Minion_Grabbed_Idle_156x188_0
+    21300002: Art_Minion_Grabbed_Idle_156x188_1
+    21300004: Art_Minion_Grabbed_Idle_156x188_2
+    21300006: Art_Minion_Grabbed_Idle_156x188_3
+    21300008: Art_Minion_Grabbed_Idle_156x188_4
+    21300010: Art_Minion_Grabbed_Idle_156x188_5
+    21300012: Art_Minion_Grabbed_Idle_156x188_6
+    21300014: Art_Minion_Grabbed_Idle_156x188_7
+    21300016: Art_Minion_Grabbed_Idle_156x188_8
+    21300018: Art_Minion_Grabbed_Idle_156x188_9
+    21300020: Art_Minion_Grabbed_Idle_156x188_10
+    21300022: Art_Minion_Grabbed_Idle_156x188_11
+    21300024: Art_Minion_Grabbed_Idle_156x188_12
+    21300026: Art_Minion_Grabbed_Idle_156x188_13
+    21300028: Art_Minion_Grabbed_Idle_156x188_14
+    21300030: Art_Minion_Grabbed_Idle_156x188_15
+    21300032: Art_Minion_Grabbed_Idle_156x188_16
+    21300034: Art_Minion_Grabbed_Idle_156x188_17
+    21300036: Art_Minion_Grabbed_Idle_156x188_18
+    21300038: Art_Minion_Grabbed_Idle_156x188_19
+    21300040: Art_Minion_Grabbed_Idle_156x188_20
+    21300042: Art_Minion_Grabbed_Idle_156x188_21
+    21300044: Art_Minion_Grabbed_Idle_156x188_22
+    21300046: Art_Minion_Grabbed_Idle_156x188_23
+    21300048: Art_Minion_Grabbed_Idle_156x188_24
+    21300050: Art_Minion_Grabbed_Idle_156x188_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_Minion_Grabbed_Idle_156x188_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 836
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 89}
+        - {x: -78, y: 81}
+        - {x: -78, y: -50}
+        - {x: -60, y: -94}
+        - {x: 58, y: -94}
+        - {x: 70, y: -45}
+        - {x: 70, y: 62}
+        - {x: 42, y: 89}
+    - name: Art_Minion_Grabbed_Idle_156x188_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 836
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56, y: 28}
+        - {x: 71, y: 49}
+        - {x: 71, y: 61}
+        - {x: 6, y: 89}
+        - {x: 0, y: 89}
+        - {x: -12, y: 85}
+        - {x: -66, y: 69}
+        - {x: -78, y: 51}
+        - {x: -78, y: -56}
+        - {x: -58, y: -94}
+        - {x: 50, y: -94}
+        - {x: 54, y: -93}
+        - {x: 67, y: -17}
+        - {x: 50, y: 7}
+        - {x: 40, y: 14}
+    - name: Art_Minion_Grabbed_Idle_156x188_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 836
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 89}
+        - {x: -78, y: 65}
+        - {x: -78, y: -48}
+        - {x: -68, y: -94}
+        - {x: 71, y: -94}
+        - {x: 71, y: 70}
+        - {x: 23, y: 89}
+    - name: Art_Minion_Grabbed_Idle_156x188_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 836
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 88}
+        - {x: -5, y: 88}
+        - {x: -77, y: 58}
+        - {x: -77, y: -81}
+        - {x: -70, y: -94}
+        - {x: 43, y: -94}
+        - {x: 67, y: -73}
+        - {x: 72, y: -54}
+        - {x: 72, y: 70}
+    - name: Art_Minion_Grabbed_Idle_156x188_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 836
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: 13}
+        - {x: 49, y: 19}
+        - {x: 70, y: 39}
+        - {x: 74, y: 46}
+        - {x: 74, y: 55}
+        - {x: 23, y: 88}
+        - {x: -37, y: 88}
+        - {x: -72, y: 75}
+        - {x: -77, y: 53}
+        - {x: -77, y: -67}
+        - {x: -58, y: -94}
+        - {x: 59, y: -94}
+        - {x: 74, y: -62}
+        - {x: 74, y: -17}
+        - {x: 51, y: 5}
+    - name: Art_Minion_Grabbed_Idle_156x188_5
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 836
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 88}
+        - {x: -77, y: 88}
+        - {x: -77, y: -72}
+        - {x: -64, y: -94}
+        - {x: 41, y: -94}
+        - {x: 46, y: -89}
+        - {x: 48, y: -77}
+        - {x: 75, y: -57}
+    - name: Art_Minion_Grabbed_Idle_156x188_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76, y: 72}
+        - {x: 33, y: 87}
+        - {x: -53, y: 87}
+        - {x: -77, y: 60}
+        - {x: -77, y: -94}
+        - {x: 40, y: -94}
+        - {x: 49, y: -92}
+        - {x: 47, y: -78}
+        - {x: 75, y: -40}
+        - {x: 76, y: -39}
+    - name: Art_Minion_Grabbed_Idle_156x188_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 648
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -20}
+        - {x: 16, y: -26}
+        - {x: 25, y: -36}
+        - {x: 59, y: -41}
+        - {x: 76, y: -27}
+        - {x: 76, y: 67}
+        - {x: 38, y: 87}
+        - {x: -46, y: 87}
+        - {x: -77, y: 58}
+        - {x: -77, y: -42}
+        - {x: -72, y: -61}
+        - {x: -54, y: -65}
+        - {x: -47, y: -66}
+        - {x: -70, y: -94}
+        - {x: 47, y: -94}
+        - {x: 49, y: -89}
+        - {x: 45, y: -73}
+        - {x: 16, y: -32}
+    - name: Art_Minion_Grabbed_Idle_156x188_8
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 648
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -19}
+        - {x: 17, y: -31}
+        - {x: 36, y: -38}
+        - {x: 56, y: -41}
+        - {x: 60, y: -33}
+        - {x: 58, y: -26}
+        - {x: 77, y: 20}
+        - {x: 77, y: 45}
+        - {x: 32, y: 66}
+        - {x: 21, y: 70}
+        - {x: 25, y: 79}
+        - {x: 24, y: 86}
+        - {x: -12, y: 86}
+        - {x: -76, y: 71}
+        - {x: -76, y: -67}
+        - {x: -56, y: -94}
+        - {x: 44, y: -94}
+        - {x: 52, y: -78}
+        - {x: 27, y: -67}
+        - {x: 15, y: -24}
+    - name: Art_Minion_Grabbed_Idle_156x188_9
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 648
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -27}
+        - {x: 15, y: -23}
+        - {x: 15, y: -26}
+        - {x: 17, y: -32}
+        - {x: 66, y: -69}
+        - {x: 78, y: -25}
+        - {x: 78, y: 51}
+        - {x: 36, y: 86}
+        - {x: -76, y: 86}
+        - {x: -76, y: -59}
+        - {x: -53, y: -94}
+        - {x: 44, y: -94}
+        - {x: 51, y: -78}
+        - {x: 21, y: -66}
+        - {x: 16, y: -29}
+    - name: Art_Minion_Grabbed_Idle_156x188_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 648
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44, y: 85}
+        - {x: -52, y: 85}
+        - {x: -73, y: 81}
+        - {x: -75, y: 38}
+        - {x: -67, y: 32}
+        - {x: -62, y: 29}
+        - {x: -65, y: 29}
+        - {x: -72, y: 21}
+        - {x: -76, y: -15}
+        - {x: -76, y: -35}
+        - {x: -64, y: -43}
+        - {x: -61, y: -43}
+        - {x: -65, y: -51}
+        - {x: -65, y: -57}
+        - {x: -61, y: -82}
+        - {x: -55, y: -94}
+        - {x: 45, y: -94}
+        - {x: 51, y: -78}
+        - {x: 78, y: 3}
+        - {x: 78, y: 55}
+    - name: Art_Minion_Grabbed_Idle_156x188_11
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 648
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78, y: 20}
+        - {x: 78, y: 50}
+        - {x: 41, y: 85}
+        - {x: -14, y: 85}
+        - {x: -60, y: 64}
+        - {x: -68, y: 54}
+        - {x: -71, y: 34}
+        - {x: -62, y: 28}
+        - {x: -59, y: 27}
+        - {x: -55, y: 27}
+        - {x: -64, y: 27}
+        - {x: -75, y: 32}
+        - {x: -76, y: 28}
+        - {x: -76, y: -79}
+        - {x: -46, y: -94}
+        - {x: 44, y: -94}
+        - {x: 51, y: -78}
+        - {x: 59, y: -38}
+    - name: Art_Minion_Grabbed_Idle_156x188_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 85}
+        - {x: -66, y: 70}
+        - {x: -76, y: 41}
+        - {x: -76, y: -90}
+        - {x: -74, y: -94}
+        - {x: 46, y: -94}
+        - {x: 78, y: -80}
+        - {x: 78, y: 44}
+        - {x: 45, y: 85}
+    - name: Art_Minion_Grabbed_Idle_156x188_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 460
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68, y: -33}
+        - {x: 77, y: -6}
+        - {x: 77, y: 57}
+        - {x: 28, y: 83}
+        - {x: 21, y: 85}
+        - {x: 2, y: 85}
+        - {x: -13, y: 74}
+        - {x: -73, y: 57}
+        - {x: -76, y: 27}
+        - {x: -76, y: -38}
+        - {x: -65, y: -45}
+        - {x: -61, y: -44}
+        - {x: -59, y: -42}
+        - {x: -61, y: -45}
+        - {x: -66, y: -46}
+        - {x: -76, y: -58}
+        - {x: -76, y: -71}
+        - {x: -52, y: -91}
+        - {x: -44, y: -94}
+        - {x: 44, y: -94}
+        - {x: 49, y: -79}
+        - {x: 44, y: -74}
+    - name: Art_Minion_Grabbed_Idle_156x188_14
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 460
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56, y: 18}
+        - {x: 77, y: 37}
+        - {x: 77, y: 46}
+        - {x: 25, y: 86}
+        - {x: -5, y: 86}
+        - {x: -75, y: 58}
+        - {x: -77, y: 17}
+        - {x: -77, y: -45}
+        - {x: -70, y: -68}
+        - {x: -56, y: -94}
+        - {x: 68, y: -94}
+        - {x: 61, y: -40}
+        - {x: 48, y: -2}
+        - {x: 40, y: 4}
+    - name: Art_Minion_Grabbed_Idle_156x188_15
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 460
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 86}
+        - {x: -14, y: 86}
+        - {x: -76, y: 56}
+        - {x: -77, y: 37}
+        - {x: -77, y: -40}
+        - {x: -66, y: -60}
+        - {x: -48, y: -64}
+        - {x: -55, y: -79}
+        - {x: -55, y: -87}
+        - {x: -54, y: -94}
+        - {x: 63, y: -94}
+        - {x: 76, y: -22}
+        - {x: 76, y: 49}
+    - name: Art_Minion_Grabbed_Idle_156x188_16
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 460
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 86}
+        - {x: -9, y: 86}
+        - {x: -76, y: 62}
+        - {x: -77, y: 46}
+        - {x: -77, y: -53}
+        - {x: -63, y: -94}
+        - {x: 41, y: -94}
+        - {x: 73, y: -73}
+        - {x: 76, y: -62}
+        - {x: 76, y: 68}
+    - name: Art_Minion_Grabbed_Idle_156x188_17
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 460
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -22}
+        - {x: 15, y: -21}
+        - {x: 15, y: -27}
+        - {x: 20, y: -31}
+        - {x: 52, y: -40}
+        - {x: 58, y: -39}
+        - {x: 60, y: -25}
+        - {x: 49, y: -2}
+        - {x: 42, y: 5}
+        - {x: 73, y: 38}
+        - {x: 75, y: 41}
+        - {x: 75, y: 48}
+        - {x: 74, y: 50}
+        - {x: 29, y: 87}
+        - {x: -18, y: 87}
+        - {x: -71, y: 54}
+        - {x: -72, y: 45}
+        - {x: -72, y: 33}
+        - {x: -66, y: 28}
+        - {x: -61, y: 26}
+        - {x: -56, y: 26}
+        - {x: -60, y: 26}
+        - {x: -65, y: 27}
+        - {x: -72, y: 25}
+        - {x: -77, y: 0}
+        - {x: -77, y: -50}
+        - {x: -75, y: -58}
+        - {x: -52, y: -94}
+        - {x: 50, y: -94}
+        - {x: 55, y: -93}
+        - {x: 18, y: -31}
+        - {x: 15, y: -32}
+        - {x: 15, y: -26}
+    - name: Art_Minion_Grabbed_Idle_156x188_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -22}
+        - {x: 15, y: -27}
+        - {x: 19, y: -32}
+        - {x: 57, y: -40}
+        - {x: 75, y: -39}
+        - {x: 75, y: 56}
+        - {x: 59, y: 87}
+        - {x: -22, y: 87}
+        - {x: -64, y: 62}
+        - {x: -74, y: 44}
+        - {x: -71, y: 34}
+        - {x: -63, y: 27}
+        - {x: -60, y: 26}
+        - {x: -66, y: 26}
+        - {x: -77, y: 33}
+        - {x: -77, y: -94}
+        - {x: 41, y: -94}
+        - {x: 46, y: -88}
+        - {x: 48, y: -78}
+        - {x: 16, y: -32}
+    - name: Art_Minion_Grabbed_Idle_156x188_19
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 272
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -32}
+        - {x: 62, y: -57}
+        - {x: 74, y: -7}
+        - {x: 74, y: 72}
+        - {x: 61, y: 87}
+        - {x: -58, y: 87}
+        - {x: -77, y: 79}
+        - {x: -77, y: -77}
+        - {x: -67, y: -94}
+        - {x: 46, y: -94}
+        - {x: 51, y: -77}
+        - {x: 18, y: -38}
+        - {x: 11, y: -9}
+    - name: Art_Minion_Grabbed_Idle_156x188_20
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 272
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 88}
+        - {x: -22, y: 72}
+        - {x: -76, y: 60}
+        - {x: -77, y: 53}
+        - {x: -77, y: -37}
+        - {x: -71, y: -54}
+        - {x: -66, y: -94}
+        - {x: 69, y: -94}
+        - {x: 73, y: -69}
+        - {x: 73, y: 57}
+        - {x: 24, y: 88}
+    - name: Art_Minion_Grabbed_Idle_156x188_21
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 272
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77, y: 88}
+        - {x: -77, y: -94}
+        - {x: 72, y: -94}
+        - {x: 72, y: 75}
+        - {x: 65, y: 88}
+    - name: Art_Minion_Grabbed_Idle_156x188_22
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 272
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: 10}
+        - {x: 71, y: 43}
+        - {x: 71, y: 62}
+        - {x: 32, y: 89}
+        - {x: -11, y: 89}
+        - {x: -77, y: 66}
+        - {x: -77, y: -77}
+        - {x: -69, y: -94}
+        - {x: 71, y: -94}
+        - {x: 71, y: -11}
+        - {x: 59, y: 0}
+    - name: Art_Minion_Grabbed_Idle_156x188_23
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 272
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 89}
+        - {x: -78, y: 64}
+        - {x: -78, y: -56}
+        - {x: -61, y: -94}
+        - {x: 69, y: -94}
+        - {x: 71, y: -88}
+        - {x: 71, y: 69}
+        - {x: 20, y: 89}
+    - name: Art_Minion_Grabbed_Idle_156x188_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 89}
+        - {x: -78, y: 61}
+        - {x: -78, y: -94}
+        - {x: 54, y: -94}
+        - {x: 70, y: -65}
+        - {x: 70, y: 77}
+        - {x: 34, y: 89}
+    - name: Art_Minion_Grabbed_Idle_156x188_25
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 84
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 89}
+        - {x: -78, y: 81}
+        - {x: -78, y: -50}
+        - {x: -60, y: -94}
+        - {x: 58, y: -94}
+        - {x: 70, y: -45}
+        - {x: 70, y: 62}
+        - {x: 42, y: 89}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

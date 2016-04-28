@@ -10,8 +10,6 @@ public class Options : MonoBehaviour {
 	public Dropdown resolutionDropdownUI;
 	public Dropdown qualityDropdownUI;
 
-	private QualityLevel _qualityLevel;
-
 	AudioSource[] _audioSources;
 	bool _fullScreen = true;
 	bool _showTutorial = true;
@@ -22,6 +20,7 @@ public class Options : MonoBehaviour {
 	void Awake()
 	{
 		_audioSources = GameObject.Find("Audio Handler").GetComponents<AudioSource>();
+		PlayerPrefs.SetString("ShowTutorial", _showTutorial.ToString());
 	}
 
 	void Update()
@@ -68,10 +67,10 @@ public class Options : MonoBehaviour {
 	public void SetQuality()
 	{
 		if(qualityDropdownUI.value == 0)
-			_qualityLevel = QualityLevel.Fantastic;
+			QualitySettings.SetQualityLevel(5);
 		else if(qualityDropdownUI.value == 1)
-			_qualityLevel = QualityLevel.Good;
+			QualitySettings.SetQualityLevel(3);
 		else if(qualityDropdownUI.value == 2)
-			_qualityLevel = QualityLevel.Fastest;
+			QualitySettings.SetQualityLevel(0);
 	}
 }

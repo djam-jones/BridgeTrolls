@@ -109,6 +109,7 @@ public class AbilityHandler : MonoBehaviour
 	{
 		Grab grabScript = GetComponent<Grab>();
 		_move.speed += 6;
+		_anim.SetTrigger("Go_Grab");
 		yield return new WaitForSeconds(0.1f);
 		_move.speed -= 6;
 		grabScript.grabReady = false;

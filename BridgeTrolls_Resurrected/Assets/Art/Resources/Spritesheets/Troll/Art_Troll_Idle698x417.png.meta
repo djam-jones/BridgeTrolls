@@ -1,0 +1,1226 @@
+fileFormatVersion: 2
+guid: 435b91fd571d2420bb9b3ed86073a94a
+timeCreated: 1461594119
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_Troll_Idle698x417_0
+    21300002: Art_Troll_Idle698x417_1
+    21300004: Art_Troll_Idle698x417_2
+    21300006: Art_Troll_Idle698x417_3
+    21300008: Art_Troll_Idle698x417_4
+    21300010: Art_Troll_Idle698x417_5
+    21300012: Art_Troll_Idle698x417_6
+    21300014: Art_Troll_Idle698x417_7
+    21300016: Art_Troll_Idle698x417_8
+    21300018: Art_Troll_Idle698x417_9
+    21300020: Art_Troll_Idle698x417_10
+    21300022: Art_Troll_Idle698x417_11
+    21300024: Art_Troll_Idle698x417_12
+    21300026: Art_Troll_Idle698x417_13
+    21300028: Art_Troll_Idle698x417_14
+    21300030: Art_Troll_Idle698x417_15
+    21300032: Art_Troll_Idle698x417_16
+    21300034: Art_Troll_Idle698x417_17
+    21300036: Art_Troll_Idle698x417_18
+    21300038: Art_Troll_Idle698x417_19
+    21300040: Art_Troll_Idle698x417_20
+    21300042: Art_Troll_Idle698x417_21
+    21300044: Art_Troll_Idle698x417_22
+    21300046: Art_Troll_Idle698x417_23
+    21300048: Art_Troll_Idle698x417_24
+    21300050: Art_Troll_Idle698x417_25
+    21300052: Art_Troll_Idle698x417_26
+    21300054: Art_Troll_Idle698x417_27
+    21300056: Art_Troll_Idle698x417_28
+    21300058: Art_Troll_Idle698x417_29
+    21300060: Art_Troll_Idle698x417_30
+    21300062: Art_Troll_Idle698x417_31
+    21300064: Art_Troll_Idle698x417_32
+    21300066: Art_Troll_Idle698x417_33
+    21300068: Art_Troll_Idle698x417_34
+    21300070: Art_Troll_Idle698x417_35
+    21300072: Art_Troll_Idle698x417_36
+    21300074: Art_Troll_Idle698x417_37
+    21300076: Art_Troll_Idle698x417_38
+    21300078: Art_Troll_Idle698x417_39
+    21300080: Art_Troll_Idle698x417_40
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_Troll_Idle698x417_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3679
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 56}
+        - {x: -16.5, y: 58}
+        - {x: -60.5, y: 58}
+        - {x: -113.5, y: 2}
+        - {x: -113.5, y: -67}
+        - {x: -102.5, y: -102}
+        - {x: 45.5, y: -102}
+        - {x: 78.5, y: -49}
+        - {x: 78.5, y: 9}
+    - name: Art_Troll_Idle698x417_1
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3679
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 58}
+        - {x: -51.5, y: 58}
+        - {x: -49.5, y: 49}
+        - {x: -46.5, y: 43}
+        - {x: -51.5, y: 49}
+        - {x: -57.5, y: 51}
+        - {x: -94.5, y: 25}
+        - {x: -113.5, y: -11}
+        - {x: -113.5, y: -88}
+        - {x: -89.5, y: -102}
+        - {x: 27.5, y: -102}
+        - {x: 68.5, y: -93}
+        - {x: 78.5, y: -59}
+        - {x: 78.5, y: 22}
+        - {x: 25.5, y: 57}
+    - name: Art_Troll_Idle698x417_2
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3679
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.5, y: 58}
+        - {x: -47.5, y: 57}
+        - {x: -49.5, y: 49}
+        - {x: -46.5, y: 43}
+        - {x: -51.5, y: 49}
+        - {x: -59.5, y: 56}
+        - {x: -113.5, y: 2}
+        - {x: -113.5, y: -98}
+        - {x: -100.5, y: -102}
+        - {x: 64.5, y: -102}
+        - {x: 78.5, y: -39}
+        - {x: 78.5, y: 3}
+        - {x: 13.5, y: 58}
+    - name: Art_Troll_Idle698x417_3
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3679
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 58}
+        - {x: -62.5, y: 58}
+        - {x: -113.5, y: -8}
+        - {x: -113.5, y: -76}
+        - {x: -96.5, y: -102}
+        - {x: 35.5, y: -102}
+        - {x: 72.5, y: -89}
+        - {x: 78.5, y: -50}
+        - {x: 78.5, y: 25}
+    - name: Art_Troll_Idle698x417_4
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 3679
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.5, y: 58}
+        - {x: -114.5, y: -5}
+        - {x: -114.5, y: -77}
+        - {x: -73.5, y: -102}
+        - {x: 44.5, y: -102}
+        - {x: 79.5, y: -58}
+        - {x: 79.5, y: 13}
+        - {x: 32.5, y: 58}
+    - name: Art_Troll_Idle698x417_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3262
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 57.5}
+        - {x: -48.5, y: 53.5}
+        - {x: -47.5, y: 42.5}
+        - {x: -47.5, y: 46.5}
+        - {x: -50.5, y: 51.5}
+        - {x: -101.5, y: 41.5}
+        - {x: -114.5, y: 14.5}
+        - {x: -114.5, y: -88.5}
+        - {x: -92.5, y: -101.5}
+        - {x: -85.5, y: -103.5}
+        - {x: 40.5, y: -103.5}
+        - {x: 79.5, y: -64.5}
+        - {x: 79.5, y: 18.5}
+        - {x: -2.5, y: 57.5}
+    - name: Art_Troll_Idle698x417_6
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3262
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 57.5}
+        - {x: -67.5, y: 57.5}
+        - {x: -114.5, y: -9.5}
+        - {x: -114.5, y: -17.5}
+        - {x: -113.5, y: -18.5}
+        - {x: -114.5, y: -19.5}
+        - {x: -114.5, y: -80.5}
+        - {x: -100.5, y: -103.5}
+        - {x: 25.5, y: -103.5}
+        - {x: 62.5, y: -79.5}
+        - {x: 80.5, y: -36.5}
+        - {x: 80.5, y: 26.5}
+    - name: Art_Troll_Idle698x417_7
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3262
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 57.5}
+        - {x: -50.5, y: 53.5}
+        - {x: -45.5, y: 39.5}
+        - {x: -50.5, y: 34.5}
+        - {x: -48.5, y: 46.5}
+        - {x: -49.5, y: 49.5}
+        - {x: -63.5, y: 53.5}
+        - {x: -111.5, y: 4.5}
+        - {x: -115.5, y: -2.5}
+        - {x: -115.5, y: -88.5}
+        - {x: -87.5, y: -103.5}
+        - {x: 65.5, y: -103.5}
+        - {x: 81.5, y: -80.5}
+        - {x: 81.5, y: 20.5}
+        - {x: 4.5, y: 57.5}
+    - name: Art_Troll_Idle698x417_8
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3262
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -17.5}
+        - {x: 71.5, y: -19.5}
+        - {x: 69.5, y: -19.5}
+        - {x: 63.5, y: -23.5}
+        - {x: 60.5, y: -23.5}
+        - {x: 71.5, y: -18.5}
+        - {x: 76.5, y: -13.5}
+        - {x: 76.5, y: -11.5}
+        - {x: 81.5, y: -1.5}
+        - {x: 81.5, y: 16.5}
+        - {x: 18.5, y: 57.5}
+        - {x: -44.5, y: 57.5}
+        - {x: -48.5, y: 53.5}
+        - {x: -46.5, y: 41.5}
+        - {x: -47.5, y: 46.5}
+        - {x: -48.5, y: 49.5}
+        - {x: -72.5, y: 42.5}
+        - {x: -115.5, y: 2.5}
+        - {x: -115.5, y: -79.5}
+        - {x: -74.5, y: -103.5}
+        - {x: 51.5, y: -103.5}
+        - {x: 81.5, y: -66.5}
+        - {x: 81.5, y: -19.5}
+        - {x: 76.5, y: -17.5}
+    - name: Art_Troll_Idle698x417_9
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 3262
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.5, y: -16.5}
+        - {x: 72.5, y: -18.5}
+        - {x: 69.5, y: -17.5}
+        - {x: 72.5, y: -17.5}
+        - {x: 77.5, y: -12.5}
+        - {x: 77.5, y: -10.5}
+        - {x: 82.5, y: -9.5}
+        - {x: 82.5, y: 5.5}
+        - {x: 65.5, y: 30.5}
+        - {x: 2.5, y: 57.5}
+        - {x: -49.5, y: 57.5}
+        - {x: -47.5, y: 52.5}
+        - {x: -45.5, y: 43.5}
+        - {x: -46.5, y: 46.5}
+        - {x: -54.5, y: 55.5}
+        - {x: -105.5, y: 43.5}
+        - {x: -116.5, y: 15.5}
+        - {x: -116.5, y: -83.5}
+        - {x: -93.5, y: -101.5}
+        - {x: -82.5, y: -103.5}
+        - {x: 49.5, y: -103.5}
+        - {x: 82.5, y: -50.5}
+        - {x: 82.5, y: -18.5}
+        - {x: 76.5, y: -16.5}
+    - name: Art_Troll_Idle698x417_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2845
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.5, y: 59}
+        - {x: -47.5, y: 54}
+        - {x: -45.5, y: 45}
+        - {x: -47.5, y: 51}
+        - {x: -59.5, y: 47}
+        - {x: -83.5, y: 29}
+        - {x: -116.5, y: -7}
+        - {x: -116.5, y: -95}
+        - {x: -115.5, y: -102}
+        - {x: 82.5, y: -102}
+        - {x: 82.5, y: 33}
+        - {x: 46.5, y: 59}
+    - name: Art_Troll_Idle698x417_11
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2845
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -15}
+        - {x: 72.5, y: -17}
+        - {x: 70.5, y: -17}
+        - {x: 64.5, y: -23}
+        - {x: 65.5, y: -17}
+        - {x: 72.5, y: -16}
+        - {x: 83.5, y: -5}
+        - {x: 83.5, y: 23}
+        - {x: 16.5, y: 59}
+        - {x: -65.5, y: 59}
+        - {x: -116.5, y: 10}
+        - {x: -116.5, y: -65}
+        - {x: -103.5, y: -102}
+        - {x: 51.5, y: -102}
+        - {x: 77.5, y: -87}
+        - {x: 83.5, y: -44}
+        - {x: 83.5, y: -8}
+    - name: Art_Troll_Idle698x417_12
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2845
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79.5, y: -14}
+        - {x: 75.5, y: -14}
+        - {x: 73.5, y: -16}
+        - {x: 70.5, y: -15}
+        - {x: 73.5, y: -15}
+        - {x: 78.5, y: -10}
+        - {x: 82.5, y: -4}
+        - {x: 84.5, y: 4}
+        - {x: 84.5, y: 23}
+        - {x: 15.5, y: 59}
+        - {x: -47.5, y: 59}
+        - {x: -46.5, y: 54}
+        - {x: -45.5, y: 46}
+        - {x: -45.5, y: 48}
+        - {x: -47.5, y: 50}
+        - {x: -57.5, y: 50}
+        - {x: -116.5, y: -2}
+        - {x: -116.5, y: -59}
+        - {x: -93.5, y: -102}
+        - {x: 41.5, y: -102}
+        - {x: 67.5, y: -72}
+        - {x: 84.5, y: -30}
+        - {x: 84.5, y: -21}
+    - name: Art_Troll_Idle698x417_13
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2845
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -15}
+        - {x: 70.5, y: -15}
+        - {x: 74.5, y: -14}
+        - {x: 79.5, y: -9}
+        - {x: 84.5, y: -7}
+        - {x: 84.5, y: -1}
+        - {x: 82.5, y: 19}
+        - {x: -12.5, y: 60}
+        - {x: -47.5, y: 60}
+        - {x: -46.5, y: 55}
+        - {x: -45.5, y: 47}
+        - {x: -43.5, y: 41}
+        - {x: -47.5, y: 39}
+        - {x: -45.5, y: 46}
+        - {x: -45.5, y: 49}
+        - {x: -47.5, y: 51}
+        - {x: -55.5, y: 60}
+        - {x: -77.5, y: 60}
+        - {x: -117.5, y: 2}
+        - {x: -117.5, y: -102}
+        - {x: 55.5, y: -102}
+        - {x: 84.5, y: -97}
+        - {x: 84.5, y: -22}
+        - {x: 79.5, y: -11}
+    - name: Art_Troll_Idle698x417_14
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2845
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80.5, y: -13}
+        - {x: 76.5, y: -13}
+        - {x: 74.5, y: -15}
+        - {x: 72.5, y: -15}
+        - {x: 66.5, y: -20}
+        - {x: 71.5, y: -14}
+        - {x: 74.5, y: -14}
+        - {x: 79.5, y: -9}
+        - {x: 79.5, y: -6}
+        - {x: 83.5, y: 2}
+        - {x: 85.5, y: 8}
+        - {x: 85.5, y: 20}
+        - {x: 49.5, y: 60}
+        - {x: -76.5, y: 60}
+        - {x: -106.5, y: 51}
+        - {x: -117.5, y: 8}
+        - {x: -117.5, y: -63}
+        - {x: -84.5, y: -102}
+        - {x: 27.5, y: -102}
+        - {x: 76.5, y: -78}
+        - {x: 85.5, y: -36}
+        - {x: 85.5, y: -19}
+    - name: Art_Troll_Idle698x417_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2428
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77.5, y: -13.5}
+        - {x: 73.5, y: -15.5}
+        - {x: 83.5, y: -10.5}
+        - {x: 85.5, y: -6.5}
+        - {x: 85.5, y: 49.5}
+        - {x: 57.5, y: 59.5}
+        - {x: -74.5, y: 59.5}
+        - {x: -117.5, y: -2.5}
+        - {x: -117.5, y: -75.5}
+        - {x: -93.5, y: -102.5}
+        - {x: -92.5, y: -103.5}
+        - {x: 36.5, y: -103.5}
+        - {x: 85.5, y: -88.5}
+        - {x: 85.5, y: -16.5}
+        - {x: 80.5, y: -12.5}
+    - name: Art_Troll_Idle698x417_16
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2428
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.5, y: -11.5}
+        - {x: 77.5, y: -12.5}
+        - {x: 69.5, y: -17.5}
+        - {x: 75.5, y: -13.5}
+        - {x: 86.5, y: -4.5}
+        - {x: 86.5, y: 31.5}
+        - {x: 20.5, y: 59.5}
+        - {x: -62.5, y: 59.5}
+        - {x: -117.5, y: -6.5}
+        - {x: -117.5, y: -54.5}
+        - {x: -114.5, y: -55.5}
+        - {x: -104.5, y: -55.5}
+        - {x: -91.5, y: -96.5}
+        - {x: -67.5, y: -103.5}
+        - {x: 15.5, y: -103.5}
+        - {x: 30.5, y: -102.5}
+        - {x: 71.5, y: -80.5}
+        - {x: 86.5, y: -39.5}
+        - {x: 86.5, y: -19.5}
+    - name: Art_Troll_Idle698x417_17
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2428
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.5, y: -14.5}
+        - {x: 80.5, y: -12.5}
+        - {x: 78.5, y: -12.5}
+        - {x: 74.5, y: -14.5}
+        - {x: 68.5, y: -18.5}
+        - {x: 63.5, y: -19.5}
+        - {x: 75.5, y: -13.5}
+        - {x: 80.5, y: -8.5}
+        - {x: 86.5, y: 1.5}
+        - {x: 86.5, y: 15.5}
+        - {x: 1.5, y: 59.5}
+        - {x: -60.5, y: 59.5}
+        - {x: -117.5, y: 0.5}
+        - {x: -117.5, y: -59.5}
+        - {x: -87.5, y: -103.5}
+        - {x: 14.5, y: -103.5}
+        - {x: 30.5, y: -102.5}
+        - {x: 71.5, y: -73.5}
+        - {x: 86.5, y: -30.5}
+        - {x: 86.5, y: -21.5}
+    - name: Art_Troll_Idle698x417_18
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2428
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79.5, y: -11.5}
+        - {x: 72.5, y: -14.5}
+        - {x: 76.5, y: -12.5}
+        - {x: 81.5, y: -7.5}
+        - {x: 81.5, y: -5.5}
+        - {x: 83.5, y: 3.5}
+        - {x: 83.5, y: 7.5}
+        - {x: 79.5, y: 11.5}
+        - {x: 76.5, y: 11.5}
+        - {x: 57.5, y: 32.5}
+        - {x: 14.5, y: 56.5}
+        - {x: -10.5, y: 59.5}
+        - {x: -53.5, y: 59.5}
+        - {x: -118.5, y: 11.5}
+        - {x: -118.5, y: -71.5}
+        - {x: -109.5, y: -103.5}
+        - {x: 55.5, y: -103.5}
+        - {x: 87.5, y: -56.5}
+        - {x: 87.5, y: -12.5}
+        - {x: 81.5, y: -10.5}
+    - name: Art_Troll_Idle698x417_19
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2428
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82.5, y: -11.5}
+        - {x: 79.5, y: -11.5}
+        - {x: 75.5, y: -13.5}
+        - {x: 69.5, y: -18.5}
+        - {x: 65.5, y: -17.5}
+        - {x: 76.5, y: -12.5}
+        - {x: 80.5, y: -9.5}
+        - {x: 83.5, y: 2.5}
+        - {x: 83.5, y: 15.5}
+        - {x: 47.5, y: 59.5}
+        - {x: -118.5, y: 59.5}
+        - {x: -118.5, y: -76.5}
+        - {x: -83.5, y: -103.5}
+        - {x: 28.5, y: -103.5}
+        - {x: 30.5, y: -102.5}
+        - {x: 73.5, y: -80.5}
+        - {x: 87.5, y: -46.5}
+        - {x: 87.5, y: -16.5}
+    - name: Art_Troll_Idle698x417_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2011
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79.5, y: -10}
+        - {x: 74.5, y: -13}
+        - {x: 83.5, y: -7}
+        - {x: 83.5, y: 11}
+        - {x: 70.5, y: 61}
+        - {x: -118.5, y: 61}
+        - {x: -118.5, y: -58}
+        - {x: -105.5, y: -77}
+        - {x: -83.5, y: -102}
+        - {x: 53.5, y: -102}
+        - {x: 87.5, y: -53}
+        - {x: 87.5, y: -10}
+        - {x: 82.5, y: -9}
+    - name: Art_Troll_Idle698x417_21
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2011
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.5, y: -9}
+        - {x: 73.5, y: -13}
+        - {x: 76.5, y: -11}
+        - {x: 81.5, y: -6}
+        - {x: 81.5, y: -4}
+        - {x: 83.5, y: 5}
+        - {x: 83.5, y: 9}
+        - {x: 79.5, y: 13}
+        - {x: 76.5, y: 13}
+        - {x: 55.5, y: 30}
+        - {x: 24.5, y: 49}
+        - {x: -2.5, y: 61}
+        - {x: -54.5, y: 61}
+        - {x: -118.5, y: 0}
+        - {x: -118.5, y: -60}
+        - {x: -83.5, y: -102}
+        - {x: 22.5, y: -102}
+        - {x: 74.5, y: -78}
+        - {x: 87.5, y: -35}
+        - {x: 87.5, y: -11}
+    - name: Art_Troll_Idle698x417_22
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2011
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.5, y: -10}
+        - {x: 79.5, y: -10}
+        - {x: 71.5, y: -13}
+        - {x: 76.5, y: -11}
+        - {x: 84.5, y: -8}
+        - {x: 86.5, y: -3}
+        - {x: 86.5, y: 16}
+        - {x: 45.5, y: 37}
+        - {x: -16.5, y: 61}
+        - {x: -54.5, y: 61}
+        - {x: -90.5, y: 41}
+        - {x: -118.5, y: -9}
+        - {x: -118.5, y: -88}
+        - {x: -117.5, y: -90}
+        - {x: -77.5, y: -102}
+        - {x: 38.5, y: -102}
+        - {x: 72.5, y: -71}
+        - {x: 86.5, y: -28}
+        - {x: 86.5, y: -14}
+    - name: Art_Troll_Idle698x417_23
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2011
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78.5, y: -10}
+        - {x: 75.5, y: -13}
+        - {x: 73.5, y: -13}
+        - {x: 67.5, y: -18}
+        - {x: 72.5, y: -12}
+        - {x: 75.5, y: -12}
+        - {x: 80.5, y: -7}
+        - {x: 81.5, y: -3}
+        - {x: 83.5, y: 10}
+        - {x: 47.5, y: 41}
+        - {x: -4.5, y: 61}
+        - {x: -43.5, y: 61}
+        - {x: -46.5, y: 55}
+        - {x: -45.5, y: 48}
+        - {x: -42.5, y: 42}
+        - {x: -48.5, y: 38}
+        - {x: -45.5, y: 47}
+        - {x: -45.5, y: 50}
+        - {x: -47.5, y: 52}
+        - {x: -61.5, y: 55}
+        - {x: -118.5, y: 18}
+        - {x: -118.5, y: -65}
+        - {x: -101.5, y: -102}
+        - {x: 48.5, y: -102}
+        - {x: 86.5, y: -47}
+        - {x: 86.5, y: -14}
+        - {x: 79.5, y: -10}
+    - name: Art_Troll_Idle698x417_24
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2011
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.5, y: 60}
+        - {x: -49.5, y: 55}
+        - {x: -45.5, y: 51}
+        - {x: -45.5, y: 47}
+        - {x: -45.5, y: 50}
+        - {x: -47.5, y: 52}
+        - {x: -51.5, y: 54}
+        - {x: -117.5, y: 11}
+        - {x: -117.5, y: -64}
+        - {x: -92.5, y: -101}
+        - {x: -88.5, y: -102}
+        - {x: 53.5, y: -102}
+        - {x: 85.5, y: -64}
+        - {x: 85.5, y: 31}
+        - {x: 0.5, y: 60}
+    - name: Art_Troll_Idle698x417_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1594
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.5, y: 59.5}
+        - {x: -47.5, y: 53.5}
+        - {x: -46.5, y: 47.5}
+        - {x: -43.5, y: 42.5}
+        - {x: -46.5, y: 48.5}
+        - {x: -48.5, y: 50.5}
+        - {x: -52.5, y: 57.5}
+        - {x: -117.5, y: 13.5}
+        - {x: -117.5, y: -100.5}
+        - {x: -108.5, y: -103.5}
+        - {x: 75.5, y: -103.5}
+        - {x: 85.5, y: -91.5}
+        - {x: 85.5, y: 32.5}
+        - {x: 14.5, y: 59.5}
+    - name: Art_Troll_Idle698x417_26
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1594
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 59.5}
+        - {x: -43.5, y: 59.5}
+        - {x: -47.5, y: 53.5}
+        - {x: -46.5, y: 46.5}
+        - {x: -43.5, y: 39.5}
+        - {x: -49.5, y: 37.5}
+        - {x: -46.5, y: 45.5}
+        - {x: -48.5, y: 52.5}
+        - {x: -61.5, y: 57.5}
+        - {x: -117.5, y: -0.5}
+        - {x: -117.5, y: -98.5}
+        - {x: -102.5, y: -103.5}
+        - {x: 76.5, y: -103.5}
+        - {x: 84.5, y: -85.5}
+        - {x: 84.5, y: 11.5}
+        - {x: 62.5, y: 43.5}
+    - name: Art_Troll_Idle698x417_27
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1594
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.5, y: -26.5}
+        - {x: 84.5, y: -13.5}
+        - {x: 80.5, y: 6.5}
+        - {x: 77.5, y: 10.5}
+        - {x: 73.5, y: 10.5}
+        - {x: 69.5, y: 6.5}
+        - {x: 51.5, y: 32.5}
+        - {x: -8.5, y: 59.5}
+        - {x: -46.5, y: 59.5}
+        - {x: -48.5, y: 53.5}
+        - {x: -45.5, y: 42.5}
+        - {x: -48.5, y: 51.5}
+        - {x: -59.5, y: 55.5}
+        - {x: -117.5, y: -3.5}
+        - {x: -117.5, y: -62.5}
+        - {x: -86.5, y: -103.5}
+        - {x: 34.5, y: -103.5}
+        - {x: 53.5, y: -85.5}
+        - {x: 66.5, y: -72.5}
+        - {x: 69.5, y: -62.5}
+    - name: Art_Troll_Idle698x417_28
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1594
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 58.5}
+        - {x: -45.5, y: 58.5}
+        - {x: -47.5, y: 55.5}
+        - {x: -48.5, y: 53.5}
+        - {x: -54.5, y: 55.5}
+        - {x: -107.5, y: 8.5}
+        - {x: -116.5, y: -9.5}
+        - {x: -116.5, y: -75.5}
+        - {x: -98.5, y: -103.5}
+        - {x: 39.5, y: -103.5}
+        - {x: 83.5, y: -66.5}
+        - {x: 83.5, y: 20.5}
+        - {x: 30.5, y: 49.5}
+    - name: Art_Troll_Idle698x417_29
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1594
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -13.5}
+        - {x: 70.5, y: -15.5}
+        - {x: 64.5, y: -18.5}
+        - {x: 71.5, y: -14.5}
+        - {x: 82.5, y: -6.5}
+        - {x: 82.5, y: 30.5}
+        - {x: 37.5, y: 58.5}
+        - {x: -43.5, y: 58.5}
+        - {x: -49.5, y: 54.5}
+        - {x: -48.5, y: 44.5}
+        - {x: -48.5, y: 47.5}
+        - {x: -50.5, y: 49.5}
+        - {x: -54.5, y: 52.5}
+        - {x: -101.5, y: 23.5}
+        - {x: -116.5, y: -7.5}
+        - {x: -116.5, y: -93.5}
+        - {x: -99.5, y: -103.5}
+        - {x: 27.5, y: -103.5}
+        - {x: 80.5, y: -84.5}
+        - {x: 82.5, y: -58.5}
+        - {x: 82.5, y: -21.5}
+        - {x: 77.5, y: -11.5}
+    - name: Art_Troll_Idle698x417_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1177
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -13}
+        - {x: 68.5, y: -14}
+        - {x: 72.5, y: -13}
+        - {x: 78.5, y: -9}
+        - {x: 82.5, y: -4}
+        - {x: 82.5, y: 30}
+        - {x: 58.5, y: 59}
+        - {x: -58.5, y: 59}
+        - {x: -50.5, y: 52}
+        - {x: -48.5, y: 46}
+        - {x: -49.5, y: 48}
+        - {x: -51.5, y: 50}
+        - {x: -59.5, y: 57}
+        - {x: -116.5, y: 16}
+        - {x: -116.5, y: -97}
+        - {x: -114.5, y: -102}
+        - {x: 50.5, y: -102}
+        - {x: 82.5, y: -47}
+        - {x: 82.5, y: -18}
+        - {x: 75.5, y: -13}
+    - name: Art_Troll_Idle698x417_31
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1177
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75.5, y: -13}
+        - {x: 73.5, y: -13}
+        - {x: 64.5, y: -19}
+        - {x: 71.5, y: -14}
+        - {x: 75.5, y: -9}
+        - {x: 81.5, y: 0}
+        - {x: 81.5, y: 13}
+        - {x: 22.5, y: 53}
+        - {x: -21.5, y: 59}
+        - {x: -55.5, y: 59}
+        - {x: -83.5, y: 30}
+        - {x: -112.5, y: -12}
+        - {x: -113.5, y: -16}
+        - {x: -115.5, y: -20}
+        - {x: -115.5, y: -70}
+        - {x: -90.5, y: -102}
+        - {x: 7.5, y: -102}
+        - {x: 31.5, y: -100}
+        - {x: 64.5, y: -79}
+        - {x: 81.5, y: -31}
+        - {x: 81.5, y: -16}
+    - name: Art_Troll_Idle698x417_32
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1177
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78.5, y: -16}
+        - {x: 72.5, y: -13}
+        - {x: 68.5, y: -17}
+        - {x: 62.5, y: -22}
+        - {x: 75.5, y: -9}
+        - {x: 81.5, y: 1}
+        - {x: 81.5, y: 13}
+        - {x: 14.5, y: 59}
+        - {x: -69.5, y: 59}
+        - {x: -104.5, y: 44}
+        - {x: -115.5, y: 14}
+        - {x: -115.5, y: -81}
+        - {x: -77.5, y: -102}
+        - {x: 49.5, y: -102}
+        - {x: 81.5, y: -51}
+        - {x: 81.5, y: -18}
+    - name: Art_Troll_Idle698x417_33
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1177
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77.5, y: -16}
+        - {x: 74.5, y: -15}
+        - {x: 72.5, y: -15}
+        - {x: 67.5, y: -18}
+        - {x: 77.5, y: -11}
+        - {x: 80.5, y: -8}
+        - {x: 80.5, y: 36}
+        - {x: 47.5, y: 59}
+        - {x: -62.5, y: 59}
+        - {x: -115.5, y: 8}
+        - {x: -115.5, y: -70}
+        - {x: -93.5, y: -102}
+        - {x: 39.5, y: -102}
+        - {x: 64.5, y: -74}
+        - {x: 80.5, y: -34}
+        - {x: 80.5, y: -24}
+    - name: Art_Troll_Idle698x417_34
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1177
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80.5, y: -19}
+        - {x: 74.5, y: -15}
+        - {x: 65.5, y: -19}
+        - {x: 62.5, y: -22}
+        - {x: 62.5, y: -18}
+        - {x: 69.5, y: -17}
+        - {x: 80.5, y: -12}
+        - {x: 80.5, y: 31}
+        - {x: 52.5, y: 58}
+        - {x: -93.5, y: 58}
+        - {x: -114.5, y: 8}
+        - {x: -114.5, y: -86}
+        - {x: -83.5, y: -102}
+        - {x: 32.5, y: -102}
+        - {x: 66.5, y: -81}
+        - {x: 79.5, y: -36}
+        - {x: 80.5, y: -34}
+    - name: Art_Troll_Idle698x417_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -17.5}
+        - {x: 65.5, y: -19.5}
+        - {x: 69.5, y: -18.5}
+        - {x: 76.5, y: -14.5}
+        - {x: 79.5, y: -9.5}
+        - {x: 79.5, y: 24.5}
+        - {x: 38.5, y: 57.5}
+        - {x: -54.5, y: 57.5}
+        - {x: -110.5, y: -6.5}
+        - {x: -114.5, y: -16.5}
+        - {x: -114.5, y: -89.5}
+        - {x: -79.5, y: -103.5}
+        - {x: 47.5, y: -103.5}
+        - {x: 79.5, y: -58.5}
+        - {x: 79.5, y: -19.5}
+        - {x: 77.5, y: -17.5}
+    - name: Art_Troll_Idle698x417_36
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 760
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -17.5}
+        - {x: 71.5, y: -18.5}
+        - {x: 68.5, y: -20.5}
+        - {x: 61.5, y: -23.5}
+        - {x: 69.5, y: -19.5}
+        - {x: 79.5, y: -11.5}
+        - {x: 79.5, y: 38.5}
+        - {x: 60.5, y: 57.5}
+        - {x: -85.5, y: 57.5}
+        - {x: -114.5, y: 15.5}
+        - {x: -114.5, y: -67.5}
+        - {x: -97.5, y: -103.5}
+        - {x: 24.5, y: -103.5}
+        - {x: 66.5, y: -82.5}
+        - {x: 79.5, y: -40.5}
+        - {x: 79.5, y: -27.5}
+    - name: Art_Troll_Idle698x417_37
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 760
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.5, y: 56.5}
+        - {x: -45.5, y: 56.5}
+        - {x: -49.5, y: 52.5}
+        - {x: -46.5, y: 39.5}
+        - {x: -51.5, y: 50.5}
+        - {x: -67.5, y: 39.5}
+        - {x: -82.5, y: 23.5}
+        - {x: -85.5, y: 11.5}
+        - {x: -113.5, y: -5.5}
+        - {x: -113.5, y: -96.5}
+        - {x: -91.5, y: -103.5}
+        - {x: 44.5, y: -103.5}
+        - {x: 60.5, y: -85.5}
+        - {x: 78.5, y: -48.5}
+        - {x: 78.5, y: 20.5}
+    - name: Art_Troll_Idle698x417_38
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 760
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 56.5}
+        - {x: -69.5, y: 56.5}
+        - {x: -106.5, y: 42.5}
+        - {x: -113.5, y: 25.5}
+        - {x: -113.5, y: -103.5}
+        - {x: 59.5, y: -103.5}
+        - {x: 78.5, y: -100.5}
+        - {x: 78.5, y: 10.5}
+        - {x: 51.5, y: 35.5}
+    - name: Art_Troll_Idle698x417_39
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 760
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.5, y: 56.5}
+        - {x: -91.5, y: 56.5}
+        - {x: -113.5, y: 9.5}
+        - {x: -113.5, y: -83.5}
+        - {x: -78.5, y: -101.5}
+        - {x: -64.5, y: -103.5}
+        - {x: 27.5, y: -103.5}
+        - {x: 61.5, y: -82.5}
+        - {x: 78.5, y: -67.5}
+        - {x: 78.5, y: 9.5}
+    - name: Art_Troll_Idle698x417_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 698
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 56}
+        - {x: -16.5, y: 58}
+        - {x: -60.5, y: 58}
+        - {x: -113.5, y: 2}
+        - {x: -113.5, y: -67}
+        - {x: -102.5, y: -102}
+        - {x: 45.5, y: -102}
+        - {x: 78.5, y: -49}
+        - {x: 78.5, y: 9}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

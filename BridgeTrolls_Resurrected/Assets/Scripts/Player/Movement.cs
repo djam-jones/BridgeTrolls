@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour {
 
     private Vector3 _autoMoveDir;
 
-	public float speed= 4;
+	public float speed = 4;
 	[SerializeField, HideInInspector] private float _scale;
 
 	[SerializeField] private float _minClampedX = -1.6f;
@@ -72,11 +72,11 @@ public class Movement : MonoBehaviour {
         
         if(dir.x == 0)
         {
-            dir.x = 0.2f;
+            dir.x = 0.3f;
         }
         if (dir.y == 0)
         {
-            dir.y = 0.2f;
+            dir.y = 0.3f;
         }
 
         _autoMove = true;
@@ -109,13 +109,11 @@ public class Movement : MonoBehaviour {
 
 		if(h >= 0.01f)
 		{
-//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
-			gameObject.GetComponent<SpriteRenderer>().flipX = true;
+			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 		else if(h <= -0.01f)
 		{
-//			transform.localScale = new Vector2(_scale, transform.localScale.y);
-			gameObject.GetComponent<SpriteRenderer>().flipX = false;
+			gameObject.GetComponent<SpriteRenderer>().flipX = true;
 		}
 
 		//Checks the Moving bool

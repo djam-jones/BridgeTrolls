@@ -6,9 +6,10 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 
 	private List<GameObject> _allTargets = new List<GameObject>();
 
-	private float _boundingBoxPadding = 2f;
+	private float _boundingBoxPadding = 1.5f;
 
 	private float _minimumOrthographicSize = 4.5f;
+	private float _maximumOrthographicSize = 7.2f;
 
 	private float _cameraZoomSpeed = 15f;
 
@@ -32,14 +33,14 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 		_originalCameraSize = _camera.orthographicSize;
 		_boundsRepGo = GameObject.FindGameObjectWithTag(Tags.SCREEN_BOUND_OBJECT_TAG);
 
-		_minimumOrthographicSize = (_camera.orthographicSize * _minimumOrthographicSize / 5.4f);
+		_minimumOrthographicSize = (_camera.orthographicSize * 4.5f / 5.4f);
 
 		renderer = _boundsRepGo.gameObject.GetComponent<SpriteRenderer>();
 
-		_boundLeftLocation = _boundsRepGo.transform.position.x - ((renderer.bounds.size.x * _boundsRepGo.transform.localScale.x) / 2);
-		_boundRightLocation = _boundsRepGo.transform.position.x + ((renderer.bounds.size.x * _boundsRepGo.transform.localScale.x) / 2);
-		_boundTopLocation = _boundsRepGo.transform.position.y + ((renderer.bounds.size.y * _boundsRepGo.transform.localScale.y) / 2);
-		_boundBottomLocation = _boundsRepGo.transform.position.y - ((renderer.bounds.size.y * _boundsRepGo.transform.localScale.y) / 2);
+		_boundLeftLocation = _boundsRepGo.transform.position.x - ((renderer.sprite.bounds.size.x * _boundsRepGo.transform.localScale.x) / 2f);
+		_boundRightLocation = _boundsRepGo.transform.position.x + ((renderer.sprite.bounds.size.x * _boundsRepGo.transform.localScale.x) / 2f);
+		_boundTopLocation = _boundsRepGo.transform.position.y + ((renderer.sprite.bounds.size.y * _boundsRepGo.transform.localScale.y) / 2f);
+		_boundBottomLocation = _boundsRepGo.transform.position.y - ((renderer.sprite.bounds.size.y * _boundsRepGo.transform.localScale.y) / 2f);
 	}
 
 	void LateUpdate()
@@ -57,10 +58,10 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 
 	Rect CalculateTargetsBoundingBox()
 	{
-		float minX = Mathf.Infinity;
-		float maxX = Mathf.NegativeInfinity;
-		float minY = Mathf.Infinity;
-		float maxY = Mathf.NegativeInfinity;
+		float minX = /*Mathf.Infinity*/ 12.4f;
+		float maxX = /*Mathf.NegativeInfinity*/ -12.4f;
+		float minY = /*Mathf.Infinity*/ 6.8f;
+		float maxY = /*Mathf.NegativeInfinity*/ -6.8f;
 
 		foreach(GameObject target in _allTargets)
 		{
@@ -119,7 +120,7 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 		else
 			orthographicSize = Mathf.Abs(boundingBox.height) / 2f;
 
-		return Mathf.Clamp(Mathf.Lerp(_camera.orthographicSize, orthographicSize, Time.deltaTime * _cameraZoomSpeed), _minimumOrthographicSize, Mathf.Infinity);
+		return Mathf.Clamp(Mathf.Lerp(_camera.orthographicSize, orthographicSize, Time.deltaTime * _cameraZoomSpeed), _minimumOrthographicSize, _maximumOrthographicSize);
 	}
 
 	private void FindAllPlayers()

@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: fd1e96dd8359e4699828b575536173ab
+timeCreated: 1461594215
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Art_Minion_Grabbed_Walk_164x200_0
+    21300002: Art_Minion_Grabbed_Walk_164x200_1
+    21300004: Art_Minion_Grabbed_Walk_164x200_2
+    21300006: Art_Minion_Grabbed_Walk_164x200_3
+    21300008: Art_Minion_Grabbed_Walk_164x200_4
+    21300010: Art_Minion_Grabbed_Walk_164x200_5
+    21300012: Art_Minion_Grabbed_Walk_164x200_6
+    21300014: Art_Minion_Grabbed_Walk_164x200_7
+    21300016: Art_Minion_Grabbed_Walk_164x200_8
+    21300018: Art_Minion_Grabbed_Walk_164x200_9
+    21300020: Art_Minion_Grabbed_Walk_164x200_10
+    21300022: Art_Minion_Grabbed_Walk_164x200_11
+    21300024: Art_Minion_Grabbed_Walk_164x200_12
+    21300026: Art_Minion_Grabbed_Walk_164x200_13
+    21300028: Art_Minion_Grabbed_Walk_164x200_14
+    21300030: Art_Minion_Grabbed_Walk_164x200_15
+    21300032: Art_Minion_Grabbed_Walk_164x200_16
+    21300034: Art_Minion_Grabbed_Walk_164x200_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Art_Minion_Grabbed_Walk_164x200_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -77}
+        - {x: -16, y: -77}
+        - {x: -13, y: -73}
+        - {x: 6, y: -77}
+        - {x: 20, y: -77}
+        - {x: 25, y: -72}
+        - {x: 76, y: -49}
+        - {x: 82, y: -31}
+        - {x: 82, y: 72}
+        - {x: 75, y: 85}
+        - {x: -82, y: 85}
+        - {x: -82, y: -63}
+        - {x: -66, y: -100}
+        - {x: 30, y: -100}
+        - {x: 41, y: -95}
+        - {x: 42, y: -84}
+        - {x: 27, y: -76}
+    - name: Art_Minion_Grabbed_Walk_164x200_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 824
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: 33}
+        - {x: 46, y: 85}
+        - {x: -21, y: 85}
+        - {x: -56, y: 75}
+        - {x: -64, y: 57}
+        - {x: -82, y: 19}
+        - {x: -82, y: -35}
+        - {x: -81, y: -37}
+        - {x: -71, y: -60}
+        - {x: -58, y: -69}
+        - {x: -60, y: -85}
+        - {x: -57, y: -98}
+        - {x: -52, y: -100}
+        - {x: 37, y: -100}
+        - {x: 47, y: -82}
+        - {x: 78, y: -46}
+        - {x: 82, y: 5}
+    - name: Art_Minion_Grabbed_Walk_164x200_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 824
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 86}
+        - {x: -80, y: 61}
+        - {x: -82, y: 55}
+        - {x: -82, y: -87}
+        - {x: -70, y: -100}
+        - {x: 47, y: -100}
+        - {x: 82, y: -1}
+        - {x: 82, y: 46}
+        - {x: 39, y: 86}
+    - name: Art_Minion_Grabbed_Walk_164x200_3
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 824
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: -41}
+        - {x: 65, y: -29}
+        - {x: 58, y: -2}
+        - {x: 82, y: 17}
+        - {x: 82, y: 44}
+        - {x: 37, y: 87}
+        - {x: -56, y: 87}
+        - {x: -82, y: 67}
+        - {x: -82, y: -92}
+        - {x: -76, y: -100}
+        - {x: 34, y: -100}
+        - {x: 40, y: -95}
+        - {x: 40, y: -84}
+        - {x: 34, y: -79}
+    - name: Art_Minion_Grabbed_Walk_164x200_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 824
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 88}
+        - {x: -81, y: 67}
+        - {x: -81, y: -52}
+        - {x: -56, y: -71}
+        - {x: -44, y: -70}
+        - {x: -62, y: -84}
+        - {x: -61, y: -100}
+        - {x: 78, y: -100}
+        - {x: 82, y: -38}
+        - {x: 82, y: 39}
+        - {x: 35, y: 88}
+    - name: Art_Minion_Grabbed_Walk_164x200_5
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 824
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: -36}
+        - {x: 81, y: -20}
+        - {x: 81, y: 52}
+        - {x: 55, y: 89}
+        - {x: -38, y: 89}
+        - {x: -80, y: 78}
+        - {x: -80, y: 76}
+        - {x: -61, y: 38}
+        - {x: -80, y: 8}
+        - {x: -80, y: -47}
+        - {x: -65, y: -100}
+        - {x: 39, y: -100}
+        - {x: 42, y: -84}
+        - {x: 33, y: -80}
+        - {x: 26, y: -78}
+    - name: Art_Minion_Grabbed_Walk_164x200_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: 8}
+        - {x: 82, y: 45}
+        - {x: 31, y: 89}
+        - {x: -80, y: 89}
+        - {x: -80, y: -100}
+        - {x: 39, y: -100}
+        - {x: 48, y: -98}
+        - {x: 40, y: -84}
+        - {x: 34, y: -79}
+        - {x: 69, y: -40}
+    - name: Art_Minion_Grabbed_Walk_164x200_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 624
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -45}
+        - {x: 13, y: -18}
+        - {x: 15, y: -27}
+        - {x: 43, y: -78}
+        - {x: 81, y: -36}
+        - {x: 81, y: 48}
+        - {x: 42, y: 90}
+        - {x: -17, y: 90}
+        - {x: -71, y: 69}
+        - {x: -80, y: 58}
+        - {x: -80, y: -100}
+        - {x: 34, y: -100}
+        - {x: 40, y: -95}
+        - {x: 40, y: -84}
+        - {x: 33, y: -80}
+    - name: Art_Minion_Grabbed_Walk_164x200_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 624
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -45}
+        - {x: 15, y: -28}
+        - {x: 12, y: -22}
+        - {x: 12, y: -19}
+        - {x: 14, y: -23}
+        - {x: 14, y: -26}
+        - {x: 19, y: -31}
+        - {x: 21, y: -34}
+        - {x: 44, y: -45}
+        - {x: 51, y: -47}
+        - {x: 57, y: -35}
+        - {x: 52, y: -5}
+        - {x: 40, y: 9}
+        - {x: 81, y: 32}
+        - {x: 81, y: 50}
+        - {x: 37, y: 91}
+        - {x: -36, y: 91}
+        - {x: -79, y: 67}
+        - {x: -80, y: 66}
+        - {x: -80, y: -94}
+        - {x: -76, y: -100}
+        - {x: 44, y: -100}
+        - {x: 48, y: -98}
+        - {x: 40, y: -84}
+        - {x: 33, y: -80}
+        - {x: 26, y: -78}
+    - name: Art_Minion_Grabbed_Walk_164x200_9
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 624
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -77}
+        - {x: 76, y: -78}
+        - {x: 81, y: -64}
+        - {x: 81, y: 73}
+        - {x: 27, y: 92}
+        - {x: -9, y: 92}
+        - {x: -73, y: 64}
+        - {x: -80, y: 45}
+        - {x: -80, y: -100}
+        - {x: 38, y: -100}
+        - {x: 40, y: -95}
+        - {x: 40, y: -84}
+        - {x: 33, y: -80}
+    - name: Art_Minion_Grabbed_Walk_164x200_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 624
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 93}
+        - {x: -80, y: -100}
+        - {x: 49, y: -100}
+        - {x: 80, y: -35}
+        - {x: 80, y: 81}
+        - {x: 61, y: 93}
+    - name: Art_Minion_Grabbed_Walk_164x200_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 624
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 93}
+        - {x: -52, y: 80}
+        - {x: -80, y: 47}
+        - {x: -80, y: -74}
+        - {x: -74, y: -100}
+        - {x: 59, y: -100}
+        - {x: 81, y: -59}
+        - {x: 81, y: 73}
+        - {x: 27, y: 93}
+    - name: Art_Minion_Grabbed_Walk_164x200_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 92}
+        - {x: -72, y: 73}
+        - {x: -81, y: 31}
+        - {x: -81, y: -80}
+        - {x: -74, y: -100}
+        - {x: 55, y: -100}
+        - {x: 81, y: -7}
+        - {x: 81, y: 66}
+        - {x: 31, y: 92}
+    - name: Art_Minion_Grabbed_Walk_164x200_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 424
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -81, y: 91}
+        - {x: -81, y: -53}
+        - {x: -64, y: -100}
+        - {x: 47, y: -100}
+        - {x: 81, y: -30}
+        - {x: 81, y: 82}
+        - {x: 72, y: 91}
+    - name: Art_Minion_Grabbed_Walk_164x200_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 424
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -77}
+        - {x: 14, y: -31}
+        - {x: 26, y: -38}
+        - {x: 81, y: -44}
+        - {x: 81, y: 69}
+        - {x: 30, y: 89}
+        - {x: -82, y: 89}
+        - {x: -82, y: -83}
+        - {x: -57, y: -98}
+        - {x: -52, y: -100}
+        - {x: 34, y: -100}
+        - {x: 40, y: -95}
+        - {x: 40, y: -84}
+        - {x: 33, y: -80}
+    - name: Art_Minion_Grabbed_Walk_164x200_15
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 424
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: 48}
+        - {x: 64, y: 87}
+        - {x: -67, y: 87}
+        - {x: -64, y: 57}
+        - {x: -62, y: 54}
+        - {x: -55, y: 42}
+        - {x: -82, y: 8}
+        - {x: -82, y: -40}
+        - {x: -72, y: -62}
+        - {x: -53, y: -68}
+        - {x: -61, y: -84}
+        - {x: -57, y: -98}
+        - {x: -52, y: -100}
+        - {x: 34, y: -100}
+        - {x: 40, y: -95}
+        - {x: 40, y: -84}
+        - {x: 82, y: -47}
+    - name: Art_Minion_Grabbed_Walk_164x200_16
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 424
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 7}
+        - {x: 77, y: 20}
+        - {x: 82, y: 26}
+        - {x: 82, y: 32}
+        - {x: 39, y: 86}
+        - {x: -29, y: 86}
+        - {x: -77, y: 80}
+        - {x: -82, y: 58}
+        - {x: -82, y: -100}
+        - {x: 50, y: -100}
+        - {x: 67, y: -27}
+        - {x: 52, y: 0}
+        - {x: 43, y: 7}
+    - name: Art_Minion_Grabbed_Walk_164x200_17
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 424
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -77}
+        - {x: -16, y: -77}
+        - {x: -14, y: -76}
+        - {x: 6, y: -77}
+        - {x: 20, y: -77}
+        - {x: 45, y: -58}
+        - {x: 82, y: -26}
+        - {x: 82, y: 38}
+        - {x: 54, y: 85}
+        - {x: -33, y: 85}
+        - {x: -77, y: 76}
+        - {x: -82, y: 16}
+        - {x: -82, y: -42}
+        - {x: -61, y: -100}
+        - {x: 35, y: -100}
+        - {x: 41, y: -95}
+        - {x: 42, y: -84}
+        - {x: 27, y: -76}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,8 +7,8 @@ public class ControllerAssigner : MonoBehaviour
 	[SerializeField, HideInInspector] private const string _actionKey = "Submit";
 	[SerializeField, HideInInspector] private const string _cancelKey = "Cancel";
 
-	[SerializeField] private string[] _controllerButtonNameArray = new string[8];
-	[SerializeField] public List<string> allControllersInOrder = new List<string>();
+	[SerializeField] private int[] _controllerButtonNameArray;
+	[SerializeField] public List<int> allControllersInOrder = new List<int>();
 	[SerializeField] private int _controllerIndex = 0;
 
 	//Instance
@@ -26,8 +26,8 @@ public class ControllerAssigner : MonoBehaviour
 		{
 			if(Input.GetButtonDown(_actionKey + _controllerButtonNameArray[i]))
 			{
-//				print(_controllerButtonNameArray[i]);
-				allControllersInOrder.Add(_controllerButtonNameArray[i]);
+				if(!allControllersInOrder.Contains(_controllerButtonNameArray[i]))
+					allControllersInOrder.Add(_controllerButtonNameArray[i]);
 			}
 		}
 	}

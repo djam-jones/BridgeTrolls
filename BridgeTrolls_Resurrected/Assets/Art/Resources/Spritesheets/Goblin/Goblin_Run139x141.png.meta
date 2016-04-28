@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 18d5e98c9326a427c8d4d487251ab13e
-timeCreated: 1460619043
+timeCreated: 1461594324
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -25,6 +25,27 @@ TextureImporter:
     21300036: LoadingScreen_GoblinRun_18
     21300038: LoadingScreen_GoblinRun_19
     21300040: LoadingScreen_GoblinRun_20
+    21300042: Goblin_Run139x141_0
+    21300044: Goblin_Run139x141_1
+    21300046: Goblin_Run139x141_2
+    21300048: Goblin_Run139x141_3
+    21300050: Goblin_Run139x141_4
+    21300052: Goblin_Run139x141_5
+    21300054: Goblin_Run139x141_6
+    21300056: Goblin_Run139x141_7
+    21300058: Goblin_Run139x141_8
+    21300060: Goblin_Run139x141_9
+    21300062: Goblin_Run139x141_10
+    21300064: Goblin_Run139x141_11
+    21300066: Goblin_Run139x141_12
+    21300068: Goblin_Run139x141_13
+    21300070: Goblin_Run139x141_14
+    21300072: Goblin_Run139x141_15
+    21300074: Goblin_Run139x141_16
+    21300076: Goblin_Run139x141_17
+    21300078: Goblin_Run139x141_18
+    21300080: Goblin_Run139x141_19
+    21300082: Goblin_Run139x141_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -71,7 +92,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: LoadingScreen_GoblinRun_0
+    - name: Goblin_Run139x141_0
       rect:
         serializedVersion: 2
         x: 0
@@ -89,7 +110,7 @@ TextureImporter:
         - {x: -39.5, y: -70.5}
         - {x: 34.5, y: -70.5}
         - {x: 34.5, y: 46.5}
-    - name: LoadingScreen_GoblinRun_1
+    - name: Goblin_Run139x141_1
       rect:
         serializedVersion: 2
         x: 139
@@ -104,7 +125,7 @@ TextureImporter:
         - {x: -61.5, y: -70.5}
         - {x: 35.5, y: -70.5}
         - {x: 35.5, y: 51.5}
-    - name: LoadingScreen_GoblinRun_2
+    - name: Goblin_Run139x141_2
       rect:
         serializedVersion: 2
         x: 278
@@ -120,7 +141,7 @@ TextureImporter:
         - {x: 31.5, y: -70.5}
         - {x: 36.5, y: -63.5}
         - {x: 36.5, y: 56.5}
-    - name: LoadingScreen_GoblinRun_3
+    - name: Goblin_Run139x141_3
       rect:
         serializedVersion: 2
         x: 417
@@ -137,7 +158,7 @@ TextureImporter:
         - {x: -53.5, y: -70.5}
         - {x: 36.5, y: -70.5}
         - {x: 36.5, y: 61.5}
-    - name: LoadingScreen_GoblinRun_4
+    - name: Goblin_Run139x141_4
       rect:
         serializedVersion: 2
         x: 556
@@ -155,7 +176,7 @@ TextureImporter:
         - {x: -42.5, y: -70.5}
         - {x: 37.5, y: -70.5}
         - {x: 37.5, y: 66.5}
-    - name: LoadingScreen_GoblinRun_5
+    - name: Goblin_Run139x141_5
       rect:
         serializedVersion: 2
         x: 695
@@ -179,7 +200,7 @@ TextureImporter:
         - {x: 37.5, y: -49.5}
         - {x: 37.5, y: 68.5}
         - {x: 35.5, y: 69.5}
-    - name: LoadingScreen_GoblinRun_6
+    - name: Goblin_Run139x141_6
       rect:
         serializedVersion: 2
         x: 834
@@ -200,7 +221,7 @@ TextureImporter:
         - {x: 36.5, y: -58.5}
         - {x: 36.5, y: -54.5}
         - {x: 22.5, y: -49.5}
-    - name: LoadingScreen_GoblinRun_7
+    - name: Goblin_Run139x141_7
       rect:
         serializedVersion: 2
         x: 0
@@ -221,7 +242,7 @@ TextureImporter:
         - {x: 34.5, y: -68.5}
         - {x: 34.5, y: -29.5}
         - {x: 24.5, y: 1.5}
-    - name: LoadingScreen_GoblinRun_8
+    - name: Goblin_Run139x141_8
       rect:
         serializedVersion: 2
         x: 139
@@ -238,7 +259,7 @@ TextureImporter:
         - {x: -54.5, y: -70.5}
         - {x: 36.5, y: -70.5}
         - {x: 36.5, y: 52.5}
-    - name: LoadingScreen_GoblinRun_9
+    - name: Goblin_Run139x141_9
       rect:
         serializedVersion: 2
         x: 278
@@ -265,7 +286,7 @@ TextureImporter:
         - {x: 52.5, y: -51.5}
         - {x: 52.5, y: -27.5}
         - {x: 42.5, y: 4.5}
-    - name: LoadingScreen_GoblinRun_10
+    - name: Goblin_Run139x141_10
       rect:
         serializedVersion: 2
         x: 417
@@ -295,7 +316,7 @@ TextureImporter:
         - {x: 34.5, y: -65.5}
         - {x: 35.5, y: -55.5}
         - {x: 28.5, y: -37.5}
-    - name: LoadingScreen_GoblinRun_11
+    - name: Goblin_Run139x141_11
       rect:
         serializedVersion: 2
         x: 556
@@ -322,7 +343,7 @@ TextureImporter:
         - {x: 35.5, y: -66.5}
         - {x: 34.5, y: -53.5}
         - {x: 26.5, y: -37.5}
-    - name: LoadingScreen_GoblinRun_12
+    - name: Goblin_Run139x141_12
       rect:
         serializedVersion: 2
         x: 695
@@ -342,7 +363,7 @@ TextureImporter:
         - {x: 64.5, y: -26.5}
         - {x: 64.5, y: -11.5}
         - {x: 62.5, y: -7.5}
-    - name: LoadingScreen_GoblinRun_13
+    - name: Goblin_Run139x141_13
       rect:
         serializedVersion: 2
         x: 834
@@ -360,7 +381,7 @@ TextureImporter:
         - {x: 67.5, y: -70.5}
         - {x: 67.5, y: 50.5}
         - {x: 44.5, y: 62.5}
-    - name: LoadingScreen_GoblinRun_14
+    - name: Goblin_Run139x141_14
       rect:
         serializedVersion: 2
         x: 0
@@ -381,7 +402,7 @@ TextureImporter:
         - {x: 69.5, y: -36.5}
         - {x: 69.5, y: 27.5}
         - {x: 44.5, y: 65.5}
-    - name: LoadingScreen_GoblinRun_15
+    - name: Goblin_Run139x141_15
       rect:
         serializedVersion: 2
         x: 139
@@ -404,7 +425,7 @@ TextureImporter:
         - {x: 31.5, y: -70.5}
         - {x: 38.5, y: -55.5}
         - {x: 55.5, y: -28.5}
-    - name: LoadingScreen_GoblinRun_16
+    - name: Goblin_Run139x141_16
       rect:
         serializedVersion: 2
         x: 278
@@ -431,7 +452,7 @@ TextureImporter:
         - {x: 66.5, y: -21.5}
         - {x: 66.5, y: 11.5}
         - {x: 37.5, y: 64.5}
-    - name: LoadingScreen_GoblinRun_17
+    - name: Goblin_Run139x141_17
       rect:
         serializedVersion: 2
         x: 417
@@ -458,7 +479,7 @@ TextureImporter:
         - {x: 35.5, y: -66.5}
         - {x: 32.5, y: -51.5}
         - {x: 23.5, y: -33.5}
-    - name: LoadingScreen_GoblinRun_18
+    - name: Goblin_Run139x141_18
       rect:
         serializedVersion: 2
         x: 556
@@ -480,7 +501,7 @@ TextureImporter:
         - {x: 32.5, y: -70.5}
         - {x: 36.5, y: -56.5}
         - {x: 34.5, y: -47.5}
-    - name: LoadingScreen_GoblinRun_19
+    - name: Goblin_Run139x141_19
       rect:
         serializedVersion: 2
         x: 695
@@ -504,7 +525,7 @@ TextureImporter:
         - {x: 37.5, y: -70.5}
         - {x: 40.5, y: -66.5}
         - {x: 40.5, y: 50.5}
-    - name: LoadingScreen_GoblinRun_20
+    - name: Goblin_Run139x141_20
       rect:
         serializedVersion: 2
         x: 834

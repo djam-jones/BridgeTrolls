@@ -90,7 +90,7 @@ public class HubHandler : MonoBehaviour {
 			_panelTexts[0].enabled = false;
 			_panelTexts[1].enabled = false;
 
-			_panelImages[0].enabled = false;
+			_panelImages[0].enabled = true;
 			_panelImages[1].enabled = false;
 			_panelImages[2].enabled = false;
 			_panelImages[3].enabled = true;
