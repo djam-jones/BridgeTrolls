@@ -33,7 +33,7 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 		_originalCameraSize = _camera.orthographicSize;
 		_boundsRepGo = GameObject.FindGameObjectWithTag(Tags.SCREEN_BOUND_OBJECT_TAG);
 
-		_minimumOrthographicSize = (_camera.orthographicSize * 4.5f / 5.4f);
+		_minimumOrthographicSize = (_originalCameraSize * 4.5f / 5.4f);
 
 		renderer = _boundsRepGo.gameObject.GetComponent<SpriteRenderer>();
 
@@ -52,16 +52,16 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 
 		Rect boundingBox = CalculateTargetsBoundingBox();
 		//transform.position = CalculateCameraPosition(boundingBox);
-		_camera.orthographicSize = CalculateOrthographicSize(boundingBox);
+		_originalCameraSize = CalculateOrthographicSize(boundingBox);
 		CorrectedCameraPosition(CalculateCameraPosition(boundingBox));
 	}
 
 	Rect CalculateTargetsBoundingBox()
 	{
-		float minX = /*Mathf.Infinity*/ 12.4f;
-		float maxX = /*Mathf.NegativeInfinity*/ -12.4f;
-		float minY = /*Mathf.Infinity*/ 6.8f;
-		float maxY = /*Mathf.NegativeInfinity*/ -6.8f;
+		float minX = Mathf.Infinity;
+		float maxX = Mathf.NegativeInfinity;
+		float minY = Mathf.Infinity;
+		float maxY = Mathf.NegativeInfinity;
 
 		foreach(GameObject target in _allTargets)
 		{
@@ -111,7 +111,7 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 
 	float CalculateOrthographicSize (Rect boundingBox)
 	{
-		float orthographicSize = _camera.orthographicSize;
+		float orthographicSize = _originalCameraSize;
 		Vector3 topRight = new Vector3(boundingBox.x + boundingBox.width, boundingBox.y, 0f);
 		Vector3 topRightAsViewport = _camera.WorldToViewportPoint(topRight);
 
@@ -120,7 +120,7 @@ public class PlayerFollowCameraZoom : MonoBehaviour {
 		else
 			orthographicSize = Mathf.Abs(boundingBox.height) / 2f;
 
-		return Mathf.Clamp(Mathf.Lerp(_camera.orthographicSize, orthographicSize, Time.deltaTime * _cameraZoomSpeed), _minimumOrthographicSize, _maximumOrthographicSize);
+		return Mathf.Clamp(Mathf.Lerp(_originalCameraSize, orthographicSize, Time.deltaTime * _cameraZoomSpeed), _minimumOrthographicSize, _maximumOrthographicSize);
 	}
 
 	private void FindAllPlayers()

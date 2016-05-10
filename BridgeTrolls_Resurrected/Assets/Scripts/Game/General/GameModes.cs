@@ -57,6 +57,20 @@ public class GameModes : MonoBehaviour {
 		if(pointsText != null)
 			pointsText.text = amountOfGamePoints.ToString();
 		else{}
+
+		ChangeRulePoints();
+	}
+
+	private void ChangeRulePoints()
+	{
+		if(Input.GetButtonDown("SelectLeftTrigger"))
+		{
+			DecreasePoint();
+		}
+		else if(Input.GetButtonDown("SelectRightTrigger"))
+		{
+			IncreasePoint();
+		}
 	}
 
 	private void SwitchGameModes(int index)
@@ -89,12 +103,12 @@ public class GameModes : MonoBehaviour {
 			if(initialTotalGamePoints < maxTotalGamePoints)
 			{
 				initialTotalGamePoints++;
-				//rightSelectionArrow.gameObject.SetActive(true);
+//				rightSelectionArrow.gameObject.SetActive(true);
 			}
 			else
 			{
 				initialTotalGamePoints = maxTotalGamePoints;
-				//rightSelectionArrow.gameObject.SetActive(false);
+//				rightSelectionArrow.gameObject.SetActive(false);
 			}
 		}
 	}
@@ -106,12 +120,12 @@ public class GameModes : MonoBehaviour {
 			if(initialTotalGamePoints > minTotalGamePoints)
 			{
 				initialTotalGamePoints--;
-				//leftSelectionArrow.gameObject.SetActive(true);
+//				leftSelectionArrow.gameObject.SetActive(true);
 			}
 			else
 			{
 				initialTotalGamePoints = minTotalGamePoints;
-				//leftSelectionArrow.gameObject.SetActive(false);
+//				leftSelectionArrow.gameObject.SetActive(false);
 			}
 		}
 	}

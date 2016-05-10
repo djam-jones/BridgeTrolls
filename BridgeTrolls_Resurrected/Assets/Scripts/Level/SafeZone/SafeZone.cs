@@ -16,7 +16,7 @@ public class SafeZone : MonoBehaviour
 
     public void EnablePlayerMovement()
     {
-        if(players.Count != 0 && deathWallScript.playtimer == true)
+		if(players.Count != 0 && deathWallScript.playtimer == true)
         {
             for (int i = 0; i < players.Count; i++)
             {
@@ -49,6 +49,11 @@ public class SafeZone : MonoBehaviour
 	private void CheckTriggerContent()
 	{
 		if(players.Count == gameManager.allGoblins.Count)
+		{
+			EnablePlayerMovement();
+			deathWallScript.Reset();
+		}
+		else if(deathWallScript.playtimer == false)
 		{
 			EnablePlayerMovement();
 			deathWallScript.Reset();

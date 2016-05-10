@@ -85,7 +85,7 @@ public class HubHandler : MonoBehaviour {
 			playerState = PlayerState.Unready;
 
 			//Enable Joystick/D-Pad controls.
-			_characterSelection.Select();
+//				_characterSelection.Select();
 
 			_panelTexts[0].enabled = false;
 			_panelTexts[1].enabled = false;

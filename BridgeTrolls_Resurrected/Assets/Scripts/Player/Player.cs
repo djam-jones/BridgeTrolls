@@ -23,7 +23,6 @@ public class Player : MonoBehaviour {
 	{
 		_effectObject = this.transform.GetChild(1).gameObject;
 		_effectObject.SetActive(false);
-		SetControllerID();
 	}
 
 	void Update()
@@ -32,11 +31,6 @@ public class Player : MonoBehaviour {
 		this.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
 		_effectObject.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
 	}
-
-    public void SetControllerID()
-    {
-		playerNum = ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex];
-    }
 
 	public void SetCharacter(string characterName)
 	{
@@ -83,25 +77,26 @@ public class Player : MonoBehaviour {
 	{
 		_effectObject.SetActive(true);
 		_effectObject.GetComponent<Animator>().Play("Poof");
-		yield return new WaitForSeconds(1.2f);
+		yield return new WaitForSeconds(0.6f);
 		_effectObject.SetActive(false);
+		yield break;
 	}
 
 	public IEnumerator DashPoof()
 	{
 		_effectObject.SetActive(true);
 		_effectObject.GetComponent<Animator>().Play("DashEffect_Animation");
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(0.5f);
 		_effectObject.SetActive(false);
-		yield return null;
+		yield break;
 	}
 
 	public IEnumerator RunPoof()
 	{
 		_effectObject.SetActive(true);
 		_effectObject.GetComponent<Animator>().Play("RunEffect_Animation");
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(0.4f);
 		_effectObject.SetActive(false);
-		yield return null;
+		yield break;
 	}
 }

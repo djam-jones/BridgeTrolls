@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 47e230642d5ca449e8093f284a6d084f
-timeCreated: 1460127059
+timeCreated: 1462784672
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -67,14 +67,14 @@ TextureImporter:
         y: 913
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.50621, y: 39.352966}
+        - {x: -83.50621, y: -9.647034}
+        - {x: 20.49379, y: -9.647034}
+        - {x: 20.49379, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_1
       rect:
         serializedVersion: 2
@@ -82,14 +82,14 @@ TextureImporter:
         y: 913
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.506226, y: 39.352966}
+        - {x: -83.506226, y: -9.647034}
+        - {x: 20.493774, y: -9.647034}
+        - {x: 20.493774, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_2
       rect:
         serializedVersion: 2
@@ -97,14 +97,14 @@ TextureImporter:
         y: 792
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.50621, y: 39.352966}
+        - {x: -83.50621, y: -9.647034}
+        - {x: 20.49379, y: -9.647034}
+        - {x: 20.49379, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_3
       rect:
         serializedVersion: 2
@@ -112,14 +112,14 @@ TextureImporter:
         y: 792
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.506226, y: 39.352966}
+        - {x: -83.506226, y: -9.647034}
+        - {x: 20.493774, y: -9.647034}
+        - {x: 20.493774, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_4
       rect:
         serializedVersion: 2
@@ -127,14 +127,14 @@ TextureImporter:
         y: 671
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.50621, y: 39.352966}
+        - {x: -83.50621, y: -9.647034}
+        - {x: 20.49379, y: -9.647034}
+        - {x: 20.49379, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_5
       rect:
         serializedVersion: 2
@@ -142,14 +142,14 @@ TextureImporter:
         y: 671
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.506226, y: 39.352966}
+        - {x: -83.506226, y: -9.647034}
+        - {x: 20.493774, y: -9.647034}
+        - {x: 20.493774, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_6
       rect:
         serializedVersion: 2
@@ -157,14 +157,14 @@ TextureImporter:
         y: 550
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.50621, y: 39.352966}
+        - {x: -83.50621, y: -9.647034}
+        - {x: 20.49379, y: -9.647034}
+        - {x: 20.49379, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_7
       rect:
         serializedVersion: 2
@@ -172,14 +172,14 @@ TextureImporter:
         y: 550
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.506226, y: 39.352966}
+        - {x: -83.506226, y: -9.647034}
+        - {x: 20.493774, y: -9.647034}
+        - {x: 20.493774, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_8
       rect:
         serializedVersion: 2
@@ -187,14 +187,14 @@ TextureImporter:
         y: 429
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.50621, y: 39.352966}
+        - {x: -83.50621, y: -9.647034}
+        - {x: 20.49379, y: -9.647034}
+        - {x: 20.49379, y: 39.352966}
     - name: Bridge Trolls_Art_Animations_run cloud_9
       rect:
         serializedVersion: 2
@@ -202,14 +202,14 @@ TextureImporter:
         y: 429
         width: 104
         height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8029443, y: 0.1968782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -52, y: 24.5}
-        - {x: -52, y: -24.5}
-        - {x: 52, y: -24.5}
-        - {x: 52, y: 24.5}
+      - - {x: -83.506226, y: 39.352966}
+        - {x: -83.506226, y: -9.647034}
+        - {x: 20.493774, y: -9.647034}
+        - {x: 20.493774, y: 39.352966}
     outline: []
   spritePackingTag: 
   userData: 

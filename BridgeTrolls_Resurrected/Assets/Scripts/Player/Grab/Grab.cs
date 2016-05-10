@@ -23,6 +23,7 @@ public class Grab : MonoBehaviour
 	private float releaseTime = 15;
 
 	public bool grabReady = true;
+	public bool hasGrabbed = false;
 
 
 	private void OnTriggerStay2D(Collider2D other)
@@ -31,31 +32,40 @@ public class Grab : MonoBehaviour
 		{
 			player = other.gameObject;
 			connectPlayers();
+			hasGrabbed = true;
+		}
+		else if(other.GetComponent<HingeJoint2D>() != null && grabReady == true)
+		{
+			hasGrabbed = false;
 		}
 	}
 
 	private void connectPlayers()
 	{
+		player.GetComponent<Movement>().enabled = false;
+		player.GetComponent<AbilityHandler>().enabled = false;
 
-		player.GetComponent<Rigidbody2D>().freezeRotation = true;
 		HingeJoint2D connector = player.gameObject.AddComponent<HingeJoint2D>();
 		connector.anchor = hingeOffset;
 		connector.connectedBody = this.gameObject.GetComponent<Rigidbody2D>();
-		player.GetComponent<Movement>().enabled = false;
+
 		player.transform.GetChild(0).gameObject.SetActive(true);
 		player.transform.GetChild(0).GetComponent<TapFree>().releaseFunc = disconnectPlayers;
+
 		grabbing = true;
 	}
 
 	private void disconnectPlayers()
 	{
-		grabbing = false;  
-		player.GetComponent<Rigidbody2D>().freezeRotation = true;
-		player.transform.rotation = Quaternion.identity;    
 		Destroy(player.GetComponent<HingeJoint2D>());
+
 		player.GetComponent<Movement>().enabled = true;
+		player.GetComponent<AbilityHandler>().enabled = true;
+
 		player.transform.GetChild(0).gameObject.SetActive(false);
 		player = null;
+
+		grabbing = false;
 	}
 
 	private void Update()
@@ -69,6 +79,7 @@ public class Grab : MonoBehaviour
 		if(grabbing == true && Input.GetButtonDown(grabButton + GetComponent<Player>().playerNum) && currentTime >= targetTime)
 		{
 			disconnectPlayers();
+			grabbing = false;
 			currentTime = 0;
 			cdTimer = 0;
 			releasetimer = 0;
@@ -81,6 +92,7 @@ public class Grab : MonoBehaviour
 		if(releasetimer >= releaseTime && grabbing == true)
 		{
 			disconnectPlayers();
+			grabbing = false;
 			currentTime = 0;
 			cdTimer = 0;
 			releasetimer = 0;

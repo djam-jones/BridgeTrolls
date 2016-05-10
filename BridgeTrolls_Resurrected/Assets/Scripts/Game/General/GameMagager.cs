@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -14,7 +15,7 @@ public class GameMagager : MonoBehaviour {
 	public bool gameOver = false;
 	[HideInInspector]
 	public bool trollWins;
-	[HideInInspector]
+//	[HideInInspector]
 	public int currentRound = 0;
 
 	//Start Button
@@ -37,6 +38,7 @@ public class GameMagager : MonoBehaviour {
 	public Text trollWinScreenText;
 
 	public GameObject transitionLock;
+	public GameObject eventSystem;
 
 	[SerializeField] public Text trollIndicationText;
 
@@ -81,22 +83,25 @@ public class GameMagager : MonoBehaviour {
 			playerArray[i].GetComponent<AbilityHandler>().enabled = false;
 		}
 
-		_rectTransform = directionIndicator.GetComponent<RectTransform>();
-		_rectTransformScale = _rectTransform.localScale;
-		_rectTransform.localScale = _rectTransformScale;
-
-		//Disable all Gameplay Scripts at the Awake.
-		GetComponent<DeathWall>().enabled = false;
-		GetComponent<Pause>().enabled = false;
-
-		winScreen.SetActive(false);
-		trollWinScreen.SetActive(false);
 		if(isMainScene) 
 		{
+			//Disable all Gameplay Scripts at the Awake.
+			GetComponent<DeathWall>().enabled = false;
+			GetComponent<Pause>().enabled = false;
+
+			winScreen.SetActive(false);
+			trollWinScreen.SetActive(false);
+
 			transitionLock.SetActive(true);
 			audioHandlerScript.GetComponents<AudioSource>()[1].clip = audioHandlerScript.allSoundEffects[0];
 			audioHandlerScript.GetComponents<AudioSource>()[1].Play();
 			transitionLock.GetComponent<Animator>().Play("Transition_Open");
+
+			_rectTransform = directionIndicator.GetComponent<RectTransform>();
+			_rectTransformScale = _rectTransform.localScale;
+			_rectTransform.localScale = _rectTransformScale;
+
+			//QualitySettings.SetQualityLevel( PlayerPrefs.GetInt("QualitySetting") );
 		}
 	}
 
@@ -133,7 +138,7 @@ public class GameMagager : MonoBehaviour {
     {
         GameObject enemyPlayer = playerArray[Random.Range(0, playerArray.Count)];   //Pick a random player from the Player List.
         enemyPlayer.GetComponent<PlayerRoles>().playerRoles = Roles.Hostile;        //Set Role to Hostile and thus the Troll.
-        enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 0.5f);
+        enemyPlayer.GetComponent<Movement>().speed = (enemyPlayer.GetComponent<Movement>().speed - 1f);
 
         enemyPlayer.name = enemyPlayer.name + " Troll";                             //Set Name to Troll.
         enemyPlayer.tag = Tags.TROLL_TAG;                                           //Set Tag to Enemy.
@@ -251,11 +256,17 @@ public class GameMagager : MonoBehaviour {
 			{
 				winScreen.SetActive(true);
 				winScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
+
+//				eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = winScreen.transform.GetChild(1).gameObject;
+//				eventSystem.GetComponent<EventSystem>().SetSelectedGameObject( winScreen.transform.GetChild(1).gameObject );
 			}
 			else if(trollWins)
 			{
 				trollWinScreen.SetActive(true);
-				trollWinScreenText.text = PlayerPrefs.GetString("PlayerThatWon") + " Wins!";
+				trollWinScreenText.text = "Troll Wins!";
+
+//				eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = trollWinScreen.transform.GetChild(1).gameObject;
+//				eventSystem.GetComponent<EventSystem>().SetSelectedGameObject( trollWinScreen.transform.GetChild(1).gameObject );
 			}
 
 			//Disable all Player Movement.
@@ -290,7 +301,6 @@ public class GameMagager : MonoBehaviour {
 			{
 				print("Application Quitting...");
 				Application.Quit();
-				PlayerPrefs.DeleteAll();
 			}
 		}
 	}

@@ -20,10 +20,11 @@ public class Options : MonoBehaviour {
 	void Awake()
 	{
 		_audioSources = GameObject.Find("Audio Handler").GetComponents<AudioSource>();
-		PlayerPrefs.SetString("ShowTutorial", _showTutorial.ToString());
+		PlayerPrefs.SetString("ShowTutorial", "True");
+		//PlayerPrefs.SetInt("QualitySetting", 5);
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		Screen.fullScreen = _fullScreen;
 	}
@@ -31,6 +32,7 @@ public class Options : MonoBehaviour {
 	public void FullScreenToggle()
 	{
 		_fullScreen = !_fullScreen;
+		print("Full Screen is " + Screen.fullScreen);
 	}
 
 	public void MusicVolume()
@@ -67,10 +69,19 @@ public class Options : MonoBehaviour {
 	public void SetQuality()
 	{
 		if(qualityDropdownUI.value == 0)
+		{
 			QualitySettings.SetQualityLevel(5);
+			PlayerPrefs.SetInt("QualitySetting", 5);
+		}
 		else if(qualityDropdownUI.value == 1)
+		{
 			QualitySettings.SetQualityLevel(3);
+			PlayerPrefs.SetInt("QualitySetting", 3);
+		}
 		else if(qualityDropdownUI.value == 2)
+		{
 			QualitySettings.SetQualityLevel(0);
+			PlayerPrefs.SetInt("QualitySetting", 0);
+		}
 	}
 }

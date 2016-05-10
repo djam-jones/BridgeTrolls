@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using System.Collections;
 
 public enum MenuState
@@ -9,7 +10,8 @@ public enum MenuState
 	Main, 
 	CharSelect, 
 	Options, 
-	Credits
+	Credits, 
+	InQuit
 }
 
 public class MenuHandler : MonoBehaviour {
@@ -20,12 +22,21 @@ public class MenuHandler : MonoBehaviour {
 	public GameObject optionsMenu;
 	public GameObject creditsScreen;
 
+	//Event System
+	public GameObject eventSystem;
+
 	//Panels
 	public GameObject buttonsPanel;
+	public GameObject popUpQuitBox;
 
 	//Texts
 	public Image title;
 	public Text pressA;
+
+	//Buttons
+	public GameObject leftSelectionArrow;
+	public GameObject rightSelectionArrow;
+	public GameObject playButton;
 
 	//BackDoor
 	public GameObject backDoor;
@@ -51,6 +62,7 @@ public class MenuHandler : MonoBehaviour {
 	void Awake()
 	{
 		_openAnimator = backDoor.GetComponent<Animator>();
+		popUpQuitBox.SetActive(false);
 	}
 
 	void Update()
@@ -67,6 +79,9 @@ public class MenuHandler : MonoBehaviour {
 		{
 			_menuIndex = 1;
 			title.GetComponent<Animator>().SetTrigger("Up");
+
+			eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = playButton;
+			eventSystem.GetComponent<EventSystem>().SetSelectedGameObject( playButton );
 		}
 	}
 
@@ -104,10 +119,16 @@ public class MenuHandler : MonoBehaviour {
 		else if(Input.GetButton(BACK_BUTTON) && menuState == MenuState.Credits)
 		{
 			_menuIndex = 1;
+
+			eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = playButton;
+			eventSystem.GetComponent<EventSystem>().SetSelectedGameObject( playButton );
 		}
 		else if(Input.GetButton(BACK_BUTTON) && menuState == MenuState.Options)
 		{
 			_menuIndex = 1;
+
+			eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = playButton;
+			eventSystem.GetComponent<EventSystem>().SetSelectedGameObject( playButton );
 		}
 	}
 
@@ -119,6 +140,9 @@ public class MenuHandler : MonoBehaviour {
 	public void OptionsState()
 	{
 		_menuIndex = 3;
+
+		eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = optionsMenu.transform.GetChild(3).gameObject;
+		eventSystem.GetComponent<EventSystem>().SetSelectedGameObject( optionsMenu.transform.GetChild(3).gameObject );
 	}
 
 	public void CreditsState()
@@ -128,10 +152,25 @@ public class MenuHandler : MonoBehaviour {
 
 	public void QuitGame()
 	{
-		print("Quitting Game...");
+		print("QUITTING...");
 		Application.Quit();
 	}
 
+	public void PopUpQuitBox(GameObject button)
+	{
+		_menuIndex = 5;
+
+		eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = button;
+		eventSystem.GetComponent<EventSystem>().SetSelectedGameObject(button, null);
+	}
+
+	public void HideQuitBox(GameObject button)
+	{
+		_menuIndex = 1;
+
+		eventSystem.GetComponent<EventSystem>().firstSelectedGameObject = button;
+		eventSystem.GetComponent<EventSystem>().SetSelectedGameObject(button, null);
+	}
 
 	private void CheckMenuIndex(int index)
 	{
@@ -152,6 +191,9 @@ public class MenuHandler : MonoBehaviour {
 		case 4:
 			menuState = MenuState.Credits;
 			break;
+		case 5:
+			menuState = MenuState.InQuit;
+			break;
 		}
 		SetMenuState();
 	}
@@ -166,6 +208,8 @@ public class MenuHandler : MonoBehaviour {
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(false);
 				creditsScreen.SetActive(false);
+				popUpQuitBox.SetActive(false);
+
 				title.enabled = true;
 				pressA.enabled = true;
 			break;
@@ -176,6 +220,8 @@ public class MenuHandler : MonoBehaviour {
 				buttonsPanel.SetActive(true);
 				optionsMenu.SetActive(false);
 				creditsScreen.SetActive(false);
+				popUpQuitBox.SetActive(false);
+
 				title.enabled = true;
 				pressA.enabled = false;
 			break;
@@ -186,6 +232,8 @@ public class MenuHandler : MonoBehaviour {
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(false);
 				creditsScreen.SetActive(false);
+				popUpQuitBox.SetActive(false);
+
 				title.enabled = false;
 				pressA.enabled = false;
 			break;
@@ -196,6 +244,8 @@ public class MenuHandler : MonoBehaviour {
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(true);
 				creditsScreen.SetActive(false);
+				popUpQuitBox.SetActive(false);
+
 				title.enabled = true;
 				pressA.enabled = false;
 			break;
@@ -206,6 +256,20 @@ public class MenuHandler : MonoBehaviour {
 				buttonsPanel.SetActive(false);
 				optionsMenu.SetActive(false);
 				creditsScreen.SetActive(true);
+				popUpQuitBox.SetActive(false);
+
+				title.enabled = true;
+				pressA.enabled = false;
+			break;
+
+			case MenuState.InQuit:
+				mainMenu.SetActive(true);
+				charSelect.SetActive(false);
+				buttonsPanel.SetActive(false);
+				optionsMenu.SetActive(false);
+				creditsScreen.SetActive(false);
+				popUpQuitBox.SetActive(true);
+
 				title.enabled = true;
 				pressA.enabled = false;
 			break;

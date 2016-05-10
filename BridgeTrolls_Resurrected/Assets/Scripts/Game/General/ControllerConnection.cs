@@ -22,9 +22,14 @@ public class ControllerConnection : MonoBehaviour, IControllerConnect<bool> {
 	{
 		CheckForInstance();
 
-		if(Input.GetJoystickNames().Length > 0)
+		if(Input.GetJoystickNames().Length == 1)
 		{
-			print(Input.GetJoystickNames().Length + " Controller(s) is Connected!");
+			print(Input.GetJoystickNames().Length + " Controller is Connected!");
+			CheckConnection(true);
+		}
+		else if(Input.GetJoystickNames().Length > 1)
+		{
+			print(Input.GetJoystickNames().Length + " Controllers are Connected!");
 			CheckConnection(true);
 		}
 		else

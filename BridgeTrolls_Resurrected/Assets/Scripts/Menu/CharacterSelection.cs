@@ -26,8 +26,8 @@ public class CharacterSelection : MonoBehaviour {
 
 	public void Select()
 	{
-//		if(Input.GetButtonDown(_rightControls + GetComponent<HubHandler>().panelID))
-		if(Input.GetButtonDown(_rightControls + ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex]))
+//		if(Input.GetButtonDown(_rightControls + ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex]))
+		if(Input.GetButtonDown(_rightControls + GetComponent<HubHandler>().panelID))
 		{
 			NextCharacter();
 			NextSprite();
@@ -37,8 +37,8 @@ public class CharacterSelection : MonoBehaviour {
 				_characterIndex++;
 			}
 		}
-//		else if(Input.GetButtonDown(_leftControls + GetComponent<HubHandler>().panelID))
-		else if(Input.GetButtonDown(_leftControls + ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex]))
+//		else if(Input.GetButtonDown(_leftControls + ControllerAssigner.Instance.allControllersInOrder[ControllerAssigner.Instance.ControllerIndex]))
+		else if(Input.GetButtonDown(_leftControls + GetComponent<HubHandler>().panelID))
 		{
 			PreviousCharacter();
 			PreviousSprite();
@@ -60,7 +60,7 @@ public class CharacterSelection : MonoBehaviour {
             CharacterDatabase.GetCharacterByInt(i);
 			PlayerPrefs.SetString("CharacterName" + i.ToString(), _selectedCharacterName);
             
-			print(_selectedCharacterName + " Confirmed!");
+			//print(_selectedCharacterName + " Confirmed!");
 		}
     }
 

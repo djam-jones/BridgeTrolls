@@ -93,10 +93,10 @@ public class AbilityHandler : MonoBehaviour
         DashUp = true;*/
 
 		//        Debug.Log("dash");
-		_move.speed += 7;
+		_move.speed += 7.2f;
 		_anim.SetTrigger("Go_Dash");
-		yield return new WaitForSeconds(0.1f);
-		_move.speed -= 7;
+		yield return new WaitForSeconds(0.15f);
+		_move.speed -= 7.2f;
 		dashUp = false;
 		_inCooldown = true;
 		yield return new WaitForSeconds(3);
@@ -110,7 +110,7 @@ public class AbilityHandler : MonoBehaviour
 		Grab grabScript = GetComponent<Grab>();
 		_move.speed += 6;
 		_anim.SetTrigger("Go_Grab");
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.15f);
 		_move.speed -= 6;
 		grabScript.grabReady = false;
 		_inCooldown = true;
@@ -122,7 +122,6 @@ public class AbilityHandler : MonoBehaviour
 
 	public IEnumerator Ability_Scratch()
 	{
-		//        Debug.Log("scratch");
 		//Play Animation.
 		_anim.SetTrigger("Go_Grab");
 		_inScratch = true;
@@ -144,12 +143,7 @@ public class AbilityHandler : MonoBehaviour
 		List<GameObject> goblin = manager.allGoblins;
 		for (int i = 0; i < goblin.Count; i++)
 		{
-            StartCoroutine(goblin[i].GetComponent<Movement>().StartAutoMove(new Vector3(Random.Range(-1,1),Random.Range(-1, 1), 0), 1));
-		//	Vector2 startPosition = goblin[i].transform.position;
-		//	Vector2 newPosition = Random.insideUnitCircle * 100;
-		//	newPosition.x += goblin[i].transform.position.x;
-		//	newPosition.y += goblin[i].transform.position.y;
-		//	goblin[i].transform.position = Vector3.Lerp(startPosition, newPosition, Time.deltaTime/10);
+            StartCoroutine(goblin[i].GetComponent<Movement>().StartAutoMove(new Vector3(Random.Range(-1, 1),Random.Range(-1, 1), 0), 1));
 		}
 		yield return new WaitForSeconds(0.25f);
 		_isRawring = false;

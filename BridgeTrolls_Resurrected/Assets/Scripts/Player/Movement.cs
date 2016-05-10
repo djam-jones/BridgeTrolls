@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour {
     private Vector3 _autoMoveDir;
 
 	public float speed = 4;
-	[SerializeField, HideInInspector] private float _scale;
 
 	[SerializeField] private float _minClampedX = -1.6f;
 	[SerializeField] private float _maxClampedX = 1.6f;
@@ -27,7 +26,6 @@ public class Movement : MonoBehaviour {
 	private Animator 	_anim;
     private AudioSource _audioSource;
 
-	public bool facingRight = false;
 	private bool _isMoving = false;
     private bool _autoMove = false;
 
@@ -39,9 +37,6 @@ public class Movement : MonoBehaviour {
 		_rigidbody2D = GetComponent<Rigidbody2D>();
 		_anim = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
-		_scale = transform.localScale.x;
-
-     
     }
 
 	void FixedUpdate()
@@ -64,6 +59,16 @@ public class Movement : MonoBehaviour {
 		}
 		else {
 			_anim.Play("Idle");
+		}
+
+		//If the Player is a Minion and has grabbed another Player, change the animation accordingly.
+		if(_playerRolesScript.playerRoles == Roles.Minion && GetComponent<Grab>().hasGrabbed == true && _isMoving)
+		{
+			_anim.Play("Grabbed Run");
+		}
+		else if(_playerRolesScript.playerRoles == Roles.Minion && GetComponent<Grab>().hasGrabbed == true && !_isMoving)
+		{
+			_anim.Play("Grabbed Idle");
 		}
 	}
 
@@ -151,13 +156,13 @@ public class Movement : MonoBehaviour {
 
         if (h >= 0.01f)
 		{
-			//			transform.localScale = new Vector2(-_scale, transform.localScale.y);
 			gameObject.GetComponent<SpriteRenderer>().flipX = true;
+			transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
 		}
 		else if(h <= -0.01f)
 		{
-			//			transform.localScale = new Vector2(_scale, transform.localScale.y);
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
+			transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
 		}
 
 		//Checks the Moving bool
