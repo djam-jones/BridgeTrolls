@@ -70,6 +70,14 @@ public class Movement : MonoBehaviour {
 		{
 			_anim.Play("Grabbed Idle");
 		}
+		else if(_playerRolesScript.playerRoles == Roles.Minion && GetComponent<Grab>().hasGrabbed == false && _isMoving)
+		{
+			_anim.Play("Run");
+		}
+		else if(_playerRolesScript.playerRoles == Roles.Minion && GetComponent<Grab>().hasGrabbed == false && !_isMoving)
+		{
+			_anim.Play("Idle");
+		}
 	}
 
     public IEnumerator StartAutoMove(Vector3 dir, float time, float _speed = 4)

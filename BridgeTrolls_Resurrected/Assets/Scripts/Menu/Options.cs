@@ -5,6 +5,7 @@ using System.Collections;
 public class Options : MonoBehaviour {
 
 	public Toggle fullScreenToggleUI;
+	public Toggle showTutorialToggleUI;
 	public Slider musicSliderUI;
 	public Slider soundFxSliderUI;
 	public Dropdown resolutionDropdownUI;
@@ -20,19 +21,24 @@ public class Options : MonoBehaviour {
 	void Awake()
 	{
 		_audioSources = GameObject.Find("Audio Handler").GetComponents<AudioSource>();
-		PlayerPrefs.SetString("ShowTutorial", "True");
+		fullScreenToggleUI.isOn = _fullScreen;
+		showTutorialToggleUI.isOn = _showTutorial;
 		//PlayerPrefs.SetInt("QualitySetting", 5);
 	}
 
-	void FixedUpdate()
+	void Start()
 	{
-		Screen.fullScreen = _fullScreen;
+		PlayerPrefs.SetString("ShowTutorial", "True");
 	}
 
 	public void FullScreenToggle()
 	{
-		_fullScreen = !_fullScreen;
-		print("Full Screen is " + Screen.fullScreen);
+		if(_fullScreen)
+			_fullScreen = false;
+		else if(!_fullScreen)
+			_fullScreen = true;
+
+		Screen.fullScreen = _fullScreen;
 	}
 
 	public void MusicVolume()
@@ -66,22 +72,22 @@ public class Options : MonoBehaviour {
 			Screen.SetResolution(1024, 576, _fullScreen);
 	}
 
-	public void SetQuality()
-	{
-		if(qualityDropdownUI.value == 0)
-		{
-			QualitySettings.SetQualityLevel(5);
-			PlayerPrefs.SetInt("QualitySetting", 5);
-		}
-		else if(qualityDropdownUI.value == 1)
-		{
-			QualitySettings.SetQualityLevel(3);
-			PlayerPrefs.SetInt("QualitySetting", 3);
-		}
-		else if(qualityDropdownUI.value == 2)
-		{
-			QualitySettings.SetQualityLevel(0);
-			PlayerPrefs.SetInt("QualitySetting", 0);
-		}
-	}
+//	public void SetQuality()
+//	{
+//		if(qualityDropdownUI.value == 0)
+//		{
+//			QualitySettings.SetQualityLevel(5);
+//			PlayerPrefs.SetInt("QualitySetting", 5);
+//		}
+//		else if(qualityDropdownUI.value == 1)
+//		{
+//			QualitySettings.SetQualityLevel(3);
+//			PlayerPrefs.SetInt("QualitySetting", 3);
+//		}
+//		else if(qualityDropdownUI.value == 2)
+//		{
+//			QualitySettings.SetQualityLevel(0);
+//			PlayerPrefs.SetInt("QualitySetting", 0);
+//		}
+//	}
 }

@@ -7,7 +7,6 @@ using System.Collections.Generic;
 
 public class GameMagager : MonoBehaviour {
 	
-    public GameMagager manager;
 	[HideInInspector] public bool isMainScene;
 	private bool _gamePaused;
 	private bool _gameStarted = false;
@@ -219,6 +218,7 @@ public class GameMagager : MonoBehaviour {
 	{
 		audioHandlerScript.GetComponents<AudioSource>()[0].Stop();
 		transitionLock.GetComponent<Animator>().Play("Transition_Close");
+		StartCoroutine( Wait(2) );
 		StartCoroutine( _screenManager.LoadScene("MainMenu") );
 	}
 

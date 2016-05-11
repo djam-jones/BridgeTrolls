@@ -32,11 +32,6 @@ public class Grab : MonoBehaviour
 		{
 			player = other.gameObject;
 			connectPlayers();
-			hasGrabbed = true;
-		}
-		else if(other.GetComponent<HingeJoint2D>() != null && grabReady == true)
-		{
-			hasGrabbed = false;
 		}
 	}
 
@@ -44,6 +39,7 @@ public class Grab : MonoBehaviour
 	{
 		player.GetComponent<Movement>().enabled = false;
 		player.GetComponent<AbilityHandler>().enabled = false;
+		player.GetComponent<SpriteRenderer>().enabled = false;
 
 		HingeJoint2D connector = player.gameObject.AddComponent<HingeJoint2D>();
 		connector.anchor = hingeOffset;
@@ -52,6 +48,7 @@ public class Grab : MonoBehaviour
 		player.transform.GetChild(0).gameObject.SetActive(true);
 		player.transform.GetChild(0).GetComponent<TapFree>().releaseFunc = disconnectPlayers;
 
+		hasGrabbed = true;
 		grabbing = true;
 	}
 
@@ -61,10 +58,12 @@ public class Grab : MonoBehaviour
 
 		player.GetComponent<Movement>().enabled = true;
 		player.GetComponent<AbilityHandler>().enabled = true;
+		player.GetComponent<SpriteRenderer>().enabled = true;
 
 		player.transform.GetChild(0).gameObject.SetActive(false);
 		player = null;
 
+		hasGrabbed = false;
 		grabbing = false;
 	}
 
